@@ -36,3 +36,7 @@ The comparison fixes the camera, lights and model data while yawing a centered m
 ## Controlled brow material comparison (iteration 12)
 
 The benchmark-12 chunks concatenate to 31,190,872 bytes, SHA-256 073e15ac751f31d87b25090f64eff38b2776951dc1e091c8152bbf12ac55fd75. Only brow vertex colour and alpha change from 11, evaluating three-source-lobe colour/opacity mixing. All 132,204 brow vertex positions are identical; geometry remains 497,022 unique triangles. Directional BRDF and original random-seed behavior remain approximations. Camera, lights, roughness and eye optics are unchanged.
+
+## Alpha/depth diagnostic (iteration 13)
+
+Only brow material BLEND changes to MASK with alphaCutoff 0.5; the entire BIN chunk is unchanged from12. A small replacement header reconstructs the exact31,190,888-byte GLB from12 chunks during CI, verified SHA-256 42e3d3a0cc0d42b9d94b05b2a62de1178613423dbb4aa1f73754867f89167019. Camera, lights, colour and roughness are unchanged.

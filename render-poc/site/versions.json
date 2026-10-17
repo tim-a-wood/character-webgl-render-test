@@ -1,5 +1,18 @@
 [
   {
+    "id": "13",
+    "title": "13 \u00b7 Brow alpha-mask diagnostic",
+    "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",
+    "limits": "Controlled alpha/depth test: brow BLEND changes to MASK with cutoff 0.5. Binary geometry, colour, roughness and optics unchanged from 12. Fidelity and mobile performance unapproved.",
+    "files": [
+      "assets/benchmark-13.glb"
+    ],
+    "bytes": 31190888,
+    "sha256": "42e3d3a0cc0d42b9d94b05b2a62de1178613423dbb4aa1f73754867f89167019",
+    "skins": 0,
+    "animations": 0
+  },
+  {
     "id": "12",
     "title": "12 \u00b7 Source brow colour-mixture test",
     "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",

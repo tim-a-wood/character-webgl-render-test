@@ -45,6 +45,7 @@ if(new URLSearchParams(location.search).get('testViews')==='1'){
   if(!testPivot){testPivot=new THREE.Group();scene.remove(model);testPivot.add(model);scene.add(testPivot);}
   controls.autoRotate=false;reset();testPivot.rotation.set(0,THREE.MathUtils.degToRad(degrees),0);
   scene.updateMatrixWorld(true);const drawStart=performance.now();renderer.render(scene,camera);const renderSubmitMs=performance.now()-drawStart;
-  return {modelYawDegrees:degrees,renderSubmitMs,rendererTriangleDraws:renderer.info.render.triangles,rendererDrawCalls:renderer.info.render.calls,cameraPosition:camera.position.toArray(),cameraTarget:controls.target.toArray(),cameraDistance:camera.position.distanceTo(controls.target),verticalFov:camera.fov,canvasWidth:renderer.domElement.width,canvasHeight:renderer.domElement.height};
+  const materials=[];model.traverse(o=>{if(o.isMesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))materials.push({mesh:o.name,name:m.name,transparent:m.transparent,depthWrite:m.depthWrite,alphaTest:m.alphaTest});});
+  return {materials,modelYawDegrees:degrees,renderSubmitMs,rendererTriangleDraws:renderer.info.render.triangles,rendererDrawCalls:renderer.info.render.calls,cameraPosition:camera.position.toArray(),cameraTarget:controls.target.toArray(),cameraDistance:camera.position.distanceTo(controls.target),verticalFov:camera.fov,canvasWidth:renderer.domElement.width,canvasHeight:renderer.domElement.height};
  };
 }

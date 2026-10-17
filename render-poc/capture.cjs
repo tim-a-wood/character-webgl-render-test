@@ -20,9 +20,13 @@ const server = http.createServer((req,res) => {
 let browser;
 (async () => {
   if (require('playwright-core/package.json').version !== '1.57.0') throw new Error('Unexpected Playwright version');
+  const patch=JSON.parse(fs.readFileSync(path.join(__dirname,'header13.json'),'utf8'));
+  const base=Buffer.concat([0,1,2,3].map(i=>fs.readFileSync(path.join(root,'assets/benchmark-12-'+i+'.bin'))));
+  if(crypto.createHash('sha256').update(base).digest('hex')!==patch.baseSha256)throw Error('Base model hash mismatch');
+  fs.writeFileSync(path.join(root,'assets/benchmark-13.glb'),Buffer.concat([Buffer.from(patch.headerBase64,'base64'),base.subarray(patch.baseOffset)]));
   const v=JSON.parse(fs.readFileSync(path.join(root,'versions.json'),'utf8'))[0];
   const model=Buffer.concat(v.files.map(file=>fs.readFileSync(path.join(root,file))));
-  if(v.id !== '12' || model.length !== 31190872 || crypto.createHash('sha256').update(model).digest('hex') !== '073e15ac751f31d87b25090f64eff38b2776951dc1e091c8152bbf12ac55fd75') throw new Error('Unexpected model payload');
+  if(v.id !== '13' || model.length !== 31190888 || crypto.createHash('sha256').update(model).digest('hex') !== '42e3d3a0cc0d42b9d94b05b2a62de1178613423dbb4aa1f73754867f89167019') throw new Error('Unexpected model payload');
   console.log('MODEL_SHA256',v.sha256);
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const origin = `http://127.0.0.1:${server.address().port}`;
@@ -39,9 +43,9 @@ let browser;
   page.on('pageerror', e=>console.error('PAGE_ERROR',e.message));
   page.on('console',msg=>{if(msg.type()==='error')console.error('CONSOLE_ERROR',msg.text());});
   const loadStart=Date.now();
-  await page.goto(origin+'/?testViews=1#iteration=12',{waitUntil:'networkidle',timeout:90000});
+  await page.goto(origin+'/?testViews=1#iteration=13',{waitUntil:'networkidle',timeout:90000});
   await page.addStyleTag({content:'.stage {width:768px;height:960px;min-height:960px} main {grid-template-columns:768px 320px}'});
-  await page.waitForFunction(()=>window.explorerState?.loaded === true && window.explorerState.iteration === '12',{},{timeout:90000});
+  await page.waitForFunction(()=>window.explorerState?.loaded === true && window.explorerState.iteration === '13',{},{timeout:90000});
   const loadToModelReadyMs=Date.now()-loadStart;
   await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
   console.log('LOAD_TIMING',JSON.stringify({loadToModelReadyMs,loadToFirstFrameMs:Date.now()-loadStart}));
