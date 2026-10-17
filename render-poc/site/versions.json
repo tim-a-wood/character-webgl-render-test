@@ -1,5 +1,21 @@
 [
   {
+    "id": "11",
+    "title": "11 \u00b7 Original source brows",
+    "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",
+    "limits": "Fidelity-first diagnostic: 497,022 total triangles, including 247,998 added brow triangles. Source colour/root alpha baked to vertex colours; triangular strand cross-sections, substituted deterministic shader seed, and omitted shader-lobe mixes are approximations. Not mobile-optimized or appearance-approved.",
+    "files": [
+      "assets/benchmark-11-0.bin",
+      "assets/benchmark-11-1.bin",
+      "assets/benchmark-11-2.bin",
+      "assets/benchmark-11-3.bin"
+    ],
+    "bytes": 31143104,
+    "sha256": "7d69964ee59ec09c9f6ac552bf332415c21a9d19e82b68d358fd750f86bedceb",
+    "skins": 0,
+    "animations": 0
+  },
+  {
     "id": "09",
     "title": "09 \u00b7 Eye colour-map correction",
     "scope": "Head and upper-chest skin, both inner eyes, corneas, menisci and plicae. No hat, hair, beard, full body, mouth internals, rig or animation.",

@@ -24,3 +24,11 @@ The four benchmark-09 binary chunks concatenate to a 29,666,452-byte GLB with SH
 One standard public GitHub-hosted Ubuntu job, ten-minute timeout, no paid runner, cache or artifact uploads. The job refuses private repositories. Repository token is read-only and is not persisted in checkout. Chromium sandbox stays enabled. Unsafe SwiftShader fallback and security-bypass flags are forbidden. Only local viewer requests are permitted. WebGL or sandbox failure ends the proof of concept.
 
 A screenshot is emitted as bounded base64 text in the workflow log with byte count and SHA-256. Completion requires verifying that payload and inspecting the actual rendered image. A passing load test does not establish appearance fidelity.
+
+## Source-brow diagnostic (iteration 11)
+
+The source-brow variant preserves the iteration09 binary prefix, materials and meshes and adds all 2,735 original Einar eyebrow curves as triangular-cross-section mesh strands. Its four benchmark-11 chunks concatenate to 31,143,104 bytes, SHA-256 7d69964ee59ec09c9f6ac552bf332415c21a9d19e82b68d358fd750f86bedceb. Total unique geometry is 497,022 triangles, of which 247,998 are added brow triangles. No personal likeness data is included.
+
+This is a fidelity-first diagnostic, not a mobile-optimized asset. Source colour and root alpha are baked to vertex colours; strand cross-section, deterministic substitute for the original shader random seed, and omitted source shader-lobe mixes remain approximations. The inherited asset metadata's broad statement that groom is omitted predates this brow-only addition; scalp hair and beard remain absent.
+
+The comparison fixes the camera, lights and model data while yawing a centered model pivot to 0 and +/-45 degrees. Timing readings are diagnostic wall-clock/submission measurements on a software renderer, not physical-device benchmarks. Renderer triangle draws may count multipass rendering and are distinct from unique geometry triangles.

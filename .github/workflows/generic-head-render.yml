@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar four-angle browser baseline'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar source-brows browser comparison'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -22,6 +22,6 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Render four generic head views
+      - name: Render three generic brow views
         working-directory: render-poc
         run: timeout 240s node capture.cjs

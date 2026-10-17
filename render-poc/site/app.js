@@ -44,7 +44,7 @@ if(new URLSearchParams(location.search).get('testViews')==='1'){
   if(!model || !Number.isFinite(degrees) || Math.abs(degrees)>180)throw Error('Invalid test pose');
   if(!testPivot){testPivot=new THREE.Group();scene.remove(model);testPivot.add(model);scene.add(testPivot);}
   controls.autoRotate=false;reset();testPivot.rotation.set(0,THREE.MathUtils.degToRad(degrees),0);
-  scene.updateMatrixWorld(true);renderer.render(scene,camera);
-  return {modelYawDegrees:degrees,cameraPosition:camera.position.toArray(),cameraTarget:controls.target.toArray(),cameraDistance:camera.position.distanceTo(controls.target),verticalFov:camera.fov,canvasWidth:renderer.domElement.width,canvasHeight:renderer.domElement.height};
+  scene.updateMatrixWorld(true);const drawStart=performance.now();renderer.render(scene,camera);const renderSubmitMs=performance.now()-drawStart;
+  return {modelYawDegrees:degrees,renderSubmitMs,rendererTriangleDraws:renderer.info.render.triangles,rendererDrawCalls:renderer.info.render.calls,cameraPosition:camera.position.toArray(),cameraTarget:controls.target.toArray(),cameraDistance:camera.position.distanceTo(controls.target),verticalFov:camera.fov,canvasWidth:renderer.domElement.width,canvasHeight:renderer.domElement.height};
  };
 }
