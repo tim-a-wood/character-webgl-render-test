@@ -44,3 +44,7 @@ Only brow material BLEND changes to MASK with alphaCutoff 0.5; the entire BIN ch
 ## Source-fitted brow cards (iteration15)
 
 All2,735 source curves are represented in64 local cards with128 brow triangles and two2048-square atlases. Total249,152 triangles;35,345,140 bytes; SHA-256 8e6911c9bfc9f2cc44abc57f3f2cb30ebfb7b4adff056efca825083d9334839e. Reconstructed from unchanged09 BIN payload, replacement header and5,677,244-byte suffix. Projection residual median0.545mm,p952.13mm,max9.28mm: glancing silhouette loss is a known limitation. This larger-file/lower-triangle diagnostic adds a75-degree glancing view; camera and lights stay fixed. No appearance or mobile-performance approval.
+
+## Placement correction16
+
+15 had an incorrect identity transform and is not a valid card-fidelity test.16 only restores the source brow node translation; all BIN data, atlas textures and materials remain identical. Strict overall-model framing guard restored. Exact35,345,220-byte model SHA-256 cf910551ab600c6d1334fe417cd5059f4044e917f39a5ec43fcb3d3f87a52bd0.

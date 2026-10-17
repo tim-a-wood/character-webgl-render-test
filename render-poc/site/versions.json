@@ -1,5 +1,18 @@
 [
   {
+    "id": "16",
+    "title": "16 \u00b7 Correctly placed source brow cards",
+    "scope": "Generic Einar09 head and eyes plus 64 local eyebrow cards fitted to all 2,735 source curves.",
+    "limits": "Placement-only correction of15; all geometry/textures/materials unchanged.64 cards,128 brow triangles. Initial15 misplaced cards and is invalid for fidelity comparison. Appearance and mobile performance unapproved.",
+    "files": [
+      "assets/benchmark-16.glb"
+    ],
+    "bytes": 35345220,
+    "sha256": "cf910551ab600c6d1334fe417cd5059f4044e917f39a5ec43fcb3d3f87a52bd0",
+    "skins": 0,
+    "animations": 0
+  },
+  {
     "id": "15",
     "title": "15 \u00b7 Source-fitted brow cards",
     "scope": "Generic Einar09 head and eyes plus 64 local eyebrow cards fitted to all 2,735 source curves.",

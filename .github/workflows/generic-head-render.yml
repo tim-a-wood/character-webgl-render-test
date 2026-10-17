@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar brow cards with fixed baseline framing'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar correctly placed brow cards'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
