@@ -1,5 +1,18 @@
 [
   {
+    "id": "15",
+    "title": "15 \u00b7 Source-fitted brow cards",
+    "scope": "Generic Einar09 head and eyes plus 64 local eyebrow cards fitted to all 2,735 source curves.",
+    "limits": "128 brow triangles, 249,152 total triangles; two 2048-square atlases. Projection depth residual median 0.545mm, p95 2.13mm, maximum 9.28mm. Glancing silhouette and aliasing require review; appearance and mobile performance unapproved.",
+    "files": [
+      "assets/benchmark-15.glb"
+    ],
+    "bytes": 35345140,
+    "sha256": "8e6911c9bfc9f2cc44abc57f3f2cb30ebfb7b4adff056efca825083d9334839e",
+    "skins": 0,
+    "animations": 0
+  },
+  {
     "id": "13",
     "title": "13 \u00b7 Brow alpha-mask diagnostic",
     "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",
