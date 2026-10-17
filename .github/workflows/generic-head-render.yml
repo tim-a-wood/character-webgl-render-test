@@ -1,0 +1,27 @@
+name: Generic head render proof
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/generic-head-render.yml']
+permissions:
+  contents: read
+jobs:
+  screenshot:
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run one generic Einar browser render proof'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+          lfs: false
+          sparse-checkout: render-poc
+      - name: Install exact test runtime
+        working-directory: render-poc
+        run: |
+          npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
+          npx --no-install playwright-core install chromium
+      - name: Render generic head once
+        working-directory: render-poc
+        run: timeout 240s node capture.cjs
