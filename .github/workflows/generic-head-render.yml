@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar source-brows browser comparison'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar brow material-mixture comparison'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:

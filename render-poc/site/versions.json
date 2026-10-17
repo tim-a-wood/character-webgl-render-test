@@ -1,5 +1,21 @@
 [
   {
+    "id": "12",
+    "title": "12 \u00b7 Source brow colour-mixture test",
+    "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",
+    "limits": "Controlled material comparison: same 497,022 triangles and identical brow positions as 11. Full three-source-lobe colour/opacity mixing baked to vertex colours; directional BRDF, shader random seed and strand cross-section remain approximations. Not mobile-optimized or appearance-approved.",
+    "files": [
+      "assets/benchmark-12-0.bin",
+      "assets/benchmark-12-1.bin",
+      "assets/benchmark-12-2.bin",
+      "assets/benchmark-12-3.bin"
+    ],
+    "bytes": 31190872,
+    "sha256": "073e15ac751f31d87b25090f64eff38b2776951dc1e091c8152bbf12ac55fd75",
+    "skins": 0,
+    "animations": 0
+  },
+  {
     "id": "11",
     "title": "11 \u00b7 Original source brows",
     "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",

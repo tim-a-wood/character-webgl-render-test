@@ -32,3 +32,7 @@ The source-brow variant preserves the iteration09 binary prefix, materials and m
 This is a fidelity-first diagnostic, not a mobile-optimized asset. Source colour and root alpha are baked to vertex colours; strand cross-section, deterministic substitute for the original shader random seed, and omitted source shader-lobe mixes remain approximations. The inherited asset metadata's broad statement that groom is omitted predates this brow-only addition; scalp hair and beard remain absent.
 
 The comparison fixes the camera, lights and model data while yawing a centered model pivot to 0 and +/-45 degrees. Timing readings are diagnostic wall-clock/submission measurements on a software renderer, not physical-device benchmarks. Renderer triangle draws may count multipass rendering and are distinct from unique geometry triangles.
+
+## Controlled brow material comparison (iteration 12)
+
+The benchmark-12 chunks concatenate to 31,190,872 bytes, SHA-256 073e15ac751f31d87b25090f64eff38b2776951dc1e091c8152bbf12ac55fd75. Only brow vertex colour and alpha change from 11, evaluating three-source-lobe colour/opacity mixing. All 132,204 brow vertex positions are identical; geometry remains 497,022 unique triangles. Directional BRDF and original random-seed behavior remain approximations. Camera, lights, roughness and eye optics are unchanged.
