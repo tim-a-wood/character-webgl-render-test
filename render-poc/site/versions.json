@@ -1,0 +1,18 @@
+[
+  {
+    "id": "09",
+    "title": "09 \u00b7 Eye colour-map correction",
+    "scope": "Head and upper-chest skin, both inner eyes, corneas, menisci and plicae. No hat, hair, beard, full body, mouth internals, rig or animation.",
+    "limits": "Partial data fix only: inner-eye colour maps corrected; geometry and eye optics unchanged from 08. Eyes remain dark in native exact-export reimport. Appearance still fails; browser appearance is unverified.",
+    "files": [
+      "assets/benchmark-09-0.bin",
+      "assets/benchmark-09-1.bin",
+      "assets/benchmark-09-2.bin",
+      "assets/benchmark-09-3.bin"
+    ],
+    "bytes": 29666452,
+    "sha256": "6159e3ed8e4f7c92bf39ad82a1e7d5d33dcca099eacf89fb4919d84cba863642",
+    "skins": 0,
+    "animations": 0
+  }
+]
