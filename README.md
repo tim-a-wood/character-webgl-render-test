@@ -48,3 +48,7 @@ All2,735 source curves are represented in64 local cards with128 brow triangles a
 ## Placement correction16
 
 15 had an incorrect identity transform and is not a valid card-fidelity test.16 only restores the source brow node translation; all BIN data, atlas textures and materials remain identical. Strict overall-model framing guard restored. Exact35,345,220-byte model SHA-256 cf910551ab600c6d1334fe417cd5059f4044e917f39a5ec43fcb3d3f87a52bd0.
+
+## Source-following ribbons17
+
+All2,735 source curves represented individually with66,441 brow triangles,315,465 total. Original below50k target missed; revised80k diagnostic budget passed. No atlas; source13 MASK0.5/roughness0.35 and full-mixture vertex colours. Exact33,451,932-byte SHA-256 4cbe74db46e47a2b816d2c126481cec273972c65bfd0d544939d73bf78065d2a. Source centerline/radius/linearRGBA interpolation errors bounded by0.04997mm/0.001996mm/0.019986. Strict source and overall bounds passed. Edge-on width loss is a known risk, evaluated at both75-degree views. Appearance and mobile performance unapproved.

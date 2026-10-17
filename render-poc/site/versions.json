@@ -1,5 +1,18 @@
 [
   {
+    "id": "17",
+    "title": "17 \u00b7 Source-following brow ribbons",
+    "scope": "Generic Einar09 head and eyes plus individual ribbons following all 2,735 source eyebrow curves.",
+    "limits": "66,441 brow triangles,315,465 total; original below50k target missed, revised80k diagnostic budget passed. No atlas. Edge-on width loss and source-fidelity remain under review; no mobile approval.",
+    "files": [
+      "assets/benchmark-17.glb"
+    ],
+    "bytes": 33451932,
+    "sha256": "4cbe74db46e47a2b816d2c126481cec273972c65bfd0d544939d73bf78065d2a",
+    "skins": 0,
+    "animations": 0
+  },
+  {
     "id": "16",
     "title": "16 \u00b7 Correctly placed source brow cards",
     "scope": "Generic Einar09 head and eyes plus 64 local eyebrow cards fitted to all 2,735 source curves.",
