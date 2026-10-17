@@ -36,3 +36,15 @@ $('capture').onclick=()=>{
  wrap(v.scope);wrap('Experimental / unapproved. Einar Rig © Blender Foundation / Blender Studio · CC BY 4.0.');
  out.toBlob(blob=>{if(!blob){$('capture-status').textContent='Capture failed. Use your device screenshot instead.';return;}const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='character-browser-iteration-'+v.id+'.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),60000);$('capture-status').textContent='PNG prepared for saving. Attach it in chat for review.';},'image/png');
 };
+
+// Query-gated generic visual-test control; rendering materials and lights are unchanged.
+if(new URLSearchParams(location.search).get('testViews')==='1'){
+ let testPivot;
+ window.setGenericTestYaw=degrees=>{
+  if(!model || !Number.isFinite(degrees) || Math.abs(degrees)>180)throw Error('Invalid test pose');
+  if(!testPivot){testPivot=new THREE.Group();scene.remove(model);testPivot.add(model);scene.add(testPivot);}
+  controls.autoRotate=false;reset();testPivot.rotation.set(0,THREE.MathUtils.degToRad(degrees),0);
+  scene.updateMatrixWorld(true);renderer.render(scene,camera);
+  return {modelYawDegrees:degrees,cameraPosition:camera.position.toArray(),cameraTarget:controls.target.toArray(),cameraDistance:camera.position.distanceTo(controls.target),verticalFov:camera.fov,canvasWidth:renderer.domElement.width,canvasHeight:renderer.domElement.height};
+ };
+}
