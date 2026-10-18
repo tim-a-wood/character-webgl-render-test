@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Complete generic Einar47 playback timing gates'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Verify generic Einar47 positive clock and hand view'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
