@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   sampled-walk:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Verify generic Einar50 corrected capture hashes'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Inspect generic Einar50 side gait sequence'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -26,4 +26,4 @@ jobs:
           npx --no-install playwright-core install chromium
       - name: Matched sampled gait preview
         working-directory: package50
-        run: timeout 480s node capture50-sequence.cjs
+        run: timeout 480s node capture50-side.cjs
