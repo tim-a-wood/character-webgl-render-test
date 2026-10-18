@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar dressed integration39 test'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar skin40 zero gate'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Compare Einar27 and integration39
+      - name: Validate skin40 compile and zero control
         working-directory: render-poc
         run: timeout 480s node capture.cjs
 

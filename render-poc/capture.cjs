@@ -48,33 +48,24 @@ let browser;
   console.log('LAUNCH_ARGUMENTS',JSON.stringify(args));
   const context = await browser.newContext({viewport:{width:1400,height:1300},deviceScaleFactor:1,serviceWorkers:'block'});
 
-  const bodySpec=JSON.parse(fs.readFileSync(path.join(root,'versions.json'),'utf8')).find(x=>x.id==='27').body;
-  await context.route('**/*',route=>(new URL(route.request().url()).origin===origin||bodySpec.files.includes(route.request().url()))?route.continue():route.abort());
-  const bodyBaseline=new Map(),headBaseline=new Map();
-  for(const iteration of ['38','27','39']){
-   const page=await context.newPage(),errors=[],bodyResponses=[];
-   page.on('pageerror',e=>{errors.push(e.message);console.error('PAGE_ERROR',e.message);});page.on('console',m=>{if(m.type()==='error'){errors.push(m.text());console.error('CONSOLE_ERROR',m.text());}});page.on('response',r=>{if(bodySpec.files.includes(r.url()))bodyResponses.push({url:r.url(),status:r.status()});});
-   const bounded=async(p,label)=>{let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label+' exceeded60s')),60000);})]);}finally{clearTimeout(timer);}};
-   const started=Date.now();await page.goto(origin+'/?testViews=1#iteration='+iteration,{waitUntil:'networkidle',timeout:90000});await page.addStyleTag({content:'.stage {width:768px;height:960px;min-height:960px} main {grid-template-columns:768px 320px}'});
-   try{await page.waitForFunction(id=>window.explorerState?.error||(window.explorerState?.loaded&&window.explorerState.iteration===id),iteration,{timeout:90000});}catch(e){console.log('LOAD_FAILURE',JSON.stringify(await page.evaluate(()=>({state:window.explorerState,stage:window.faceLoadStage}))));throw e;}
-   const state=await page.evaluate(()=>window.explorerState);if(state.error)throw Error(JSON.stringify(state));await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));await page.evaluate(()=>window.pauseGenericTestLoop());
-   console.log('LOAD_TIMING',JSON.stringify({iteration,loadToFirstFrameMs:Date.now()-started}));console.log('RENDER_DIAGNOSTICS',JSON.stringify(state));
-   if(iteration==='39')await page.evaluate(()=>window.enableCanonicalOpaqueOrder());
-   if(iteration==='38'){for(const [key,values]of [['neutral',{}],['combo',{jaw:.6,smile:.7,brow:.17,blink:.3}]]){await page.evaluate(v=>window.activeFace26.setExpressions({jaw:0,smile:0,brow:0,blink:0,...v}),values);headBaseline.set(key,await page.evaluate(()=>window.faceGeometryDigest()));}if(errors.length)throw Error(errors.join(';'));await page.close();continue;}
-   const neutralDigest=await page.evaluate(()=>window.faceGeometryDigest());let neutralSha;
 
-   for(const [view,gesture,angle,closeup,values]of [['body-neutral',0,0,false,{}],['body-gesture',1,0,false,{}],['body-gesture45',1,45,false,{}],['face-with-gesture',1,0,true,{jaw:.6,smile:.7,brow:.17,blink:.3}],['body-neutral-restored',0,0,false,{}]]){
-    await page.locator('#body-pose').evaluate((el,v)=>{el.value=String(v);el.dispatchEvent(new Event('change',{bubbles:true}));},gesture);
-    for(const k of ['jaw','smile','brow','blink'])await page.locator('#face-'+k).evaluate((el,v)=>{el.value=String(v);el.dispatchEvent(new Event('input',{bubbles:true}));},values[k]||0);
-    const actual=await page.evaluate(()=>({body:window.bodyPoseState(),face:{...window.activeFace26.state},faceMetadata:window.activeFace26.metadata}));if(actual.body.weights.length!==14||actual.body.weights.some(x=>x.value!==gesture))throw Error('Body endpoint control mismatch');for(const k of ['jaw','smile','brow','blink'])if(actual.face[k]!== (values[k]||0))throw Error('Face input mismatch');
-    const bodyDigest=await bounded(page.evaluate(()=>window.bodyDigest39()),'body digest');if(iteration==='27')bodyBaseline.set(view,bodyDigest);else if(JSON.stringify(bodyDigest)!==JSON.stringify(bodyBaseline.get(view)))throw Error('Body geometry/material/morph mismatch '+view);
-    console.log('BODY_PARITY',JSON.stringify({iteration,view,matched:iteration==='39',digest:bodyDigest}));
-    if(iteration==='39'){const reference=headBaseline.get(closeup?'combo':'neutral'),names=new Set(reference.map(x=>x.name)),actualHead=(await page.evaluate(()=>window.faceGeometryDigest())).filter(x=>names.has(x.name));if(JSON.stringify(actualHead)!==JSON.stringify(reference))throw Error('Head38 buffers changed '+view);console.log('HEAD38_PARITY',JSON.stringify({view,matched:true}));}
-    const framing=await page.evaluate(c=>window.setBodyFraming(c),closeup),pose=await bounded(page.evaluate(a=>window.setGenericTestYaw(a),angle),'pose');if(Math.abs(pose.cameraDistance-(closeup?v.expectedCameraDistance:Math.hypot(.2,4.4)))>1e-9)throw Error('Body framing mismatch');
-    if(iteration==='39'){for(const n of ['Einar24 full source beard scalp lashes','Einar38 authored moustache']){const m=pose.materials.find(x=>x.mesh===n);if(!m?.fiberNormal36||!m.alphaHash||m.transparent||!m.depthWrite)throw Error('39 groom shader mismatch '+n);}}const name='einar'+iteration+'-'+view,t=Date.now();const pixels=await bounded(page.evaluate(k=>window.measureGroomPixels(k),name),'framebuffer');if(pixels.glError)throw Error('GL error');const wall=Date.now()-t,base64=await page.evaluate(k=>window.encodeGroomFrame(k),name),image=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(image).digest('hex');
-    if(view==='body-neutral')neutralSha=sha256;if(view==='body-neutral-restored'){if(sha256!==neutralSha)throw Error('Body reset pixels mismatch');if(JSON.stringify(await page.evaluate(()=>window.faceGeometryDigest()))!==JSON.stringify(neutralDigest))throw Error('Head reset attributes mismatch');}
-    console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,iteration,view,pose,state:actual,framing,renderAndReadbackWallMs:wall,bytes:image.length,sha256,mime:'image/jpeg'}));for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
-   }
-   console.log('BODY_DELIVERY',JSON.stringify({iteration,responses:bodyResponses}));if(bodyResponses.length!==12||bodyResponses.some(x=>x.status!==200))throw Error('Body raw delivery incomplete');if(errors.length)throw Error(errors.join(';'));await page.close();
+  await context.route('**/*',route=>new URL(route.request().url()).origin===origin?route.continue():route.abort());
+  if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/einar-skin40.js'))).digest('hex')!=='3f807a7f12b06f096c99b011b3a581d3ec089701791bd216ad1b13c2b3d660f3')throw Error('Skin40 module hash');
+  const page=await context.newPage(),errors=[];page.on('pageerror',e=>{errors.push(e.message);console.error('PAGE_ERROR',e.message);});page.on('console',m=>{if(m.type()==='error'){errors.push(m.text());console.error('CONSOLE_ERROR',m.text());}});
+  const bounded=async(p,label)=>{let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label+' exceeded60s')),60000);})]);}finally{clearTimeout(timer);}};
+  await page.goto(origin+'/?testViews=1#iteration=38',{waitUntil:'networkidle',timeout:90000});await page.addStyleTag({content:'.stage {width:768px;height:960px;min-height:960px} main {grid-template-columns:768px 320px}'});
+  await page.waitForFunction(()=>window.explorerState?.error||window.explorerState?.loaded,{},{timeout:90000});const state=await page.evaluate(()=>window.explorerState);if(state.error)throw Error(JSON.stringify(state));await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));await page.evaluate(()=>window.pauseGenericTestLoop());await page.evaluate(()=>window.enableCanonicalOpaqueOrder());
+  const geometry=await page.evaluate(()=>window.faceGeometryDigest());let reference;
+  for(const mode of ['original','historical','zero','zero-repeat']){
+   if(mode==='historical')console.log('SKIN40_INSTALL',JSON.stringify(await page.evaluate(()=>window.installSkinTest40())));
+   if(mode!=='original')await page.evaluate(m=>window.skinTest40.setMode(m==='zero-repeat'?'zero':m),mode);
+   const pose=await bounded(page.evaluate(()=>window.setGenericTestYaw(0)),'pose'),name='einar40-'+mode,start=Date.now();
+   const pixels=await bounded(page.evaluate(k=>window.measureGroomPixels(k),name),'framebuffer'),wall=Date.now()-start;
+   const metadata=await page.evaluate(()=>window.skinTest40?.metadata||null);console.log('SKIN40_METADATA',JSON.stringify({mode,metadata,readError:pixels.glError}));
+   const raw=Buffer.from(await page.evaluate(k=>window.rawFrameBase64(k),name),'base64');if(!reference)reference=raw;let changed=0,total=0,max=0;for(let i=0;i<raw.length;i+=4){let d=false;for(let c=0;c<4;c++){const v=Math.abs(raw[i+c]-reference[i+c]);total+=v;max=Math.max(max,v);if(v)d=true;}if(d)changed++;}
+   console.log('ZERO_PARITY',JSON.stringify({mode,changedPixels:changed,maxChannelDelta:max,meanAbsRGBA:total/raw.length,rawSha256:crypto.createHash('sha256').update(raw).digest('hex')}));
+   const base64=await page.evaluate(k=>window.encodeGroomFrame(k),name),bytes=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(bytes).digest('hex');console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,mode,pose,metadata,renderAndReadbackWallMs:wall,bytes:bytes.length,sha256,mime:'image/jpeg'}));for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
+   if(errors.length)throw Error('Shader/browser errors: '+errors.join(';'));if(pixels.glError||metadata?.glError)throw Error('GL error');if(JSON.stringify(await page.evaluate(()=>window.faceGeometryDigest()))!==JSON.stringify(geometry))throw Error('Skin40 geometry changed');if(changed)throw Error('Skin40 zero/historical raw equality failed '+mode);if(mode.startsWith('zero')&&(metadata.actualSamples!==4||metadata.sampleBuffers!==1||metadata.framebufferStatus!==36053))throw Error('Skin40 sample/framebuffer gate');
   }
+  console.log('SKIN40_ZERO_GATE_PASSED',true);
 })().catch(e=>{console.error(e.stack);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();server.close();});
