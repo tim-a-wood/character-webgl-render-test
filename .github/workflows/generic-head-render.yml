@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar skin40c diffusion gate'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar milestone41 usability gate'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Validate skin40c zero and masked diffusion
+      - name: Validate demand rendering and lazy body controls
         working-directory: render-poc
         run: timeout 480s node capture.cjs
 
