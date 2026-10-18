@@ -52,3 +52,7 @@ All2,735 source curves are represented in64 local cards with128 brow triangles a
 ## Source-following ribbons17
 
 All2,735 source curves represented individually with66,441 brow triangles,315,465 total. Original below50k target missed; revised80k diagnostic budget passed. No atlas; source13 MASK0.5/roughness0.35 and full-mixture vertex colours. Exact33,451,932-byte SHA-256 4cbe74db46e47a2b816d2c126481cec273972c65bfd0d544939d73bf78065d2a. Source centerline/radius/linearRGBA interpolation errors bounded by0.04997mm/0.001996mm/0.019986. Strict source and overall bounds passed. Edge-on width loss is a known risk, evaluated at both75-degree views. Appearance and mobile performance unapproved.
+
+## Source hat18
+
+Original hat geometry and UVs retained with three2048 composed maps; KHR specular/IOR, omitted source sheen.22,432 added triangles,337,897 total;47,647,900bytes; SHA-256 e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee. Native reference already shows lighter/flatter shading, not fidelity-approved. Header+hat suffix reuse exact17 BIN. Explicit source18 bounds [[-0.13972650468349457, 1.45891173183918, -0.13773080246869823], [0.13972605764865875, 1.880686596688355, 0.17094007777084727]] define center and camera distance 0.801771719833492m at34-degree FOV; bounds checked before capture. Camera fit expands deliberately for hat crown/depth, lights unchanged.

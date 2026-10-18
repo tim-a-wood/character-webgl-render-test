@@ -1,5 +1,31 @@
 [
   {
+    "id": "18",
+    "title": "18 \u00b7 Source hat with exported maps",
+    "scope": "Generic Einar17 head, eyes and source-following brows plus original Einar hat geometry and exported material maps.",
+    "limits": "Hat adds22,432 triangles;337,897 total;47.65MB. Native comparison already shows lighter/flatter shading; source sheen omitted. Browser rendering is a gate, not fidelity approval.",
+    "files": [
+      "assets/benchmark-18.glb"
+    ],
+    "bytes": 47647900,
+    "sha256": "e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee",
+    "skins": 0,
+    "animations": 0,
+    "expectedBounds": [
+      [
+        -0.13972650468349457,
+        1.45891173183918,
+        -0.13773080246869823
+      ],
+      [
+        0.13972605764865875,
+        1.880686596688355,
+        0.17094007777084727
+      ]
+    ],
+    "expectedCameraDistance": 0.801771719833492
+  },
+  {
     "id": "17",
     "title": "17 \u00b7 Source-following brow ribbons",
     "scope": "Generic Einar09 head and eyes plus individual ribbons following all 2,735 source eyebrow curves.",
