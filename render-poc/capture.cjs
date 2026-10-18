@@ -32,6 +32,7 @@ let browser;
   const model=Buffer.concat(v.files.map(file=>fs.readFileSync(path.join(root,file))));
   if(v.id !== '26' || model.length !== 47647900 || crypto.createHash('sha256').update(model).digest('hex') !== 'e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee') throw new Error('Unexpected model payload');
   console.log('MODEL_SHA256',v.sha256);
+  for(const [name,sha]of [['einar-face37.js','6fb6dec17bc0daf1f38730d26565751004f4b2a6e89cabb6d3f4c6d7a7f265e4'],['sparse-groom37.js','9f27027e90ea4021927715bdc66ce1c716f9b2d044ea54a5ab410fe6fa6fc0f8']])if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets',name))).digest('hex')!==sha)throw Error('37 module hash '+name);
   if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/einar-groom36.js'))).digest('hex')!=='48db997d0bf0b42d014d39e4e3fc9d073b2f9977fdb32fb515f1085e1af5e8f5')throw Error('36 module hash');
   for(const [file,sha] of [['assets/einar-face26b.js','f807edda945c99ad079343991367748f84c05ad228d3278a20c1656d1a6ae272'],[v.face.url,v.face.compressedSha256],[v.face.oral,'a0615d3c5fe106644fc7c950b83b0131e4cbe4f91d69eb755a29bac5ecabc597']])if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex')!==sha)throw Error('Face asset hash mismatch '+file);
   if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/einar-groom24.js'))).digest('hex')!==v.runtimePatch.moduleSha256)throw Error('Module hash mismatch');
@@ -47,8 +48,10 @@ let browser;
   console.log('LAUNCH_ARGUMENTS',JSON.stringify(args));
   const context = await browser.newContext({viewport:{width:1400,height:1300},deviceScaleFactor:1,serviceWorkers:'block'});
   await context.route('**/*',route=>new URL(route.request().url()).origin===origin ? route.continue() : route.abort());
-  const baseline=new Map();
-  for(const iteration of ['26','36']){
+  const baseline=new Map(),stateBaseline=new Map(),imageBaseline=new Map();
+  let seed=0x12345678;const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return Math.round(seed/4294967296*100)/100;};
+  const states=[{jaw:0,smile:0,brow:0,blink:0},{jaw:1,smile:0,brow:0,blink:0},{jaw:0,smile:1,brow:0,blink:0},{jaw:0,smile:0,brow:1,blink:0},{jaw:0,smile:0,brow:0,blink:1},{jaw:.6,smile:.7,brow:.4,blink:.8},{jaw:0,smile:0,brow:0,blink:0}];while(states.length<37)states.push({jaw:rand(),smile:rand(),brow:rand(),blink:rand()});states.push({jaw:0,smile:0,brow:0,blink:0});
+  for(const iteration of ['36','37']){
   const page = await context.newPage();
   const errors=[];page.on('pageerror', e=>{errors.push(e.message);console.error('PAGE_ERROR',e.message);});
   page.on('console',msg=>{if(msg.type()==='error'){errors.push(msg.text());console.error('CONSOLE_ERROR',msg.text());}});
@@ -73,19 +76,28 @@ let browser;
   const bounded=async(promise,label)=>{let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Budget exceeded: '+label+' exceeded60s')),60000);})]);}finally{clearTimeout(timer);}};
   await page.evaluate(()=>window.pauseGenericTestLoop());
   const neutralDigest=await page.evaluate(()=>window.faceGeometryDigest());
+  for(let i=0;i<states.length;i++){
+    const actual=await page.evaluate(v=>window.activeFace26.setExpressions(v),states[i]);for(const k of Object.keys(states[i]))if(actual[k]!==states[i][k])throw Error('Seeded state mismatch');
+    const digest=await page.evaluate(()=>window.faceGeometryDigest());if(iteration==='36')stateBaseline.set(i,digest);else if(JSON.stringify(digest)!==JSON.stringify(stateBaseline.get(i)))throw Error('Sparse state parity failure '+i);console.log('STATE_PARITY',JSON.stringify({iteration,index:i,state:states[i],digest,matched:iteration==='37'}));
+  }
+  const cpu=await bounded(page.evaluate(()=>{
+    const zero={jaw:0,smile:0,brow:0,blink:0},out={};for(const channel of ['zero','jaw','smile','brow','blink','jawSmile','mixed']){const samples=[];for(let i=0;i<30;i++){const q=.1+(i%9)*.1,values={...zero};if(channel==='jawSmile'){values.jaw=q;values.smile=1-q;}else if(channel==='mixed'){values.jaw=q;values.smile=.73;values.brow=.31;values.blink=.62;}else if(channel!=='zero')values[channel]=q;const t=performance.now();window.activeFace26.setExpressions(values);const ms=performance.now()-t;if(i>=5)samples.push(ms);}const sorted=[...samples].sort((a,b)=>a-b);out[channel]={warmups:5,samples,medianMs:sorted[12],p95Ms:sorted[Math.ceil(sorted.length*.95)-1]};}return {cases:out,sparseMemory:window.activeFace26.metadata.sparseGroom37||null,measured:'synchronous full setExpressions call; excludes rendering, digest, input dispatch'};
+  }),'CPU benchmark');console.log('CPU_BENCHMARK',JSON.stringify({iteration,...cpu}));
+  const burst=await page.evaluate(()=>{const states=[{jaw:1,smile:0,brow:0,blink:0},{jaw:0,smile:0,brow:1,blink:1},{jaw:.6,smile:.7,brow:.2,blink:.3}];let events=0;const start=performance.now();for(const values of states)for(const [k,v]of Object.entries(values)){const el=document.getElementById('face-'+k);el.value=String(v);el.dispatchEvent(new Event('input',{bubbles:true}));events++;}return {events,dispatchAndCpuMs:performance.now()-start,state:{...window.activeFace26.state}};});const burstDigest=await page.evaluate(()=>window.faceGeometryDigest());if(iteration==='36')stateBaseline.set('burst',burstDigest);else if(JSON.stringify(burstDigest)!==JSON.stringify(stateBaseline.get('burst')))throw Error('Burst final geometry mismatch');for(const [k,v]of Object.entries({jaw:.6,smile:.7,brow:.2,blink:.3}))if(burst.state[k]!==v)throw Error('Burst final state mismatch');console.log('EVENT_BURST',JSON.stringify({iteration,...burst}));
+
   for(const [key,value] of Object.entries({jaw:.13,smile:.27,brow:.38,blink:.42}))await page.locator('#face-'+key).evaluate((el,v)=>{el.value=String(v);el.dispatchEvent(new Event('input',{bubbles:true}));},value);
   const eventState=await page.evaluate(()=>({...window.activeFace26.state}));for(const [key,value]of Object.entries({jaw:.13,smile:.27,brow:.38,blink:.42}))if(eventState[key]!==value)throw Error('Live input mismatch '+key);console.log('CONTROL_EVENTS',JSON.stringify({iteration,state:eventState}));
-  const poses=[['front',{},0],['yaw-plus45',{},45],['glancing-plus75',{},75],['jaw-smile',{jaw:.6,smile:.7},30],['neutral-restored',{},0]];let firstHash;
+  const poses=[['front',{},0],['blink',{blink:1},0],['brow',{brow:1},0],['jaw-smile',{jaw:.6,smile:.7},30],['neutral-restored',{},0]];let firstHash;
   for(const [view,values,angle] of poses){
     for(const key of ['jaw','smile','brow','blink'])await page.locator('#face-'+key).evaluate((el,value)=>{el.value=String(value);el.dispatchEvent(new Event('input',{bubbles:true}));},values[key]||0);
     const digest=await page.evaluate(()=>window.faceGeometryDigest());if(view==='neutral-restored'&&JSON.stringify(digest)!==JSON.stringify(neutralDigest))throw Error('Neutral attributes changed');
     const state=await page.evaluate(()=>({state:{...window.activeFace26.state},metadata:window.activeFace26.metadata}));
     const pose=await bounded(page.evaluate(a=>window.setGenericTestYaw(a),angle),'pose');if(Math.abs(pose.cameraDistance-v.expectedCameraDistance)>1e-9)throw Error('Framing changed');
-    const groom=pose.materials.find(m=>m.mesh==='Einar24 full source beard scalp lashes');if(!groom||!groom.alphaHash||groom.alphaToCoverage||groom.transparent||!groom.depthWrite)throw Error('Groom material baseline changed');if(iteration==='36'&&!groom.fiberNormal36)throw Error('36 shader not compiled');
-    const compare={digest,groomPhysical:Object.fromEntries(['transparent','depthWrite','alphaTest','alphaHash','alphaToCoverage','blending','roughness','metalness','side','vertexColors'].map(k=>[k,groom[k]])),triangles:pose.rendererTriangleDraws,calls:pose.rendererDrawCalls,camera:pose.cameraPosition,target:pose.cameraTarget};if(iteration==='26')baseline.set(view,compare);else if(JSON.stringify(compare)!==JSON.stringify(baseline.get(view)))throw Error('26/36 geometry, draw count or framing mismatch '+view);
+    const groom=pose.materials.find(m=>m.mesh==='Einar24 full source beard scalp lashes');if(!groom||!groom.alphaHash||groom.alphaToCoverage||groom.transparent||!groom.depthWrite)throw Error('Groom material baseline changed');if(!groom.fiberNormal36)throw Error('36 shader not compiled');
+    const compare={digest,groomPhysical:Object.fromEntries(['transparent','depthWrite','alphaTest','alphaHash','alphaToCoverage','blending','roughness','metalness','side','vertexColors'].map(k=>[k,groom[k]])),triangles:pose.rendererTriangleDraws,calls:pose.rendererDrawCalls,camera:pose.cameraPosition,target:pose.cameraTarget};if(iteration==='36')baseline.set(view,compare);else if(JSON.stringify(compare)!==JSON.stringify(baseline.get(view)))throw Error('36/37 geometry, draw count or framing mismatch '+view);
     const name='einar'+iteration+'-'+view,started=Date.now();const pixels=await bounded(page.evaluate(k=>window.measureGroomPixels(k),name),'framebuffer');if(pixels.glError)throw Error('GL error');const renderAndReadbackWallMs=Date.now()-started;
-    const base64=await bounded(page.evaluate(k=>window.encodeGroomFrame(k),name),'framebuffer export'),screenshot=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(screenshot).digest('hex');if(view==='front')firstHash=sha256;if(view==='neutral-restored'&&sha256!==firstHash)throw Error('Neutral image mismatch');
-    console.log('SHADING_COMPARE',JSON.stringify({iteration,view,state,geometryMatched:iteration==='36',compare}));
+    const base64=await bounded(page.evaluate(k=>window.encodeGroomFrame(k),name),'framebuffer export'),screenshot=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(screenshot).digest('hex');if(iteration==='36')imageBaseline.set(view,sha256);else if(sha256!==imageBaseline.get(view))throw Error('Sparse final image mismatch '+view);if(view==='front')firstHash=sha256;if(view==='neutral-restored'&&sha256!==firstHash)throw Error('Neutral image mismatch');
+    console.log('SHADING_COMPARE',JSON.stringify({iteration,view,state,geometryMatched:iteration==='37',compare}));
     console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,iteration,view,pose,state:state.state,renderAndReadbackWallMs,mime:'image/jpeg',bytes:screenshot.length,sha256}));for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
   }
   if(errors.length)throw Error('Browser errors: '+errors.join(';'));

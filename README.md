@@ -90,3 +90,8 @@ Rain Rig © Blender Foundation / Blender Studio, CC BY4.0. Source https://studio
 
 Exact Einar26 model/expressions and source24 groom geometry, vertex colors, radii, alphaHash and material parameters remain unchanged. New immutable wrapper SHA25648db997d0bf0b42d014d39e4e3fc9d073b2f9977fdb32fb515f1085e1af5e8f5 replaces flat sheet lighting normals with a cylindrical cross-section using the live strand tangent. This approximates round-fiber normals; it is not source multi-lobe hair shader parity. Same-job26/36 front,+45,+75 and jaw/smile views verify identical geometry/draw counts/framing/physical material flags, live four-control input events and neutral reset. Standard free public runner only. Einar © Blender Foundation / Blender Studio, CC BY4.0; source attribution above remains applicable.
 
+
+
+## Einar37 exact sparse computation diagnostic
+
+Same36 cylindrical shader, exact26 assets, materials and expression arithmetic. Sparse active-channel point/curve masks use no numeric threshold. Module einar-face37.js SHA2566fb6dec17bc0daf1f38730d26565751004f4b2a6e89cabb6d3f4c6d7a7f265e4 and helper SHA2569f27027e90ea4021927715bdc66ce1c716f9b2d044ea54a5ab410fe6fa6fc0f8. Added cache6,860,112bytes+609,549mask bytes;50,307,488byte temporary setup released. Paired same-browser38 seeded endpoint/mixed/zero state digests,12 input-event burst final state,25 CPU timing samples after5 warmups per channel, matched blink/brow/jaw-smile/reset images. CPU call timing excludes rendering and is not FPS or physical-device performance. No scheduler change.

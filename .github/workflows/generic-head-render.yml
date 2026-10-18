@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar cylindrical normal comparison'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar exact sparse update comparison'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Compare Einar26 and36 shading normals
+      - name: Compare exact Einar36 and37 updates
         working-directory: render-poc
         run: timeout 480s node capture.cjs
 
