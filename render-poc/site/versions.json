@@ -1,7 +1,81 @@
 [
   {
+    "id": "27",
+    "title": "27 \u00b7 Dressed body source endpoints",
+    "scope": "Generic Einar dressed body with selected head groom, hat, eyes, brows and experimental26 face controls. Excludes separate authored moustache, ear/nose hair and face/hat fuzz.",
+    "limits": "Optional heavy benchmark: two source body poses only, no validated interpolated animation or full rig. Jacket shading is brighter/softer than source; sheen and directional effects omitted. No mobile approval.",
+    "files": [
+      "assets/benchmark-18.glb"
+    ],
+    "bytes": 47647900,
+    "sha256": "e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee",
+    "skins": 0,
+    "animations": 0,
+    "expectedBounds": [
+      [
+        -0.13972650468349457,
+        1.45891173183918,
+        -0.13773080246869823
+      ],
+      [
+        0.13972605764865875,
+        1.880686596688355,
+        0.17094007777084727
+      ]
+    ],
+    "expectedCameraDistance": 0.801771719833492,
+    "runtimePatch": {
+      "kind": "groom24",
+      "files": [
+        "assets/einar-groom24-0.bin",
+        "assets/einar-groom24-1.bin",
+        "assets/einar-groom24-2.bin",
+        "assets/einar-groom24-3.bin"
+      ],
+      "compressedSha256": "12140bb3080bb81f354a05a8c94bcd462f5a8295f46d526cc93b6c402c9a6aed",
+      "sha256": "dee778cc5bdd6e6aa298af3c80647400a3a9dac2421acb14125b2457062fb60e",
+      "moduleSha256": "adc30fa229e809ca58ddd4d966c088e861bb9980c9f880bc3dd78d308d9693d2"
+    },
+    "face": {
+      "url": "assets/einar-face26.bin.gz",
+      "compressedSha256": "1c323b0294114d46d206b24c6304da50377f3dffc83d08f819ab8a8b4e75dfe5",
+      "sha256": "450e950c75362f7c33bca5e63b4c21ecfe6e4dc8fe1394a9fa2944220c832bd0",
+      "oral": "assets/oral-source-pbr.glb"
+    },
+    "body": {
+      "files": [
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-00.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-01.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-02.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-03.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-04.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-05.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-06.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-07.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-08.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-09.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-10.bin",
+        "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-11.bin"
+      ],
+      "bytes": 94856980,
+      "sha256": "6cd1a7ed76984a50bdad00010826117c89729bc8a72ed32d30edb405593c6c25",
+      "expectedBounds": [
+        [
+          -0.9180374145507812,
+          -0.025218840688467026,
+          -0.1424711048603058
+        ],
+        [
+          1.0337929725646973,
+          1.6221872568130493,
+          0.22968196868896484
+        ]
+      ]
+    }
+  },
+  {
     "id": "26",
-    "title": "26 · Four source-sampled expressions",
+    "title": "26 \u00b7 Four source-sampled expressions",
     "scope": "Einar head, eyes, source brow ribbons and hat plus selected beard, scalp hair and lashes: 37,873 curves / 571,676 points. Excludes separate authored moustache, ear/nose hair, face/hat fuzz and body. Adds oral meshes and four experimental expression controls.",
     "limits": "Heavy reference: jaw, smile, brow and blink with sampled corrective deltas. Source approximation; no mobile or full facial rig approval.",
     "files": [
@@ -45,7 +119,7 @@
   },
   {
     "id": "25",
-    "title": "25 · Controlled MSAA alpha coverage",
+    "title": "25 \u00b7 Controlled MSAA alpha coverage",
     "scope": "Einar head, eyes, source brow ribbons and hat plus selected beard, scalp hair and lashes: 37,873 curves / 571,676 points. Excludes separate authored moustache, ear/nose hair, face/hat fuzz and body. No oral meshes or functioning rig.",
     "limits": "Exact24 full groom, alpha-pipeline-only test: alphaHash versus MSAA alphaToCoverage with NoBlending. Actual framebuffer samples must be positive. Grain and coverage metrics are render proxies, not source fidelity or mobile approval.",
     "files": [
@@ -83,7 +157,7 @@
   },
   {
     "id": "24",
-    "title": "24 · Complete source groom reference",
+    "title": "24 \u00b7 Complete source groom reference",
     "scope": "Einar head, eyes, source brow ribbons and hat plus selected beard, scalp hair and lashes: 37,873 curves / 571,676 points. Excludes separate authored moustache, ear/nose hair, face/hat fuzz and body. No oral meshes or functioning rig.",
     "limits": "Heavy diagnostic:1,034,814 added groom triangles,1,372,711 total;26.04MB gzip/62.73MB decoded. Custom runtime, no LOD; not standaloneGLB. Source shader parity and mobile readiness unapproved.",
     "files": [
@@ -121,7 +195,7 @@
   },
   {
     "id": "23",
-    "title": "23 · View-facing under-chin source patch",
+    "title": "23 \u00b7 View-facing under-chin source patch",
     "scope": "Exact Einar18 base plus602 full-length source under-chin curves in an isolated view-facing Three.js component. This is a patch, not a full beard.",
     "limits": "Custom runtime component, not a standalone GLB.15,031 added triangles; source linearRGBA with alphaHash. Native opacity comparison is not directly comparable because this subset lacks surrounding beard. Source spatial fidelity and mobile performance remain unapproved.",
     "files": [
@@ -152,7 +226,7 @@
   },
   {
     "id": "18",
-    "title": "18 · Source hat with exported maps",
+    "title": "18 \u00b7 Source hat with exported maps",
     "scope": "Generic Einar17 head, eyes and source-following brows plus original Einar hat geometry and exported material maps.",
     "limits": "Hat adds22,432 triangles;337,897 total;47.65MB. Native comparison already shows lighter/flatter shading; source sheen omitted. Browser rendering is a gate, not fidelity approval.",
     "files": [
@@ -178,7 +252,7 @@
   },
   {
     "id": "17",
-    "title": "17 · Source-following brow ribbons",
+    "title": "17 \u00b7 Source-following brow ribbons",
     "scope": "Generic Einar09 head and eyes plus individual ribbons following all 2,735 source eyebrow curves.",
     "limits": "66,441 brow triangles,315,465 total; original below50k target missed, revised80k diagnostic budget passed. No atlas. Edge-on width loss and source-fidelity remain under review; no mobile approval.",
     "files": [
@@ -191,7 +265,7 @@
   },
   {
     "id": "16",
-    "title": "16 · Correctly placed source brow cards",
+    "title": "16 \u00b7 Correctly placed source brow cards",
     "scope": "Generic Einar09 head and eyes plus 64 local eyebrow cards fitted to all 2,735 source curves.",
     "limits": "Placement-only correction of15; all geometry/textures/materials unchanged.64 cards,128 brow triangles. Initial15 misplaced cards and is invalid for fidelity comparison. Appearance and mobile performance unapproved.",
     "files": [
@@ -204,7 +278,7 @@
   },
   {
     "id": "15",
-    "title": "15 · Source-fitted brow cards",
+    "title": "15 \u00b7 Source-fitted brow cards",
     "scope": "Generic Einar09 head and eyes plus 64 local eyebrow cards fitted to all 2,735 source curves.",
     "limits": "128 brow triangles, 249,152 total triangles; two 2048-square atlases. Projection depth residual median 0.545mm, p95 2.13mm, maximum 9.28mm. Glancing silhouette and aliasing require review; appearance and mobile performance unapproved.",
     "files": [
@@ -217,7 +291,7 @@
   },
   {
     "id": "13",
-    "title": "13 · Brow alpha-mask diagnostic",
+    "title": "13 \u00b7 Brow alpha-mask diagnostic",
     "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",
     "limits": "Controlled alpha/depth test: brow BLEND changes to MASK with cutoff 0.5. Binary geometry, colour, roughness and optics unchanged from 12. Fidelity and mobile performance unapproved.",
     "files": [
@@ -230,7 +304,7 @@
   },
   {
     "id": "12",
-    "title": "12 · Source brow colour-mixture test",
+    "title": "12 \u00b7 Source brow colour-mixture test",
     "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",
     "limits": "Controlled material comparison: same 497,022 triangles and identical brow positions as 11. Full three-source-lobe colour/opacity mixing baked to vertex colours; directional BRDF, shader random seed and strand cross-section remain approximations. Not mobile-optimized or appearance-approved.",
     "files": [
@@ -246,7 +320,7 @@
   },
   {
     "id": "11",
-    "title": "11 · Original source brows",
+    "title": "11 \u00b7 Original source brows",
     "scope": "Generic Einar09 head and eyes plus all 2,735 original source eyebrow curves converted to mesh strands. No hair, beard, hat, body, mouth internals, rig or animation.",
     "limits": "Fidelity-first diagnostic: 497,022 total triangles, including 247,998 added brow triangles. Source colour/root alpha baked to vertex colours; triangular strand cross-sections, substituted deterministic shader seed, and omitted shader-lobe mixes are approximations. Not mobile-optimized or appearance-approved.",
     "files": [
@@ -262,7 +336,7 @@
   },
   {
     "id": "09",
-    "title": "09 · Eye colour-map correction",
+    "title": "09 \u00b7 Eye colour-map correction",
     "scope": "Head and upper-chest skin, both inner eyes, corneas, menisci and plicae. No hat, hair, beard, full body, mouth internals, rig or animation.",
     "limits": "Partial data fix only: inner-eye colour maps corrected; geometry and eye optics unchanged from 08. Eyes remain dark in native exact-export reimport. Appearance still fails; browser appearance is unverified.",
     "files": [

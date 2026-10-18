@@ -73,3 +73,8 @@ Exact24 selected head-groom buffer and18 base. Module SHA-256 4a45701a59ecec9bd4
 Iteration26 adds source-sampled jaw, smile, brow and blink with midpoint/interaction corrective deltas, plus embedded source oral maps. Exact18 base and24 full groom remain unchanged. Generic Einar Rig © Blender Foundation / Blender Studio, CC BY4.0; modifications are source-sampled runtime deformation and portable PBR oral export. CPU-heavy diagnostic, incomplete rig, no mobile performance approval.
 
 Scope clarification: groom24 excludes the separate authored moustache, ear/nose hair and face/hat fuzz. Version24 also excludes oral meshes and has no functioning rig or animation. Version26 adds oral meshes and four experimental facial controls; it does not add those excluded groom components, body or a full rig.
+
+
+## Dressed body27
+
+Generic Einar dressed-body derivative, CC BY4.0 Blender Foundation / Blender Studio. Exact94,856,980-byte GLB SHA2566cd1a7ed76984a50bdad00010826117c89729bc8a72ed32d30edb405593c6c25,180 meshes and1,685,454 unique triangles. Fourteen named SourceGesture27 morph targets encode only two source-evaluated endpoints. Intermediate interpolation failed source parity and is not exposed. Twelve immutable commit-pinned raw GitHub chunks are fetched with CORS, omitted credentials and no referrer, concatenated and whole-payload hash checked. Same delivery wrapper as the private optional viewer. Whole-body framing center[0,.95,0], relative camera[0,.2,4.4], FOV34; separate head close-up retains26 framing. Native material comparison shows brighter/softer jacket and missing sheen/directional effects. Optional heavy benchmark, no rig, animation, fidelity or device-performance approval.
