@@ -1,0 +1,43 @@
+{
+  "bytes": 85631920,
+  "sha256": "138a5480c697bb939b38bf3300768ac87b7898ca2e21504c4740bcc40897d2f2",
+  "originalBytes": 94856980,
+  "originalSha256": "6cd1a7ed76984a50bdad00010826117c89729bc8a72ed32d30edb405593c6c25",
+  "candidateImages": 335,
+  "accepted": 237,
+  "rejected": 98,
+  "rejectionReasons": {
+    "roughnessGerror": 74,
+    "metallicBerror": 76,
+    "noEncodedSizeSaving": 20
+  },
+  "acceptedByRole": {
+    "basecolor": 164,
+    "metalrough": 73
+  },
+  "seconds": 51.94362735748291,
+  "nonImageBufferViewsExact": true,
+  "normalPngBytesExact": true,
+  "nodesMeshesAccessorsMaterialsSamplersExact": true,
+  "acceptedOriginalImageBytes": 32197017,
+  "acceptedKtxBytes": 22953699,
+  "acceptedTexels": 29294592,
+  "acceptedOriginalRgbaMipEstimate": 156237508,
+  "acceptedAstcMipBytes": 39065776,
+  "estimatedTexturePayloadReduction": 117171732,
+  "qualityGates": {
+    "baseColorLinearRMSE": 0.005,
+    "baseColorLinearP95": 0.01,
+    "metalRoughEachChannelP95_8bit": 2,
+    "metalRoughEachChannelMax_8bit": 14,
+    "constantChannelsExact": true,
+    "ktxEncodedBytesMustBeSmaller": true
+  },
+  "notes": [
+    "Generic Einar-derived CC BY4.0 source, existing repository attribution applies.",
+    "237 accepted colour/MR images replaced with KTX2 UASTC quality3 Zstd18 full box mips. Every normal PNG and98 rejected colour/MR maps retained.",
+    "No geometry, UV, node, material-factor or source-motion changes. Original42 remains available.",
+    "Only ASTC4x4 software-browser target is being validated; unsupported targets choose original PNG body before downloading.",
+    "GPU numbers are texture mip payload estimates, not measured whole-device memory or frame rate."
+  ]
+}
