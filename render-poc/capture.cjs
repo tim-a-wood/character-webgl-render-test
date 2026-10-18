@@ -66,6 +66,7 @@ let browser;
   console.log('RENDER_DIAGNOSTICS',JSON.stringify(diagnostics));
   const perf=await context.newCDPSession(page);await perf.send('Performance.enable');console.log('MEMORY_METRICS',JSON.stringify(await perf.send('Performance.getMetrics')));
   const bounded=async(promise,label)=>{let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Budget exceeded: '+label+' exceeded60s')),60000);})]);}finally{clearTimeout(timer);}};
+  await page.evaluate(()=>window.pauseGenericTestLoop());
   const views=[['front',0],['yaw-plus45',45]];
   for(const [view,angle] of views){
     await bounded(page.evaluate(a=>window.setGenericTestYaw(a),angle),'pose');
@@ -82,8 +83,8 @@ let browser;
       await bounded(page.evaluate(k=>window.measureGroomPixels(k),name+'-repeat'),'pixel sample2');
       console.log('PIXEL_METRICS',JSON.stringify({name,...await page.evaluate(([a,b,c])=>window.compareGroomPixels(a,b,c),[name,view+'-hidden',name+'-repeat'])}));
       const captureStart=Date.now();
-      const screenshot=await page.locator('#viewport canvas').screenshot({type:'jpeg',quality:95,timeout:60000});
-      const base64=screenshot.toString('base64');
+      const base64=await bounded(page.evaluate(k=>window.encodeGroomFrame(k),name),'framebuffer export');
+      const screenshot=Buffer.from(base64,'base64');
       console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,pose,screenshotWallMs:Date.now()-captureStart,mime:'image/jpeg',bytes:screenshot.length,sha256:crypto.createHash('sha256').update(screenshot).digest('hex'),chunks:Math.ceil(base64.length/2048)}));
       for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
     }
