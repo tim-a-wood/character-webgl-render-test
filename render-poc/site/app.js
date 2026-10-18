@@ -1,4 +1,4 @@
-import {attachEinarFace26} from './assets/einar-face26.js';
+import {attachEinarFace26} from './assets/einar-face26b.js';
 import {loadEinarGroom25} from './assets/einar-groom25.js';
 import {loadEinarGroom24} from './assets/einar-groom24.js';
 import {loadEinarPatch23} from './assets/einar-patch23.js';
