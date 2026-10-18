@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar conservative body45 repack'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar46 independent SDK lifecycle'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -16,14 +16,12 @@ jobs:
           persist-credentials: false
           fetch-depth: 1
           lfs: false
-          sparse-checkout: render-poc
+          sparse-checkout: package46
       - name: Install exact test runtime
-        working-directory: render-poc
+        working-directory: package46
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Compare conservative body texture repack and controls
-        working-directory: render-poc
-        run: timeout 480s node capture.cjs
-
-
+      - name: Independent host SDK lifecycle and lazy body
+        working-directory: package46
+        run: timeout 480s node capture46.cjs
