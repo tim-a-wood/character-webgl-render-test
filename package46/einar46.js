@@ -20,10 +20,15 @@ export function createReferenceScene46(renderer){
  scene.add(new THREE.HemisphereLight(0xdde7f1,0x777866,2));for(const [p,c,power]of [[[4,5,6],0xfff0db,2.5],[[-4,2,3],0xc5dcff,1.5],[[2,3,-4],0xe4f1e9,2]]){const l=new THREE.DirectionalLight(c,power);l.position.set(...p);scene.add(l);}
  let disposed=false;return {scene,camera,headCenter:[...headCenter],headRadius,dispose(){if(disposed)return;disposed=true;scene.clear();renderer.outputColorSpace=old.color;renderer.toneMapping=old.tone;renderer.toneMappingExposure=old.exposure;renderer.setOpaqueSort(null);}};
 }
+// Private same-origin manifests need the existing site session; external assets remain credential-free.
+export function manifestFetchOptions46(url,pageUrl=globalThis.location?.href){
+ const page=new URL(pageUrl),target=new URL(url,page);
+ return {credentials:target.origin===page.origin?'same-origin':'omit',referrerPolicy:'no-referrer'};
+}
 export async function loadEinar46({renderer,manifestUrl=new URL('./manifest.json',import.meta.url),onChange=()=>{},onProgress=()=>{}}={}){
  if(!renderer||THREE.REVISION!=='160')throw Error('Einar46 requires a Three.js r160 renderer');
  if(!globalThis.crypto?.subtle||typeof DecompressionStream==='undefined')throw Error('Secure-context SHA256 and gzip DecompressionStream are required');
- const manifestResponse=await fetch(manifestUrl,{credentials:'omit',referrerPolicy:'no-referrer'});if(!manifestResponse.ok)throw Error('Einar46 manifest HTTP '+manifestResponse.status);const manifest=await manifestResponse.json();const spec=manifest.version45;
+ const manifestResponse=await fetch(manifestUrl,manifestFetchOptions46(manifestUrl));if(!manifestResponse.ok)throw Error('Einar46 manifest HTTP '+manifestResponse.status);const manifest=await manifestResponse.json();const spec=manifest.version45;
  if(!spec||spec.sha256!=='e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee')throw Error('Unsupported Einar46 baseline');
  const root=new THREE.Group();root.name='Einar46 character';const draco=new DRACOLoader().setDecoderPath(new URL('./runtime/draco/',import.meta.url).href).setWorkerLimit(2);const loader=new GLTFLoader().setDRACOLoader(draco);
  let disposed=false,face=null,body=null,motion=null,bodyPromise=null;const state={expressions:{jaw:0,smile:0,brow:0,blink:0},wrist:0,bodyStatus:'not-loaded',disposed:false};
