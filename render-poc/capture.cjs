@@ -51,7 +51,7 @@ let browser;
   const baseline=new Map(),stateBaseline=new Map(),imageBaseline=new Map(),rawBaseline=new Map(),imageMismatches=[];
   let seed=0x12345678;const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return Math.round(seed/4294967296*100)/100;};
   const states=[{jaw:0,smile:0,brow:0,blink:0},{jaw:1,smile:0,brow:0,blink:0},{jaw:0,smile:1,brow:0,blink:0},{jaw:0,smile:0,brow:1,blink:0},{jaw:0,smile:0,brow:0,blink:1},{jaw:.6,smile:.7,brow:.4,blink:.8},{jaw:0,smile:0,brow:0,blink:0}];while(states.length<37)states.push({jaw:rand(),smile:rand(),brow:rand(),blink:rand()});states.push({jaw:0,smile:0,brow:0,blink:0});
-  for(const iteration of ['36','37b']){
+  let pageIndex=0;for(const iteration of ['36','36','37b']){pageIndex++;
   const page = await context.newPage();
   const errors=[];page.on('pageerror', e=>{errors.push(e.message);console.error('PAGE_ERROR',e.message);});
   page.on('console',msg=>{if(msg.type()==='error'){errors.push(msg.text());console.error('CONSOLE_ERROR',msg.text());}});
@@ -76,10 +76,17 @@ let browser;
   const bounded=async(promise,label)=>{let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Budget exceeded: '+label+' exceeded60s')),60000);})]);}finally{clearTimeout(timer);}};
   await page.evaluate(()=>window.pauseGenericTestLoop());
   const freshPose=await bounded(page.evaluate(()=>window.setGenericTestYaw(0)),'fresh neutral pose');
-  await bounded(page.evaluate(()=>window.measureGroomPixels('fresh-neutral')),'fresh neutral frame');
-  const freshRaw=Buffer.from(await page.evaluate(()=>window.rawFrameBase64('fresh-neutral')),'base64');
-  const freshSha=crypto.createHash('sha256').update(freshRaw).digest('hex');if(iteration==='36')rawBaseline.set('fresh-neutral',freshRaw);else if(!freshRaw.equals(rawBaseline.get('fresh-neutral')))throw Error('Fresh neutral framebuffer mismatch');
-  console.log('FRESH_NEUTRAL',JSON.stringify({iteration,rawSha256:freshSha,pose:freshPose}));
+  console.log('SCENE_DIAGNOSTIC',JSON.stringify({iteration,pageIndex,pose:freshPose,scene:await page.evaluate(()=>window.sceneDiagnostic())}));
+  for(let repeat=0;repeat<3;repeat++){
+   const name='fresh-'+iteration+'-page'+pageIndex+'-frame'+repeat;
+   await page.evaluate(()=>{window.drawOrderDiagnostic=[];});await bounded(page.evaluate(k=>window.measureGroomPixels(k),name),'fresh frame');console.log('DRAW_ORDER',JSON.stringify({iteration,pageIndex,repeat,draws:await page.evaluate(()=>window.drawOrderDiagnostic)}));
+   const raw=Buffer.from(await page.evaluate(k=>window.rawFrameBase64(k),name),'base64');
+   const rawSha256=crypto.createHash('sha256').update(raw).digest('hex');
+   if(pageIndex===1&&repeat===0)rawBaseline.set('fresh',raw);const base=rawBaseline.get('fresh');let count=0,max=0,total=0;for(let i=0;i<raw.length;i+=4){let changed=false;for(let c=0;c<3;c++){const d=Math.abs(raw[i+c]-base[i+c]);if(d)changed=true;max=Math.max(max,d);total+=d;}if(changed)count++;}
+   console.log('FRESH_PARITY',JSON.stringify({iteration,pageIndex,repeat,rawSha256,changedPixels:count,maxChannelDelta:max,meanAbsRGB:total/(raw.length/4*3)}));if(count)imageMismatches.push(name);
+   const base64=await page.evaluate(k=>window.encodeGroomFrame(k),name),screenshot=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(screenshot).digest('hex');console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,iteration,pageIndex,repeat,pose:freshPose,mime:'image/jpeg',bytes:screenshot.length,sha256}));for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
+  }
+  if(errors.length)throw Error('Browser errors '+errors.join(';'));await page.close();continue;
   const neutralDigest=await page.evaluate(()=>window.faceGeometryDigest());
   for(let i=0;i<states.length;i++){
     const actual=await page.evaluate(v=>window.activeFace26.setExpressions(v),states[i]);for(const k of Object.keys(states[i]))if(actual[k]!==states[i][k])throw Error('Seeded state mismatch');
