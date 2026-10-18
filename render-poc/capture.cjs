@@ -50,22 +50,35 @@ let browser;
 
 
   await context.route('**/*',route=>new URL(route.request().url()).origin===origin?route.continue():route.abort());
-  if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/einar-skin40b.js'))).digest('hex')!=='12aa5aede6270c2ae317d7674856697679eb7d1f7431d107e06fb7ae0efab2b3')throw Error('Skin40 module hash');
+  if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/einar-skin40c.js'))).digest('hex')!=='deeee853f5f2d895ebbea625507bf27c0e7cac0de7888c0f659924737adea687')throw Error('Skin40 module hash');
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>{errors.push(e.message);console.error('PAGE_ERROR',e.message);});page.on('console',m=>{if(m.type()==='error'){errors.push(m.text());console.error('CONSOLE_ERROR',m.text());}});
   const bounded=async(p,label)=>{let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label+' exceeded60s')),60000);})]);}finally{clearTimeout(timer);}};
   await page.goto(origin+'/?testViews=1#iteration=38',{waitUntil:'networkidle',timeout:90000});await page.addStyleTag({content:'.stage {width:768px;height:960px;min-height:960px} main {grid-template-columns:768px 320px}'});
   await page.waitForFunction(()=>window.explorerState?.error||window.explorerState?.loaded,{},{timeout:90000});const state=await page.evaluate(()=>window.explorerState);if(state.error)throw Error(JSON.stringify(state));await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));await page.evaluate(()=>window.pauseGenericTestLoop());await page.evaluate(()=>window.enableCanonicalOpaqueOrder());
-  const geometry=await page.evaluate(()=>window.faceGeometryDigest());let reference;const mismatches=[];await page.evaluate(()=>window.observeTransmissionClear40());
-  for(const mode of ['original','historical','zero','zero-repeat']){
-   if(mode==='historical')console.log('SKIN40_INSTALL',JSON.stringify(await page.evaluate(()=>window.installSkinTest40())));
-   if(mode!=='original')await page.evaluate(m=>window.skinTest40.setMode(m==='zero-repeat'?'zero':m),mode);
-   const pose=await bounded(page.evaluate(()=>window.setGenericTestYaw(0)),'pose'),name='einar40b-'+mode,start=Date.now();
-   const pixels=await bounded(page.evaluate(k=>window.measureGroomPixels(k),name),'framebuffer'),wall=Date.now()-start;
-   const metadata=await page.evaluate(()=>window.skinTest40?.metadata||null);console.log('SKIN40_METADATA',JSON.stringify({mode,metadata,readError:pixels.glError}));
-   const raw=Buffer.from(await page.evaluate(k=>window.rawFrameBase64(k),name),'base64');if(!reference)reference=raw;let changed=0,total=0,max=0,minX=Infinity,minY=Infinity,maxX=-1,maxY=-1,channelMax=[0,0,0,0];for(let i=0;i<raw.length;i+=4){let d=false;for(let c=0;c<4;c++){const v=Math.abs(raw[i+c]-reference[i+c]);total+=v;max=Math.max(max,v);channelMax[c]=Math.max(channelMax[c],v);if(v)d=true;}if(d){changed++;const x=(i/4)%pose.canvasWidth,y=pose.canvasHeight-1-Math.floor(i/4/pose.canvasWidth);minX=Math.min(minX,x);maxX=Math.max(maxX,x);minY=Math.min(minY,y);maxY=Math.max(maxY,y);}}
-   console.log('ZERO_PARITY',JSON.stringify({mode,changedPixels:changed,maxChannelDelta:max,channelMax,changedBounds:changed?[minX,minY,maxX,maxY]:null,meanAbsRGBA:total/raw.length,rawSha256:crypto.createHash('sha256').update(raw).digest('hex')}));
-   const base64=await page.evaluate(k=>window.encodeGroomFrame(k),name),bytes=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(bytes).digest('hex');console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,mode,pose,metadata,renderAndReadbackWallMs:wall,bytes:bytes.length,sha256,mime:'image/jpeg'}));for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
-   if(errors.length)throw Error('Shader/browser errors: '+errors.join(';'));if(pixels.glError||metadata?.glError)throw Error('GL error');if(JSON.stringify(await page.evaluate(()=>window.faceGeometryDigest()))!==JSON.stringify(geometry))throw Error('Skin40 geometry changed');if(changed)mismatches.push(mode);if(mode.startsWith('zero')&&(metadata.actualSamples!==4||metadata.sampleBuffers!==1||metadata.framebufferStatus!==36053))throw Error('Skin40 sample/framebuffer gate');
+
+  const neutralGeometry=await page.evaluate(()=>window.faceGeometryDigest());let frontDiffusion;
+  for(const [view,angle,values]of [['front',0,{}],['yaw45',45,{}],['jaw-smile',30,{jaw:.6,smile:.7}],['neutral-restored',0,{}]]){
+   for(const k of ['jaw','smile','brow','blink'])await page.locator('#face-'+k).evaluate((el,v)=>{el.value=String(v);el.dispatchEvent(new Event('input',{bubbles:true}));},values[k]||0);
+   const geometry=await page.evaluate(()=>window.faceGeometryDigest());if(view==='neutral-restored'&&JSON.stringify(geometry)!==JSON.stringify(neutralGeometry))throw Error('Neutral geometry mismatch');
+   let reference,zero;
+   for(const mode of ['historical','zero','diffusion']){
+    if(view==='front'&&mode==='zero')console.log('SKIN40_INSTALL',JSON.stringify(await page.evaluate(()=>window.installSkinTest40())));
+    if(!(view==='front'&&mode==='historical'))await page.evaluate(m=>window.skinTest40.setMode(m),mode);
+    const pose=await bounded(page.evaluate(a=>window.setGenericTestYaw(a),angle),'pose'),name='einar40c-'+view+'-'+mode,start=Date.now();const pixels=await bounded(page.evaluate(k=>window.measureGroomPixels(k),name),'framebuffer'),wall=Date.now()-start,metadata=await page.evaluate(()=>window.skinTest40?.metadata||null);
+    const raw=Buffer.from(await page.evaluate(k=>window.rawFrameBase64(k),name),'base64');if(mode==='historical')reference=raw;
+    const rawSha256=crypto.createHash('sha256').update(raw).digest('hex');
+    let metrics={view,mode,rawSha256};
+    if(mode==='zero'){if(!raw.equals(reference))throw Error('40c zero control failed '+view);zero=raw;metrics.zeroExact=true;}
+    if(mode==='diffusion'){
+     const maskResult=await page.evaluate(()=>window.readSkinMaskBase64()),mask=Buffer.from(maskResult.base64,'base64');if(mask.length!==raw.length||maskResult.width!==pose.canvasWidth||maskResult.height!==pose.canvasHeight)throw Error('Mask dimensions');
+     let skin=0,changedSkin=0,changedNonSkin=0,totalSkin=0,maxSkin=0,maxNonSkin=0;for(let i=0;i<raw.length;i+=4){const isSkin=mask[i]===255;if(mask[i]!==0&&mask[i]!==255)throw Error('Mask notbinary');if(isSkin)skin++;let changed=false;for(let c=0;c<4;c++){const d=Math.abs(raw[i+c]-zero[i+c]);if(d)changed=true;if(isSkin){totalSkin+=d;maxSkin=Math.max(maxSkin,d);}else maxNonSkin=Math.max(maxNonSkin,d);}if(changed){if(isSkin)changedSkin++;else changedNonSkin++;}}
+     metrics={...metrics,skinPixels:skin,changedSkinPixels:changedSkin,changedNonSkinPixels:changedNonSkin,maxSkinChannelDelta:maxSkin,maxNonSkinChannelDelta:maxNonSkin,meanSkinAbsRGBA:totalSkin/(skin*4),maskSha256:crypto.createHash('sha256').update(mask).digest('hex')};
+     if(view==='front')frontDiffusion=raw;if(view==='neutral-restored'&&!raw.equals(frontDiffusion))throw Error('Diffusion neutral pixels mismatch');
+    }
+    console.log('DIFFUSION_GATE',JSON.stringify(metrics));console.log('SKIN40_METADATA',JSON.stringify({view,mode,metadata,readError:pixels.glError}));
+    const base64=await page.evaluate(k=>window.encodeGroomFrame(k),name),bytes=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(bytes).digest('hex');console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,view,mode,pose,metadata,renderAndReadbackWallMs:wall,bytes:bytes.length,sha256,mime:'image/jpeg'}));for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
+    if(errors.length)throw Error('Shader/browser errors: '+errors.join(';'));if(pixels.glError||metadata?.glError)throw Error('GL error');if(JSON.stringify(await page.evaluate(()=>window.faceGeometryDigest()))!==JSON.stringify(geometry))throw Error('Skin geometry changed');if(mode!=='historical'&&(metadata.actualSamples!==4||metadata.sampleBuffers!==1||metadata.framebufferStatus!==36053))throw Error('Samples/framebuffer gate');if(metrics.changedNonSkinPixels)throw Error('Non-skin pixels changed');
+   }
   }
-  console.log('ORIGINAL_TRANSMISSION_CLEAR',JSON.stringify(await page.evaluate(()=>window.originalTransmissionClear40)));if(mismatches.length)throw Error('Skin40b raw equality failed '+mismatches.join(','));console.log('SKIN40_ZERO_GATE_PASSED',true);
+  console.log('SKIN40_DIFFUSION_GATE_PASSED',true);
 })().catch(e=>{console.error(e.stack);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();server.close();});
