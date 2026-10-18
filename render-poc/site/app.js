@@ -1,3 +1,4 @@
+import {loadEinarGroom25} from './assets/einar-groom25.js';
 import {loadEinarGroom24} from './assets/einar-groom24.js';
 import {loadEinarPatch23} from './assets/einar-patch23.js';
 import * as THREE from 'three';
@@ -5,9 +6,9 @@ import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {DRACOLoader} from 'three/addons/loaders/DRACOLoader.js';
 async function loadRuntimeComponent(spec){
- if(spec.kind!=='groom24')return loadEinarPatch23(spec);
+ if(spec.kind!=='groom24'&&spec.kind!=='groom25')return loadEinarPatch23(spec);
  const chunks=[];for(const file of spec.files){const response=await fetch(file);if(!response.ok)throw Error('Groom chunk request failed '+response.status);chunks.push(await response.arrayBuffer());}
- const url=URL.createObjectURL(new Blob(chunks,{type:'application/gzip'}));try{return await loadEinarGroom24({url,compressedSha256:spec.compressedSha256,sha256:spec.sha256});}finally{URL.revokeObjectURL(url);}
+ const url=URL.createObjectURL(new Blob(chunks,{type:'application/gzip'}));try{return await (spec.kind==='groom25'?loadEinarGroom25:loadEinarGroom24)({url,compressedSha256:spec.compressedSha256,sha256:spec.sha256});}finally{URL.revokeObjectURL(url);}
 }
 const draco=new DRACOLoader();draco.setDecoderPath('./assets/draco/');
 const loader=new GLTFLoader();loader.setDRACOLoader(draco);
@@ -47,13 +48,19 @@ $('capture').onclick=()=>{
 // Query-gated generic visual-test control; rendering materials and lights are unchanged.
 if(new URLSearchParams(location.search).get('testViews')==='1'){
  let testPivot;
+ window.setGroomPipeline=mode=>{const mesh=model.getObjectByName('Einar25 full source beard scalp lashes');const m=mesh.material;m.alphaHash=mode==='hash';m.alphaToCoverage=mode==='atoc';m.blending=mode==='atoc'?THREE.NoBlending:THREE.NormalBlending;m.needsUpdate=true;mesh.userData.sampleStates=[];return mode;};
+ window.groomSampleStates=()=>{const mesh=model.getObjectByName('Einar25 full source beard scalp lashes');return {...mesh.userData};};
+ const pixelFrames={};
+ window.measureGroomPixels=(key,hidden=false)=>{const mesh=model.getObjectByName('Einar25 full source beard scalp lashes');mesh.visible=!hidden;renderer.render(scene,camera);const gl=renderer.getContext(),w=renderer.domElement.width,h=renderer.domElement.height,rgba=new Uint8Array(w*h*4);gl.readPixels(0,0,w,h,gl.RGBA,gl.UNSIGNED_BYTE,rgba);mesh.visible=true;pixelFrames[key]=rgba;return {key,width:w,height:h,glError:gl.getError()};};
+ window.compareGroomPixels=(key,baseKey,repeatKey)=>{const a=pixelFrames[key],b=pixelFrames[baseKey],r=pixelFrames[repeatKey],w=renderer.domElement.width,h=renderer.domElement.height;let count=0,delta=0,repeatDelta=0,repeatChanged=0,grain=0;for(let y=Math.floor(h*.48);y<Math.floor(h*.9);y++)for(let x=Math.floor(w*.18);x<Math.floor(w*.86);x++){const k=((h-1-y)*w+x)*4;const d=(Math.abs(a[k]-b[k])+Math.abs(a[k+1]-b[k+1])+Math.abs(a[k+2]-b[k+2]))/3;if(d>12){count++;delta+=d;const q=(Math.abs(a[k]-r[k])+Math.abs(a[k+1]-r[k+1])+Math.abs(a[k+2]-r[k+2]))/3;repeatDelta+=q;if(q>2)repeatChanged++;for(let c=0;c<3;c++)grain+=Math.abs(4*a[k+c]-a[k-4+c]-a[k+4+c]-a[k-w*4+c]-a[k+w*4+c])/3;}}return {coveredPixelProxy:count,meanDeltaFromHidden:delta/count,repeatMeanAbsRGB:repeatDelta/count,repeatChangedFraction:repeatChanged/count,meanAbsLaplacian:grain/count,region:'x18%-86%, y48%-90%, RGB change>12 from hidden groom; not physical opacity'};};
+
  window.benchmarkGenericPatch=()=>{const patch=model.getObjectByName('Einar24 full source beard scalp lashes')||model.getObjectByName('Einar23 source under-chin patch');if(!patch)throw Error('Patch absent');const gl=renderer.getContext(),samples=[];for(const visible of [false,true,false,true]){patch.visible=visible;renderer.render(scene,camera);gl.finish();const t=performance.now();renderer.render(scene,camera);gl.finish();samples.push({visible,gpuSynchronizedWallMs:performance.now()-t,triangles:renderer.info.render.triangles,calls:renderer.info.render.calls,programs:renderer.info.programs.length});}patch.visible=true;return samples;};
  window.setGenericTestYaw=degrees=>{
   if(!model || !Number.isFinite(degrees) || Math.abs(degrees)>180)throw Error('Invalid test pose');
   if(!testPivot){testPivot=new THREE.Group();scene.remove(model);testPivot.add(model);scene.add(testPivot);}
   controls.autoRotate=false;reset();testPivot.rotation.set(0,THREE.MathUtils.degToRad(degrees),0);
   scene.updateMatrixWorld(true);const drawStart=performance.now();renderer.render(scene,camera);const renderSubmitMs=performance.now()-drawStart;
-  const materials=[];model.traverse(o=>{if(o.isMesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))materials.push({mesh:o.name,name:m.name,transparent:m.transparent,depthWrite:m.depthWrite,alphaTest:m.alphaTest,alphaHash:m.alphaHash,shaderCompiled:m.userData.shaderCompiled||false});});
+  const materials=[];model.traverse(o=>{if(o.isMesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))materials.push({mesh:o.name,name:m.name,transparent:m.transparent,depthWrite:m.depthWrite,alphaTest:m.alphaTest,alphaHash:m.alphaHash,alphaToCoverage:m.alphaToCoverage,blending:m.blending,shaderCompiled:m.userData.shaderCompiled||false});});
   return {materials,modelYawDegrees:degrees,renderSubmitMs,rendererTriangleDraws:renderer.info.render.triangles,rendererDrawCalls:renderer.info.render.calls,shaderPrograms:renderer.info.programs.length,cameraPosition:camera.position.toArray(),cameraTarget:controls.target.toArray(),cameraDistance:camera.position.distanceTo(controls.target),verticalFov:camera.fov,canvasWidth:renderer.domElement.width,canvasHeight:renderer.domElement.height};
  };
 }

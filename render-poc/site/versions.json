@@ -1,5 +1,43 @@
 [
   {
+    "id": "25",
+    "title": "25 \u00b7 Controlled MSAA alpha coverage",
+    "scope": "Exact Einar18 base plus all37,873 source beard, scalp-hair and eyelash curves,571,676 original points; no source-point decimation. Replaces isolated23 patch.",
+    "limits": "Exact24 full groom, alpha-pipeline-only test: alphaHash versus MSAA alphaToCoverage with NoBlending. Actual framebuffer samples must be positive. Grain and coverage metrics are render proxies, not source fidelity or mobile approval.",
+    "files": [
+      "assets/benchmark-18.glb"
+    ],
+    "bytes": 47647900,
+    "sha256": "e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee",
+    "skins": 0,
+    "animations": 0,
+    "expectedBounds": [
+      [
+        -0.13972650468349457,
+        1.45891173183918,
+        -0.13773080246869823
+      ],
+      [
+        0.13972605764865875,
+        1.880686596688355,
+        0.17094007777084727
+      ]
+    ],
+    "expectedCameraDistance": 0.801771719833492,
+    "runtimePatch": {
+      "kind": "groom25",
+      "files": [
+        "assets/einar-groom24-0.bin",
+        "assets/einar-groom24-1.bin",
+        "assets/einar-groom24-2.bin",
+        "assets/einar-groom24-3.bin"
+      ],
+      "compressedSha256": "12140bb3080bb81f354a05a8c94bcd462f5a8295f46d526cc93b6c402c9a6aed",
+      "sha256": "dee778cc5bdd6e6aa298af3c80647400a3a9dac2421acb14125b2457062fb60e",
+      "moduleSha256": "4a45701a59ecec9bd4efcd26947fb744bbc745049d9fe8bfb98807eebdc08bfa"
+    }
+  },
+  {
     "id": "24",
     "title": "24 \u00b7 Complete source groom reference",
     "scope": "Exact Einar18 base plus all37,873 source beard, scalp-hair and eyelash curves,571,676 original points; no source-point decimation. Replaces isolated23 patch.",

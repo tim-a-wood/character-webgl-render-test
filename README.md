@@ -64,3 +64,7 @@ Exact18 GLB unchanged. Isolated module SHA-256 a9ed72e154900d49d8c8a3671ccc81b6d
 ## Complete source groom24
 
 All37,873 source curves and571,676 source points retained; no decimation or LOD.1,034,814 added groom triangles,1,372,711 total.26,043,251-byte gzip SHA-256 12140bb3080bb81f354a05a8c94bcd462f5a8295f46d526cc93b6c402c9a6aed,62,725,272-byte decoded SHA-256 dee778cc5bdd6e6aa298af3c80647400a3a9dac2421acb14125b2457062fb60e. Immutable module SHA-256 adc30fa229e809ca58ddd4d966c088e861bb9980c9f880bc3dd78d308d9693d2. Four chunk fetches become a temporary Blob URL; original module checks compressed+decoded hashes. Replaces23 patch on unchanged18 base/camera. Five fixed views, bounded orbit and patch on/off diagnostics;480-second script budget within10-minute standard runner job,60-second per-render/screenshot budget. No silent source reduction; budget failure is reported. Native matched front is feasibility evidence, not source shader parity or mobile approval.
+
+## Controlled alpha pipeline25
+
+Exact24 complete groom buffer and18 base. Module SHA-256 4a45701a59ecec9bd4efcd26947fb744bbc745049d9fe8bfb98807eebdc08bfa. Only alpha pipeline changes: hash baseline versus actual MSAA alphaToCoverage+NoBlending. Samples/SAMPLE_BUFFERS checked per observed draw target; zero-sample targets fail. Front/+45 repeated same-pose raw-pixel measurements report coverage proxy against groom-hidden render and local Laplacian grain, not source opacity. No fidelity or mobile approval.

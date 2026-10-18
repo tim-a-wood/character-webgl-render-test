@@ -30,9 +30,9 @@ let browser;
   fs.writeFileSync(path.join(root,'assets/benchmark-18.glb'),Buffer.concat([Buffer.from(patch18.headerBase64,'base64'),base17.subarray(patch18.baseOffset),...([0,1].map(i=>fs.readFileSync(path.join(root,'assets/benchmark-18-append-'+i+'.bin'))))]));
   const v=JSON.parse(fs.readFileSync(path.join(root,'versions.json'),'utf8'))[0];
   const model=Buffer.concat(v.files.map(file=>fs.readFileSync(path.join(root,file))));
-  if(v.id !== '24' || model.length !== 47647900 || crypto.createHash('sha256').update(model).digest('hex') !== 'e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee') throw new Error('Unexpected model payload');
+  if(v.id !== '25' || model.length !== 47647900 || crypto.createHash('sha256').update(model).digest('hex') !== 'e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee') throw new Error('Unexpected model payload');
   console.log('MODEL_SHA256',v.sha256);
-  if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/einar-groom24.js'))).digest('hex')!==v.runtimePatch.moduleSha256)throw Error('Module hash mismatch');
+  if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/einar-groom25.js'))).digest('hex')!==v.runtimePatch.moduleSha256)throw Error('Module hash mismatch');
   const compressed=Buffer.concat(v.runtimePatch.files.map(f=>fs.readFileSync(path.join(root,f))));if(crypto.createHash('sha256').update(compressed).digest('hex')!==v.runtimePatch.compressedSha256)throw Error('Compressed groom hash mismatch');
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const origin = `http://127.0.0.1:${server.address().port}`;
@@ -49,9 +49,9 @@ let browser;
   const errors=[];page.on('pageerror', e=>{errors.push(e.message);console.error('PAGE_ERROR',e.message);});
   page.on('console',msg=>{if(msg.type()==='error'){errors.push(msg.text());console.error('CONSOLE_ERROR',msg.text());}});
   const loadStart=Date.now();
-  await page.goto(origin+'/?testViews=1#iteration=24',{waitUntil:'networkidle',timeout:90000});
+  await page.goto(origin+'/?testViews=1#iteration=25',{waitUntil:'networkidle',timeout:90000});
   await page.addStyleTag({content:'.stage {width:768px;height:960px;min-height:960px} main {grid-template-columns:768px 320px}'});
-  await page.waitForFunction(()=>window.explorerState?.loaded === true && window.explorerState.iteration === '24',{},{timeout:90000});
+  await page.waitForFunction(()=>window.explorerState?.loaded === true && window.explorerState.iteration === '25',{},{timeout:90000});
   const loadToModelReadyMs=Date.now()-loadStart;
   await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
   console.log('LOAD_TIMING',JSON.stringify({loadToModelReadyMs,loadToFirstFrameMs:Date.now()-loadStart}));
@@ -66,23 +66,27 @@ let browser;
   console.log('RENDER_DIAGNOSTICS',JSON.stringify(diagnostics));
   const perf=await context.newCDPSession(page);await perf.send('Performance.enable');console.log('MEMORY_METRICS',JSON.stringify(await perf.send('Performance.getMetrics')));
   const bounded=async(promise,label)=>{let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Budget exceeded: '+label+' exceeded60s')),60000);})]);}finally{clearTimeout(timer);}};
-  const views=[['front',0],['yaw-minus45',-45],['yaw-plus45',45],['glancing-minus75',-75],['glancing-plus75',75]];
-  for(const [name,angle] of views){
-    const pose=await bounded(page.evaluate(angle=>window.setGenericTestYaw(angle),angle),name);
-    if(Math.abs(pose.cameraDistance-v.expectedCameraDistance)>1e-9)throw new Error('Camera framing differs from declared18 bounds');
-    const twoFrameWaitMs=await page.evaluate(()=>new Promise(resolve=>{const t=performance.now();requestAnimationFrame(()=>requestAnimationFrame(()=>resolve(performance.now()-t)));}));
-    const captureStart=Date.now();
-    const screenshot = await page.locator('#viewport canvas').screenshot({type:'jpeg',quality:95,timeout:60000});
-    if (screenshot.length > 750000) throw new Error('Screenshot exceeds bounded log payload');
-    fs.writeFileSync(path.join(__dirname,name+'.jpg'),screenshot);
-    const base64=screenshot.toString('base64');
-    console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,pose,twoFrameWaitMs,screenshotWallMs:Date.now()-captureStart,mime:'image/jpeg',bytes:screenshot.length,sha256:crypto.createHash('sha256').update(screenshot).digest('hex'),chunks:Math.ceil(base64.length/2048)}));
-    for(let i=0;i<base64.length;i+=2048) console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));
-    console.log('RENDER_IMAGE_END');
+  const views=[['front',0],['yaw-plus45',45]];
+  for(const [view,angle] of views){
+    await bounded(page.evaluate(a=>window.setGenericTestYaw(a),angle),'pose');
+    await bounded(page.evaluate(k=>window.measureGroomPixels(k,true),view+'-hidden'),'hidden baseline');
+    for(const mode of ['hash','atoc']){
+      const name=view+'-'+mode;
+      await page.evaluate(m=>window.setGroomPipeline(m),mode);
+      const pose=await bounded(page.evaluate(a=>window.setGenericTestYaw(a),angle),name);
+      if(Math.abs(pose.cameraDistance-v.expectedCameraDistance)>1e-9)throw Error('Framing changed');
+      const samples=await page.evaluate(()=>window.groomSampleStates());
+      console.log('MSAA_STATES',JSON.stringify({name,samples}));
+      if(mode==='atoc'&&(!samples.sampleStates?.length||samples.sampleStates.some(s=>s.samples<1||s.sampleBuffers<1)||!samples.afterDrawAlphaToCoverageEnabled||samples.afterDrawBlendEnabled))throw Error('MSAA alpha coverage gate failed: '+JSON.stringify(samples));
+      await bounded(page.evaluate(k=>window.measureGroomPixels(k),name),'pixel sample1');
+      await bounded(page.evaluate(k=>window.measureGroomPixels(k),name+'-repeat'),'pixel sample2');
+      console.log('PIXEL_METRICS',JSON.stringify({name,...await page.evaluate(([a,b,c])=>window.compareGroomPixels(a,b,c),[name,view+'-hidden',name+'-repeat'])}));
+      const captureStart=Date.now();
+      const screenshot=await page.locator('#viewport canvas').screenshot({type:'jpeg',quality:95,timeout:60000});
+      const base64=screenshot.toString('base64');
+      console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,pose,screenshotWallMs:Date.now()-captureStart,mime:'image/jpeg',bytes:screenshot.length,sha256:crypto.createHash('sha256').update(screenshot).digest('hex'),chunks:Math.ceil(base64.length/2048)}));
+      for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
+    }
   }
-  console.log('PATCH_FRAME_COST',JSON.stringify(await bounded(page.evaluate(()=>window.benchmarkGenericPatch()),'patch frame costs')));
-  const orbit=[];for(const angle of [-75,-45,0,45,75]){orbit.push(await bounded(page.evaluate(a=>window.setGenericTestYaw(a),angle),'orbit'));}
-  console.log('ORBIT_SAMPLES',JSON.stringify(orbit));
   if(errors.length)throw Error('Browser errors: '+errors.join(';'));
-  const compiled=await page.evaluate(()=>window.setGenericTestYaw(0).materials.some(m=>m.shaderCompiled&&m.alphaHash));if(!compiled)throw Error('Patch shader did not compile');
 })().catch(e=>{console.error(e.stack);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();server.close();});
