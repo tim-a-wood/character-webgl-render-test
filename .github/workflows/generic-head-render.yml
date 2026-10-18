@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar jacket texture pilot'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar jacket supported loader gate'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
