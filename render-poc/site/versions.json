@@ -1,5 +1,62 @@
 [
   {
+    "id": "38",
+    "title": "38 \u00b7 Authored separate moustache",
+    "scope": "Einar head, eyes, source brow ribbons and hat plus selected beard, scalp hair and lashes: 37,873 curves / 571,676 points. Adds all7,566 separate authored moustache curves. Excludes ear/nose hair, face/hat fuzz and body. Adds oral meshes and four experimental expression controls.",
+    "limits": "Same37b base plus source moustache and sampled jaw/smile motion. Adds129,516triangles and6.79MBgzip. Source-heldout residualp95.251mm/max1.22mm; portable shading, no source fidelity or mobile approval.",
+    "files": [
+      "assets/benchmark-18.glb"
+    ],
+    "bytes": 47647900,
+    "sha256": "e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee",
+    "skins": 0,
+    "animations": 0,
+    "expectedBounds": [
+      [
+        -0.13972650468349457,
+        1.45891173183918,
+        -0.13773080246869823
+      ],
+      [
+        0.13972605764865875,
+        1.880686596688355,
+        0.17094007777084727
+      ]
+    ],
+    "expectedCameraDistance": 0.801771719833492,
+    "runtimePatch": {
+      "kind": "groom36",
+      "files": [
+        "assets/einar-groom24-0.bin",
+        "assets/einar-groom24-1.bin",
+        "assets/einar-groom24-2.bin",
+        "assets/einar-groom24-3.bin"
+      ],
+      "compressedSha256": "12140bb3080bb81f354a05a8c94bcd462f5a8295f46d526cc93b6c402c9a6aed",
+      "sha256": "dee778cc5bdd6e6aa298af3c80647400a3a9dac2421acb14125b2457062fb60e",
+      "moduleSha256": "48db997d0bf0b42d014d39e4e3fc9d073b2f9977fdb32fb515f1085e1af5e8f5"
+    },
+    "face": {
+      "url": "assets/einar-face26.bin.gz",
+      "compressedSha256": "1c323b0294114d46d206b24c6304da50377f3dffc83d08f819ab8a8b4e75dfe5",
+      "sha256": "450e950c75362f7c33bca5e63b4c21ecfe6e4dc8fe1394a9fa2944220c832bd0",
+      "oral": "assets/oral-source-pbr.glb",
+      "kind": "hybrid37b"
+    },
+    "moustache": {
+      "geometry": {
+        "url": "assets/einar-moustache38.bin.gz",
+        "compressedSha256": "e35827cea6e6674f18b75f08b6ad67295f51c9be11baf9b327aceee9ff854d9b",
+        "sha256": "b3aac1a95336eb9f96b3fc83968da853ce617e01b8b6dc6d8262f0efe5049119"
+      },
+      "motion": {
+        "url": "assets/einar-moustache-motion38.bin.gz",
+        "compressedSha256": "91c73cac5664bba77d8cb3fdf6f26483142504f3d05caafa3dd52844d2327212",
+        "sha256": "d86284184b090ca2c4838858e08e8b0bbc7e24ba2bdd4a7a0ae3d22c0160891c"
+      }
+    }
+  },
+  {
     "id": "37b",
     "title": "37b \u00b7 Exact hybrid groom computation",
     "scope": "Einar head, eyes, source brow ribbons and hat plus selected beard, scalp hair and lashes: 37,873 curves / 571,676 points. Excludes separate authored moustache, ear/nose hair, face/hat fuzz and body. Adds oral meshes and four experimental expression controls.",
