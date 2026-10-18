@@ -48,7 +48,7 @@ let browser;
   console.log('LAUNCH_ARGUMENTS',JSON.stringify(args));
   const context = await browser.newContext({viewport:{width:1400,height:1300},deviceScaleFactor:1,serviceWorkers:'block'});
   await context.route('**/*',route=>new URL(route.request().url()).origin===origin ? route.continue() : route.abort());
-  const baseline=new Map(),stateBaseline=new Map(),imageBaseline=new Map();
+  const baseline=new Map(),stateBaseline=new Map(),imageBaseline=new Map(),rawBaseline=new Map(),imageMismatches=[];
   let seed=0x12345678;const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return Math.round(seed/4294967296*100)/100;};
   const states=[{jaw:0,smile:0,brow:0,blink:0},{jaw:1,smile:0,brow:0,blink:0},{jaw:0,smile:1,brow:0,blink:0},{jaw:0,smile:0,brow:1,blink:0},{jaw:0,smile:0,brow:0,blink:1},{jaw:.6,smile:.7,brow:.4,blink:.8},{jaw:0,smile:0,brow:0,blink:0}];while(states.length<37)states.push({jaw:rand(),smile:rand(),brow:rand(),blink:rand()});states.push({jaw:0,smile:0,brow:0,blink:0});
   for(const iteration of ['36','37']){
@@ -96,12 +96,14 @@ let browser;
     const groom=pose.materials.find(m=>m.mesh==='Einar24 full source beard scalp lashes');if(!groom||!groom.alphaHash||groom.alphaToCoverage||groom.transparent||!groom.depthWrite)throw Error('Groom material baseline changed');if(!groom.fiberNormal36)throw Error('36 shader not compiled');
     const compare={digest,groomPhysical:Object.fromEntries(['transparent','depthWrite','alphaTest','alphaHash','alphaToCoverage','blending','roughness','metalness','side','vertexColors'].map(k=>[k,groom[k]])),triangles:pose.rendererTriangleDraws,calls:pose.rendererDrawCalls,camera:pose.cameraPosition,target:pose.cameraTarget};if(iteration==='36')baseline.set(view,compare);else if(JSON.stringify(compare)!==JSON.stringify(baseline.get(view)))throw Error('36/37 geometry, draw count or framing mismatch '+view);
     const name='einar'+iteration+'-'+view,started=Date.now();const pixels=await bounded(page.evaluate(k=>window.measureGroomPixels(k),name),'framebuffer');if(pixels.glError)throw Error('GL error');const renderAndReadbackWallMs=Date.now()-started;
-    const base64=await bounded(page.evaluate(k=>window.encodeGroomFrame(k),name),'framebuffer export'),screenshot=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(screenshot).digest('hex');if(iteration==='36')imageBaseline.set(view,sha256);else if(sha256!==imageBaseline.get(view))throw Error('Sparse final image mismatch '+view);if(view==='front')firstHash=sha256;if(view==='neutral-restored'&&sha256!==firstHash)throw Error('Neutral image mismatch');
+    const base64=await bounded(page.evaluate(k=>window.encodeGroomFrame(k),name),'framebuffer export'),screenshot=Buffer.from(base64,'base64'),sha256=crypto.createHash('sha256').update(screenshot).digest('hex');if(iteration==='36')imageBaseline.set(view,sha256);else if(sha256!==imageBaseline.get(view))imageMismatches.push(view);if(view==='front')firstHash=sha256;if(view==='neutral-restored'&&sha256!==firstHash)throw Error('Neutral image mismatch');
+    const raw=Buffer.from(await page.evaluate(k=>window.rawFrameBase64(k),name),'base64');if(iteration==='36')rawBaseline.set(view,raw);else{const base=rawBaseline.get(view);let changed=0,max=0,total=0,minX=Infinity,minY=Infinity,maxX=-1,maxY=-1;for(let i=0;i<raw.length;i+=4){let pixel=false;for(let c=0;c<3;c++){const d=Math.abs(raw[i+c]-base[i+c]);if(d)pixel=true;max=Math.max(max,d);total+=d;}if(pixel){changed++;const x=(i/4)%pose.canvasWidth,y=pose.canvasHeight-1-Math.floor(i/4/pose.canvasWidth);minX=Math.min(minX,x);maxX=Math.max(maxX,x);minY=Math.min(minY,y);maxY=Math.max(maxY,y);}}console.log('RAW_PIXEL_PARITY',JSON.stringify({view,bytes:raw.length,rawSha256:crypto.createHash('sha256').update(raw).digest('hex'),baselineRawSha256:crypto.createHash('sha256').update(base).digest('hex'),changedPixels:changed,maxChannelDelta:max,meanAbsRGB:total/(raw.length/4*3),changedBounds:changed?[minX,minY,maxX,maxY]:null}));}
     console.log('SHADING_COMPARE',JSON.stringify({iteration,view,state,geometryMatched:iteration==='37',compare}));
     console.log('RENDER_IMAGE_BEGIN',JSON.stringify({name,iteration,view,pose,state:state.state,renderAndReadbackWallMs,mime:'image/jpeg',bytes:screenshot.length,sha256}));for(let i=0;i<base64.length;i+=2048)console.log('RENDER_IMAGE_CHUNK',String(i/2048).padStart(5,'0'),base64.slice(i,i+2048));console.log('RENDER_IMAGE_END');
   }
   if(errors.length)throw Error('Browser errors: '+errors.join(';'));
   await page.close();
   }
+  if(imageMismatches.length)throw Error('Exact image parity failed: '+imageMismatches.join(','));
 })().catch(e=>{console.error(e.stack);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();server.close();});
 

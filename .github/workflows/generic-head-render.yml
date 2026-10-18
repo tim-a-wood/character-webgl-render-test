@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar exact sparse update comparison'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar sparse pixel parity diagnostic'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
