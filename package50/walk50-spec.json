@@ -1,0 +1,13 @@
+{
+  "dataFiles": [
+    "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/cc6a92cf000aab2e79b6c27c50d9da8a6820a33b/render-poc/site/assets/einar-walk50-00.bin",
+    "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/cc6a92cf000aab2e79b6c27c50d9da8a6820a33b/render-poc/site/assets/einar-walk50-01.bin",
+    "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/cc6a92cf000aab2e79b6c27c50d9da8a6820a33b/render-poc/site/assets/einar-walk50-02.bin",
+    "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/cc6a92cf000aab2e79b6c27c50d9da8a6820a33b/render-poc/site/assets/einar-walk50-03.bin",
+    "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/cc6a92cf000aab2e79b6c27c50d9da8a6820a33b/render-poc/site/assets/einar-walk50-04.bin",
+    "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/cc6a92cf000aab2e79b6c27c50d9da8a6820a33b/render-poc/site/assets/einar-walk50-05.bin"
+  ],
+  "dataSha256": "be811e04b3f99256ea1f34bbb537bb16fa334051c2821fbf98caa01fd2d84de0",
+  "manifestUrl": "../walk50-manifest.json",
+  "manifestSha256": "c0a5a665bedb7d98f6fecf1b6ee34d7f4e3a4cb9193299f64d23f73871ac1529"
+}
