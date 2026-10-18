@@ -1,3 +1,4 @@
+import {loadEinarGroom36} from './assets/einar-groom36.js';
 import {attachRainFace33} from './assets/rain-face33b.js';
 import {attachEinarFace26} from './assets/einar-face26b.js';
 import {loadEinarGroom25} from './assets/einar-groom25.js';
@@ -8,9 +9,9 @@ import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {DRACOLoader} from 'three/addons/loaders/DRACOLoader.js';
 async function loadRuntimeComponent(spec){
- if(spec.kind!=='groom24'&&spec.kind!=='groom25')return loadEinarPatch23(spec);
+ if(spec.kind!=='groom24'&&spec.kind!=='groom25'&&spec.kind!=='groom36')return loadEinarPatch23(spec);
  const chunks=[];for(const file of spec.files){const response=await fetch(file);if(!response.ok)throw Error('Groom chunk request failed '+response.status);chunks.push(await response.arrayBuffer());}
- const url=URL.createObjectURL(new Blob(chunks,{type:'application/gzip'}));try{return await (spec.kind==='groom25'?loadEinarGroom25:loadEinarGroom24)({url,compressedSha256:spec.compressedSha256,sha256:spec.sha256});}finally{URL.revokeObjectURL(url);}
+ const url=URL.createObjectURL(new Blob(chunks,{type:'application/gzip'}));try{return await (spec.kind==='groom36'?loadEinarGroom36:spec.kind==='groom25'?loadEinarGroom25:loadEinarGroom24)({url,compressedSha256:spec.compressedSha256,sha256:spec.sha256});}finally{URL.revokeObjectURL(url);}
 }
 const draco=new DRACOLoader();draco.setDecoderPath('./assets/draco/');
 const loader=new GLTFLoader();loader.setDRACOLoader(draco);
@@ -64,7 +65,7 @@ if(new URLSearchParams(location.search).get('testViews')==='1'){
   if(!testPivot){testPivot=new THREE.Group();scene.remove(model);testPivot.add(model);scene.add(testPivot);}
   controls.autoRotate=false;reset();testPivot.rotation.set(0,THREE.MathUtils.degToRad(degrees),0);
   scene.updateMatrixWorld(true);const drawStart=performance.now();renderer.render(scene,camera);const renderSubmitMs=performance.now()-drawStart;
-  const materials=[];model.traverse(o=>{if(o.isMesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))materials.push({mesh:o.name,name:m.name,transparent:m.transparent,depthWrite:m.depthWrite,alphaTest:m.alphaTest,alphaHash:m.alphaHash,alphaToCoverage:m.alphaToCoverage,blending:m.blending,shaderCompiled:m.userData.shaderCompiled||false});});
+  const materials=[];model.traverse(o=>{if(o.isMesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))materials.push({mesh:o.name,name:m.name,transparent:m.transparent,depthWrite:m.depthWrite,alphaTest:m.alphaTest,alphaHash:m.alphaHash,alphaToCoverage:m.alphaToCoverage,blending:m.blending,shaderCompiled:m.userData.shaderCompiled||false,fiberNormal36:m.userData.fiberNormal36||false,roughness:m.roughness,metalness:m.metalness,side:m.side,vertexColors:m.vertexColors});});
   return {materials,modelYawDegrees:degrees,renderSubmitMs,rendererTriangleDraws:renderer.info.render.triangles,rendererDrawCalls:renderer.info.render.calls,shaderPrograms:renderer.info.programs.length,cameraPosition:camera.position.toArray(),cameraTarget:controls.target.toArray(),cameraDistance:camera.position.distanceTo(controls.target),verticalFov:camera.fov,canvasWidth:renderer.domElement.width,canvasHeight:renderer.domElement.height};
  };
 }
@@ -77,4 +78,5 @@ async function loadBody27(spec){const parts=[];let total=0;for(const url of spec
 function installBodyControls(body){document.getElementById('body-controls')?.remove();const box=document.createElement('fieldset');box.id='body-controls';box.innerHTML='<legend>Source body endpoint</legend><select id="body-pose"><option value="0">Neutral</option><option value="1">Source gesture</option></select><p>Two sampled poses only. Intermediate motion is not validated.</p>';box.querySelector('select').onchange=e=>{const v=Number(e.target.value);if(v!==0&&v!==1)throw Error('Unsupported body pose');for(const t of body.targets)t.mesh.morphTargetInfluences[t.index]=v;body.metadata.pose=v;};document.querySelector('main').append(box);}
 window.bodyPoseState=()=>({metadata:window.activeBody27.metadata,weights:window.activeBody27.targets.map(t=>({name:t.mesh.name,value:t.mesh.morphTargetInfluences[t.index]}))});
 window.setBodyFraming=closeup=>{window.bodyCloseup=closeup;model.position.copy(closeup?new THREE.Vector3(...window.explorerState.modelCenter).negate():new THREE.Vector3(0,-.95,0));reset();return {closeup,modelPosition:model.position.toArray()};};
+
 

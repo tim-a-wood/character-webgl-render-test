@@ -84,3 +84,9 @@ Generic Einar dressed-body derivative, CC BY4.0 Blender Foundation / Blender Stu
 ## Rain33 facial transport diagnostic
 
 Rain Rig © Blender Foundation / Blender Studio, CC BY4.0. Source https://studio.blender.org/characters/rain/v3/ ; license https://creativecommons.org/licenses/by/4.0/ . Modifications: composed portable PBR maps, static18-mesh GLB and source-sampled paired expression grids with portable normal/tangent updates.79,594 unique triangles.29,312,456-byte model SHA25662ea66074d27060a6b93e951c9539fb4822f6439f237e105bb65b35b4a787834. Known appearance losses include greyer hair, changed corneal reflections and coarse scarf gaps. Near-closure lash p95.332mm misses.25mm numerical gate (~.63px at proposed closeup). Four0..1 controls are experimental, no full rig, mature realistic female, unified topology or mobile claim. Source-world face camera[0,1.47,.87], target[0,1.45,.02], verticalFOV34,766x958. Existing Einar versions retained.
+
+
+## Einar36 normal-only shading diagnostic
+
+Exact Einar26 model/expressions and source24 groom geometry, vertex colors, radii, alphaHash and material parameters remain unchanged. New immutable wrapper SHA25648db997d0bf0b42d014d39e4e3fc9d073b2f9977fdb32fb515f1085e1af5e8f5 replaces flat sheet lighting normals with a cylindrical cross-section using the live strand tangent. This approximates round-fiber normals; it is not source multi-lobe hair shader parity. Same-job26/36 front,+45,+75 and jaw/smile views verify identical geometry/draw counts/framing/physical material flags, live four-control input events and neutral reset. Standard free public runner only. Einar © Blender Foundation / Blender Studio, CC BY4.0; source attribution above remains applicable.
+
