@@ -1,5 +1,36 @@
 [
   {
+    "id": "23",
+    "title": "23 \u00b7 View-facing under-chin source patch",
+    "scope": "Exact Einar18 base plus602 full-length source under-chin curves in an isolated view-facing Three.js component. This is a patch, not a full beard.",
+    "limits": "Custom runtime component, not a standalone GLB.15,031 added triangles; source linearRGBA with alphaHash. Native opacity comparison is not directly comparable because this subset lacks surrounding beard. Source spatial fidelity and mobile performance remain unapproved.",
+    "files": [
+      "assets/benchmark-18.glb"
+    ],
+    "bytes": 47647900,
+    "sha256": "e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee",
+    "skins": 0,
+    "animations": 0,
+    "expectedBounds": [
+      [
+        -0.13972650468349457,
+        1.45891173183918,
+        -0.13773080246869823
+      ],
+      [
+        0.13972605764865875,
+        1.880686596688355,
+        0.17094007777084727
+      ]
+    ],
+    "expectedCameraDistance": 0.801771719833492,
+    "runtimePatch": {
+      "url": "assets/einar-patch23.bin",
+      "sha256": "a4eaae5af5b1ce03fa6a751eda2151f318c6137285bccdde530d11961bfc1840",
+      "moduleSha256": "a9ed72e154900d49d8c8a3671ccc81b6da9a646ce09c80be5feceeac9bb287b7"
+    }
+  },
+  {
     "id": "18",
     "title": "18 \u00b7 Source hat with exported maps",
     "scope": "Generic Einar17 head, eyes and source-following brows plus original Einar hat geometry and exported material maps.",

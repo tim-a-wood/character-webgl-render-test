@@ -56,3 +56,7 @@ All2,735 source curves represented individually with66,441 brow triangles,315,46
 ## Source hat18
 
 Original hat geometry and UVs retained with three2048 composed maps; KHR specular/IOR, omitted source sheen.22,432 added triangles,337,897 total;47,647,900bytes; SHA-256 e6a03bc8b8f573142e04ac886fe5732b545890cc7559910018aa7e90865d36ee. Native reference already shows lighter/flatter shading, not fidelity-approved. Header+hat suffix reuse exact17 BIN. Explicit source18 bounds [[-0.13972650468349457, 1.45891173183918, -0.13773080246869823], [0.13972605764865875, 1.880686596688355, 0.17094007777084727]] define center and camera distance 0.801771719833492m at34-degree FOV; bounds checked before capture. Camera fit expands deliberately for hat crown/depth, lights unchanged.
+
+## View-facing under-chin patch23
+
+Exact18 GLB unchanged. Isolated module SHA-256 a9ed72e154900d49d8c8a3671ccc81b6da9a646ce09c80be5feceeac9bb287b7;918,356-byte buffer SHA-256 a4eaae5af5b1ce03fa6a751eda2151f318c6137285bccdde530d11961bfc1840.602 full-length source curves,15,031 triangles; custom view-facing vertex expansion with source vertexRGBA and alphaHash. Not a standaloneGLB or full beard. World-to-local camera uniform handles pivot orbit. Five fixed views plus44/46-degree orbit samples; synchronized render wall costs via gl.finish are software diagnostics, not mobile benchmarks. Native masks include surrounding beard occlusion absent here, so no direct opacity-parity claim. No appearance approval.
