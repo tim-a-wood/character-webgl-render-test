@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {attachBodyMotion42} from './body-motion42b.js';
+import {attachBodyMotion42} from './body-motion42c.js';
 import {installDemandRenderer41} from './demand-render41.js';
 // Browser-only controls for the generic Einar reference. No asset or shading changes.
 export function installViewerMilestone42({renderer,scene,camera,controls,model,face,headCenter,headRadius,host,loadBody,motionSpec,disposeBody,onBody=()=>{},onStatus=()=>{},onError=console.error}){
