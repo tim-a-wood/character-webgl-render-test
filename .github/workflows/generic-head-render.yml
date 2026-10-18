@@ -6,8 +6,12 @@ on:
 permissions:
   contents: read
 jobs:
-  screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Verify generic Einar48 sampled walk playback'
+  sampled-walk:
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Compare generic Einar48 and49 sampled gait cycles'
+    strategy:
+      fail-fast: false
+      matrix:
+        version: [48, 49]
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -19,11 +23,12 @@ jobs:
           sparse-checkout: |
             package46
             package48
+            package49
       - name: Install exact test runtime
-        working-directory: package48
+        working-directory: package49
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Source walk playback and original appearance reset
-        working-directory: package48
-        run: timeout 480s node capture48.cjs
+      - name: Matched sampled gait preview
+        working-directory: package49
+        run: timeout 480s node capture${{ matrix.version }}-sequence.cjs
