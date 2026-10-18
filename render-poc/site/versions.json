@@ -1,5 +1,51 @@
 [
   {
+    "id": "33",
+    "title": "33 \u00b7 Rain four source-sampled face controls",
+    "scope": "Generic Rain v3 derivative,18 visible source meshes, static body and four face controls. Rain Rig \u00a9 Blender Foundation / Blender Studio \u00b7 CC BY4.0.",
+    "limits": "Control/deformation transport diagnostic. Greyer hair, changed corneal reflections and coarse scarf gaps; appearance fidelity partial. Near-closure lash p95 .332mm misses .25mm target (~.63px in this closeup). No mature realistic female, unified topology, full rig or mobile approval.",
+    "files": [
+      "assets/rain33-0.bin",
+      "assets/rain33-1.bin",
+      "assets/rain33-2.bin",
+      "assets/rain33-3.bin"
+    ],
+    "bytes": 29312456,
+    "sha256": "62ea66074d27060a6b93e951c9539fb4822f6439f237e105bb65b35b4a787834",
+    "skins": 0,
+    "animations": 0,
+    "expectedBounds": [
+      [
+        -0.6982753276824951,
+        0.0011454803170636296,
+        -0.5091394186019897
+      ],
+      [
+        0.6982754468917847,
+        1.6499534845352173,
+        0.18652081489562988
+      ]
+    ],
+    "frameCenter": [
+      0,
+      1.45,
+      0.02
+    ],
+    "camera": [
+      0,
+      0.02,
+      0.85
+    ],
+    "expectedCameraDistance": 0.850235261559999,
+    "rain": {
+      "url": "assets/rain33-face.bin.gz",
+      "sha256": "d3ed558ac8f5b77ce4d7ffe57dfe05c1d9eef0024a73a389017973d71f254ae8",
+      "manifestUrl": "assets/rain33-face.json",
+      "manifestSha256": "cc042846655511e4c1c340454ad4dcef4d14951f0c13f91d7e06c6254481ea9d",
+      "moduleSha256": "e79ab389d89427f294bdc1c50db1a910f40bf7a8fcc502367f3808d97419c4b1"
+    }
+  },
+  {
     "id": "27",
     "title": "27 \u00b7 Dressed body source endpoints",
     "scope": "Generic Einar dressed body with selected head groom, hat, eyes, brows and experimental26 face controls. Excludes separate authored moustache, ear/nose hair and face/hat fuzz.",

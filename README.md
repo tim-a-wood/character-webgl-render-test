@@ -78,3 +78,9 @@ Scope clarification: groom24 excludes the separate authored moustache, ear/nose 
 ## Dressed body27
 
 Generic Einar dressed-body derivative, CC BY4.0 Blender Foundation / Blender Studio. Exact94,856,980-byte GLB SHA2566cd1a7ed76984a50bdad00010826117c89729bc8a72ed32d30edb405593c6c25,180 meshes and1,685,454 unique triangles. Fourteen named SourceGesture27 morph targets encode only two source-evaluated endpoints. Intermediate interpolation failed source parity and is not exposed. Twelve immutable commit-pinned raw GitHub chunks are fetched with CORS, omitted credentials and no referrer, concatenated and whole-payload hash checked. Same delivery wrapper as the private optional viewer. Whole-body framing center[0,.95,0], relative camera[0,.2,4.4], FOV34; separate head close-up retains26 framing. Native material comparison shows brighter/softer jacket and missing sheen/directional effects. Optional heavy benchmark, no rig, animation, fidelity or device-performance approval.
+
+
+
+## Rain33 facial transport diagnostic
+
+Rain Rig © Blender Foundation / Blender Studio, CC BY4.0. Source https://studio.blender.org/characters/rain/v3/ ; license https://creativecommons.org/licenses/by/4.0/ . Modifications: composed portable PBR maps, static18-mesh GLB and source-sampled paired expression grids with portable normal/tangent updates.79,594 unique triangles.29,312,456-byte model SHA25662ea66074d27060a6b93e951c9539fb4822f6439f237e105bb65b35b4a787834. Known appearance losses include greyer hair, changed corneal reflections and coarse scarf gaps. Near-closure lash p95.332mm misses.25mm numerical gate (~.63px at proposed closeup). Four0..1 controls are experimental, no full rig, mature realistic female, unified topology or mobile claim. Source-world face camera[0,1.47,.87], target[0,1.45,.02], verticalFOV34,766x958. Existing Einar versions retained.

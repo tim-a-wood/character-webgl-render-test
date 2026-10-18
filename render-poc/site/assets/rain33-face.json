@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "coordinateSystem": "glTF Y-up world (x,z,-y)",
+  "controls": [
+    "jaw",
+    "smile",
+    "blink",
+    "brow"
+  ],
+  "grids": [
+    {
+      "controls": [
+        "jaw",
+        "smile"
+      ],
+      "dimensions": [
+        3,
+        3
+      ]
+    },
+    {
+      "controls": [
+        "blink",
+        "brow"
+      ],
+      "dimensions": [
+        9,
+        3
+      ]
+    }
+  ],
+  "meshes": {
+    "GEO-rain-gums_upper": {
+      "vertices": 3069,
+      "maximumDelta": 5.960464477539062e-07,
+      "grids": [
+        {
+          "byteOffset": 0,
+          "byteLength": 331452,
+          "states": 9
+        },
+        {
+          "byteOffset": 331452,
+          "byteLength": 994356,
+          "states": 27
+        }
+      ]
+    },
+    "GEO-rain-gums_lower": {
+      "vertices": 3068,
+      "maximumDelta": 0.02779567241668701,
+      "grids": [
+        {
+          "byteOffset": 1325808,
+          "byteLength": 331344,
+          "states": 9
+        },
+        {
+          "byteOffset": 1657152,
+          "byteLength": 994032,
+          "states": 27
+        }
+      ]
+    },
+    "GEO-rain-tongue": {
+      "vertices": 275,
+      "maximumDelta": 0.024480581283569336,
+      "grids": [
+        {
+          "byteOffset": 2651184,
+          "byteLength": 29700,
+          "states": 9
+        },
+        {
+          "byteOffset": 2680884,
+          "byteLength": 89100,
+          "states": 27
+        }
+      ]
+    },
+    "GEO-rain-eyebrows": {
+      "vertices": 296,
+      "maximumDelta": 0.014977574348449707,
+      "grids": [
+        {
+          "byteOffset": 2769984,
+          "byteLength": 31968,
+          "states": 9
+        },
+        {
+          "byteOffset": 2801952,
+          "byteLength": 95904,
+          "states": 27
+        }
+      ]
+    },
+    "GEO-rain-eyelashes": {
+      "vertices": 240,
+      "maximumDelta": 0.03757643699645996,
+      "grids": [
+        {
+          "byteOffset": 2897856,
+          "byteLength": 25920,
+          "states": 9
+        },
+        {
+          "byteOffset": 2923776,
+          "byteLength": 77760,
+          "states": 27
+        }
+      ]
+    },
+    "GEO-rain-head": {
+      "vertices": 6395,
+      "maximumDelta": 0.03317415714263916,
+      "grids": [
+        {
+          "byteOffset": 3001536,
+          "byteLength": 690660,
+          "states": 9
+        },
+        {
+          "byteOffset": 3692196,
+          "byteLength": 2071980,
+          "states": 27
+        }
+      ]
+    },
+    "GEO-rain-hair_main": {
+      "vertices": 2204,
+      "maximumDelta": 0.003106355667114258,
+      "grids": [
+        {
+          "byteOffset": 5764176,
+          "byteLength": 238032,
+          "states": 9
+        },
+        {
+          "byteOffset": 6002208,
+          "byteLength": 714096,
+          "states": 27
+        }
+      ]
+    }
+  },
+  "knownResidual": {
+    "lashP95Meters": 0.000331622,
+    "failedGateMeters": 0.00025,
+    "closeupP95Pixels": 0.629745
+  },
+  "attribution": "Rain Rig (CC) Blender Foundation | studio.blender.org; CC BY 4.0",
+  "decodedBytes": 6716304,
+  "decodedSha256": "e4b794e4f0f7773de2772cea652493b2afb970fb971d13ef53cfdcfd03b27e92",
+  "compressedBytes": 1240168,
+  "compressedSha256": "d3ed558ac8f5b77ce4d7ffe57dfe05c1d9eef0024a73a389017973d71f254ae8"
+}
