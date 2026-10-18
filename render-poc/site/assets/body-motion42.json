@@ -1,0 +1,1812 @@
+{
+  "version": 42,
+  "source": "Einar v1, Blender Foundation/Studio, CC BY 4.0",
+  "baseBodySha256": "6cd1a7ed76984a50bdad00010826117c89729bc8a72ed32d30edb405593c6c25",
+  "keys": [
+    0,
+    0.125,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "decodedBytes": 24035616,
+  "decodedSha256": "05962bbf5debd3165f3a65b7509f23607777a0fe95b20919992209c4bf5838e3",
+  "compressedBytes": 12345850,
+  "compressedSha256": "abfe667f87fadeaa59291504c699ddc859381ecd1f601f272c1edf5f2c3f34de",
+  "meshes": [
+    {
+      "name": "GEO-einar_fingers",
+      "count": 29821,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            29821,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "4325f6f9469775bae0a8161f90a0c640b3ff66f86c3b7165d684a1896a853429"
+        },
+        "NORMAL": {
+          "shape": [
+            29821,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "4156ee9b803edf187a943c98f0896e547d7d8e5afb6b2669b13dcbbefa7f5050"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            29821,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "80b921d412711e1d935b680651d75e237443148079c446398a1879c30094e513"
+        },
+        "COLOR_0": {
+          "shape": [
+            29821,
+            4
+          ],
+          "dtype": "float32",
+          "sha256": "a56517da8c435fb56c48ca328a628585ef7ce25090225aec542d87fc10f17d82"
+        },
+        "COLOR_1": {
+          "shape": [
+            29821,
+            4
+          ],
+          "dtype": "float32",
+          "sha256": "364a573c6a514f4f1b63fddaadaf45ffb27d982722c40644fca959aef6110205"
+        },
+        "INDEX": {
+          "shape": [
+            133248,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "7125274c9443464499c4b44d7a9598bab70b82d24d7f2e65369d960d4b2cee21"
+        },
+        "morphPOSITION": {
+          "shape": [
+            29821,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "fedeb319900f533d21f98abf7145355e098c1b5f40e8331749a31eb692b71da4"
+        },
+        "morphNORMAL": {
+          "shape": [
+            29821,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1ef7e93efce7e210add5edd7f519e1778da2a194af148e731bb54f6c212e8187"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 0,
+            "length": 357852,
+            "sha256": "af314ce104429958c0b5b693d68058cffae96693b43205381f33b1fb92c50248"
+          },
+          "normal": {
+            "offset": 357852,
+            "length": 357852,
+            "sha256": "ada5bf718201fa5ec10c6b766b735fd54b60e062272d1279298cf14b01fada74"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 715704,
+            "length": 357852,
+            "sha256": "95f6eb28cae64e3b65199d5b4a3460184fe334ea11fc0339eb62285e1b56103d"
+          },
+          "normal": {
+            "offset": 1073556,
+            "length": 357852,
+            "sha256": "78c69d4cabcc904af833493469a4066746df9386a7ee5edd56dffea17b4694e9"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 1431408,
+            "length": 357852,
+            "sha256": "95deb8678a868f3d10d64ddac69a0f3a11c0006eb68cb6f07f181803b7596058"
+          },
+          "normal": {
+            "offset": 1789260,
+            "length": 357852,
+            "sha256": "2999fc5180376df77391517105ea4ce630e79b342ee926c627bf58224d399903"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 2147112,
+            "length": 357852,
+            "sha256": "850c4d2bcfdccd4faa9fa83f1e21d46d8b977ece35877746962e49865cac2f75"
+          },
+          "normal": {
+            "offset": 2504964,
+            "length": 357852,
+            "sha256": "137bd430fbeae5103c9ce14cdb0fc720e4ef0ed49e0ec18055216a9e87ab3509"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_glove",
+      "count": 15925,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            15925,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1a4899a85ef8565fdcd8b4d34fd2f4e597699436500d3842238176a5c51c6248"
+        },
+        "NORMAL": {
+          "shape": [
+            15925,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "ebee7490fc863ad3c557009c5ce8760038393748e0a9441e59925de080eb03ae"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            15925,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "4302d8ddb131158422f1a4b3847915430f5df219881efeaba4dd7ec703a010fe"
+        },
+        "INDEX": {
+          "shape": [
+            72480,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "831f513cc9d1a6d878f0cb325a17addf97ed10116f22db0fe648e1fc01c1f770"
+        },
+        "morphPOSITION": {
+          "shape": [
+            15925,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "07557935f234cad2b78f0d4bfa372b2d69b9b0114b53b84e0fa75223b95e3b71"
+        },
+        "morphNORMAL": {
+          "shape": [
+            15925,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "532bf26ec52f160f88efe51746beec10d319de31325f9e8ede5f527bdc155abf"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 2862816,
+            "length": 191100,
+            "sha256": "35111766018caaf6fea46c90bad3467fb9936c8a6f4bf3e2de1a6b88eb4ddec6"
+          },
+          "normal": {
+            "offset": 3053916,
+            "length": 191100,
+            "sha256": "8915440786467c8f8c228b4a6102fa4b800c4cbe4af194e04cffae0952785b4e"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 3245016,
+            "length": 191100,
+            "sha256": "c01a41d48619cf191bdd80fa3931f53b83111a0ef0c907fbd044f90f96bb4c84"
+          },
+          "normal": {
+            "offset": 3436116,
+            "length": 191100,
+            "sha256": "a23a864b3cab6c074f7885462c4eeac8d77d2785e79290f48cafb0bc187bb7cd"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 3627216,
+            "length": 191100,
+            "sha256": "ee0d0614130e76387d79be28c316146131b4b410c90d46560b4d578c9b6ba8c1"
+          },
+          "normal": {
+            "offset": 3818316,
+            "length": 191100,
+            "sha256": "9d80229191d39b86fa8b5c836cc7ce066f457e77e7dafbbf190fc052171ec72a"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 4009416,
+            "length": 191100,
+            "sha256": "484253fcbfbb329d03c3f91622281341857d8bd30efb04b89c0b485870b331e7"
+          },
+          "normal": {
+            "offset": 4200516,
+            "length": 191100,
+            "sha256": "a5e694dc4889584013151868825e25c10ad8caa6d445dc67c71b2a847c21f7fe"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_jacket_backstrap",
+      "count": 3384,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            3384,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "870e4dc060f95355d3dc830fa72a34813a37545a35068f45ca78adead2d51729"
+        },
+        "NORMAL": {
+          "shape": [
+            3384,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "fe621b4c74618457aff91acc4cf4c7b0c16c30dd3f27ec92031dd48eadf3562b"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            3384,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "75556f16a0c3d8110448833b240785197767e56ce104212c55a720fae9bcfe7a"
+        },
+        "INDEX": {
+          "shape": [
+            16704,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "0bc09ab2d6641bd4382a2ff411158632e0695fb60d6acde35396985cf85ab7d8"
+        },
+        "morphPOSITION": {
+          "shape": [
+            3384,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "4acf8d09abef098e0209deb3afadc5ec7f79be01596b8bd57c84bd9ab6dfe942"
+        },
+        "morphNORMAL": {
+          "shape": [
+            3384,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "5cbf56ca3d3c1750c1d181b4b452fa4ab9c47cb5b62c5819a24a2a91f78b2107"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 4391616,
+            "length": 40608,
+            "sha256": "58ed4a4895b562d7012b294475ff68fe8a630001bc00af6f5ade58bcc6df5cc4"
+          },
+          "normal": {
+            "offset": 4432224,
+            "length": 40608,
+            "sha256": "25d41a9c98922e86cc9ef609e479685d7e0ad30b210c44cdb00a9c268905b320"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 4472832,
+            "length": 40608,
+            "sha256": "da8e5ce9e3005abf52eba63755354e7feb327cd1c1cf3e302dbd49aef4869f47"
+          },
+          "normal": {
+            "offset": 4513440,
+            "length": 40608,
+            "sha256": "3b0817ba8c2137f8e94cb9222355b81fe5207cc8595458212efcbe8f4ac303e8"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 4554048,
+            "length": 40608,
+            "sha256": "a380cb9faa1582663fe5c0b7963989b6f8fcfd6bef0a441112d20731f11ba808"
+          },
+          "normal": {
+            "offset": 4594656,
+            "length": 40608,
+            "sha256": "2388345d3f172884b0effcd890563ea2793fa7476c4f8d038742262bc5b4964b"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 4635264,
+            "length": 40608,
+            "sha256": "6d3d2c17a2cc53e207dfd6161831b9bc38219dfa0b3a7d511623d2aa82bd2c71"
+          },
+          "normal": {
+            "offset": 4675872,
+            "length": 40608,
+            "sha256": "632e8e912b01b9b78f1a54002971485ed280ee808f242cb7aed616524c0dfbaf"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_jacket_button3_18cm",
+      "count": 2772,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            2772,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "3540eb8dc2b20b170c1777566d4241c4b97fb2a008cd53ff8daa48408ff3c4cf"
+        },
+        "NORMAL": {
+          "shape": [
+            2772,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "557a3e542f5aad5780b86e4a29681c7d874e5869a68e768691f4add2055fe3d7"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            2772,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "9b5ffcf6d9a10715aad6c2b4485e925aedfb239c7a6a04b337177e1bc1ec2aa8"
+        },
+        "INDEX": {
+          "shape": [
+            13536,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "0d4268ddfacac6d24ad40852951f793b22da2a103197287d9dc62ffa583d1806"
+        },
+        "morphPOSITION": {
+          "shape": [
+            2772,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "e3053773de5246733cb984aa37958b4e810e5d1cb509b4504f3cc38290b5128e"
+        },
+        "morphNORMAL": {
+          "shape": [
+            2772,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "c9e71ac7cd10a5eae95359e720b9a07116378b282f783203476fd08aa5938c10"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 4716480,
+            "length": 33264,
+            "sha256": "0fc4aa11c64c0ad812eb7da785719316f744df3050c5adcc2b1731d9b8bcb1e1"
+          },
+          "normal": {
+            "offset": 4749744,
+            "length": 33264,
+            "sha256": "56ae176a327741e918401619aff14ae31fdd3aa772b7cc00f43047fc019477df"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 4783008,
+            "length": 33264,
+            "sha256": "4cc9c47359e5998d89c42f4fc351b2b1f093ce499061ce6e77d39406dd8a88a3"
+          },
+          "normal": {
+            "offset": 4816272,
+            "length": 33264,
+            "sha256": "ece0ae3420379499c72fb06e6223c98a4932ea9b026fbc4caba2c14804a3ea60"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 4849536,
+            "length": 33264,
+            "sha256": "bab1ab98331093e3835a7f969b7209cd3de46c532f2ca440581ad36b0536c215"
+          },
+          "normal": {
+            "offset": 4882800,
+            "length": 33264,
+            "sha256": "c4235f3c8d476fc4c68125eca84ac452aab251420726021b7a1b9e07f693910d"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 4916064,
+            "length": 33264,
+            "sha256": "07c4370359c863dbdc35345bb5175d912f8b000cb461d760eba40caf549c6d43"
+          },
+          "normal": {
+            "offset": 4949328,
+            "length": 33264,
+            "sha256": "5872f7e7c85448ec2ba1a937b82a41f950bc5af4c474b6fe7b967f792ca14a14"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_jacket_collar2",
+      "count": 13266,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            13266,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1c67d695b83104365731222a91948421f8e8264d491719aae9b1fe65a7e9fed4"
+        },
+        "NORMAL": {
+          "shape": [
+            13266,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1f6a1022303e0b23e4fce5ccc12d8c46ff9167bf1f7eb95d7e6f2e651df1db65"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            13266,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "2c6e47d7b9caf43cf8782cbb3b53cb1717c57bb9d65c8fd6ff73916726df9fdc"
+        },
+        "INDEX": {
+          "shape": [
+            65088,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "ec27fc800ea85e1ab78a52048145c73d3160e8c7a25022d3dd11cb1e1eed100a"
+        },
+        "morphPOSITION": {
+          "shape": [
+            13266,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "86421a955a064daa637412c775e28844bc529125085f7240764507addf1a8ccb"
+        },
+        "morphNORMAL": {
+          "shape": [
+            13266,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "e1adfabad95fced23da679df7ce6b4c5596e610c04a8167ce733e82a0a641cc1"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 4982592,
+            "length": 159192,
+            "sha256": "94ab9786a2b520961add04e95654056b310aeedf580eab4baaeca56c0939f25a"
+          },
+          "normal": {
+            "offset": 5141784,
+            "length": 159192,
+            "sha256": "3725ee6e22e85a05976dfadd8eee3eb4a096f31adf2b8ec3743360e81707b724"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 5300976,
+            "length": 159192,
+            "sha256": "ef2312855dda624841594444388b2252fd05a1ddbdaaee373da30aea138b46e3"
+          },
+          "normal": {
+            "offset": 5460168,
+            "length": 159192,
+            "sha256": "eb55146353cc1ee812ebbbd233d80b799e4f29135f91bc27ffe62d6e38667d5e"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 5619360,
+            "length": 159192,
+            "sha256": "144b74feafffe460b91b8b4a4cba3d4abe1834e79381d2c6b07104344bf31dc1"
+          },
+          "normal": {
+            "offset": 5778552,
+            "length": 159192,
+            "sha256": "5d8ccd35743c981795d03d978c969645c929ff67674040be4b385e04ac3cff1a"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 5937744,
+            "length": 159192,
+            "sha256": "16feeb6b16e06caaa86bec12945247bd78a61a914ba9c7ca47c777e6488cf496"
+          },
+          "normal": {
+            "offset": 6096936,
+            "length": 159192,
+            "sha256": "a96ab104747efbab55c585dcb6357e54552dfc84b32597f0821284a1492e2f58"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_jacket_main",
+      "count": 50906,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            50906,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "74085209f43547ba599fd3a215df9389ac0b51260b7c0b1231cd20b7b412909a"
+        },
+        "NORMAL": {
+          "shape": [
+            50906,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "58f10c4b890a0e98425fbe345ce5ebed2c0e651615118ff4da49f50702dfd6ec"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            50906,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "4452419e2163a76b690da9b3f6fd379812ad928735feab32babfd33df0e47d3e"
+        },
+        "INDEX": {
+          "shape": [
+            255024,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "db3679fed2d0ca1d8538112c9ff1c527b4c4a4d25e205f92af7263e220c3c1fe"
+        },
+        "morphPOSITION": {
+          "shape": [
+            50906,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "b5b0134e47663cd2707e38349a9facf7576a8f70ebae9847496314a7976769c2"
+        },
+        "morphNORMAL": {
+          "shape": [
+            50906,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "cac4be53b46be76817ba640509fc593dbfd8f4705344e1510551e67a28a5ea37"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 6256128,
+            "length": 610872,
+            "sha256": "8210560e9f57fda90feaf4496326556ef8687931c3644fd2412e3902a3174f38"
+          },
+          "normal": {
+            "offset": 6867000,
+            "length": 610872,
+            "sha256": "5e6d4b4f05ebd71c8afa03124339db65dbb5e08f9bc5070c567057027399395f"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 7477872,
+            "length": 610872,
+            "sha256": "79bf1c233b99b4fe00f55c13e2b979f06ed2c1e106b8cc577631965bde865df4"
+          },
+          "normal": {
+            "offset": 8088744,
+            "length": 610872,
+            "sha256": "8d64693764dda9869c483821d9e9983da0895e0ce08ca72219d588cf9c0bd0a4"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 8699616,
+            "length": 610872,
+            "sha256": "a2b5325197c3da3417d6679f8623c1aa57c485a7f13bde5e169c91794a96255f"
+          },
+          "normal": {
+            "offset": 9310488,
+            "length": 610872,
+            "sha256": "4e33d752423335076e84f5dfe9440a67f49b30650335dfc4f0276038c61f637a"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 9921360,
+            "length": 610872,
+            "sha256": "06d8becc39afaa2b87ee1b0999aff1ca7713f437a3388f65a72be02d79eb4edf"
+          },
+          "normal": {
+            "offset": 10532232,
+            "length": 610872,
+            "sha256": "8802ba65e50baa63e5f6a6bec6fa23adcad4086c4a9d674d2ca571b6d77085d8"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_jacket_pocket1",
+      "count": 8015,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            8015,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "7f16a847080fd0913a7f0b418dad54d093ccf697b39da3b010b007f5b86d46a4"
+        },
+        "NORMAL": {
+          "shape": [
+            8015,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "00927ec5cc9cfafd337cc784be2272ab72d65a41a3d82194ec6ef0773db4f4a0"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            8015,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "99f4356bd641024c7c6a684bc564f0f3520d1ba24a0c04ac4b7347dccd412569"
+        },
+        "INDEX": {
+          "shape": [
+            37968,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "fd61743e7c45ef4b229a598d2a03d5c13e831cc72398a9781057ebdfc2e9afcb"
+        },
+        "morphPOSITION": {
+          "shape": [
+            8015,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "4b89f94e479619931197d66d92e5a33d3ccb3f629e55a3af24dd6be0468054bd"
+        },
+        "morphNORMAL": {
+          "shape": [
+            8015,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "580c5906f8409b03f3e9f6119c7f5ca11311f0419aa29a1a837b6d41d0579d23"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 11143104,
+            "length": 96180,
+            "sha256": "6e31ff451094c6f9d76fc140468ae881a78ad2c3d47c979ebd4dc7672296ac06"
+          },
+          "normal": {
+            "offset": 11239284,
+            "length": 96180,
+            "sha256": "da9f8099522e9c0b482657f1fbe8fb7450354f8a168c5229f2caf256f011574d"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 11335464,
+            "length": 96180,
+            "sha256": "6613c7a2336d231e632e2235e26712a2f0820d2985e10fcde0b8d95133ad6fb4"
+          },
+          "normal": {
+            "offset": 11431644,
+            "length": 96180,
+            "sha256": "419c56aaca346c22c21c99a85b20a38f476f5c88fea434bf276b05805390b259"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 11527824,
+            "length": 96180,
+            "sha256": "ea013974758c6fc9764dd8b7cb83c5480c4705baad9cdda5b27e84a03dba58df"
+          },
+          "normal": {
+            "offset": 11624004,
+            "length": 96180,
+            "sha256": "0f2645b74d1eb6380764be089ad8fdb6e66d60b0421207221cab26124ea2bb0d"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 11720184,
+            "length": 96180,
+            "sha256": "99a1f62a24ec2917c72ebc738c71f9b5382eafb7d9ff696cb155f9adef72ce76"
+          },
+          "normal": {
+            "offset": 11816364,
+            "length": 96180,
+            "sha256": "8a022f51956be6a506e38f1e6ebf4aa7ad9033373a15d490d9a1820c4f17e570"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_jacket_tape",
+      "count": 15457,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            15457,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "e1536085681a0cd4903e400b1344a8c417a147d5e1220aad4fdebbcb8a565063"
+        },
+        "NORMAL": {
+          "shape": [
+            15457,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "f18df9eeed9573f248035791569774388e464ace3365ecafc63834e75991edc9"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            15457,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "a29cba67fdb19ea45d1ea044a067105416755e265cc79167e1224cda63afebc2"
+        },
+        "INDEX": {
+          "shape": [
+            82368,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "8132cdcdb46506de2911c541ba4e78c510ec106797dffede82fef4595bc8e346"
+        },
+        "morphPOSITION": {
+          "shape": [
+            15457,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "449e111a1729d50a88742d40e72885c4973f785d7fd2f11e300f7e44f5855167"
+        },
+        "morphNORMAL": {
+          "shape": [
+            15457,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "dafb1413e89a6697735228fd087e5b8aab34bbc64b85a404522da0ce28614f5c"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 11912544,
+            "length": 185484,
+            "sha256": "24d21600b7367cc18d45144092fb17717a8b915d1768fa3e4eb1bcd26c64acf3"
+          },
+          "normal": {
+            "offset": 12098028,
+            "length": 185484,
+            "sha256": "57a1bbe2ceca4ec94d9154346c5bb74c12f584df1d0e42695851aec2486c2851"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 12283512,
+            "length": 185484,
+            "sha256": "b7e2bc46b37e15c85fad368bea0c91303b2d035562ca6acb58b818bad901e0b8"
+          },
+          "normal": {
+            "offset": 12468996,
+            "length": 185484,
+            "sha256": "72e04021b6b751111eb1581ba477a858fe63d69f13365a904942b13c79ef09e0"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 12654480,
+            "length": 185484,
+            "sha256": "65389e13b15e05c8fe06506fc22cf99134ab9930d0262d0f6e899aa125923045"
+          },
+          "normal": {
+            "offset": 12839964,
+            "length": 185484,
+            "sha256": "8ece0207de73af2edbfcfb46093ea028e4da0522148799303d9a875ff397b688"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 13025448,
+            "length": 185484,
+            "sha256": "90b14c2f35ddeb237c8af947138d23457f55fad3a29c5168ec365842ff6ec35f"
+          },
+          "normal": {
+            "offset": 13210932,
+            "length": 185484,
+            "sha256": "0ccf202b6ff28b0cd7f6ea64d608be50288ef5668d281c106e6a54cd02af5c9a"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_tire_shoulder",
+      "count": 48996,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            48996,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "d65f7b455b7bdcf6a5849a6551bd0a9bb6246ec834e96be216905e0c6df9bb30"
+        },
+        "NORMAL": {
+          "shape": [
+            48996,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "c593594ad8deb30746f797a8ea7ec677d4a796daa4c5c92b857dd972113ef07f"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            48996,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "4f248650e13b75696cdc51d8a925978c308ea6f1d8eaf79173fb5e5955b6dd44"
+        },
+        "INDEX": {
+          "shape": [
+            201168,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "0cba4d1af775addf06bd220c1e5f89993de654a4b0c7f1ba0034293825a81a26"
+        },
+        "morphPOSITION": {
+          "shape": [
+            48996,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "c98725ed8b809adfcbe848eea5d40025f37b42f2b28a96dd51eefdb8c3a05817"
+        },
+        "morphNORMAL": {
+          "shape": [
+            48996,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "b5c5317c2c52efb6066823f24eb35ef56a5950c201235ba62b2c74c547568067"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 13396416,
+            "length": 587952,
+            "sha256": "389b2c7f3589f3578703a8067f07f4843f05e677496b6ae24c5c4ea63b5fc5f9"
+          },
+          "normal": {
+            "offset": 13984368,
+            "length": 587952,
+            "sha256": "e13020c075e366ce72e3ee5d4fc96ffee87f2c58d5e8689018b62528387839fb"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 14572320,
+            "length": 587952,
+            "sha256": "fe26dd7944c42de1c875fb7d2cbb41484a653eccddbb0868929c6448d19e6c05"
+          },
+          "normal": {
+            "offset": 15160272,
+            "length": 587952,
+            "sha256": "a11d2a5698b3a0da7acf185107a950a3a8facd0d9ef63b509f0780859bc3259d"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 15748224,
+            "length": 587952,
+            "sha256": "8e9f175032c989c05e559e077989520dd89c7a0f3628f80d00156c2dc5742e54"
+          },
+          "normal": {
+            "offset": 16336176,
+            "length": 587952,
+            "sha256": "e786f3cd9251a811d937925f49a61ac467434addffd5153483dea0d42907e23a"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 16924128,
+            "length": 587952,
+            "sha256": "6194afcfc89b96d071ae5037b4627e7eb42f22fd960ddf5f83be9a9ac4aea688"
+          },
+          "normal": {
+            "offset": 17512080,
+            "length": 587952,
+            "sha256": "9565726c7263b114a175f48f3cc0f0b94fbbccf4a6cda25cc6e98be451f0b192"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_tire_shoulder_bolt1",
+      "count": 14551,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            14551,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "457ca1e42cd6d775d29dba237ec5fcae6c81483dbdac06e86939784563d19e31"
+        },
+        "NORMAL": {
+          "shape": [
+            14551,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "b1c2f81870235907906d617c55baab36dfb9e9a9588cfa558cea457afc82be62"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            14551,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "aa838e441b4ad1e32bd1a8088f15c9e8968c583ca061bba6c9caa8f9263805d5"
+        },
+        "INDEX": {
+          "shape": [
+            64944,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "f6dd5e0fcc421afd7e62d8899ce4e8b5e515a312576470f0e13495706fdf1770"
+        },
+        "morphPOSITION": {
+          "shape": [
+            14551,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "b89c0d01bf4b77667d0f2e9dc6b569d0fa8504afe661185ccb2f47b025f6e738"
+        },
+        "morphNORMAL": {
+          "shape": [
+            14551,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "84dfeb451b1c7b4807556172cd4bbac33ad8f93f6591a1230b63b4b2458f069a"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 18100032,
+            "length": 174612,
+            "sha256": "6b7a459534d9a8aec68db934b24cbec87a14c4f31a03ce7f194f13b39b07e550"
+          },
+          "normal": {
+            "offset": 18274644,
+            "length": 174612,
+            "sha256": "542bd7ac4fc2c76e7d041df2831efce53d340bfa22b5ffe33090bf1ab9ee82b3"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 18449256,
+            "length": 174612,
+            "sha256": "d4d4c12b234bc41ad91b2f6e8a226538512c778c5d7e124f75a2a1be0fb82cd5"
+          },
+          "normal": {
+            "offset": 18623868,
+            "length": 174612,
+            "sha256": "506843a26852659c606d0bb9b1a4deb68437e4439d078e41877ce7b83f85930c"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 18798480,
+            "length": 174612,
+            "sha256": "6581277167d68ebfa9c00e51c6e3f96d555f25f9f63a8089259636ea2b92b649"
+          },
+          "normal": {
+            "offset": 18973092,
+            "length": 174612,
+            "sha256": "1e6cb0f598cf00b4de8fef4280f363a5085f754b1143d9e85798930a60e6de73"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 19147704,
+            "length": 174612,
+            "sha256": "1d3e776a6e00c26e074cd34b60ae998170c102cd83bdb60c27637ef90c55f9f0"
+          },
+          "normal": {
+            "offset": 19322316,
+            "length": 174612,
+            "sha256": "e7e83e19fdb4746fb31c13b2ceccc857253e78e112bd26774d5ae77c70b5754d"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_tire_shoulder_bolt2",
+      "count": 14513,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            14513,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "e46a2bfd840b66ea241a4a2b4910d6fea3f08e54d8e211905b3d0ffb009e0d81"
+        },
+        "NORMAL": {
+          "shape": [
+            14513,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "9a3d9b429bfbf0be12bbbe60db7b317725c9c32d93354cc0aba547f3151e6201"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            14513,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "631f11b0258dca40222632d391470653c86a7e066bfe1ee4bd5a4ca2c70e5ee3"
+        },
+        "INDEX": {
+          "shape": [
+            64944,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "6d546df1259b3bfc7882005cd8c5cada78aebb1c08aa9bbd4bd656b245ab28b6"
+        },
+        "morphPOSITION": {
+          "shape": [
+            14513,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "24032e082258ba7a2c3ba8720d0ad88f78f0d2243621f325e1e1d0cc8db92425"
+        },
+        "morphNORMAL": {
+          "shape": [
+            14513,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "5e79754efb68ebb654ba1e68abba7c9872960a70ef488d2fa4cedba71cd478f4"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 19496928,
+            "length": 174156,
+            "sha256": "e9e2ce1637598ecea4550194a83f3bd80203a013808094bfd282f16aa8a40a1a"
+          },
+          "normal": {
+            "offset": 19671084,
+            "length": 174156,
+            "sha256": "b30723a7b8fe507c0804410e6742b172db4c0b73e9420132020b7810a408327d"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 19845240,
+            "length": 174156,
+            "sha256": "e0ddb0500267b9b875061bba3ba71d69a3c4b571c06bd189c51da76e7aeece36"
+          },
+          "normal": {
+            "offset": 20019396,
+            "length": 174156,
+            "sha256": "0ce64422c3d23829a6725909701d7deb1ad7e6c9023baa1d1e3ee71a231ed3a4"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 20193552,
+            "length": 174156,
+            "sha256": "4113601c5a5af3fa7f7cc3fd2c604a287a5ef5fcc81d16c15d35810948a74dc0"
+          },
+          "normal": {
+            "offset": 20367708,
+            "length": 174156,
+            "sha256": "b0c07c13673d1a6265916b1e719591dc555d013a509fcf782062808c4beb9b2c"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 20541864,
+            "length": 174156,
+            "sha256": "7cea39148807e0978c9beda61df66f4b4e0f6f028c7ef49a992835ecbe9db2ff"
+          },
+          "normal": {
+            "offset": 20716020,
+            "length": 174156,
+            "sha256": "ccda4d84d0132b155f279bfba4cd3d914132f7c73e74664d05818170d92d8c89"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_tire_shoulder_bolt3",
+      "count": 14365,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            14365,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "ea8071ef0f5047af82b5d484fe4d74a14eddbd395375c2b630e9d1c320ee077b"
+        },
+        "NORMAL": {
+          "shape": [
+            14365,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "f3de8809e43e43abcae6a104033325643a9e0368eb0adb25bd4b4ef6b6792c74"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            14365,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "9721be481047b74a20180ca2f29ac7b16b68ac0bd732044868fbffbd3fc68f74"
+        },
+        "INDEX": {
+          "shape": [
+            64944,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "435c0df32508c47fe8918b9474cb197e5c0280e02b4b5c36cf0a8af79a4eaf7c"
+        },
+        "morphPOSITION": {
+          "shape": [
+            14365,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "a041decb0a938c245ca226d5c6d42ee9a07125c8fd5263e68e539da7e32dc9c2"
+        },
+        "morphNORMAL": {
+          "shape": [
+            14365,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "92e1798b8823ef9b305be2f76e0aed92401b4bc69afc8d622764857329485bdc"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 20890176,
+            "length": 172380,
+            "sha256": "b5266e0ad91097d544fb853ec2aa10d7d06d41cb23d341d6dc5ddb99fc0e7dd0"
+          },
+          "normal": {
+            "offset": 21062556,
+            "length": 172380,
+            "sha256": "306de4e08c2c42bc882ab4c5176d531f0746d3d1e43924182310a412a3dae7bf"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 21234936,
+            "length": 172380,
+            "sha256": "6b55e6fc221d22ad454d510fa02ad82a6ea452aeb572b96a46178e3a879dbacf"
+          },
+          "normal": {
+            "offset": 21407316,
+            "length": 172380,
+            "sha256": "ff56eb2d2495fb0c86b33091fe74e466a2d004ca803d6ae519bd111a00684e70"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 21579696,
+            "length": 172380,
+            "sha256": "dadce29dda35c6aff8a25ebf17ebed3a5c2d6685bf483d5213e3b921b7208fb4"
+          },
+          "normal": {
+            "offset": 21752076,
+            "length": 172380,
+            "sha256": "4b9237ca85a4717c01e5bfedfc23bf037ebe670973373463fa13806aaebdf748"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 21924456,
+            "length": 172380,
+            "sha256": "740b28d428bb6be1eaf9563dca16daa75ec949df69fae66a228fc37fa55e5117"
+          },
+          "normal": {
+            "offset": 22096836,
+            "length": 172380,
+            "sha256": "7f5ff3d97d24a0ae0116fc57d098d3b2e322bea8e2bcf5ced8715e7ce92db2c6"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_tire_shoulder_bolt4",
+      "count": 14561,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            14561,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "06e05175278c0930c51d110139b96e6903bf973f34baf9a962ea812e283917ea"
+        },
+        "NORMAL": {
+          "shape": [
+            14561,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "c77193c86126e59bb2208d0bbaa2990abb4a4817cf57ab3f0786352cd90fec28"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            14561,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "d07006a118e5dcc15be03054a3404a73a74eaa1f7a0ba8c379c9aa9f9ce099c5"
+        },
+        "INDEX": {
+          "shape": [
+            64944,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "b10ed76183c41f554fd7062a71a6e5ba34e564198eadf226c740fbd826516140"
+        },
+        "morphPOSITION": {
+          "shape": [
+            14561,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "6d0ad855124511c37f36a1581bea6486020cabad820ab9cdb089cfb76f77507f"
+        },
+        "morphNORMAL": {
+          "shape": [
+            14561,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "3b34fa0719354a445b17d7181e237de727c751f864cb1ef7ec02fe34a1d339a3"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 22269216,
+            "length": 174732,
+            "sha256": "4ed31a3cc4d96d35632303d63a3f2b34158a40961bac4a9b62afa62781109823"
+          },
+          "normal": {
+            "offset": 22443948,
+            "length": 174732,
+            "sha256": "35ed707e9070fc01915716c66da610becf2cbfe01fb2663663c1d0a975f83118"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 22618680,
+            "length": 174732,
+            "sha256": "bfc1c466fb49a8ef0ea5ab3871581da51cd84efa2f37fe05e28371dc653a1f09"
+          },
+          "normal": {
+            "offset": 22793412,
+            "length": 174732,
+            "sha256": "14690f2db453e5c4c7e1eea95930707b6b3426bcc66e9a22e76c1688c3ea1420"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 22968144,
+            "length": 174732,
+            "sha256": "e2ab934445258f5eed070d0c6686fa5fa6c8361a2cee27c7b17315f751429c3d"
+          },
+          "normal": {
+            "offset": 23142876,
+            "length": 174732,
+            "sha256": "127ccdc59e2b68de664736ee21a6943eea77d4cc331f22a977b9149c7b2e307d"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 23317608,
+            "length": 174732,
+            "sha256": "a8354335ad6b50056cd8a705a4f4a7a4cfa48d1ae32c81b6aa629cb930978fb8"
+          },
+          "normal": {
+            "offset": 23492340,
+            "length": 174732,
+            "sha256": "c090948dbc63fd09ad23b6223e7558af22398d4d7eae0435c0e0c76bfb27672a"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GEO-einar_tire_shoulder_padding",
+      "count": 3839,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            3839,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "ffc595839b0e594dcc4bb81320b5de744354581e67a40a3eecbd4f60549fac2a"
+        },
+        "NORMAL": {
+          "shape": [
+            3839,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "e6ed70322e98d4fa63c6a9f93c4d16dd6fce2f8f8bb7019013dec931ba769fc8"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            3839,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "c54f19a5f0b452f357fdbaa7cf8fa6844179d098035828eac823d7109778f10e"
+        },
+        "INDEX": {
+          "shape": [
+            18432,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "81cfec58e78fcd7da5f976d6e1577c1a5167d1bb5ed8207f3dded2cf8a43dd71"
+        },
+        "morphPOSITION": {
+          "shape": [
+            3839,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "9f3fdcc0d1b28c696a264e048f64116dfe39a81c8d43be8606c973732e7248ec"
+        },
+        "morphNORMAL": {
+          "shape": [
+            3839,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "5bd7bd6f997c07e51be17399c9019b8083174491aff971aeae04fbd5775bce68"
+        }
+      },
+      "keys": [
+        {
+          "value": 0.125,
+          "position": {
+            "offset": 23667072,
+            "length": 46068,
+            "sha256": "cc9f95e1bec98569cfd2b4e96786fa3c708d94906cadb29f332016a21bbe4604"
+          },
+          "normal": {
+            "offset": 23713140,
+            "length": 46068,
+            "sha256": "4138175d267500fea8d0c1cab87fea6313ae89382af715e0aa2be4e1d55a3ebd"
+          }
+        },
+        {
+          "value": 0.25,
+          "position": {
+            "offset": 23759208,
+            "length": 46068,
+            "sha256": "0d3ca97910789e2da4b07ebdff5dad61134aafa39c18e6c79acc6e2b42750c5d"
+          },
+          "normal": {
+            "offset": 23805276,
+            "length": 46068,
+            "sha256": "97f3962cfe38c735dabe51a42123a6267772f07d806d879c6ac96cf622012086"
+          }
+        },
+        {
+          "value": 0.5,
+          "position": {
+            "offset": 23851344,
+            "length": 46068,
+            "sha256": "5d577d0a15da6bbb38f0839ada83888e453b6391d32a15dfce21acb2483aeb95"
+          },
+          "normal": {
+            "offset": 23897412,
+            "length": 46068,
+            "sha256": "9c55c9a9300ac28f2abb5ffc3dbff35e2ca6e8b0b947e192c8c29c8a486251a7"
+          }
+        },
+        {
+          "value": 0.75,
+          "position": {
+            "offset": 23943480,
+            "length": 46068,
+            "sha256": "4efb4ff8e87a60da94dfbca1f5727ab4f2fece72954efd0d37e12be6cb605e11"
+          },
+          "normal": {
+            "offset": 23989548,
+            "length": 46068,
+            "sha256": "dcfc946441c74ae1a1f6cbac97a8f13f9ae6455564b4a806cbbd837eba877e3b"
+          }
+        }
+      ]
+    }
+  ],
+  "normalAmbiguityAudit": {
+    "GEO-einar_fingers": {
+      "equivalentNeutralCornerPairs": 88832,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_glove": {
+      "equivalentNeutralCornerPairs": 48320,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_jacket_backstrap": {
+      "equivalentNeutralCornerPairs": 11136,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_jacket_button3_18cm": {
+      "equivalentNeutralCornerPairs": 9024,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_jacket_collar2": {
+      "equivalentNeutralCornerPairs": 43392,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_jacket_main": {
+      "equivalentNeutralCornerPairs": 170016,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_jacket_pocket1": {
+      "equivalentNeutralCornerPairs": 25312,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_jacket_tape": {
+      "equivalentNeutralCornerPairs": 54912,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_tire_shoulder": {
+      "equivalentNeutralCornerPairs": 134112,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_tire_shoulder_bolt1": {
+      "equivalentNeutralCornerPairs": 43296,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_tire_shoulder_bolt2": {
+      "equivalentNeutralCornerPairs": 43296,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_tire_shoulder_bolt3": {
+      "equivalentNeutralCornerPairs": 43296,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_tire_shoulder_bolt4": {
+      "equivalentNeutralCornerPairs": 43296,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    },
+    "GEO-einar_tire_shoulder_padding": {
+      "equivalentNeutralCornerPairs": 12288,
+      "maximumKeyNormalDivergence": 0.0,
+      "hasTangent": false
+    }
+  },
+  "knownLimitations": {
+    "singleGestureOnly": true,
+    "endpointPositionNormalBuffersUnchanged": true,
+    "worldPositionHeldoutMaxMm": 6.28887414932251,
+    "normalResidual": {
+      "0.375": {
+        "vertices": 55,
+        "affectedSourceTriangles": 125,
+        "projectedIncidentTriangleAreaMaxPixels2": 0.07679133552230823,
+        "projectedIncidentTriangleAreaSumAcrossTwoViewsPixels2": 6.393840965174886,
+        "normalMaxDegrees": 85.6902084350586,
+        "scope": "Source corner normals, small glove strip. Projection is unoccluded triangle area, not visibility or acceptance."
+      },
+      "0.625": {
+        "vertices": 72,
+        "affectedSourceTriangles": 180,
+        "projectedIncidentTriangleAreaMaxPixels2": 0.07555396218083232,
+        "projectedIncidentTriangleAreaSumAcrossTwoViewsPixels2": 6.879416050105869,
+        "normalMaxDegrees": 89.64188385009766,
+        "scope": "Source corner normals, small glove strip. Projection is unoccluded triangle area, not visibility or acceptance."
+      },
+      "0.875": {
+        "vertices": 22,
+        "affectedSourceTriangles": 66,
+        "projectedIncidentTriangleAreaMaxPixels2": 0.04421937109107972,
+        "projectedIncidentTriangleAreaSumAcrossTwoViewsPixels2": 1.2148381258157237,
+        "normalMaxDegrees": 96.51888275146484,
+        "scope": "Source corner normals, small glove strip. Projection is unoccluded triangle area, not visibility or acceptance."
+      }
+    },
+    "affectedMesh": "GEO-einar_glove",
+    "fineGloveShadingParity": false,
+    "normalResidualVertices": {
+      "0.0625": [],
+      "0.1875": [],
+      "0.375": [
+        1278,
+        1279,
+        1293,
+        1294,
+        3329,
+        3330,
+        3335,
+        3336,
+        3550,
+        3551,
+        3552,
+        3553,
+        3962,
+        3963,
+        3964,
+        3965,
+        6547,
+        6548,
+        6549,
+        6550,
+        6551,
+        6598,
+        6599,
+        6639,
+        6640,
+        6664,
+        6665,
+        6666,
+        6667,
+        6668,
+        9247,
+        9250,
+        9253,
+        9256,
+        9257,
+        9259,
+        9260,
+        9262,
+        9263,
+        10030,
+        10031,
+        10032,
+        10033,
+        10034,
+        10035,
+        10037,
+        10038,
+        10973,
+        14016,
+        14018,
+        14019,
+        14021,
+        14022,
+        14024,
+        14025
+      ],
+      "0.625": [
+        1278,
+        1279,
+        1280,
+        1293,
+        1294,
+        1300,
+        1301,
+        1576,
+        1577,
+        3329,
+        3330,
+        3335,
+        3336,
+        3960,
+        3961,
+        3962,
+        3963,
+        3964,
+        3965,
+        6556,
+        6557,
+        6598,
+        6599,
+        6616,
+        6617,
+        6630,
+        6632,
+        6639,
+        6640,
+        6641,
+        6643,
+        6644,
+        6663,
+        6664,
+        6665,
+        6666,
+        6667,
+        6668,
+        7625,
+        7699,
+        7700,
+        9247,
+        9248,
+        9250,
+        9251,
+        9253,
+        9254,
+        9256,
+        9257,
+        9259,
+        9260,
+        10027,
+        10034,
+        10036,
+        10037,
+        10038,
+        10966,
+        10969,
+        10970,
+        10972,
+        10973,
+        13914,
+        13917,
+        13938,
+        13941,
+        13946,
+        13950,
+        13952,
+        13953,
+        14010,
+        14013,
+        14016
+      ],
+      "0.875": [
+        1281,
+        1576,
+        1577,
+        4439,
+        4440,
+        6556,
+        6557,
+        6558,
+        6642,
+        6643,
+        7625,
+        7699,
+        7700,
+        9220,
+        9224,
+        10981,
+        13947,
+        14989,
+        14990,
+        14992,
+        14993,
+        14995
+      ]
+    },
+    "sourceTriangleTopology": "Evaluated quad triangulation can flip with pose. Runtime retains original triangle indices."
+  }
+}
