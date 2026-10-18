@@ -1,0 +1,232 @@
+{
+  "version": 47,
+  "source": {
+    "asset": "Einar v1",
+    "author": "Blender Foundation / Blender Studio",
+    "license": "CC BY 4.0",
+    "action": "AnimTest_Fingers",
+    "sourceFrames": [
+      1,
+      54
+    ],
+    "fps": 24,
+    "arrangement": "derived forward/reverse playback",
+    "sourceSampling": "evaluated integer frames, nearest-frame playback; no skeletal retargeting"
+  },
+  "frameCount": 54,
+  "duration": 4.416666666666667,
+  "meshes": [
+    {
+      "name": "GEO-einar_fingers",
+      "count": 29821,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            29821,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "4325f6f9469775bae0a8161f90a0c640b3ff66f86c3b7165d684a1896a853429"
+        },
+        "NORMAL": {
+          "shape": [
+            29821,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "4156ee9b803edf187a943c98f0896e547d7d8e5afb6b2669b13dcbbefa7f5050"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            29821,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "80b921d412711e1d935b680651d75e237443148079c446398a1879c30094e513"
+        },
+        "COLOR_0": {
+          "shape": [
+            29821,
+            4
+          ],
+          "dtype": "float32",
+          "sha256": "a56517da8c435fb56c48ca328a628585ef7ce25090225aec542d87fc10f17d82"
+        },
+        "COLOR_1": {
+          "shape": [
+            29821,
+            4
+          ],
+          "dtype": "float32",
+          "sha256": "364a573c6a514f4f1b63fddaadaf45ffb27d982722c40644fca959aef6110205"
+        },
+        "INDEX": {
+          "shape": [
+            133248,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "7125274c9443464499c4b44d7a9598bab70b82d24d7f2e65369d960d4b2cee21"
+        },
+        "morphPOSITION": {
+          "shape": [
+            29821,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "fedeb319900f533d21f98abf7145355e098c1b5f40e8331749a31eb692b71da4"
+        },
+        "morphNORMAL": {
+          "shape": [
+            29821,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1ef7e93efce7e210add5edd7f519e1778da2a194af148e731bb54f6c212e8187"
+        }
+      },
+      "channels": {
+        "position": {
+          "offset": 0,
+          "length": 9662004,
+          "scale": [
+            4.474495780563669e-06,
+            2.0114416591080703e-06,
+            3.526319655318807e-06
+          ],
+          "sha256": "58cdc539fb6b3f26f7c1adf539517dc0efcb0709c63320a1fa0066f9142137cd",
+          "quantizationError": {
+            "maxMeters": 3.007182442162384e-06,
+            "p95Meters": 2.5045552001338395e-06
+          }
+        },
+        "normal": {
+          "offset": 9662004,
+          "length": 9662004,
+          "scale": [
+            6.092213171316495e-05,
+            6.079766902189563e-05,
+            5.8017237038652673e-05
+          ],
+          "sha256": "d91f455bb575f0ffc8a4e0639458a5f01058871ae863093d3e8a7d523aed0f19",
+          "quantizationError": {
+            "maxAngleDegrees": 0.002928489406705896,
+            "p95AngleDegrees": 0.002154241666040418
+          }
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.9180041551589966,
+          1.3306002616882324,
+          -0.053069718182086945
+        ],
+        "max": [
+          -0.7617590427398682,
+          1.437260389328003,
+          0.11132902652025223
+        ]
+      }
+    },
+    {
+      "name": "GEO-einar_glove",
+      "count": 15925,
+      "baseline": {
+        "POSITION": {
+          "shape": [
+            15925,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "1a4899a85ef8565fdcd8b4d34fd2f4e597699436500d3842238176a5c51c6248"
+        },
+        "NORMAL": {
+          "shape": [
+            15925,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "ebee7490fc863ad3c557009c5ce8760038393748e0a9441e59925de080eb03ae"
+        },
+        "TEXCOORD_0": {
+          "shape": [
+            15925,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "4302d8ddb131158422f1a4b3847915430f5df219881efeaba4dd7ec703a010fe"
+        },
+        "INDEX": {
+          "shape": [
+            72480,
+            1
+          ],
+          "dtype": "uint16",
+          "sha256": "831f513cc9d1a6d878f0cb325a17addf97ed10116f22db0fe648e1fc01c1f770"
+        },
+        "morphPOSITION": {
+          "shape": [
+            15925,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "07557935f234cad2b78f0d4bfa372b2d69b9b0114b53b84e0fa75223b95e3b71"
+        },
+        "morphNORMAL": {
+          "shape": [
+            15925,
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "532bf26ec52f160f88efe51746beec10d319de31325f9e8ede5f527bdc155abf"
+        }
+      },
+      "channels": {
+        "position": {
+          "offset": 19324008,
+          "length": 5159700,
+          "scale": [
+            1.089948066317697e-06,
+            1.149730977494894e-06,
+            1.3714992700251916e-06
+          ],
+          "sha256": "718cd0eb49ac1d099b7f00423112418bb7df9a815731995e684fa5e7700baa3d",
+          "quantizationError": {
+            "maxMeters": 1.0382348166739398e-06,
+            "p95Meters": 8.359497000905824e-07
+          }
+        },
+        "normal": {
+          "offset": 24483708,
+          "length": 5159700,
+          "scale": [
+            5.851121687614787e-05,
+            5.392350010189818e-05,
+            5.753400775661335e-05
+          ],
+          "sha256": "cb7ff75057442492ee31cb75ee997d1f512e5ea8de6084e4629abf5600e944e8",
+          "quantizationError": {
+            "maxAngleDegrees": 0.002790506364936608,
+            "p95AngleDegrees": 0.002012799935688191
+          }
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.8490099906921387,
+          1.3737049102783203,
+          -0.05367103964090347
+        ],
+        "max": [
+          -0.6502188444137573,
+          1.4742176532745361,
+          0.08535794168710709
+        ]
+      }
+    }
+  ],
+  "decodedBytes": 29643408,
+  "decodedSha256": "350d8e29e8200c6af0e33764309b1bf27e5523ee7d182bbd20660fe42245e6fa",
+  "compressedBytes": 19411131,
+  "compressedSha256": "4ff62db00736fb05ca68ee40ddab7fa6593ee5cdeff6af5f522a56731399fc94"
+}

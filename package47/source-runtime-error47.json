@@ -1,0 +1,14 @@
+{
+  "GEO-einar_fingers": {
+    "positionMaxMeters": 3.2961220313154627e-06,
+    "positionP95Meters": 2.532013695599744e-06,
+    "normalMaxDegrees": 1.5277238293391338,
+    "normalP95Degrees": 0.016972796986927476
+  },
+  "GEO-einar_glove": {
+    "positionMaxMeters": 1.3197047792345984e-06,
+    "positionP95Meters": 8.943878242462233e-07,
+    "normalMaxDegrees": 0.24716153490644185,
+    "normalP95Degrees": 0.010603488770649858
+  }
+}

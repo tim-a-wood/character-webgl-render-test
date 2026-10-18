@@ -1,0 +1,12 @@
+{
+  "GEO-einar_fingers": {
+    "triangleCount": 44416,
+    "maxChangedTriangleRows": 94,
+    "loopsExactAll54": true
+  },
+  "GEO-einar_glove": {
+    "triangleCount": 24160,
+    "maxChangedTriangleRows": 20,
+    "loopsExactAll54": true
+  }
+}

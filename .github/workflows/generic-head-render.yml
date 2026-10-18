@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   screenshot:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Test generic Einar46 manifest credential scope'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Run generic Einar47 source finger animation'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -16,12 +16,14 @@ jobs:
           persist-credentials: false
           fetch-depth: 1
           lfs: false
-          sparse-checkout: package46
+          sparse-checkout: |
+            package46
+            package47
       - name: Install exact test runtime
-        working-directory: package46
+        working-directory: package47
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Same-origin manifest session and cross-origin credential isolation
-        working-directory: package46
-        run: timeout 90s node auth46.cjs
+      - name: Source finger playback seek pause loop reset
+        working-directory: package47
+        run: timeout 480s node capture47.cjs
