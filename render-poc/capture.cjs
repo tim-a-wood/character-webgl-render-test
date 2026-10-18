@@ -52,7 +52,8 @@ let browser;
   const loadStart=Date.now();
   await page.goto(origin+'/?testViews=1#iteration=26',{waitUntil:'networkidle',timeout:90000});
   await page.addStyleTag({content:'.stage {width:768px;height:960px;min-height:960px} main {grid-template-columns:768px 320px}'});
-  await page.waitForFunction(()=>window.explorerState?.loaded === true && window.explorerState.iteration === '26',{},{timeout:90000});
+  try{await page.waitForFunction(()=>window.explorerState?.error || (window.explorerState?.loaded === true && window.explorerState.iteration === '26'),{},{timeout:90000});}catch(e){console.log('LOAD_FAILURE_STATE',JSON.stringify(await page.evaluate(()=>({state:window.explorerState,stage:window.faceLoadStage,status:document.getElementById('status')?.textContent}))));throw e;}
+  const loadedState=await page.evaluate(()=>window.explorerState);if(loadedState.error)throw Error('Loader failed: '+JSON.stringify(loadedState));
   const loadToModelReadyMs=Date.now()-loadStart;
   await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
   console.log('LOAD_TIMING',JSON.stringify({loadToModelReadyMs,loadToFirstFrameMs:Date.now()-loadStart}));
