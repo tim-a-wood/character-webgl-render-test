@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   sampled-walk:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Inspect generic Einar50 side gait sequence'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Test generic Einar51 gait and dense preview'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -18,12 +18,12 @@ jobs:
           lfs: false
           sparse-checkout: |
             package46
-            package50
+            package51
       - name: Install exact test runtime
-        working-directory: package50
+        working-directory: package51
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
       - name: Matched sampled gait preview
-        working-directory: package50
-        run: timeout 480s node capture50-side.cjs
+        working-directory: package51
+        run: timeout 480s node capture51-combined.cjs
