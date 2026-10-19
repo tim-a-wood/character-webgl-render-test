@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Test generic Einar56 whole-character motion'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Complete generic Einar56 sampled motion'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -25,6 +25,6 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Actual full-character control gates and offline sampled clip
+      - name: Remaining sampled poses with exact cross-run overlap
         working-directory: package56
-        run: timeout 480s node capture56.cjs
+        run: timeout 480s node capture56-tail.cjs
