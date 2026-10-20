@@ -1,4 +1,4 @@
-name: Generic whole-character Einar60 browser proof
+name: Generic Einar61 measurement UI proof
 on:
   push:
     branches: [main]
@@ -7,11 +7,7 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar60 upright walk'
-    strategy:
-      fail-fast: false
-      matrix:
-        segment: [a, b]
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Verify generic Einar61 measurement UI'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -25,13 +21,12 @@ jobs:
             package55
             package57
             package60
+            package61
       - name: Install exact browser test runtime
-        working-directory: package60
+        working-directory: package61
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Bounded upright walk segment
-        working-directory: package60
-        env:
-          CAPTURE_SEGMENT: ${{ matrix.segment }}
-        run: timeout 480s node capture60-full.cjs
+      - name: Bounded measurement interaction gate
+        working-directory: package61
+        run: timeout 480s node capture61.cjs
