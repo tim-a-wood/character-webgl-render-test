@@ -327,6 +327,11 @@
       "path": "package68/packed68/manifest68.json",
       "bytes": 177467,
       "sha256": "37806fdd27c8061755e65d35f2057b2aef0e234719e2e678d8510fcf5c26d471"
+    },
+    {
+      "path": "package68/transport-probe68.cjs",
+      "bytes": 16174,
+      "sha256": "f0d65c7e1e4ea7c080ace9fe311cb657d21cdd7775f0d3c71f5a2188defc73d1"
     }
   ],
   "externalAssets": [
