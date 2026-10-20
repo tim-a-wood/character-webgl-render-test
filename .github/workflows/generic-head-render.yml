@@ -7,7 +7,11 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Compare generic Einar60 upright posture'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar60 upright walk'
+    strategy:
+      fail-fast: false
+      matrix:
+        segment: [a, b]
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -26,6 +30,8 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Matched original and corrected three-pose posture
+      - name: Bounded upright walk segment
         working-directory: package60
-        run: timeout 480s node capture60.cjs
+        env:
+          CAPTURE_SEGMENT: ${{ matrix.segment }}
+        run: timeout 480s node capture60-full.cjs
