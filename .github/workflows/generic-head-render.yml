@@ -1,4 +1,4 @@
-name: Generic Einar61 measurement UI proof
+name: Generic Einar60 front baseline proof
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Verify generic Einar61 measurement UI'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar60 front baseline'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -21,12 +21,12 @@ jobs:
             package55
             package57
             package60
-            package61
+            package62
       - name: Install exact browser test runtime
-        working-directory: package61
+        working-directory: package62
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Bounded measurement interaction gate
-        working-directory: package61
-        run: timeout 480s node capture61.cjs
+      - name: Three front source poses only
+        working-directory: package62
+        run: timeout 480s node capture62-baseline-front.cjs
