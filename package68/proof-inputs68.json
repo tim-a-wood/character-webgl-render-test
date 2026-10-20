@@ -1,12 +1,255 @@
 {
   "format": "einar68-runtime-proof-inputs-v1",
-  "mode": "pilot",
+  "mode": "full",
   "publicationPerformed": false,
   "nativeSnapshotsIncluded": false,
   "sourceScriptsIncluded": false,
   "objects": 185,
-  "nativeSamples": 3,
+  "nativeSamples": 80,
   "duration": 1.3166930000000001,
+  "externalAssets": [
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-00.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "70717f7bd6193e496cc39982402f566e00f7a506",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-01.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "55b70657c643b44a8bac55a6da9f66639d51587f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-02.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "f1628208d5ee8556a32f8d7eb70591c7127d8699",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-03.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "ee658a7c31b8db56f09b8a19295508f6ea306d34",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-04.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "bb5dda70d0cdf7cb5417efb6b95cca1d0f01604a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-05.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "b9137236ea1c544460ce1f9fdf30c5aabac24443",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-06.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "b0a8a6ff305553f61797eacf6d18b07ae23514bb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-07.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "4655eac0b08cb3e8f5c70c6ddc256a3350789ff1",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-08.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "e5710c9a1e238bbc7463dda7de9aa7eb16eebcc4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-09.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "0086b7118f6e56f7ce38cc9718f3ada61cd9aecf",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-10.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "9baebc26a267d55d114cde491ba7669e196dcf2c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-11.bin",
+      "bytes": 2582292,
+      "gitBlobSha1": "12be1cccbbe792f9255d59b9a52e087626aead55",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-0.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "27179d1706dc0e872c960192def1ab0a0d3977fb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-1.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "bd5f59d586cf69ff793abddeb20580c37c72b3cc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-2.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "74f474e2ab7cde0e166eb4ec1068c61ac4d61795",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-3.bin",
+      "bytes": 4500628,
+      "gitBlobSha1": "31a23f96fdbe74d08f9814508a21e38ea50e9ee4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-17-append.bin",
+      "bytes": 3784332,
+      "gitBlobSha1": "d672ddeedbfe3599366dfc928bba3cfba9d6f16a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-18-append-0.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "ea178a17c863c928a32c6626c8ea931d9f3a81af",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-18-append-1.bin",
+      "bytes": 5805256,
+      "gitBlobSha1": "98c304d37dec6db49002d253a808ade6b24760d3",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/body-motion42.bin.gz",
+      "bytes": 12345850,
+      "gitBlobSha1": "a88c6fe05c6399f7d75a1b7ec474461cb92fab3c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/body-motion42.json",
+      "bytes": 50501,
+      "gitBlobSha1": "c8430bda57eb077e0b891eb6888e14751815d0bc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-face26.bin.gz",
+      "bytes": 10071210,
+      "gitBlobSha1": "7f837c93d2468d826e5105d72700e855960cb066",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-0.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "4462a3908c9cfd45b7405e31aa5be4877e5839f7",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-1.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "c4964ebca27fb9a318b49daea0e25eb09719b596",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-2.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "3add992ebe466a166bd59805fdde03fcfe254c8f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-3.bin",
+      "bytes": 877427,
+      "gitBlobSha1": "32aae36841cd834a5815fc79d31d1b38d09591ab",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-moustache-motion38.bin.gz",
+      "bytes": 3347637,
+      "gitBlobSha1": "351433134043f36007243b876e81e4f525017af5",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-moustache38.bin.gz",
+      "bytes": 3439460,
+      "gitBlobSha1": "e4055a08245b823c6c49981a897faee101570411",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/oral-source-pbr.glb",
+      "bytes": 790256,
+      "gitBlobSha1": "42427d4060ba3d611f89dfbcb299e4191723b57a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-00.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "8541e0f2dea667c2652b54febbde20a328b64c86",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-01.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "50760ff36291e0fec6edd945a3556a0199c44483",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-02.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "d1c068c6fd361958f32ca4391cdc9fa27d2fac3e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-03.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "e133d46147fb09fe38ebe1a8b493e228590459c2",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-04.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "cd05f235e2782a8f93b107f732838bd89172d699",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-05.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "853f0846aa536fe869385c7c28ff6ae9449e6a43",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-06.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "f4dfe9181846eb2073109fb88c50fd55f0bc62ed",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-07.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "6ddcb801ff8e37f12cd31cfcf49eba92fa78a1ee",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-08.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "5223830b24195eba2e2c4310ac9240b9ccef5bfb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-09.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "c1de49e886e4af508047a303cc2c84513568c2e5",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-10.bin",
+      "bytes": 1745840,
+      "gitBlobSha1": "0f39bdc38ed03c8b3d75fb1e0673b01e006ec857",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "externalPolicy": "Existing immutable generic character asset URLs only; fetched without credentials; runtime verifies aggregate payload hashes.",
   "localFiles": [
     {
       "path": "package46/ATTRIBUTION.md",
@@ -270,8 +513,8 @@
     },
     {
       "path": "package68/full-demo/demo-config68.js",
-      "bytes": 447,
-      "sha256": "373d52bcb5b02b84b4c85bbefa139ddcd727d60c3baadcd282a96382ced28f5d"
+      "bytes": 4558,
+      "sha256": "5ee1f833dc8fb240932a8cc5ee4e813c34bc3ca7468c46e8c9e4c2254cd20075"
     },
     {
       "path": "package68/full-demo/demo.css",
@@ -310,276 +553,408 @@
     },
     {
       "path": "package68/packed68/frame-000-source-539.bin.gz",
-      "bytes": 4580270,
-      "sha256": "5bd71cd5e3c5cab3d67b738dfbc41be74e8e213ef2033f32e636db1465322c42"
+      "bytes": 4580428,
+      "sha256": "79e7ea6d305c9c1a6347f3ee25575aa17e54fead868e16a557b8f34d4843cf9c"
     },
     {
-      "path": "package68/packed68/frame-001-source-571.bin.gz",
-      "bytes": 3753785,
-      "sha256": "a4970cf2c4c4c7dd851f139adf55dbeb654875e73c1cf156ed191076d9f03899"
+      "path": "package68/packed68/frame-001-source-540.bin.gz",
+      "bytes": 1597311,
+      "sha256": "c3b311df7a3287b57443030978ecb516e3b1db00075748168e9569dab7437658"
     },
     {
-      "path": "package68/packed68/frame-002-source-618.bin.gz",
-      "bytes": 3729341,
-      "sha256": "781cbd3cfafcbff05b8f3174441332d4b6575b02f3f41a0756f46616cdb09701"
+      "path": "package68/packed68/frame-002-source-541.bin.gz",
+      "bytes": 1592911,
+      "sha256": "65c033b54dde12e67844b0af272e2d6687f554598daa693e008f2e9ba6b57d3a"
+    },
+    {
+      "path": "package68/packed68/frame-003-source-542.bin.gz",
+      "bytes": 1625371,
+      "sha256": "7067337b39018470ec15457bb9b3198a93337a0786007c6667aeabd8d3b70025"
+    },
+    {
+      "path": "package68/packed68/frame-004-source-543.bin.gz",
+      "bytes": 1555330,
+      "sha256": "2d680c02534d63fb2d362a8ac66779b2a6eea25afb21539c5a60990b6625bbb5"
+    },
+    {
+      "path": "package68/packed68/frame-005-source-544.bin.gz",
+      "bytes": 1558714,
+      "sha256": "c1f8d243d357fe6f816ffc8dabe055e576782564acc314428eb168013e5c6b91"
+    },
+    {
+      "path": "package68/packed68/frame-006-source-545.bin.gz",
+      "bytes": 1686961,
+      "sha256": "71b11e4955a92b47d76d5a136b924fa0ae49f7846bb793f3a0cf8cc2a39fcc88"
+    },
+    {
+      "path": "package68/packed68/frame-007-source-546.bin.gz",
+      "bytes": 1698245,
+      "sha256": "b912107e71a7b12727bc800818c3d2dfe432c5315a8629f70465d07910e14488"
+    },
+    {
+      "path": "package68/packed68/frame-008-source-547.bin.gz",
+      "bytes": 1778692,
+      "sha256": "d2ad058a6045599f7f166981a7d0f5dbb6012345cf5b85cdecd4fbd8d1045784"
+    },
+    {
+      "path": "package68/packed68/frame-009-source-548.bin.gz",
+      "bytes": 1849013,
+      "sha256": "3d594dfe4f70ed4bcb5c1d6864662b65ff311b85ef9be739e2b667e4c60940a0"
+    },
+    {
+      "path": "package68/packed68/frame-010-source-549.bin.gz",
+      "bytes": 4534781,
+      "sha256": "8e49d039809370acd69aba1a28cb614f36a465db521204937d0ab6f54121fda7"
+    },
+    {
+      "path": "package68/packed68/frame-011-source-550.bin.gz",
+      "bytes": 1670953,
+      "sha256": "ed2e71657b53474dae5fba336b1686966f4d30665a65d825f0fdbf2941ee2ed0"
+    },
+    {
+      "path": "package68/packed68/frame-012-source-551.bin.gz",
+      "bytes": 1638175,
+      "sha256": "fe8c79bc2f6c19d9e25196c2410be25e24409b995749b4a4d09a302393ecf555"
+    },
+    {
+      "path": "package68/packed68/frame-013-source-552.bin.gz",
+      "bytes": 1562285,
+      "sha256": "6359cf537cbc16ba9244f284a0881d90831362f1f896443dc07f726ec2ef619a"
+    },
+    {
+      "path": "package68/packed68/frame-014-source-553.bin.gz",
+      "bytes": 1518575,
+      "sha256": "cb1eefe9f82f41065a440b515dc15a31d0601b7d8924cf33198a5ac73392fb67"
+    },
+    {
+      "path": "package68/packed68/frame-015-source-554.bin.gz",
+      "bytes": 1548377,
+      "sha256": "934b68196ccae5e703764f811fc7f66c5f303d7baec364f32b8179b02de897a0"
+    },
+    {
+      "path": "package68/packed68/frame-016-source-555.bin.gz",
+      "bytes": 1545708,
+      "sha256": "91fcf54ccb3fd8fa23d6218e4e8cfe129d66f4b35f6e9e59fe9025715fc05180"
+    },
+    {
+      "path": "package68/packed68/frame-017-source-556.bin.gz",
+      "bytes": 1594220,
+      "sha256": "06ba88adaf426c7e07658325ca6968498e15548b68707f4612c6889b54b8f748"
+    },
+    {
+      "path": "package68/packed68/frame-018-source-557.bin.gz",
+      "bytes": 1616219,
+      "sha256": "4e3cf98a92cae742bf06849432741036184e11f172f7055744833b5d3a20be66"
+    },
+    {
+      "path": "package68/packed68/frame-019-source-558.bin.gz",
+      "bytes": 1495034,
+      "sha256": "222e7dee976d1b70f02087cc46dc8e8752c6bd5d768f1fa93b3e63a33cc5d198"
+    },
+    {
+      "path": "package68/packed68/frame-020-source-559.bin.gz",
+      "bytes": 4497471,
+      "sha256": "3ac3904605ecffd72bda3b57f8f12875cbca582aee33d6824fcd95ab428a9fc0"
+    },
+    {
+      "path": "package68/packed68/frame-021-source-560.bin.gz",
+      "bytes": 1688211,
+      "sha256": "5db515f4c1b1d2f4dbb052948fd981a4f39bd91159e5c5abf954a9bdce0c1882"
+    },
+    {
+      "path": "package68/packed68/frame-022-source-561.bin.gz",
+      "bytes": 1625363,
+      "sha256": "893381fc762372fa4d57de755286c083021fb8493c0bdddd936755396b2d92ca"
+    },
+    {
+      "path": "package68/packed68/frame-023-source-562.bin.gz",
+      "bytes": 1461987,
+      "sha256": "f99e4dac901b9618fb4a3e542fce699dbf26eeaf10b8ebf29c0ebd0e2c18bb1a"
+    },
+    {
+      "path": "package68/packed68/frame-024-source-563.bin.gz",
+      "bytes": 1386259,
+      "sha256": "b9f8d5ce341e6712576440166f96ba5543e7fed160a0590547776635a3959fa1"
+    },
+    {
+      "path": "package68/packed68/frame-025-source-564.bin.gz",
+      "bytes": 1338073,
+      "sha256": "3d0d74c69aef0ffc082db9ec4008ce994cf75fefa4f6626f2bfbec2f5b87a0e0"
+    },
+    {
+      "path": "package68/packed68/frame-026-source-565.bin.gz",
+      "bytes": 1156184,
+      "sha256": "66860513f1ecf4a8b0fdf5febb10f51f1beb546e210af89cce8e7f3483391944"
+    },
+    {
+      "path": "package68/packed68/frame-027-source-566.bin.gz",
+      "bytes": 1142796,
+      "sha256": "4c5497820b845e01334c33fd5b88dfeb0fce0c9964d3028122a7e5a6bd093ef9"
+    },
+    {
+      "path": "package68/packed68/frame-028-source-567.bin.gz",
+      "bytes": 1146100,
+      "sha256": "18489ab7f118fc72de794a8c7eddb92662cc4d972f353b718c7ede5ab8b61118"
+    },
+    {
+      "path": "package68/packed68/frame-029-source-568.bin.gz",
+      "bytes": 1333965,
+      "sha256": "c446993d2efe954b0f59ee3482ec86e3c4af031e3c38f8b8e84f18f8c28a68d8"
+    },
+    {
+      "path": "package68/packed68/frame-030-source-569.bin.gz",
+      "bytes": 4581259,
+      "sha256": "b510c6e3175a080c993c6efa6d10a7c16c367cd00984d5e41531f643ad8cafac"
+    },
+    {
+      "path": "package68/packed68/frame-031-source-570.bin.gz",
+      "bytes": 1565382,
+      "sha256": "060badc28958134a43807dd51ed200ee8e11534edaf5c24e25f372ba82099337"
+    },
+    {
+      "path": "package68/packed68/frame-032-source-571.bin.gz",
+      "bytes": 1364832,
+      "sha256": "129e9c263f8315b9b7fb604a377f3ea32a5e21af6953674715434bdaf991c449"
+    },
+    {
+      "path": "package68/packed68/frame-033-source-572.bin.gz",
+      "bytes": 1714849,
+      "sha256": "ae5fca48ac24dc5e0a12142a3d337a6935f34016152eb48d570fe313f5320c04"
+    },
+    {
+      "path": "package68/packed68/frame-034-source-573.bin.gz",
+      "bytes": 1555940,
+      "sha256": "fa09c482b705eeb0698bf9832c52f02566998804bb893a77d78556648f649193"
+    },
+    {
+      "path": "package68/packed68/frame-035-source-574.bin.gz",
+      "bytes": 1532988,
+      "sha256": "10e3434ef229f499757aca9ea0b16d863b9d62e0c0c22075add9c361e023d699"
+    },
+    {
+      "path": "package68/packed68/frame-036-source-575.bin.gz",
+      "bytes": 1534328,
+      "sha256": "74f205a9210d69a7675ce10c614c519c3340557b697b795bdf6ba32dc8e24c53"
+    },
+    {
+      "path": "package68/packed68/frame-037-source-576.bin.gz",
+      "bytes": 1504534,
+      "sha256": "c66f863427e70b2c74e4d96f8e794e64eda4a925be2a7d45ccc0f191a64c9762"
+    },
+    {
+      "path": "package68/packed68/frame-038-source-577.bin.gz",
+      "bytes": 1572667,
+      "sha256": "40fe0b9665c32160bdf7d4d55719ec117b8d1934a8995e9754ab9f5086ea7783"
+    },
+    {
+      "path": "package68/packed68/frame-039-source-578.bin.gz",
+      "bytes": 1656540,
+      "sha256": "c16fae996696ac001e099aa7bb1329d0cc12924cb0220394da140630e14382c5"
+    },
+    {
+      "path": "package68/packed68/frame-040-source-579.bin.gz",
+      "bytes": 4546605,
+      "sha256": "8a5244a1120e9ba121544a9923a0fc739079d9ddebf2cdc8c5d0a9acd36d13b6"
+    },
+    {
+      "path": "package68/packed68/frame-041-source-580.bin.gz",
+      "bytes": 1660731,
+      "sha256": "1317693c7d1d3ad6cf0d9a294566dfdfb14b75d30c303b8f80f64b1282d7b9f2"
+    },
+    {
+      "path": "package68/packed68/frame-042-source-581.bin.gz",
+      "bytes": 1685319,
+      "sha256": "8c63334466eecff47921fbe5cc92c1f808d6e6e143ddd9bedaf993ab144b22c9"
+    },
+    {
+      "path": "package68/packed68/frame-043-source-582.bin.gz",
+      "bytes": 1578602,
+      "sha256": "43287989e67633826921aaad134e6b002d585e8e3a2adbfc0e72ca140430c15a"
+    },
+    {
+      "path": "package68/packed68/frame-044-source-583.bin.gz",
+      "bytes": 1601245,
+      "sha256": "935d2e5ba4e38ead30c094b79387ed1c1e5e7aedcfbba23b37bcb4b24dbd219e"
+    },
+    {
+      "path": "package68/packed68/frame-045-source-584.bin.gz",
+      "bytes": 1650103,
+      "sha256": "71ce5b5c28248b63b9fa71999847d73d734b6763c325953366a52352e966bb9a"
+    },
+    {
+      "path": "package68/packed68/frame-046-source-585.bin.gz",
+      "bytes": 1630426,
+      "sha256": "03cafecbccff7918ff692f5801e46d293eb99d3a980b6395544100c9a9ea6f50"
+    },
+    {
+      "path": "package68/packed68/frame-047-source-586.bin.gz",
+      "bytes": 1679876,
+      "sha256": "aa787fe2e005768db63be9a18b2d75bafacd9ccb6c0c4b7385535e5556990e87"
+    },
+    {
+      "path": "package68/packed68/frame-048-source-587.bin.gz",
+      "bytes": 1731660,
+      "sha256": "d4fe273ef0adcdf55642f87f84b7257d5d8f0f1d76688487530bfb2f251d0d73"
+    },
+    {
+      "path": "package68/packed68/frame-049-source-588.bin.gz",
+      "bytes": 1643563,
+      "sha256": "786b7a9687fad21a0ffe6a56cb3a19cda115ec7ad8f7b15d3aa4880c82d8d936"
+    },
+    {
+      "path": "package68/packed68/frame-050-source-589.bin.gz",
+      "bytes": 4411162,
+      "sha256": "eb2942a282452cca53c07712871f4b2c29465a6ed257ad4b4d2dcd92168fdb6f"
+    },
+    {
+      "path": "package68/packed68/frame-051-source-590.bin.gz",
+      "bytes": 1510060,
+      "sha256": "8c5c1386f9333b62b9f36ff01c0b30ad84c773ac256b0d00959e6a6eda8e2cb8"
+    },
+    {
+      "path": "package68/packed68/frame-052-source-591.bin.gz",
+      "bytes": 1544780,
+      "sha256": "f795be2de4c16b793254960244f92b4cf616cc7eb8c9b2f24117fedf84a0910e"
+    },
+    {
+      "path": "package68/packed68/frame-053-source-592.bin.gz",
+      "bytes": 1405177,
+      "sha256": "8f460c75f540b82d425f61e80e939034bbfdf69574e5205b74e81f655410a8ff"
+    },
+    {
+      "path": "package68/packed68/frame-054-source-593.bin.gz",
+      "bytes": 1427041,
+      "sha256": "354063d8da2afe8b63f54e8e80cd2467a814aa832cc3c4f37fdaa4b68133dccb"
+    },
+    {
+      "path": "package68/packed68/frame-055-source-594.bin.gz",
+      "bytes": 1402037,
+      "sha256": "42ce131c154b8e83a17b2092f20ab252fe2c2d73643743cfe4ef7a82fb779b30"
+    },
+    {
+      "path": "package68/packed68/frame-056-source-595.bin.gz",
+      "bytes": 1358747,
+      "sha256": "f3db888daa7927fc96228e446a95689511d249f902190415640349860ada7297"
+    },
+    {
+      "path": "package68/packed68/frame-057-source-596.bin.gz",
+      "bytes": 1325673,
+      "sha256": "f1bb00f10ac3e68b7ddebf3fa7ef076e93302de53a70f818e60177a8fd32042b"
+    },
+    {
+      "path": "package68/packed68/frame-058-source-597.bin.gz",
+      "bytes": 1275775,
+      "sha256": "8d39606d0b703a567c1399db6864f68cbace239b106d99dad706a733efdf9d9a"
+    },
+    {
+      "path": "package68/packed68/frame-059-source-598.bin.gz",
+      "bytes": 1209383,
+      "sha256": "56e97141e9fb108014891fe99e276b9ea58e26b51930086a9bb81c92bcf7c2c7"
+    },
+    {
+      "path": "package68/packed68/frame-060-source-599.bin.gz",
+      "bytes": 4522830,
+      "sha256": "a9f13aef1d660ed9eee5a6b8124b929df5951cf27ab4c1a01f7e5f9cc4fd3baa"
+    },
+    {
+      "path": "package68/packed68/frame-061-source-600.bin.gz",
+      "bytes": 1185703,
+      "sha256": "e95fddf4d8bab9d4b12c8d7d0017ba66ddd058ca24a5c9b7137c31128927dab3"
+    },
+    {
+      "path": "package68/packed68/frame-062-source-601.bin.gz",
+      "bytes": 1178153,
+      "sha256": "d680f795eeef75e862b6400b26fda1677e4cecc288f1149b3a7bdc5774e5d2f2"
+    },
+    {
+      "path": "package68/packed68/frame-063-source-602.bin.gz",
+      "bytes": 1173056,
+      "sha256": "8622511b4611780115d99147bade5b1eb815b36e21205e8bad093c35a9f13400"
+    },
+    {
+      "path": "package68/packed68/frame-064-source-603.bin.gz",
+      "bytes": 1130191,
+      "sha256": "e51865612cadaa359a0501468036f2c4ffb09217b46e3eee253e51486ec96735"
+    },
+    {
+      "path": "package68/packed68/frame-065-source-604.bin.gz",
+      "bytes": 1122356,
+      "sha256": "614c8ac8e7b2379f8c72e8b606c737c52fdfd8c224264706718dbcf9554b6c25"
+    },
+    {
+      "path": "package68/packed68/frame-066-source-605.bin.gz",
+      "bytes": 1112624,
+      "sha256": "8133b1a1a6a2c6e3293488523c984db6cc18ab75db74af913c51b023ac891317"
+    },
+    {
+      "path": "package68/packed68/frame-067-source-606.bin.gz",
+      "bytes": 1075764,
+      "sha256": "981ba3ead6ee119a0fdb7af46df1c44f1ce49407b3d2be8029c384df1f360c67"
+    },
+    {
+      "path": "package68/packed68/frame-068-source-607.bin.gz",
+      "bytes": 1037687,
+      "sha256": "d4be0c513b6e54c7138a1007fea4f25393a6eec9a37c7e74184fd7ea3f77bcda"
+    },
+    {
+      "path": "package68/packed68/frame-069-source-608.bin.gz",
+      "bytes": 1163117,
+      "sha256": "fc20f9fa4dee719ed1ea0e2909ff4ea6705fa7ee82f47a6305d23d710e6aa380"
+    },
+    {
+      "path": "package68/packed68/frame-070-source-609.bin.gz",
+      "bytes": 4594513,
+      "sha256": "fdb9aabc57e09aee0712b01d96b8410c2e0ea81d9e62d18f6b1f7ac1215a4b70"
+    },
+    {
+      "path": "package68/packed68/frame-071-source-610.bin.gz",
+      "bytes": 1327711,
+      "sha256": "847b704fdf7f98e613f2e898e2d01d10e4bfcc0fd87cdc638c6825c5a7c97445"
+    },
+    {
+      "path": "package68/packed68/frame-072-source-611.bin.gz",
+      "bytes": 1504201,
+      "sha256": "71da4c4390f193eb50b616799bf4978fa92a8091b3ba75317e2db1f8eb4df930"
+    },
+    {
+      "path": "package68/packed68/frame-073-source-612.bin.gz",
+      "bytes": 1415919,
+      "sha256": "c422b73476ea058cc3cdebb2b6fafc49f860208ea4f4c5dd2404dfbcac01a0e4"
+    },
+    {
+      "path": "package68/packed68/frame-074-source-613.bin.gz",
+      "bytes": 1410644,
+      "sha256": "a1cfebb84844f8818caac95b943c3d8c4e08b033168d861e69ab329ad58263d0"
+    },
+    {
+      "path": "package68/packed68/frame-075-source-614.bin.gz",
+      "bytes": 1363666,
+      "sha256": "c23868e5b38f3f58ad3223934a4faf234a4cf3b731aff15c74569f9d22463858"
+    },
+    {
+      "path": "package68/packed68/frame-076-source-615.bin.gz",
+      "bytes": 1251722,
+      "sha256": "ad44e72c09da13e615413262687af69fb4036fac29b278c98600074711c15df4"
+    },
+    {
+      "path": "package68/packed68/frame-077-source-616.bin.gz",
+      "bytes": 1298025,
+      "sha256": "dd1c8faee4afcf2ee0242ec48f6a2ae75d6e17d07aaa02c1a38ce294ca2f1c69"
+    },
+    {
+      "path": "package68/packed68/frame-078-source-617.bin.gz",
+      "bytes": 1376596,
+      "sha256": "8ddd955b5dda47e07fe208c67e6bafd5f734a01b6a17e5dd4ac5a79d0c1d4adc"
+    },
+    {
+      "path": "package68/packed68/frame-079-source-618.bin.gz",
+      "bytes": 1411831,
+      "sha256": "edc12df9228a4761dd8e4a40427f51fe9edf1335833746bf97525b2e7bcea5a1"
     },
     {
       "path": "package68/packed68/manifest68.json",
-      "bytes": 177467,
-      "sha256": "37806fdd27c8061755e65d35f2057b2aef0e234719e2e678d8510fcf5c26d471"
-    },
-    {
-      "path": "package68/transport-lifecycle68.cjs",
-      "bytes": 23914,
-      "sha256": "2f1f123641eb5d711c6f47d2b7701e4d233f8aca75e1c100d10231e2a9cfc467"
-    },
-    {
-      "path": "package68/transport-probe68.cjs",
-      "bytes": 16174,
-      "sha256": "f0d65c7e1e4ea7c080ace9fe311cb657d21cdd7775f0d3c71f5a2188defc73d1"
+      "bytes": 216251,
+      "sha256": "26849b1833c4f22a3f15082be0379b3f2d242be14f3b1248fd64b17759ae7117"
     }
-  ],
-  "externalAssets": [
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-00.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "70717f7bd6193e496cc39982402f566e00f7a506",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-01.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "55b70657c643b44a8bac55a6da9f66639d51587f",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-02.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "f1628208d5ee8556a32f8d7eb70591c7127d8699",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-03.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "ee658a7c31b8db56f09b8a19295508f6ea306d34",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-04.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "bb5dda70d0cdf7cb5417efb6b95cca1d0f01604a",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-05.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "b9137236ea1c544460ce1f9fdf30c5aabac24443",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-06.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "b0a8a6ff305553f61797eacf6d18b07ae23514bb",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-07.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "4655eac0b08cb3e8f5c70c6ddc256a3350789ff1",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-08.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "e5710c9a1e238bbc7463dda7de9aa7eb16eebcc4",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-09.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "0086b7118f6e56f7ce38cc9718f3ada61cd9aecf",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-10.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "9baebc26a267d55d114cde491ba7669e196dcf2c",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-11.bin",
-      "bytes": 2582292,
-      "gitBlobSha1": "12be1cccbbe792f9255d59b9a52e087626aead55",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-0.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "27179d1706dc0e872c960192def1ab0a0d3977fb",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-1.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "bd5f59d586cf69ff793abddeb20580c37c72b3cc",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-2.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "74f474e2ab7cde0e166eb4ec1068c61ac4d61795",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-3.bin",
-      "bytes": 4500628,
-      "gitBlobSha1": "31a23f96fdbe74d08f9814508a21e38ea50e9ee4",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-17-append.bin",
-      "bytes": 3784332,
-      "gitBlobSha1": "d672ddeedbfe3599366dfc928bba3cfba9d6f16a",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-18-append-0.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "ea178a17c863c928a32c6626c8ea931d9f3a81af",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-18-append-1.bin",
-      "bytes": 5805256,
-      "gitBlobSha1": "98c304d37dec6db49002d253a808ade6b24760d3",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/body-motion42.bin.gz",
-      "bytes": 12345850,
-      "gitBlobSha1": "a88c6fe05c6399f7d75a1b7ec474461cb92fab3c",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/body-motion42.json",
-      "bytes": 50501,
-      "gitBlobSha1": "c8430bda57eb077e0b891eb6888e14751815d0bc",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-face26.bin.gz",
-      "bytes": 10071210,
-      "gitBlobSha1": "7f837c93d2468d826e5105d72700e855960cb066",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-0.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "4462a3908c9cfd45b7405e31aa5be4877e5839f7",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-1.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "c4964ebca27fb9a318b49daea0e25eb09719b596",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-2.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "3add992ebe466a166bd59805fdde03fcfe254c8f",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-3.bin",
-      "bytes": 877427,
-      "gitBlobSha1": "32aae36841cd834a5815fc79d31d1b38d09591ab",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-moustache-motion38.bin.gz",
-      "bytes": 3347637,
-      "gitBlobSha1": "351433134043f36007243b876e81e4f525017af5",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-moustache38.bin.gz",
-      "bytes": 3439460,
-      "gitBlobSha1": "e4055a08245b823c6c49981a897faee101570411",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/oral-source-pbr.glb",
-      "bytes": 790256,
-      "gitBlobSha1": "42427d4060ba3d611f89dfbcb299e4191723b57a",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-00.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "8541e0f2dea667c2652b54febbde20a328b64c86",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-01.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "50760ff36291e0fec6edd945a3556a0199c44483",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-02.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "d1c068c6fd361958f32ca4391cdc9fa27d2fac3e",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-03.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "e133d46147fb09fe38ebe1a8b493e228590459c2",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-04.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "cd05f235e2782a8f93b107f732838bd89172d699",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-05.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "853f0846aa536fe869385c7c28ff6ae9449e6a43",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-06.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "f4dfe9181846eb2073109fb88c50fd55f0bc62ed",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-07.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "6ddcb801ff8e37f12cd31cfcf49eba92fa78a1ee",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-08.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "5223830b24195eba2e2c4310ac9240b9ccef5bfb",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-09.bin",
-      "bytes": 8388608,
-      "gitBlobSha1": "c1de49e886e4af508047a303cc2c84513568c2e5",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-10.bin",
-      "bytes": 1745840,
-      "gitBlobSha1": "0f39bdc38ed03c8b3d75fb1e0673b01e006ec857",
-      "license": "CC-BY-4.0"
-    }
-  ],
-  "externalPolicy": "Existing immutable generic character asset URLs only; fetched without credentials; runtime verifies aggregate payload hashes."
+  ]
 }

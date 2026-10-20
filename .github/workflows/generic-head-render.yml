@@ -1,5 +1,4 @@
-# Observe frame-only JS lifecycle calls; retain runtime assets and strict failure checks.
-name: Generic Einar68 instrumented lifecycle diagnostic
+name: Generic Einar68 full finite native walk proof
 on:
   push:
     branches: [main]
@@ -8,13 +7,13 @@ permissions:
   contents: read
 jobs:
   native-geometry:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar68 pilot proof'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar68 full finite walk proof'
     strategy:
       fail-fast: false
       matrix:
-        segment: [a]
+        segment: [a, b, c, d]
     runs-on: ubuntu-22.04
-    timeout-minutes: 15
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -31,8 +30,8 @@ jobs:
         run: |
           npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Observe frame-only JavaScript lifecycle and transport completion
+      - name: Actual WebGL native geometry and reset proof
         working-directory: package68
         env:
           CAPTURE_SEGMENT: ${{ matrix.segment }}
-        run: timeout 600s node transport-lifecycle68.cjs
+        run: timeout 1800s node capture68.cjs
