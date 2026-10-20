@@ -1,5 +1,4 @@
-# Capture server explicitly serves ES module .mjs as JavaScript.
-name: Generic Einar62 matched three-pose proof
+name: Generic whole-character Einar62 browser proof
 on:
   push:
     branches: [main]
@@ -8,7 +7,11 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar62 matched static poses'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar62 corrected full walk'
+    strategy:
+      fail-fast: false
+      matrix:
+        segment: [a, b]
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -20,6 +23,7 @@ jobs:
           sparse-checkout: |
             package46
             package55
+            package56
             package57
             package60
             package62
@@ -28,6 +32,8 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Nine matched views of three source poses
+      - name: Bounded upright walk segment
         working-directory: package62
-        run: timeout 480s node capture62.cjs
+        env:
+          CAPTURE_SEGMENT: ${{ matrix.segment }}
+        run: timeout 480s node capture62-full.cjs
