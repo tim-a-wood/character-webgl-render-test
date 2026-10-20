@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),crypto=require('node:crypto');
 const {chromium}=require('playwright-core');process.env.DEBUG='pw:browser';
 const root=path.resolve(__dirname,'..'),manifest=JSON.parse(fs.readFileSync(path.join(root,'package46/manifest.json'))),allowed=new Set(manifest.assetInventory.map(x=>x.url));
-const server=http.createServer((req,res)=>{try{const name=decodeURIComponent(new URL(req.url,'http://localhost').pathname),file=path.resolve(root,'.'+name);if(!file.startsWith(root+path.sep))throw Error('path');const b=fs.readFileSync(file),ext=path.extname(file);res.writeHead(200,{'Content-Type':{'.js':'application/javascript','.json':'application/json','.html':'text/html','.css':'text/css','.wasm':'application/wasm'}[ext]||'application/octet-stream','Content-Length':b.length});res.end(b);}catch{res.writeHead(404).end();}});
+const server=http.createServer((req,res)=>{try{const name=decodeURIComponent(new URL(req.url,'http://localhost').pathname),file=path.resolve(root,'.'+name);if(!file.startsWith(root+path.sep))throw Error('path');const b=fs.readFileSync(file),ext=path.extname(file);res.writeHead(200,{'Content-Type':{'.js':'application/javascript','.mjs':'application/javascript','.json':'application/json','.html':'text/html','.css':'text/css','.wasm':'application/wasm'}[ext]||'application/octet-stream','Content-Length':b.length});res.end(b);}catch{res.writeHead(404).end();}});
 let browser;
 const check=(ok,msg)=>{if(!ok)throw Error(msg);};
 (async()=>{

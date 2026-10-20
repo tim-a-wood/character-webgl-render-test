@@ -1,3 +1,4 @@
+# Capture server explicitly serves ES module .mjs as JavaScript.
 name: Generic Einar62 matched three-pose proof
 on:
   push:
