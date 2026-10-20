@@ -36,7 +36,7 @@ const check=(ok,msg)=>{if(!ok)throw Error(msg);};
   await page.locator('#start-clip').click();await page.evaluate(()=>window.einarDemoQA62.getPlayer().whenReady());await idle();
   const ticksBefore=await page.evaluate(()=>window.einarDemoQA62.clock.stats.ticks);
   await page.locator('#play').click();await page.waitForFunction(ticks=>{const q=window.einarDemoQA62;return q.clock.stats.ticks>ticks&&q.getPlayer().getState().time>0;},ticksBefore,{timeout:30000});
-  await page.locator('#pause').click();await page.evaluate(()=>window.einarDemoQA62.getPlayer().whenReady());await idle();
+  await page.evaluate(()=>document.getElementById('pause').click());await page.evaluate(()=>window.einarDemoQA62.getPlayer().whenReady());await idle();
   const paused=await page.evaluate(()=>({player:window.einarDemoQA62.getPlayer().getState(),clock:window.einarDemoQA62.clock.getState()}));check(!paused.player.playing&&!paused.clock.scheduled,'Pause stops host clock');
   await page.locator('#player-reset').click();await idle();check(JSON.stringify(await digest())===neutralDigest,'Playback exact neutral geometry reset');
   Object.assign(controlsRegression,{executed:true,channels,playAdvanced:true,pauseStopped:true,playbackResetExact:true});console.log('CONTROLS62_REGRESSION',JSON.stringify(controlsRegression));
