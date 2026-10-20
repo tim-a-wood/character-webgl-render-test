@@ -1,0 +1,327 @@
+{
+  "version": 57,
+  "format": "einar57-six-object-posture-overlay-v1",
+  "baseManifestSha256": "c486cd667ef5775c572e603200f76fe683b0509c855300d23eedd9f31b630e24",
+  "baseManifestUrl": "../../package55/packed55/manifest55.json",
+  "baseCompressedBytes": 119451210,
+  "sharedAuxiliary": "Use frozen base manifest auxiliary without new arrays or changed offsets",
+  "matrixBytes": 384,
+  "decodedBytes": 4394796,
+  "objects": [
+    {
+      "name": "GEO-einar_head",
+      "kind": "mesh",
+      "matrixOffset": 0,
+      "positionOffset": 384,
+      "positionCount": 72666,
+      "positionUnit": [
+        5e-05,
+        5e-05,
+        5e-05
+      ],
+      "normalUnit": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "normalOffset": 436380,
+      "normalCount": 75038,
+      "transform": "DEF-Head",
+      "basePosition": {
+        "offset": 0,
+        "count": 72666,
+        "dtype": "float32",
+        "components": 3
+      },
+      "baseNormal": {
+        "offset": 871992,
+        "count": 75038,
+        "dtype": "float32",
+        "components": 3
+      },
+      "loopToNormalGroup": {
+        "offset": 1772448,
+        "count": 289408,
+        "dtype": "uint32",
+        "components": 1
+      },
+      "loopCount": 289408,
+      "loopSha256": "aa45dc8ab04968583ed8678bd5f958470acdb4f708b48e1411179c6d5254967f",
+      "baseObjectIndex": 0,
+      "baseMatrixOffset": 0
+    },
+    {
+      "name": "GEO-einar_sweater",
+      "kind": "mesh",
+      "matrixOffset": 64,
+      "positionOffset": 886608,
+      "positionCount": 12751,
+      "positionUnit": [
+        5e-05,
+        5e-05,
+        5e-05
+      ],
+      "normalUnit": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "normalOffset": 963114,
+      "normalCount": 12751,
+      "transform": "affine-or-kabsch",
+      "basePosition": {
+        "offset": 27691652,
+        "count": 12751,
+        "dtype": "float32",
+        "components": 3
+      },
+      "baseNormal": {
+        "offset": 27844664,
+        "count": 12751,
+        "dtype": "float32",
+        "components": 3
+      },
+      "loopToNormalGroup": {
+        "offset": 27997676,
+        "count": 49472,
+        "dtype": "uint32",
+        "components": 1
+      },
+      "loopCount": 49472,
+      "loopSha256": "3ce372378f058f6f4b5753a7ea5fcd9dd04f051e1f52c552ee194de4bbd4fec3",
+      "baseObjectIndex": 126,
+      "baseMatrixOffset": 8064
+    },
+    {
+      "name": "GEO-einar_beard",
+      "kind": "groom",
+      "matrixOffset": 128,
+      "positionOffset": 1039620,
+      "positionCount": 339716,
+      "positionUnit": [
+        5e-05,
+        5e-05,
+        5e-05
+      ],
+      "normalUnit": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "normalOffset": null,
+      "normalCount": 0,
+      "transform": "DEF-Head",
+      "basePosition": {
+        "offset": 36873784,
+        "count": 339716,
+        "dtype": "float32",
+        "components": 3
+      },
+      "curveOffsets": {
+        "offset": 40950376,
+        "count": 21971,
+        "dtype": "uint32",
+        "components": 1
+      },
+      "curveCount": 21970,
+      "offsetsSha256": "4a2ff6c5c5c225127ec85a427da4ccbba64c7fd9c0e1f236e642381b78cc7e14",
+      "baseObjectIndex": 181,
+      "baseMatrixOffset": 11584
+    },
+    {
+      "name": "GEO-einar_beard.messy",
+      "kind": "groom",
+      "matrixOffset": 192,
+      "positionOffset": 3077916,
+      "positionCount": 59949,
+      "positionUnit": [
+        5e-05,
+        5e-05,
+        5e-05
+      ],
+      "normalUnit": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "normalOffset": null,
+      "normalCount": 0,
+      "transform": "DEF-Head",
+      "basePosition": {
+        "offset": 41038260,
+        "count": 59949,
+        "dtype": "float32",
+        "components": 3
+      },
+      "curveOffsets": {
+        "offset": 41757648,
+        "count": 3890,
+        "dtype": "uint32",
+        "components": 1
+      },
+      "curveCount": 3889,
+      "offsetsSha256": "24b92b34388e8ddd1b90e001d59cd559af419a62c4fec7a0a4a4101e200c67a1",
+      "baseObjectIndex": 182,
+      "baseMatrixOffset": 11648
+    },
+    {
+      "name": "GEO-einar_hair",
+      "kind": "groom",
+      "matrixOffset": 256,
+      "positionOffset": 3437610,
+      "positionCount": 144284,
+      "positionUnit": [
+        5e-05,
+        5e-05,
+        5e-05
+      ],
+      "normalUnit": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "normalOffset": null,
+      "normalCount": 0,
+      "transform": "DEF-Head",
+      "basePosition": {
+        "offset": 41773208,
+        "count": 144284,
+        "dtype": "float32",
+        "components": 3
+      },
+      "curveOffsets": {
+        "offset": 43504616,
+        "count": 10300,
+        "dtype": "uint32",
+        "components": 1
+      },
+      "curveCount": 10299,
+      "offsetsSha256": "1d049583f180eda904d3d95e76b35362c7d872877eb9bd25e83e2c93a9916d95",
+      "baseObjectIndex": 183,
+      "baseMatrixOffset": 11712
+    },
+    {
+      "name": "GEO-einar_hair.messy",
+      "kind": "groom",
+      "matrixOffset": 320,
+      "positionOffset": 4303314,
+      "positionCount": 15247,
+      "positionUnit": [
+        5e-05,
+        5e-05,
+        5e-05
+      ],
+      "normalUnit": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "normalOffset": null,
+      "normalCount": 0,
+      "transform": "DEF-Head",
+      "basePosition": {
+        "offset": 43545816,
+        "count": 15247,
+        "dtype": "float32",
+        "components": 3
+      },
+      "curveOffsets": {
+        "offset": 43728780,
+        "count": 1092,
+        "dtype": "uint32",
+        "components": 1
+      },
+      "curveCount": 1091,
+      "offsetsSha256": "08881c8446f54d5c97a2f53497d68c2099c798e15d9820f575c46139602142ae",
+      "baseObjectIndex": 184,
+      "baseMatrixOffset": 11776
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "sourceFrame": 539,
+      "sourceTime": 0.816683,
+      "time": 0.0,
+      "url": "overlay-000-source-539.bin.gz",
+      "sha256": "81b74d3785849492e603566c1580682084e000c3a7f4b4179cb07695d4768ef3",
+      "decodedSha256": "65bae0f3b198cd34437ded806faa948d14bf100919301832f8fc59edaf262ea7",
+      "absoluteSha256": "65bae0f3b198cd34437ded806faa948d14bf100919301832f8fc59edaf262ea7",
+      "keyframe": true,
+      "compressedBytes": 1210929,
+      "sourceInventorySha256": "504309f42f691c83fcc58d8b3a0157892ca49688c55ab9bd7c9166be536cf454",
+      "baseFrameIndex": 0
+    },
+    {
+      "index": 1,
+      "sourceFrame": 579,
+      "sourceTime": 1.4833630000000002,
+      "time": 0.6666800000000002,
+      "url": "overlay-001-source-579.bin.gz",
+      "sha256": "7a131ba1e6b3c811532127fc6183679a412982196db0b8a0f820b7cc70bc0af6",
+      "decodedSha256": "56eb00c5770939946a009357715b3156acade34ee63365cc7ed759ed99a1e9e0",
+      "absoluteSha256": "56eb00c5770939946a009357715b3156acade34ee63365cc7ed759ed99a1e9e0",
+      "keyframe": true,
+      "compressedBytes": 1224003,
+      "sourceInventorySha256": "a7bbfbd266a565562fad72ee2a5a8761176d618af5fbf555129717465d74b935",
+      "baseFrameIndex": 20
+    },
+    {
+      "index": 2,
+      "sourceFrame": 618,
+      "sourceTime": 2.133376,
+      "time": 1.3166930000000001,
+      "url": "overlay-002-source-618.bin.gz",
+      "sha256": "d7a7e13d63569c46acd4aaeaec7c9b69aff4813087ca8942cb853277d76d3466",
+      "decodedSha256": "093364a08af30defe896ef724af68bacd743bfffb6dc199009f74b79a008bbf4",
+      "absoluteSha256": "093364a08af30defe896ef724af68bacd743bfffb6dc199009f74b79a008bbf4",
+      "keyframe": true,
+      "compressedBytes": 1219573,
+      "sourceInventorySha256": "ec46e3753ba735d0cb882ac800a95e333fc718b7a98e5186ab79d6b74d33fdbc",
+      "baseFrameIndex": 40
+    }
+  ],
+  "compressedBytes": 3654505,
+  "duration": 1.3166930000000001,
+  "availableDuration": 1.3166930000000001,
+  "targetSourceFrames": [
+    539,
+    579,
+    618
+  ],
+  "staticOnly": true,
+  "status": "complete",
+  "byteOrder": "little-endian",
+  "matrixLayout": "row-major",
+  "positionUnit": 5e-05,
+  "normalUnit": 0.001,
+  "keyframeInterval": 1,
+  "sourceStartTime": 0.816683,
+  "sourceFps": 60,
+  "decodedSha256Scope": "inflated wire payload before modular delta reconstruction",
+  "activeSafetyCeilingBytes": 150000000,
+  "source": {
+    "correction": "Rest-direction-aligned FK-Neck, preserving captured absolute head orientation",
+    "motion": {
+      "name": "100STYLE Neutral_FW",
+      "attribution": "Ian Mason",
+      "url": "https://www.ianxmason.com/100style/",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "rawDatasetIncluded": false
+    },
+    "character": {
+      "name": "Einar",
+      "attribution": "Blender Foundation / Blender Studio",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "timing": "Exact existing frozen55 sourceFrame/sourceTime/time; no cadence or gait changes"
+  },
+  "limitations": [
+    "Local posture diagnostic; no publication approval implied",
+    "Static mode permits only listed exact pose times",
+    "All existing source-contact, temporal-interpolation and facial-composition limitations remain"
+  ],
+  "totalWithBaseCompressedBytes": 123105715
+}

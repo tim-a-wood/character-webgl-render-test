@@ -1,4 +1,4 @@
-name: Generic whole-character Einar56 browser proof
+name: Generic whole-character Einar57 browser proof
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Complete generic Einar56 sampled motion'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Compare generic Einar57 neck posture'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -20,11 +20,12 @@ jobs:
             package46
             package55
             package56
+            package57
       - name: Install exact browser test runtime
-        working-directory: package56
+        working-directory: package57
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Remaining sampled poses with exact cross-run overlap
-        working-directory: package56
-        run: timeout 480s node capture56-tail.cjs
+      - name: Matched original and corrected three-pose posture
+        working-directory: package57
+        run: timeout 480s node capture57.cjs
