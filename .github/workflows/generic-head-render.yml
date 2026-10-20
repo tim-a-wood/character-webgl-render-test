@@ -7,7 +7,11 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Compare generic Einar58 GPU rendering'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar58 GPU walk'
+    strategy:
+      fail-fast: false
+      matrix:
+        segment: [a, b]
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -27,8 +31,8 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Matched CPU and GPU rendering
+      - name: Bounded GPU walk segment
         working-directory: package58
-        run: timeout 480s node capture58.cjs
-
-# Full57 baseline hash inventory verified.
+        env:
+          CAPTURE_SEGMENT: ${{ matrix.segment }}
+        run: timeout 480s node capture58-full.cjs
