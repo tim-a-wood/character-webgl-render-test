@@ -1,3 +1,4 @@
+# Verify recovered pilot manifest references after workspace recovery.
 name: Generic Einar68 native pilot geometry proof
 on:
   push:
