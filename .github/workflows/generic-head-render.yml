@@ -1,4 +1,4 @@
-name: Generic Einar60 front baseline proof
+name: Generic Einar62 matched three-pose proof
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar60 front baseline'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar62 matched static poses'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -27,6 +27,6 @@ jobs:
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Three front source poses only
+      - name: Nine matched views of three source poses
         working-directory: package62
-        run: timeout 480s node capture62-baseline-front.cjs
+        run: timeout 480s node capture62.cjs
