@@ -1,0 +1,2 @@
+// Generated from the verified evaluated runtime manifest.
+export const proofConfig68 = Object.freeze({"ready":true,"mode":"pilot","frames":[{"index":0,"sourceFrame":539,"time":0.0},{"index":1,"sourceFrame":571,"time":0.533344},{"index":2,"sourceFrame":618,"time":1.3166930000000001}],"duration":1.3166930000000001,"manifestSha256":"36fcb0cb91ddfcc4201f80820d26fa1fafba46be51d569abaeadee734a01e673","totalBytes":48383923,"sharedBytes":36320723});

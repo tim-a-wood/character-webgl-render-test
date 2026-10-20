@@ -1,0 +1,575 @@
+{
+  "format": "einar68-runtime-proof-inputs-v1",
+  "mode": "pilot",
+  "publicationPerformed": false,
+  "nativeSnapshotsIncluded": false,
+  "sourceScriptsIncluded": false,
+  "objects": 185,
+  "nativeSamples": 3,
+  "duration": 1.3166930000000001,
+  "localFiles": [
+    {
+      "path": "package46/ATTRIBUTION.md",
+      "bytes": 1676,
+      "sha256": "9c91d7a60d82fb3b3ef1ac9854735df1e41bca54134be63278b3c574c597b9bc"
+    },
+    {
+      "path": "package46/README.md",
+      "bytes": 6272,
+      "sha256": "5e48617f708e4474a2484e324a258dc66af684cad3f6d3133685c5c9da47592c"
+    },
+    {
+      "path": "package46/einar46.js",
+      "bytes": 10537,
+      "sha256": "cac6f3c5b936fe4ac53b68028d11cd3af74bb2135345173712b4768c209a9aa1"
+    },
+    {
+      "path": "package46/licenses/BASIS-LICENSE.txt",
+      "bytes": 11347,
+      "sha256": "065fcf48d6af21c0b75e23be5ed5753aee75c892e1c2cf178fa6736305614a5c"
+    },
+    {
+      "path": "package46/licenses/DRACO-LICENSE.txt",
+      "bytes": 13899,
+      "sha256": "58738680341b408022157c34c95823fe803794b83b272a4904b7f86dfc4f2a6e"
+    },
+    {
+      "path": "package46/licenses/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "package46/licenses/ktx-parse-LICENSE.txt",
+      "bytes": 1078,
+      "sha256": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692"
+    },
+    {
+      "path": "package46/licenses/zstd-LICENSE.txt",
+      "bytes": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "package46/licenses/zstddec-LICENSE.txt",
+      "bytes": 2617,
+      "sha256": "8d078b49fc02bd63c1beaf4ddc629a8b48e4ba6a435415408c8209e2a5c3aacf"
+    },
+    {
+      "path": "package46/manifest.json",
+      "bytes": 92631,
+      "sha256": "4997fe5ed1beab04547e5176005c91d86072261e7566d923e2f1c79e8044d700"
+    },
+    {
+      "path": "package46/package.json",
+      "bytes": 18,
+      "sha256": "1239d4d885dcad42201a27ed9324f8f0f760b78700d8db9ced39a511cffe7eae"
+    },
+    {
+      "path": "package46/runtime/body-loader46.js",
+      "bytes": 4485,
+      "sha256": "bf7ef95b27df2931fbc44543cb3fd5f297cb05bd4cbf6f9b9a35744133291880"
+    },
+    {
+      "path": "package46/runtime/body-motion42c.js",
+      "bytes": 5300,
+      "sha256": "c73310a150e2305720cad913d27fcc5ad3e68913052dcd7f9138627b1e3142d0"
+    },
+    {
+      "path": "package46/runtime/canonical-opaque-order37b.js",
+      "bytes": 510,
+      "sha256": "b13ff1370617e6e24a7980f779e25cc36483dda954c3aaf884fe94366c9e53d4"
+    },
+    {
+      "path": "package46/runtime/draco/draco_decoder.js",
+      "bytes": 512465,
+      "sha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f"
+    },
+    {
+      "path": "package46/runtime/draco/draco_decoder.wasm",
+      "bytes": 192420,
+      "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac"
+    },
+    {
+      "path": "package46/runtime/draco/draco_wasm_wrapper.js",
+      "bytes": 58456,
+      "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6"
+    },
+    {
+      "path": "package46/runtime/einar-face37b.js",
+      "bytes": 6268,
+      "sha256": "caa8da17e80b4abc777a42ce0430609e0d2c6e25c60a7e7631a579a5f8cd9c41"
+    },
+    {
+      "path": "package46/runtime/einar-groom24.js",
+      "bytes": 4187,
+      "sha256": "adc30fa229e809ca58ddd4d966c088e861bb9980c9f880bc3dd78d308d9693d2"
+    },
+    {
+      "path": "package46/runtime/einar-groom36.js",
+      "bytes": 2024,
+      "sha256": "48db997d0bf0b42d014d39e4e3fc9d073b2f9977fdb32fb515f1085e1af5e8f5"
+    },
+    {
+      "path": "package46/runtime/einar-moustache38.js",
+      "bytes": 2108,
+      "sha256": "91b0e615e6db98c808e2cfdacdf14396884a011a355560c58f6a9be1efa88f22"
+    },
+    {
+      "path": "package46/runtime/hybrid-groom37b.js",
+      "bytes": 4480,
+      "sha256": "af19e13a84987108593c3a101954485852b87e3ae58c7507262ea5a43330369e"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/BASIS-LICENSE.txt",
+      "bytes": 11347,
+      "sha256": "065fcf48d6af21c0b75e23be5ed5753aee75c892e1c2cf178fa6736305614a5c"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/basis_transcoder.js",
+      "bytes": 62337,
+      "sha256": "48a0ef319a28bf0224ee88ded34f74eaf97c175bba9eb18b47fb9720510ad6c4"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/basis_transcoder.wasm",
+      "bytes": 499935,
+      "sha256": "79ae97d781e10a566659c689b7bb1de91726453f55f9f5e3bcc07a4e3904070f"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/ktx-parse-LICENSE.txt",
+      "bytes": 1078,
+      "sha256": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/libs/ktx-parse.module.js",
+      "bytes": 18676,
+      "sha256": "f73948e7bbf8db386076fda0458160bdb50ce2e11e88fa7da0f339e1ec547493"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/libs/zstddec.module.js",
+      "bytes": 39754,
+      "sha256": "5cbf818e842628a4464e748594a6deae18ceddda3c2f541e7b3a0ff5fc7611e2"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/loaders/KTX2Loader.js",
+      "bytes": 22589,
+      "sha256": "9cca5aa35fdb04b4818c792c8d08fb6e7607dcafc46e7b06a9485e9f25261be7"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/utils/WorkerPool.js",
+      "bytes": 1712,
+      "sha256": "94ff7b608caf3b827ffa95bd6092b9d174732b856915b38ed006b4f049f95675"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/zstd-LICENSE.txt",
+      "bytes": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "package46/runtime/ktx-pilot/zstddec-LICENSE.txt",
+      "bytes": 2617,
+      "sha256": "8d078b49fc02bd63c1beaf4ddc629a8b48e4ba6a435415408c8209e2a5c3aacf"
+    },
+    {
+      "path": "package46/runtime/moustache-motion38.js",
+      "bytes": 2130,
+      "sha256": "a6b73a0cd830dbd4e1c6480de5debee51ba2f6161285611abe09c62c60cf11da"
+    },
+    {
+      "path": "package46/vendor/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "package46/vendor/three/build/three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "path": "package46/vendor/three/examples/jsm/controls/OrbitControls.js",
+      "bytes": 29868,
+      "sha256": "5a44a9e86a2a0fb11933eed69bc2cd33c76a496854c1aed6ed776efa87d7b064"
+    },
+    {
+      "path": "package46/vendor/three/examples/jsm/loaders/DRACOLoader.js",
+      "bytes": 13628,
+      "sha256": "65c114ecb7b349cdc59c75b2c92d19cca672a138060dba0f60f64262fa40408c"
+    },
+    {
+      "path": "package46/vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 108522,
+      "sha256": "d073b438e6a07e1359741dd5d6c76c953420cc0d4fd84eb1bdde94315540e6a3"
+    },
+    {
+      "path": "package46/vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 31906,
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb"
+    },
+    {
+      "path": "package46/vendor/three/package.json",
+      "bytes": 127,
+      "sha256": "76f039648e4766c12a7c3aacb54939c5d518c4e6207bd1a1fc9bf64c969aef96"
+    },
+    {
+      "path": "package55/ATTRIBUTION.md",
+      "bytes": 1016,
+      "sha256": "7fae3213f6054f00a7a987d2618598857bde4fe5febe586652d283651232e35f"
+    },
+    {
+      "path": "package55/compressed-store55.js",
+      "bytes": 12100,
+      "sha256": "7e48e84a553ff914083b4e06c7c1266012ed8771264f17e3291ec6952aa60c28"
+    },
+    {
+      "path": "package55/frame-cache55.js",
+      "bytes": 16689,
+      "sha256": "d81166d40628184c18ecac96b335683f5ce8ae55c67e427209331a6a4ac09a0c"
+    },
+    {
+      "path": "package55/mappings55.bin.gz",
+      "bytes": 4242448,
+      "sha256": "f2e292d5d3ef0f665024c879a430c72c36137fb7e369ab0f4765f1b2ce054553"
+    },
+    {
+      "path": "package55/mappings55.json",
+      "bytes": 796711,
+      "sha256": "4d76f6c963c0a1375c51fbe58f34687878b3777745cbc377332333500e4d7787"
+    },
+    {
+      "path": "package55/packed55/neutral55-part-0.bin",
+      "bytes": 16777216,
+      "sha256": "020bddaf26c4f5330a0833d61de91bd64359131ac86270e19353bcedb1fa6df3"
+    },
+    {
+      "path": "package55/packed55/neutral55-part-1.bin",
+      "bytes": 14504348,
+      "sha256": "c3b42d8b6bd683951b6ebb57842802af589416766e68557ac60c384e6e6179ed"
+    },
+    {
+      "path": "package56/ATTRIBUTION.md",
+      "bytes": 1016,
+      "sha256": "7fae3213f6054f00a7a987d2618598857bde4fe5febe586652d283651232e35f"
+    },
+    {
+      "path": "package56/einar-walk56.js",
+      "bytes": 18773,
+      "sha256": "8b78840d846570c38bb317c96d14e167603436154d22c57f87c3f5f0eca341d4"
+    },
+    {
+      "path": "package68/ATTRIBUTION68.md",
+      "bytes": 1233,
+      "sha256": "d8c521f838d41b7fb3958dbc19008c3b774b08cbf857bb23046f8ff869a4c79b"
+    },
+    {
+      "path": "package68/capture68.cjs",
+      "bytes": 16937,
+      "sha256": "1904f9d530bd2a2ce9e43be55c3fc5e5b51593796df5e3d13b054f928cb02f2c"
+    },
+    {
+      "path": "package68/full-demo/demand-render41.js",
+      "bytes": 3815,
+      "sha256": "e41517f5ac8b9a3309382d4597f3086952990524fdb96c190c909dbdd54bac69"
+    },
+    {
+      "path": "package68/full-demo/demo-config68.js",
+      "bytes": 447,
+      "sha256": "81a1de7215fbd5bff1b01e579243e8c51dafb780fe00db95dc53c706925d68a0"
+    },
+    {
+      "path": "package68/full-demo/demo.css",
+      "bytes": 1289,
+      "sha256": "8a5d492f541c8e4ec3ff5249bb497b2ec75110a442ccac4f82543d2e19af3d91"
+    },
+    {
+      "path": "package68/full-demo/demo.js",
+      "bytes": 10598,
+      "sha256": "ac2095a2ecc20793c5e21cf233bcd58b3e65ba6d421f2ec2b88d0815a5336deb"
+    },
+    {
+      "path": "package68/full-demo/index.html",
+      "bytes": 3869,
+      "sha256": "57f1a5df1b2e4a33bff0a32cba847d3d2f6ff8bf2a3e9ada934180f6703a9c19"
+    },
+    {
+      "path": "package68/full-demo/pilot-guard68.js",
+      "bytes": 1226,
+      "sha256": "145d40d40a80ed7d1ad60456de3c966ed423d9db4080be63944c3484e28160ab"
+    },
+    {
+      "path": "package68/full-demo/player-loop55.js",
+      "bytes": 1933,
+      "sha256": "c5a2b4eae531fc7b136880d0af18c4f6c71fea3d922e5c054f85ecdf5b16a460"
+    },
+    {
+      "path": "package68/full-demo/startup56.js",
+      "bytes": 819,
+      "sha256": "2c3183ed5b2a118c2a5122443eecde8fbde19145f3930e04ef7551919459bba4"
+    },
+    {
+      "path": "package68/package.json",
+      "bytes": 173,
+      "sha256": "c369eb43e0c4d028a19b8d20f8c66cd2dce1722a743ea1a79b0cfd8b8ded2c88"
+    },
+    {
+      "path": "package68/packed68/frame-000-source-539.bin.gz",
+      "bytes": 4580270,
+      "sha256": "5bd71cd5e3c5cab3d67b738dfbc41be74e8e213ef2033f32e636db1465322c42"
+    },
+    {
+      "path": "package68/packed68/frame-001-source-571.bin.gz",
+      "bytes": 3753785,
+      "sha256": "a4970cf2c4c4c7dd851f139adf55dbeb654875e73c1cf156ed191076d9f03899"
+    },
+    {
+      "path": "package68/packed68/frame-002-source-618.bin.gz",
+      "bytes": 3729341,
+      "sha256": "781cbd3cfafcbff05b8f3174441332d4b6575b02f3f41a0756f46616cdb09701"
+    },
+    {
+      "path": "package68/packed68/manifest68.json",
+      "bytes": 177467,
+      "sha256": "37806fdd27c8061755e65d35f2057b2aef0e234719e2e678d8510fcf5c26d471"
+    }
+  ],
+  "externalAssets": [
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-00.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "70717f7bd6193e496cc39982402f566e00f7a506",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-01.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "55b70657c643b44a8bac55a6da9f66639d51587f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-02.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "f1628208d5ee8556a32f8d7eb70591c7127d8699",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-03.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "ee658a7c31b8db56f09b8a19295508f6ea306d34",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-04.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "bb5dda70d0cdf7cb5417efb6b95cca1d0f01604a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-05.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "b9137236ea1c544460ce1f9fdf30c5aabac24443",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-06.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "b0a8a6ff305553f61797eacf6d18b07ae23514bb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-07.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "4655eac0b08cb3e8f5c70c6ddc256a3350789ff1",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-08.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "e5710c9a1e238bbc7463dda7de9aa7eb16eebcc4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-09.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "0086b7118f6e56f7ce38cc9718f3ada61cd9aecf",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-10.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "9baebc26a267d55d114cde491ba7669e196dcf2c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/5fb606a465c704d35a6988630c6845db9698d780/render-poc/site/assets/einar-body27-11.bin",
+      "bytes": 2582292,
+      "gitBlobSha1": "12be1cccbbe792f9255d59b9a52e087626aead55",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-0.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "27179d1706dc0e872c960192def1ab0a0d3977fb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-1.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "bd5f59d586cf69ff793abddeb20580c37c72b3cc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-2.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "74f474e2ab7cde0e166eb4ec1068c61ac4d61795",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-09-3.bin",
+      "bytes": 4500628,
+      "gitBlobSha1": "31a23f96fdbe74d08f9814508a21e38ea50e9ee4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-17-append.bin",
+      "bytes": 3784332,
+      "gitBlobSha1": "d672ddeedbfe3599366dfc928bba3cfba9d6f16a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-18-append-0.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "ea178a17c863c928a32c6626c8ea931d9f3a81af",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/benchmark-18-append-1.bin",
+      "bytes": 5805256,
+      "gitBlobSha1": "98c304d37dec6db49002d253a808ade6b24760d3",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/body-motion42.bin.gz",
+      "bytes": 12345850,
+      "gitBlobSha1": "a88c6fe05c6399f7d75a1b7ec474461cb92fab3c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/body-motion42.json",
+      "bytes": 50501,
+      "gitBlobSha1": "c8430bda57eb077e0b891eb6888e14751815d0bc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-face26.bin.gz",
+      "bytes": 10071210,
+      "gitBlobSha1": "7f837c93d2468d826e5105d72700e855960cb066",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-0.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "4462a3908c9cfd45b7405e31aa5be4877e5839f7",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-1.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "c4964ebca27fb9a318b49daea0e25eb09719b596",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-2.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "3add992ebe466a166bd59805fdde03fcfe254c8f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-groom24-3.bin",
+      "bytes": 877427,
+      "gitBlobSha1": "32aae36841cd834a5815fc79d31d1b38d09591ab",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-moustache-motion38.bin.gz",
+      "bytes": 3347637,
+      "gitBlobSha1": "351433134043f36007243b876e81e4f525017af5",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/einar-moustache38.bin.gz",
+      "bytes": 3439460,
+      "gitBlobSha1": "e4055a08245b823c6c49981a897faee101570411",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/96c4372fc0d97654d283b2b0427ebc694e9575b4/render-poc/site/assets/oral-source-pbr.glb",
+      "bytes": 790256,
+      "gitBlobSha1": "42427d4060ba3d611f89dfbcb299e4191723b57a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-00.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "8541e0f2dea667c2652b54febbde20a328b64c86",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-01.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "50760ff36291e0fec6edd945a3556a0199c44483",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-02.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "d1c068c6fd361958f32ca4391cdc9fa27d2fac3e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-03.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "e133d46147fb09fe38ebe1a8b493e228590459c2",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-04.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "cd05f235e2782a8f93b107f732838bd89172d699",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-05.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "853f0846aa536fe869385c7c28ff6ae9449e6a43",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-06.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "f4dfe9181846eb2073109fb88c50fd55f0bc62ed",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-07.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "6ddcb801ff8e37f12cd31cfcf49eba92fa78a1ee",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-08.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "5223830b24195eba2e2c4310ac9240b9ccef5bfb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-09.bin",
+      "bytes": 8388608,
+      "gitBlobSha1": "c1de49e886e4af508047a303cc2c84513568c2e5",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tim-a-wood/character-webgl-render-test/c487797c897147830533d259ac1b99f23cb0539c/render-poc/site/assets/einar-body45-10.bin",
+      "bytes": 1745840,
+      "gitBlobSha1": "0f39bdc38ed03c8b3d75fb1e0673b01e006ec857",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "externalPolicy": "Existing immutable generic character asset URLs only; fetched without credentials; runtime verifies aggregate payload hashes."
+}

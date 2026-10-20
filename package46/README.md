@@ -64,4 +64,8 @@ The head is about91.4 MB. On a device supporting ASTC4x4, the dressed body is85.
 
 The wrist movement uses six sampled source keys. Held-out cloth error reaches6.29 mm, and fine glove-normal outliers remain. This is one gesture, not arbitrary animation. Hair grain and portable material differences remain visible. Moustache deformation is approximate, with tested held-out maximum error1.22 mm. Facial correctives cover tested combinations rather than the full authored rig.
 
-The source character and dependency licenses are documented in ATTRIBUTION.md and licenses/. Browser verification of this package is pending until its combined integration gate finishes; earlier explorer verification alone is not a package test.
+The source character and dependency licenses are documented in ATTRIBUTION.md and licenses/. The independent demo passed its browser gate in sandboxed Chromium/SwiftShader: head loading, four real face inputs, lazy body fetch once, wrist input, exact neutral reset, exact version45 body pixels, disposal and head reload. After disposal, measured geometry count returned to zero while one renderer texture remained; this is not a claim of zero allocated memory. Disposal while a load is pending is guarded in code but was not exercised by this browser gate. Physical devices remain untested. See verification-summary.json for the tested scope and reproducible source revision.
+
+## Private-host authentication correction
+
+The manifest request now retains the existing browser session only for the page’s own origin. Cross-origin manifest and model asset requests omit credentials. This targeted correction follows the original rendering gate; it changes no model data, controls or shaders.
