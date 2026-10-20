@@ -1,4 +1,4 @@
-name: Generic Einar68 full finite native walk proof
+name: Generic Einar68 bounded playback and transport proof
 on:
   push:
     branches: [main]
@@ -7,13 +7,13 @@ permissions:
   contents: read
 jobs:
   native-geometry:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar68 full finite walk proof'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Check generic Einar68 playback and transport fix'
     strategy:
       fail-fast: false
       matrix:
-        segment: [a, b, c, d]
+        segment: [transport, playback]
     runs-on: ubuntu-22.04
-    timeout-minutes: 35
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -30,8 +30,14 @@ jobs:
         run: |
           npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Actual WebGL native geometry and reset proof
+      - name: Bounded full-manifest playback or transport check
         working-directory: package68
         env:
           CAPTURE_SEGMENT: ${{ matrix.segment }}
-        run: timeout 1800s node capture68.cjs
+          SMOKE_CACHE_CONTROL68: no-cache
+        run: |
+          if [ "$CAPTURE_SEGMENT" = transport ]; then
+            timeout 600s node transport-matrix68.cjs
+          else
+            timeout 600s node playback-smoke68.cjs
+          fi
