@@ -28,7 +28,7 @@ jobs:
       - name: Install exact browser test runtime
         working-directory: package68
         run: |
-          npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
+          npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund playwright-core@1.57.0
           npx --no-install playwright-core install chromium
       - name: Actual WebGL native geometry and reset proof
         working-directory: package68
