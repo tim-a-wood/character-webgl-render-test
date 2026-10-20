@@ -1,4 +1,4 @@
-name: Generic whole-character Einar58 browser proof
+name: Generic whole-character Einar60 browser proof
 on:
   push:
     branches: [main]
@@ -7,11 +7,7 @@ permissions:
   contents: read
 jobs:
   whole-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Render generic Einar58 GPU walk'
-    strategy:
-      fail-fast: false
-      matrix:
-        segment: [a, b]
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Compare generic Einar60 upright posture'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -23,16 +19,13 @@ jobs:
           sparse-checkout: |
             package46
             package55
-            package56
             package57
-            package58
+            package60
       - name: Install exact browser test runtime
-        working-directory: package58
+        working-directory: package60
         run: |
           npm install --ignore-scripts --no-audit --no-fund --save-exact playwright-core@1.57.0
           npx --no-install playwright-core install chromium
-      - name: Bounded GPU walk segment
-        working-directory: package58
-        env:
-          CAPTURE_SEGMENT: ${{ matrix.segment }}
-        run: timeout 480s node capture58-full.cjs
+      - name: Matched original and corrected three-pose posture
+        working-directory: package60
+        run: timeout 480s node capture60.cjs
