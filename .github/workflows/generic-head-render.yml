@@ -1,5 +1,6 @@
 name: Generic character finite Jog WIP proof76
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths: ['.github/workflows/generic-head-render.yml', 'package72/**']
@@ -7,7 +8,7 @@ permissions:
   contents: read
 jobs:
   standard-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Check generic whole-character mobile port72'
+    if: github.event.repository.private == false && github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || github.event.head_commit.message == 'Check generic whole-character mobile port72')
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
