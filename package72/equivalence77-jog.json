@@ -1,0 +1,157 @@
+{
+  "baselineSha256": "e64040e3aa5017c64cb9b00907d147ce414c02b9145e1bb16611c88e2b80bc4a",
+  "outputSha256": "b718024b077944a61c8b06e7784e1d481e518674a0f72a8f888e187b8cd8c4e6",
+  "outputBytes": 29571792,
+  "boundedAddedTargets": [
+    {
+      "node": "Mobile_Jacket",
+      "mesh": "Jacket_Geometry",
+      "oldCount": 9,
+      "targetNames": [
+        "JogSupplement01",
+        "JogSupplement02",
+        "JogSupplement03",
+        "JogSupplement04"
+      ],
+      "addedCount": 4
+    },
+    {
+      "node": "Mobile_MechanicalSoft",
+      "mesh": "MechanicalSoft_Geometry",
+      "oldCount": 7,
+      "targetNames": [
+        "JogSupplement01",
+        "JogSupplement02",
+        "JogSupplement03",
+        "JogSupplement04"
+      ],
+      "addedCount": 4
+    }
+  ],
+  "maxAddedTargetsPerMesh": 4,
+  "originalGeometryAndTargetsExact": true,
+  "appearanceBindingsRestGraphExact": true,
+  "retainedWalkFaceZeroPaddingEquivalent": true,
+  "v1JogZeroPaddingEquivalent": true,
+  "jogBonesAndOriginalWeightsExact": true,
+  "supplementalDefaultWalkFaceZero": true,
+  "supplementalReconstructionAudit": {
+    "values": 1209528,
+    "maxPositionBasisError": 3.015335495182292e-09,
+    "maxNormalBasisError": 5.921737056269194e-08,
+    "maxWeightScalingError": 5.7859537605509104e-08,
+    "maxPositionContributionError": 5.358340299244091e-09,
+    "maxNormalContributionError": 1.1246595743585885e-07,
+    "positionUnits": "native source meters",
+    "samples": "all original Jog weight rows; equal input times and interpolation separately verified",
+    "exactPrescribedFloat32Rescale": true,
+    "positionContributionTolerance": 1e-06,
+    "normalContributionTolerance": 1e-05
+  },
+  "supplementalScaling": [
+    {
+      "node": "Mobile_Jacket",
+      "primitive": 0,
+      "target": "JogSupplement01",
+      "normalReciprocalFactor": 1.9540715217590332,
+      "positionCoordinateScale": 0.8404111750608635
+    },
+    {
+      "node": "Mobile_Jacket",
+      "primitive": 0,
+      "target": "JogSupplement02",
+      "normalReciprocalFactor": 1,
+      "positionCoordinateScale": 0.8404111750608635
+    },
+    {
+      "node": "Mobile_Jacket",
+      "primitive": 0,
+      "target": "JogSupplement03",
+      "normalReciprocalFactor": 1.2032390832901,
+      "positionCoordinateScale": 0.8404111750608635
+    },
+    {
+      "node": "Mobile_Jacket",
+      "primitive": 0,
+      "target": "JogSupplement04",
+      "normalReciprocalFactor": 1,
+      "positionCoordinateScale": 0.8404111750608635
+    },
+    {
+      "node": "Mobile_MechanicalSoft",
+      "primitive": 0,
+      "target": "JogSupplement01",
+      "normalReciprocalFactor": 1.9871513843536377,
+      "positionCoordinateScale": 0.8066251403861798
+    },
+    {
+      "node": "Mobile_MechanicalSoft",
+      "primitive": 0,
+      "target": "JogSupplement02",
+      "normalReciprocalFactor": 1.5621323585510254,
+      "positionCoordinateScale": 0.8066251403861798
+    },
+    {
+      "node": "Mobile_MechanicalSoft",
+      "primitive": 0,
+      "target": "JogSupplement03",
+      "normalReciprocalFactor": 1,
+      "positionCoordinateScale": 0.8066251403861798
+    },
+    {
+      "node": "Mobile_MechanicalSoft",
+      "primitive": 0,
+      "target": "JogSupplement04",
+      "normalReciprocalFactor": 1,
+      "positionCoordinateScale": 0.8066251403861798
+    }
+  ],
+  "jog": {
+    "samples": 48,
+    "duration": 0.783349,
+    "sourceDt": 0.016667,
+    "loopMode": "finite"
+  },
+  "clips": [
+    "Face_Jaw",
+    "Face_Smile",
+    "Face_Brow",
+    "Face_Blink",
+    "Face_JawSmile",
+    "Walk539_618",
+    "Diagnostic_JogV1",
+    "Jog478_525"
+  ],
+  "supplementalBasisExactAfterNodeIORoundtrip": true,
+  "correctedJogExactAfterNodeIORoundtrip": true,
+  "schema": "bounded-jog-equivalence77-v1",
+  "artisticAcceptance": false,
+  "reviewStatus": "WIP, actual source comparison required",
+  "sourceReportSha256": "f740c963b173deb27a03c47c006773b114698d9cb420c0fb88a6b2ebba83b874",
+  "knownFitLimitations": {
+    "status": "WIP",
+    "artisticAccepted": false,
+    "scope": "Four appended targets each on Jacket and MechanicalSoft. Bones, old weights and all other components unchanged.",
+    "fitReportSha256": "3accfd780d130c8e98a55cca7acc5575dada6b05c070cd05b604146b52bd6c29",
+    "groups": {
+      "Jacket": {
+        "oldMaxErrorMillimetres": 64.34644765095078,
+        "newMaxErrorMillimetres": 5.769456921142609,
+        "newRmsErrorMillimetres": 0.4584414664946656,
+        "heldoutInterpolatedMaxErrorMillimetres": 3.668256573093011
+      },
+      "MechanicalSoft": {
+        "oldMaxErrorMillimetres": 64.93174954839441,
+        "newMaxErrorMillimetres": 6.495272086193375,
+        "newRmsErrorMillimetres": 0.3105969573165311,
+        "heldoutInterpolatedMaxErrorMillimetres": 3.1234273329309037
+      }
+    },
+    "remainingLimitations": [
+      "Three corrected components remain above the previous3mm walk gate; no gate was relaxed.",
+      "Unchanged pants/head/foot/contact approximations from v1 remain.",
+      "Finite excerpt and inherited contact/reset discontinuities are unchanged.",
+      "Motion-specific supplemental basis does not prove arbitrary-animation generality."
+    ]
+  }
+}

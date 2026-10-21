@@ -1,0 +1,154 @@
+{
+  "schema": "standard-character-runtime72-v1",
+  "asset": {
+    "filename": "einar-jog-v2-diagnostic-b718024b0779.glb",
+    "bytes": 29571792,
+    "sha256": "b718024b077944a61c8b06e7784e1d481e518674a0f72a8f888e187b8cd8c4e6",
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "04f23f95449b7e8affe2c9ecb2c0a60adf996486d32528b2b2b05ed1c8bd31c3",
+      "postprocessor": "@gltf-transform/core 4.5.1",
+      "auditedNativeDerivativeSha256": "4c025a3b6405efc84d6bbce1f806a2f9e897eef0aeb9a642c088d4cd192448da",
+      "scope": "Standard bounded morph append, fixed old runtime data, zero-padded retained clips; v1 comparison clip included."
+    },
+    "parts": [
+      {
+        "filename": "einar-jog-v2-diagnostic-b718024b0779.glb.part0",
+        "bytes": 16777216,
+        "sha256": "2f150883117ddcebf28d73285d2a6f213d4b91bf1487337835808f3fc49129d2"
+      },
+      {
+        "filename": "einar-jog-v2-diagnostic-b718024b0779.glb.part1",
+        "bytes": 12794576,
+        "sha256": "81f61a5cc06e4177d7cb92b4c899968b5c4505ed1cb6466958f3ab5a3b835ac7"
+      }
+    ]
+  },
+  "clip": "Walk539_618",
+  "duration": 1.316693,
+  "scope": "Jog v2 bounded Jacket/MechanicalSoft supplemental morph comparison. Existing geometry, targets, skin, appearance and animation components retained; new defaults/Walk/Face weights zero.",
+  "baselineAsset": {
+    "filename": "einar-jog-v1-e64040e3aa50.glb",
+    "bytes": 25265084,
+    "sha256": "e64040e3aa5017c64cb9b00907d147ce414c02b9145e1bb16611c88e2b80bc4a"
+  },
+  "jog": {
+    "clip": "Jog478_525",
+    "samples": 48,
+    "firstSourceFrame": 478,
+    "lastSourceFrame": 525,
+    "sourceDt": 0.016667,
+    "duration": 0.783349,
+    "loopMode": "finite",
+    "contactAnchors": [
+      {
+        "sourceFrame": 478,
+        "label": "right support",
+        "status": "source-worker annotation"
+      },
+      {
+        "sourceFrame": 493,
+        "label": "no-support hypothesis",
+        "status": "hypothesis, not independently proven contact"
+      },
+      {
+        "sourceFrame": 501,
+        "label": "left support",
+        "status": "source-worker annotation"
+      },
+      {
+        "sourceFrame": 513,
+        "label": "worst wire fit",
+        "status": "fit-error review anchor, not contact"
+      },
+      {
+        "sourceFrame": 522,
+        "label": "partial right support",
+        "status": "source-worker annotation"
+      }
+    ],
+    "fitReview": {
+      "status": "WIP",
+      "artisticAccepted": false,
+      "scope": "Four appended targets each on Jacket and MechanicalSoft. Bones, old weights and all other components unchanged.",
+      "fitReportSha256": "3accfd780d130c8e98a55cca7acc5575dada6b05c070cd05b604146b52bd6c29",
+      "groups": {
+        "Jacket": {
+          "oldMaxErrorMillimetres": 64.34644765095078,
+          "newMaxErrorMillimetres": 5.769456921142609,
+          "newRmsErrorMillimetres": 0.4584414664946656,
+          "heldoutInterpolatedMaxErrorMillimetres": 3.668256573093011
+        },
+        "MechanicalSoft": {
+          "oldMaxErrorMillimetres": 64.93174954839441,
+          "newMaxErrorMillimetres": 6.495272086193375,
+          "newRmsErrorMillimetres": 0.3105969573165311,
+          "heldoutInterpolatedMaxErrorMillimetres": 3.1234273329309037
+        }
+      },
+      "remainingLimitations": [
+        "Three corrected components remain above the previous3mm walk gate; no gate was relaxed.",
+        "Unchanged pants/head/foot/contact approximations from v1 remain.",
+        "Finite excerpt and inherited contact/reset discontinuities are unchanged.",
+        "Motion-specific supplemental basis does not prove arbitrary-animation generality."
+      ]
+    }
+  },
+  "iterationPolicy": "Iteration2 demo, review and retro before any next iteration. No seamless-loop or artistic acceptance claim.",
+  "transportBaselineAsset": {
+    "filename": "einar-jog-v1-e64040e3aa50.glb",
+    "bytes": 25265084,
+    "sha256": "e64040e3aa5017c64cb9b00907d147ce414c02b9145e1bb16611c88e2b80bc4a"
+  },
+  "acceptedWalkBaselineAsset": {
+    "filename": "einar-knee74-production.glb",
+    "sha256": "2b6b1228fc69de4d7a32c1d08f869da49daa45fa1716b44c162e40ebfff538e6",
+    "bytes": 24509432
+  },
+  "diagnosticBeforeClip": "Diagnostic_JogV1",
+  "boundedAddedTargets": [
+    {
+      "node": "Mobile_Jacket",
+      "mesh": "Jacket_Geometry",
+      "oldCount": 9,
+      "targetNames": [
+        "JogSupplement01",
+        "JogSupplement02",
+        "JogSupplement03",
+        "JogSupplement04"
+      ],
+      "addedCount": 4
+    },
+    {
+      "node": "Mobile_MechanicalSoft",
+      "mesh": "MechanicalSoft_Geometry",
+      "oldCount": 7,
+      "targetNames": [
+        "JogSupplement01",
+        "JogSupplement02",
+        "JogSupplement03",
+        "JogSupplement04"
+      ],
+      "addedCount": 4
+    }
+  ],
+  "comparisonCamera": {
+    "target": [
+      0.005892801219423426,
+      0.8538701889494573,
+      0.017776522720290896
+    ],
+    "distance": 4.32361890233801,
+    "fov": 32,
+    "frontDirection": [
+      0,
+      0.025,
+      1
+    ],
+    "sideDirection": [
+      1,
+      0.025,
+      0
+    ]
+  }
+}
