@@ -4,7 +4,11 @@
     "filename": "einar-knee74-5849f06afdaa.glb",
     "sha256": "5849f06afdaa04d0f8a362c30d05807fc5f9de5e37d819ca820929a4b43c4d92",
     "bytes": 24649156,
-    "provenance": "Standard Blender 5.0.1 evaluated animation; standard glTF Transform animation-only merge. Existing mesh, basis, skin bindings, materials and textures unchanged."
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "d03238c29e55e1809691a977eaad374100a4dbd3014994762819406753df5a1f",
+      "postprocessor": "@gltf-transform/core 4.5.1"
+    }
   },
   "clip": "Walk539_618",
   "duration": 1.3166930675506592,
