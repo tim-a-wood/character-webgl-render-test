@@ -1,4 +1,4 @@
-name: Generic Einar68 bounded playback and transport proof
+name: Generic representative standard glTF proof71
 on:
   push:
     branches: [main]
@@ -6,14 +6,10 @@ on:
 permissions:
   contents: read
 jobs:
-  native-geometry:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Check generic Einar68 playback and transport fix'
-    strategy:
-      fail-fast: false
-      matrix:
-        segment: [transport, playback]
+  standard-character:
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Check generic representative standard port71'
     runs-on: ubuntu-22.04
-    timeout-minutes: 12
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -21,23 +17,26 @@ jobs:
           fetch-depth: 1
           lfs: false
           sparse-checkout: |
-            package46
-            package55
-            package56
-            package68
-      - name: Install exact browser test runtime
-        working-directory: package68
-        run: |
-          npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund playwright-core@1.57.0
-          npx --no-install playwright-core install chromium
-      - name: Bounded full-manifest playback or transport check
-        working-directory: package68
-        env:
-          CAPTURE_SEGMENT: ${{ matrix.segment }}
-          SMOKE_CACHE_CONTROL68: no-cache
-        run: |
-          if [ "$CAPTURE_SEGMENT" = transport ]; then
-            timeout 600s node transport-matrix68.cjs
-          else
-            timeout 600s node playback-smoke68.cjs
-          fi
+            package71
+      - name: Use exact supported Node runtime
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.19.0'
+      - name: Install exact validator and established browser harness
+        working-directory: package71
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Restore the exact exporter GLB from lossless transport
+        working-directory: package71
+        run: node restore-transport71.cjs
+      - name: Validate the exact standard Blender glTF export
+        working-directory: package71
+        run: node validate-gltf71.cjs representative71.glb validator71.json
+      - name: Fetch, verify and build official Khronos Sample Viewer
+        working-directory: package71
+        run: bash prepare-official-viewer71.sh
+      - name: Install established Chromium
+        working-directory: package71
+        run: npx --no-install playwright-core install chromium
+      - name: Small independent standard viewer proof
+        working-directory: package71
+        run: timeout 300s node capture-standard-viewer71.cjs

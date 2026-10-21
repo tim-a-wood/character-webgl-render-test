@@ -1,0 +1,113 @@
+{
+  "format": "representative-standard-proof-inputs71-v1",
+  "asset": {
+    "filename": "representative71.glb",
+    "bytes": 22937072,
+    "sha256": "178434ff01531c08c88a378838e6ebbe53fb66cee1a4b990d776f3601d8d3a46"
+  },
+  "transport": {
+    "filename": "representative71.glb.gz",
+    "encoding": "gzip",
+    "bytes": 12169269,
+    "sha256": "6295f8ac3c85983cddb07a21471a81e251e5b448dc869a5559cef0a5ad3a7233"
+  },
+  "playbackAnimation": "Walk539_618",
+  "playbackCamera": "Knee_Boot_Closeup",
+  "requireAnimatedMorphs": true,
+  "poses": [
+    {
+      "label": "neutral-overview",
+      "kind": "neutral",
+      "animationNames": [],
+      "seconds": 0,
+      "cameraName": "Full_Representative_View",
+      "expectMorphs": false,
+      "caption": "Neutral rest overview; all animations inactive and morph weights zero."
+    },
+    {
+      "label": "plant539",
+      "kind": "animation",
+      "animationNames": [
+        "Walk539_618"
+      ],
+      "seconds": 0,
+      "cameraName": "Knee_Boot_Closeup",
+      "expectMorphs": true,
+      "caption": "Plant sample from the accepted clip.",
+      "sourceFrame": 539
+    },
+    {
+      "label": "deep-bend553",
+      "kind": "animation",
+      "animationNames": [
+        "Walk539_618"
+      ],
+      "seconds": 0.23333801329135895,
+      "cameraName": "Knee_Boot_Closeup",
+      "expectMorphs": true,
+      "caption": "Deepest left-knee bend sample, approximately 66.59 degrees of flexion.",
+      "sourceFrame": 553
+    },
+    {
+      "label": "near-extension577",
+      "kind": "animation",
+      "animationNames": [
+        "Walk539_618"
+      ],
+      "seconds": 0.6333460360765457,
+      "cameraName": "Knee_Boot_Closeup",
+      "expectMorphs": true,
+      "caption": "Near-extension sample, approximately 5.085 degrees of left-knee flexion.",
+      "sourceFrame": 577
+    },
+    {
+      "label": "release564",
+      "kind": "animation",
+      "animationNames": [
+        "Walk539_618"
+      ],
+      "seconds": 0.41667502373456955,
+      "cameraName": "Knee_Boot_Closeup",
+      "expectMorphs": true,
+      "caption": "Left-foot release sample from the accepted clip.",
+      "sourceFrame": 564
+    },
+    {
+      "label": "head-neutral",
+      "kind": "neutral",
+      "animationNames": [],
+      "seconds": 0,
+      "cameraName": "Head_Closeup",
+      "expectMorphs": false,
+      "caption": "Neutral generic head surface. Eyes, oral meshes and groom are outside this partial proof."
+    },
+    {
+      "label": "head-motion553",
+      "kind": "animation",
+      "animationNames": [
+        "Walk539_618"
+      ],
+      "seconds": 0.23333801329135895,
+      "cameraName": "Head_Closeup",
+      "expectMorphs": true,
+      "caption": "Head movement with compact walking correction modes.",
+      "sourceFrame": 553
+    },
+    {
+      "label": "head-jaw-smile",
+      "kind": "animation",
+      "animationNames": [
+        "Face_JawSmile"
+      ],
+      "seconds": 0.5000100284814835,
+      "cameraName": "Head_Closeup",
+      "expectMorphs": true,
+      "caption": "Existing generic jaw and smile expression, including its source interaction term."
+    }
+  ],
+  "limits": [
+    "Representative knee/boot and head proof, not a complete character.",
+    "Neutral diagnostic materials, not final PBR or appearance acceptance.",
+    "Only standard glTF skinning and animated morph targets; no source control rig or personal reference images."
+  ]
+}

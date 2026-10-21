@@ -1,0 +1,7 @@
+{
+  "name": "standard-character-proof71",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bounded Khronos glTF Validator and official Sample Viewer proof, no custom renderer",
+  "dependencies": {"gltf-validator": "2.0.0-dev.3.10", "playwright-core": "1.57.0"}
+}
