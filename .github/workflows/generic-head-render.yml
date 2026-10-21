@@ -1,4 +1,4 @@
-name: Generic character eye-pass diagnostic73
+name: Generic character eye-material and start-pose candidate74
 on:
   push:
     branches: [main]
@@ -26,10 +26,10 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Restore and verify exact standard runtime
         working-directory: package72
-        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs && node freeze73-diagnostic.cjs
+        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs && node freeze74-candidate.cjs
       - name: Install established Chromium
         working-directory: package72
         run: npx --no-install playwright-core install chromium
-      - name: Same-model eye-pass A/B diagnostic
+      - name: Same-model visible eye material and start-pose proof
         working-directory: package72
-        run: timeout 300s node capture73-diagnostic.cjs
+        run: timeout 420s node capture74-candidate.cjs
