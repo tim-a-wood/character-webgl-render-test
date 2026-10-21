@@ -1,4 +1,4 @@
-name: Generic support Jog v4 comparison79
+name: Generic full-cycle Jog v5 comparison80
 on:
   workflow_dispatch:
 permissions:
@@ -24,10 +24,10 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Restore exact standard runtime and lossless hosting parts
         working-directory: package72
-        run: node restore-transport72.cjs && node restore-transport76.cjs && node restore-transport77.cjs && node restore-transport78.cjs && node restore-transport79.cjs && node split79.cjs && node validate79.cjs
+        run: node restore-transport72.cjs && node restore-transport76.cjs && node restore-transport77.cjs && node restore-transport78.cjs && node restore-transport79.cjs && node restore-transport80.cjs && node split80.cjs && node validate80.cjs
       - name: Install established Chromium
         working-directory: package72
         run: npx --no-install playwright-core install chromium
-      - name: Support Jog v3-v4 poses and finite-play smoke
+      - name: Full-cycle seam, arm poses and real repeated-play smoke
         working-directory: package72
-        run: timeout 300s node capture79-jog.cjs
+        run: timeout 300s node capture80-jog.cjs

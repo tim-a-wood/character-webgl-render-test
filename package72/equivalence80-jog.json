@@ -1,0 +1,152 @@
+{
+  "schema": "full-cycle-jog-equivalence80-v1",
+  "semanticBaselineSha256": "2b1839efe95a16645bd1340304582d3c899b04165a1c046cd1c39e12b71408ab",
+  "transportBaselineSha256": "b03187bc5c3070c31930ea62d7aefa4882c31067be1384fd87faf5e3e10713db",
+  "assetSha256": "6611e1a3ce90dbd4091d789580616ebcc5a19466a921a350bad4a0b3ce8c34e8",
+  "assetBytes": 29579956,
+  "fixedGeometryTargetsAppearanceBindingsRestGraphExact": true,
+  "retainedWalkFaceExact": true,
+  "beforeJogExact": true,
+  "allExistingTargetsExact": true,
+  "newTargets": 0,
+  "newCycleExactAfterRoundtrip": true,
+  "retainedClips": [
+    "Face_Jaw",
+    "Face_Smile",
+    "Face_Brow",
+    "Face_Blink",
+    "Face_JawSmile",
+    "Walk539_618"
+  ],
+  "beforeClip": {
+    "clip": "Diagnostic_BeforeJogV5",
+    "samples": 48,
+    "firstSourceFrame": 478,
+    "lastSourceFrame": 525,
+    "sourceDt": 0.016667,
+    "duration": 0.783349,
+    "loopMode": "finite"
+  },
+  "newClip": {
+    "clip": "JogLoop498_546",
+    "samples": 49,
+    "firstSourceFrame": 498,
+    "lastSourceFrame": 546,
+    "sourceDt": 0.016667,
+    "duration": 0.800016,
+    "loopMode": "repeat",
+    "rootMode": "in-place-cyclic",
+    "contactAnchors": [],
+    "fitReview": {
+      "status": "WIP",
+      "artisticAccepted": false,
+      "fitReportSha256": "be6a3dd4cd9bb671826b7ecfe789f1b938650cbbae864cc17977e89275d019f2",
+      "maxErrorsByGroupMm": {
+        "RigidBody": {
+          "component": "GEO-hyd_hose_connector_straight_nut.003",
+          "maxMm": 1.0175362097255203e-12,
+          "sourceFrame": 522
+        },
+        "MechanicalSoft": {
+          "component": "GEO-einar_tire_shoulder_padding",
+          "maxMm": 29.631420131642564,
+          "sourceFrame": 534
+        },
+        "Footwear": {
+          "component": "GEO-einar_boot_main.L",
+          "maxMm": 9.219744422022057,
+          "sourceFrame": 530
+        },
+        "Hand": {
+          "component": "GEO-einar_glove",
+          "maxMm": 5.982334557199048,
+          "sourceFrame": 502
+        },
+        "Jacket": {
+          "component": "GEO-einar_jacket_main",
+          "maxMm": 20.438020541137032,
+          "sourceFrame": 535
+        },
+        "Pants": {
+          "component": "GEO-einar_pants_main",
+          "maxMm": 12.246975237177768,
+          "sourceFrame": 530
+        },
+        "HeadSkin": {
+          "component": "GEO-einar_head",
+          "maxMm": 6.725780711613418,
+          "sourceFrame": 527
+        },
+        "KnitHat": {
+          "component": "GEO-einar_hat",
+          "maxMm": 2.5438405243138007e-13,
+          "sourceFrame": 498
+        },
+        "OralExpression": {
+          "component": "GEO-einar_teeth_lower",
+          "maxMm": 4.585973723508303e-13,
+          "sourceFrame": 505
+        },
+        "EyeOpaque": {
+          "component": "GEO-einar_teeth_upper",
+          "maxMm": 4.982493048981751e-13,
+          "sourceFrame": 529
+        },
+        "EyeCornea": {
+          "component": "GEO-eye.cornea.R",
+          "maxMm": 7.027150473277824e-13,
+          "sourceFrame": 534
+        },
+        "EyeMeniscus": {
+          "component": "GEO-eye.meniscus.L",
+          "maxMm": 2.498001805406602e-13,
+          "sourceFrame": 498
+        }
+      },
+      "rightSupportPersistentPointDriftMm": 25.264543833097758,
+      "limitations": [
+        "Authored full-cycle endpoints are exact; sampled boundary velocity is nonzero and final linear runtime is not claimed mathematically C1.",
+        "Right full-support drift remains about25.265mm in restored source world; old v4 phase-specific pin is not inherited.",
+        "Existing fixed basis retains footwear, pants, jacket and hose fit residuals; no new targets were added.",
+        "Actual repeated playback and ordered seam views remain subject to visual review."
+      ]
+    },
+    "loopValidation": {
+      "approved": true,
+      "scope": "WIP-loop-review",
+      "endpointPosePassed": true,
+      "firstDerivativeReviewed": true,
+      "contactSeamPassed": true,
+      "rootConventionPassed": true,
+      "nativeAuditSha256": "44aa08759962e0c4902b5af2bd39ff4e509f51e04ecbb1bf360707f2d9c6587a",
+      "decodedAuditSha256": "e03b8d9bd9e0981aba2d24ee1333cf7aad8b779e20b0a9777a4cdf5f82aad79b",
+      "decodedAssetSha256": "6611e1a3ce90dbd4091d789580616ebcc5a19466a921a350bad4a0b3ce8c34e8",
+      "interpretation": "Approval to repeat the actual authored cycle for WIP review. Not mathematical C1, no-slide or finished-motion certification."
+    }
+  },
+  "officialNativeExportSha256": "f6378a29b158603964af9e3aeeb6555d18abc81dbd66a21f725fc478835771f5",
+  "mergeAuditSha256": "01b86b125a029e335c6891fbba0540b410ebfabc6defa9549f01166265c3bf76",
+  "production": {
+    "sha256": "57e6f937fa050381dcc95a87939e72c56fd342b0f967919132a326567f5ec72b",
+    "bytes": 28820000,
+    "clips": [
+      "Face_Jaw",
+      "Face_Smile",
+      "Face_Brow",
+      "Face_Blink",
+      "Face_JawSmile",
+      "Walk539_618",
+      "JogLoop498_546"
+    ],
+    "removed": {
+      "removedClip": "Diagnostic_BeforeJogV5",
+      "removedChannels": 953,
+      "removedSamplers": 953,
+      "removedAccessorCount": 1906
+    },
+    "diagnosticOmitted": true,
+    "retainedTrackTargetParityExact": true
+  },
+  "artisticAcceptance": false,
+  "scope": "Generic evaluated runtime only. Full-cycle WIP review with exact endpoints and independently measured nonzero boundary velocity. No mathematical C1 or no-slide certification."
+}

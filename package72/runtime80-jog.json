@@ -1,0 +1,265 @@
+{
+  "schema": "standard-character-runtime72-v1",
+  "clip": "Walk539_618",
+  "duration": 1.316693,
+  "acceptedWalkBaselineAsset": {
+    "filename": "einar-knee74-production.glb",
+    "sha256": "2b6b1228fc69de4d7a32c1d08f869da49daa45fa1716b44c162e40ebfff538e6",
+    "bytes": 24509432
+  },
+  "existingSupplementTargets": [
+    {
+      "node": "Mobile_Jacket",
+      "mesh": "Jacket_Geometry",
+      "oldCount": 9,
+      "targetNames": [
+        "JogSupplement01",
+        "JogSupplement02",
+        "JogSupplement03",
+        "JogSupplement04"
+      ],
+      "addedCount": 4
+    },
+    {
+      "node": "Mobile_MechanicalSoft",
+      "mesh": "MechanicalSoft_Geometry",
+      "oldCount": 7,
+      "targetNames": [
+        "JogSupplement01",
+        "JogSupplement02",
+        "JogSupplement03",
+        "JogSupplement04"
+      ],
+      "addedCount": 4
+    }
+  ],
+  "scope": "Authored49-key full-cycle Jog v5 WIP with natural fore-aft arms. Exact v4 static model and Walk/Face retained; no crossfade or source-clock changes.",
+  "baselineAsset": {
+    "filename": "einar-jog-v4-production-2b1839efe95a.glb",
+    "bytes": 28810964,
+    "sha256": "2b1839efe95a16645bd1340304582d3c899b04165a1c046cd1c39e12b71408ab"
+  },
+  "transportBaselineAsset": {
+    "filename": "einar-jog-v4-diagnostic-b03187bc5c30.glb",
+    "bytes": 29570640,
+    "sha256": "b03187bc5c3070c31930ea62d7aefa4882c31067be1384fd87faf5e3e10713db"
+  },
+  "comparisonCamera": {
+    "target": [
+      0.005892801219423426,
+      0.8538701889494573,
+      0.017776522720290896
+    ],
+    "distance": 4.32361890233801,
+    "fov": 32,
+    "frontDirection": [
+      0,
+      0.025,
+      1
+    ],
+    "sideDirection": [
+      1,
+      0.025,
+      0
+    ],
+    "threeQuarterDirection": [
+      1,
+      0.025,
+      1
+    ],
+    "scope": "Fixed earlier in-place whole-character camera, shared across both clips and every capture. No QA root travel applied."
+  },
+  "iterationPolicy": "Demo, review and retro before any next iteration. Loop repetition is for WIP motion review, not a mathematical C1 or finished-contact certification.",
+  "animationEditContract": {
+    "allowedMorphNodes": [
+      "Mobile_EyeMeniscus",
+      "Mobile_Footwear",
+      "Mobile_GEO-einar_eyebrows",
+      "Mobile_GEO-einar_eyelashes",
+      "Mobile_GroomCore",
+      "Mobile_Hand",
+      "Mobile_HeadSkin",
+      "Mobile_Jacket",
+      "Mobile_MechanicalSoft",
+      "Mobile_OralExpression",
+      "Mobile_Pants"
+    ],
+    "frozenUpperBodyNodes": [],
+    "scope": "New full-cycle clip may change all existing scalar/bone channels. Static geometry and all existing targets remain exact; no new modes."
+  },
+  "diagnosticContact": {
+    "groundY": -0.025249142199754715,
+    "gridSpacingMetres": 0.1,
+    "units": "metres",
+    "productionRootChanged": false,
+    "rightSoleVertices": [
+      {
+        "label": "rightSole01",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19365
+      },
+      {
+        "label": "rightSole02",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19368
+      },
+      {
+        "label": "rightSole03",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19372
+      },
+      {
+        "label": "rightSole04",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19375
+      },
+      {
+        "label": "rightSole05",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19379
+      },
+      {
+        "label": "rightSole06",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 20426
+      },
+      {
+        "label": "rightSole07",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 20429
+      }
+    ],
+    "soleMappingAuditSha256": "d20a04bebd260e81f353faeb27583c2ba3022b8e3053fbf427b7e58df2296bf6",
+    "rootTravelConvention": "Production and screenshots remain in-place. No QA root travel is applied. Periodic seam checks do not establish no-slide world-ground support."
+  },
+  "jog": {
+    "clip": "JogLoop498_546",
+    "samples": 49,
+    "firstSourceFrame": 498,
+    "lastSourceFrame": 546,
+    "sourceDt": 0.016667,
+    "duration": 0.800016,
+    "loopMode": "repeat",
+    "rootMode": "in-place-cyclic",
+    "contactAnchors": [],
+    "fitReview": {
+      "status": "WIP",
+      "artisticAccepted": false,
+      "fitReportSha256": "be6a3dd4cd9bb671826b7ecfe789f1b938650cbbae864cc17977e89275d019f2",
+      "maxErrorsByGroupMm": {
+        "RigidBody": {
+          "component": "GEO-hyd_hose_connector_straight_nut.003",
+          "maxMm": 1.0175362097255203e-12,
+          "sourceFrame": 522
+        },
+        "MechanicalSoft": {
+          "component": "GEO-einar_tire_shoulder_padding",
+          "maxMm": 29.631420131642564,
+          "sourceFrame": 534
+        },
+        "Footwear": {
+          "component": "GEO-einar_boot_main.L",
+          "maxMm": 9.219744422022057,
+          "sourceFrame": 530
+        },
+        "Hand": {
+          "component": "GEO-einar_glove",
+          "maxMm": 5.982334557199048,
+          "sourceFrame": 502
+        },
+        "Jacket": {
+          "component": "GEO-einar_jacket_main",
+          "maxMm": 20.438020541137032,
+          "sourceFrame": 535
+        },
+        "Pants": {
+          "component": "GEO-einar_pants_main",
+          "maxMm": 12.246975237177768,
+          "sourceFrame": 530
+        },
+        "HeadSkin": {
+          "component": "GEO-einar_head",
+          "maxMm": 6.725780711613418,
+          "sourceFrame": 527
+        },
+        "KnitHat": {
+          "component": "GEO-einar_hat",
+          "maxMm": 2.5438405243138007e-13,
+          "sourceFrame": 498
+        },
+        "OralExpression": {
+          "component": "GEO-einar_teeth_lower",
+          "maxMm": 4.585973723508303e-13,
+          "sourceFrame": 505
+        },
+        "EyeOpaque": {
+          "component": "GEO-einar_teeth_upper",
+          "maxMm": 4.982493048981751e-13,
+          "sourceFrame": 529
+        },
+        "EyeCornea": {
+          "component": "GEO-eye.cornea.R",
+          "maxMm": 7.027150473277824e-13,
+          "sourceFrame": 534
+        },
+        "EyeMeniscus": {
+          "component": "GEO-eye.meniscus.L",
+          "maxMm": 2.498001805406602e-13,
+          "sourceFrame": 498
+        }
+      },
+      "rightSupportPersistentPointDriftMm": 25.264543833097758,
+      "limitations": [
+        "Authored full-cycle endpoints are exact; sampled boundary velocity is nonzero and final linear runtime is not claimed mathematically C1.",
+        "Right full-support drift remains about25.265mm in restored source world; old v4 phase-specific pin is not inherited.",
+        "Existing fixed basis retains footwear, pants, jacket and hose fit residuals; no new targets were added.",
+        "Actual repeated playback and ordered seam views remain subject to visual review."
+      ]
+    },
+    "loopValidation": {
+      "approved": true,
+      "scope": "WIP-loop-review",
+      "endpointPosePassed": true,
+      "firstDerivativeReviewed": true,
+      "contactSeamPassed": true,
+      "rootConventionPassed": true,
+      "nativeAuditSha256": "44aa08759962e0c4902b5af2bd39ff4e509f51e04ecbb1bf360707f2d9c6587a",
+      "decodedAuditSha256": "e03b8d9bd9e0981aba2d24ee1333cf7aad8b779e20b0a9777a4cdf5f82aad79b",
+      "decodedAssetSha256": "6611e1a3ce90dbd4091d789580616ebcc5a19466a921a350bad4a0b3ce8c34e8",
+      "interpretation": "Approval to repeat the actual authored cycle for WIP review. Not mathematical C1, no-slide or finished-motion certification."
+    }
+  },
+  "asset": {
+    "filename": "einar-jog-v5-diagnostic-6611e1a3ce90.glb",
+    "bytes": 29579956,
+    "sha256": "6611e1a3ce90dbd4091d789580616ebcc5a19466a921a350bad4a0b3ce8c34e8",
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "f6378a29b158603964af9e3aeeb6555d18abc81dbd66a21f725fc478835771f5",
+      "postprocessor": "@gltf-transform/core 4.5.1",
+      "scope": "Append authored full-cycle scalar animation onto exact frozen v4 model; no new geometry or basis."
+    },
+    "parts": [
+      {
+        "filename": "einar-jog-v5-diagnostic-6611e1a3ce90.glb.part0",
+        "bytes": 16777216,
+        "sha256": "dcee0c22ee52db80bdf289aaadec2066228b2bddd1f0bacb7bf0a94238358913"
+      },
+      {
+        "filename": "einar-jog-v5-diagnostic-6611e1a3ce90.glb.part1",
+        "bytes": 12802740,
+        "sha256": "307e13ba3a524dc4a6cadae35672390c408fc341b742cdc41a1cc3b683ac19f0"
+      }
+    ]
+  },
+  "diagnosticBeforeClip": "Diagnostic_BeforeJogV5",
+  "diagnosticBefore": {
+    "clip": "Diagnostic_BeforeJogV5",
+    "samples": 48,
+    "firstSourceFrame": 478,
+    "lastSourceFrame": 525,
+    "sourceDt": 0.016667,
+    "duration": 0.783349,
+    "loopMode": "finite"
+  }
+}

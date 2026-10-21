@@ -1,0 +1,338 @@
+{
+  "schema": "loop-jog-comparison-inputs80-v1",
+  "entry": "index80-jog.html",
+  "asset": {
+    "filename": "einar-jog-v5-diagnostic-6611e1a3ce90.glb",
+    "bytes": 29579956,
+    "sha256": "6611e1a3ce90dbd4091d789580616ebcc5a19466a921a350bad4a0b3ce8c34e8",
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "f6378a29b158603964af9e3aeeb6555d18abc81dbd66a21f725fc478835771f5",
+      "postprocessor": "@gltf-transform/core 4.5.1",
+      "scope": "Append authored full-cycle scalar animation onto exact frozen v4 model; no new geometry or basis."
+    },
+    "parts": [
+      {
+        "filename": "einar-jog-v5-diagnostic-6611e1a3ce90.glb.part0",
+        "bytes": 16777216,
+        "sha256": "dcee0c22ee52db80bdf289aaadec2066228b2bddd1f0bacb7bf0a94238358913"
+      },
+      {
+        "filename": "einar-jog-v5-diagnostic-6611e1a3ce90.glb.part1",
+        "bytes": 12802740,
+        "sha256": "307e13ba3a524dc4a6cadae35672390c408fc341b742cdc41a1cc3b683ac19f0"
+      }
+    ]
+  },
+  "baselineAsset": {
+    "filename": "einar-jog-v4-production-2b1839efe95a.glb",
+    "bytes": 28810964,
+    "sha256": "2b1839efe95a16645bd1340304582d3c899b04165a1c046cd1c39e12b71408ab"
+  },
+  "jog": {
+    "clip": "JogLoop498_546",
+    "samples": 49,
+    "firstSourceFrame": 498,
+    "lastSourceFrame": 546,
+    "sourceDt": 0.016667,
+    "duration": 0.800016,
+    "loopMode": "repeat",
+    "rootMode": "in-place-cyclic",
+    "contactAnchors": [],
+    "fitReview": {
+      "status": "WIP",
+      "artisticAccepted": false,
+      "fitReportSha256": "be6a3dd4cd9bb671826b7ecfe789f1b938650cbbae864cc17977e89275d019f2",
+      "maxErrorsByGroupMm": {
+        "RigidBody": {
+          "component": "GEO-hyd_hose_connector_straight_nut.003",
+          "maxMm": 1.0175362097255203e-12,
+          "sourceFrame": 522
+        },
+        "MechanicalSoft": {
+          "component": "GEO-einar_tire_shoulder_padding",
+          "maxMm": 29.631420131642564,
+          "sourceFrame": 534
+        },
+        "Footwear": {
+          "component": "GEO-einar_boot_main.L",
+          "maxMm": 9.219744422022057,
+          "sourceFrame": 530
+        },
+        "Hand": {
+          "component": "GEO-einar_glove",
+          "maxMm": 5.982334557199048,
+          "sourceFrame": 502
+        },
+        "Jacket": {
+          "component": "GEO-einar_jacket_main",
+          "maxMm": 20.438020541137032,
+          "sourceFrame": 535
+        },
+        "Pants": {
+          "component": "GEO-einar_pants_main",
+          "maxMm": 12.246975237177768,
+          "sourceFrame": 530
+        },
+        "HeadSkin": {
+          "component": "GEO-einar_head",
+          "maxMm": 6.725780711613418,
+          "sourceFrame": 527
+        },
+        "KnitHat": {
+          "component": "GEO-einar_hat",
+          "maxMm": 2.5438405243138007e-13,
+          "sourceFrame": 498
+        },
+        "OralExpression": {
+          "component": "GEO-einar_teeth_lower",
+          "maxMm": 4.585973723508303e-13,
+          "sourceFrame": 505
+        },
+        "EyeOpaque": {
+          "component": "GEO-einar_teeth_upper",
+          "maxMm": 4.982493048981751e-13,
+          "sourceFrame": 529
+        },
+        "EyeCornea": {
+          "component": "GEO-eye.cornea.R",
+          "maxMm": 7.027150473277824e-13,
+          "sourceFrame": 534
+        },
+        "EyeMeniscus": {
+          "component": "GEO-eye.meniscus.L",
+          "maxMm": 2.498001805406602e-13,
+          "sourceFrame": 498
+        }
+      },
+      "rightSupportPersistentPointDriftMm": 25.264543833097758,
+      "limitations": [
+        "Authored full-cycle endpoints are exact; sampled boundary velocity is nonzero and final linear runtime is not claimed mathematically C1.",
+        "Right full-support drift remains about25.265mm in restored source world; old v4 phase-specific pin is not inherited.",
+        "Existing fixed basis retains footwear, pants, jacket and hose fit residuals; no new targets were added.",
+        "Actual repeated playback and ordered seam views remain subject to visual review."
+      ]
+    },
+    "loopValidation": {
+      "approved": true,
+      "scope": "WIP-loop-review",
+      "endpointPosePassed": true,
+      "firstDerivativeReviewed": true,
+      "contactSeamPassed": true,
+      "rootConventionPassed": true,
+      "nativeAuditSha256": "44aa08759962e0c4902b5af2bd39ff4e509f51e04ecbb1bf360707f2d9c6587a",
+      "decodedAuditSha256": "e03b8d9bd9e0981aba2d24ee1333cf7aad8b779e20b0a9777a4cdf5f82aad79b",
+      "decodedAssetSha256": "6611e1a3ce90dbd4091d789580616ebcc5a19466a921a350bad4a0b3ce8c34e8",
+      "interpretation": "Approval to repeat the actual authored cycle for WIP review. Not mathematical C1, no-slide or finished-motion certification."
+    }
+  },
+  "diagnosticBeforeClip": "Diagnostic_BeforeJogV5",
+  "diagnosticBefore": {
+    "clip": "Diagnostic_BeforeJogV5",
+    "samples": 48,
+    "firstSourceFrame": 478,
+    "lastSourceFrame": 525,
+    "sourceDt": 0.016667,
+    "duration": 0.783349,
+    "loopMode": "finite"
+  },
+  "retainedClips": [
+    "Face_Jaw",
+    "Face_Smile",
+    "Face_Brow",
+    "Face_Blink",
+    "Face_JawSmile",
+    "Walk539_618"
+  ],
+  "capturePlan": {
+    "seamOffsets": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "cycleKeyIndices": [
+      0,
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42
+    ],
+    "armSourceFrames": [
+      513,
+      525
+    ],
+    "views": [
+      "front",
+      "side"
+    ]
+  },
+  "expectedCaptureCount": 30,
+  "decodedSeamAudit": {
+    "path": "decoded-loop80-seam.json",
+    "sha256": "714d1d4be5965bee1df70cf916d1ce9e326ca47e42336569697c5d7431b105be",
+    "bytes": 156293,
+    "fullDecodedAuditSha256": "e03b8d9bd9e0981aba2d24ee1333cf7aad8b779e20b0a9777a4cdf5f82aad79b"
+  },
+  "mergeAuditSha256": "01b86b125a029e335c6891fbba0540b410ebfabc6defa9549f01166265c3bf76",
+  "nativeAuditSha256": "44aa08759962e0c4902b5af2bd39ff4e509f51e04ecbb1bf360707f2d9c6587a",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 1,
+  "network": {
+    "offline": false,
+    "latency": 40,
+    "downloadThroughput": 1250000,
+    "uploadThroughput": 625000,
+    "connectionType": "cellular4g"
+  },
+  "cpuThrottlingRate": 2,
+  "conditionsLabel": "Synthetic throttled desktop Chromium/SwiftShader; not a phone or cellular-network measurement.",
+  "localFiles": [
+    {
+      "path": "index80-jog.html",
+      "bytes": 1760,
+      "sha256": "0ea2e3303a6c19f57f78d7ee71bdd1c560ab7214006eda97bd6449bce920f58a"
+    },
+    {
+      "path": "viewer80-jog.js",
+      "bytes": 41996,
+      "sha256": "9b85ef872dbc5bc1fb17861b8bf6957f9cf7061f56f6d626fbc653a80775a24e"
+    },
+    {
+      "path": "viewer72.css",
+      "bytes": 2050,
+      "sha256": "5621ebe9815e3e2f91ccffc902f02cf10d871cecdd91acce7e32d26f7d63d59f"
+    },
+    {
+      "path": "metrics72.js",
+      "bytes": 1680,
+      "sha256": "74a18a19a576e9d686c37d8de1dca2428e6d06860627b0a85d431d891a7297b8"
+    },
+    {
+      "path": "runtime80-jog.json",
+      "bytes": 8641,
+      "sha256": "a6cd06be325f912db263918afd6e0499bb1aea773cf1678542d8996617a30fc3"
+    },
+    {
+      "path": "ATTRIBUTION72.md",
+      "bytes": 1737,
+      "sha256": "94920154e671cf1f2748b3530e56fa11f860e6cba49632034f3805ee1fe96c8c"
+    },
+    {
+      "path": "decoded-loop80-seam.json",
+      "bytes": 156293,
+      "sha256": "714d1d4be5965bee1df70cf916d1ce9e326ca47e42336569697c5d7431b105be"
+    },
+    {
+      "path": "einar-jog-v5-diagnostic-6611e1a3ce90.glb.part0",
+      "bytes": 16777216,
+      "sha256": "dcee0c22ee52db80bdf289aaadec2066228b2bddd1f0bacb7bf0a94238358913"
+    },
+    {
+      "path": "einar-jog-v5-diagnostic-6611e1a3ce90.glb.part1",
+      "bytes": 12802740,
+      "sha256": "307e13ba3a524dc4a6cadae35672390c408fc341b742cdc41a1cc3b683ac19f0"
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "vendor/three/build/three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "path": "vendor/three/examples/jsm/controls/OrbitControls.js",
+      "bytes": 29868,
+      "sha256": "5a44a9e86a2a0fb11933eed69bc2cd33c76a496854c1aed6ed776efa87d7b064"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/MESHOPT_LICENSE.md",
+      "bytes": 1079,
+      "sha256": "063805e3b8e24ceab4c5dea358b03245ee41c31be87cf65c61d836636cb494bb"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/meshopt_decoder.module.js",
+      "bytes": 24850,
+      "sha256": "01f48524f4bac6141eaba07e94cc36e7ee56f311796fa6117c159842941b0468"
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 108522,
+      "sha256": "d073b438e6a07e1359741dd5d6c76c953420cc0d4fd84eb1bdde94315540e6a3"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 31906,
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb"
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/KTX2Loader.js",
+      "bytes": 22589,
+      "sha256": "9cca5aa35fdb04b4818c792c8d08fb6e7607dcafc46e7b06a9485e9f25261be7"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/WorkerPool.js",
+      "bytes": 1712,
+      "sha256": "94ff7b608caf3b827ffa95bd6092b9d174732b856915b38ed006b4f049f95675"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/ktx-parse.module.js",
+      "bytes": 18676,
+      "sha256": "f73948e7bbf8db386076fda0458160bdb50ce2e11e88fa7da0f339e1ec547493"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstddec.module.js",
+      "bytes": 39754,
+      "sha256": "5cbf818e842628a4464e748594a6deae18ceddda3c2f541e7b3a0ff5fc7611e2"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/README.md",
+      "bytes": 1448,
+      "sha256": "930b11bbbb742b2525491b0964f0462d63d8b21383c0623ec4c98c43d53723c6"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/basis_transcoder.js",
+      "bytes": 62337,
+      "sha256": "48a0ef319a28bf0224ee88ded34f74eaf97c175bba9eb18b47fb9720510ad6c4"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/basis_transcoder.wasm",
+      "bytes": 499935,
+      "sha256": "79ae97d781e10a566659c689b7bb1de91726453f55f9f5e3bcc07a4e3904070f"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/BASIS-LICENSE.txt",
+      "bytes": 11347,
+      "sha256": "065fcf48d6af21c0b75e23be5ed5753aee75c892e1c2cf178fa6736305614a5c"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstd-LICENSE.txt",
+      "bytes": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/ktx-parse-LICENSE.txt",
+      "bytes": 1078,
+      "sha256": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstddec-LICENSE.txt",
+      "bytes": 2617,
+      "sha256": "8d078b49fc02bd63c1beaf4ddc629a8b48e4ba6a435415408c8209e2a5c3aacf"
+    }
+  ],
+  "externalAssets": [],
+  "policy": "Thirty deterministic native-clock screenshots and separately instrumented three real LoopRepeat crossings; one loaded model, no benchmark, no slowdown or crossfade. Review/retro before any next iteration."
+}

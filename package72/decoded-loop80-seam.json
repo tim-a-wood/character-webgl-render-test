@@ -1,0 +1,5270 @@
+{
+  "schema": "decoded-final-loop-seam80-v1",
+  "asset": {
+    "sha256": "6611e1a3ce90dbd4091d789580616ebcc5a19466a921a350bad4a0b3ce8c34e8",
+    "bytes": 29579956
+  },
+  "clip": "JogLoop498_546",
+  "duration": 0.800016,
+  "trackCount": 953,
+  "allTrackEndpointsExactlyEqual": true,
+  "maxEndpointRotationAngleRadians": 5.960464477539063e-8,
+  "nonconstantStepTracks": [],
+  "groups": {
+    "translation": {
+      "count": 314,
+      "maxEndpointComponentAbs": 0,
+      "maxBoundaryVelocityMismatch": 1.2258664046338452,
+      "worstVelocityTracks": [
+        {
+          "key": "PortableObject_GEO-pinkie.3/translation",
+          "maxAbs": 1.2258664046338452,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0558518592029442,
+                "norm": 1.1033437559826282
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.34902707054559956,
+                "norm": 0.4187261418836898
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.41099629505124713,
+                "norm": 0.41486503122152135
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.681421791964982,
+                "norm": 2.711512832302887
+              }
+            ],
+            "nearbyMax": 2.681421791964982,
+            "interiorMedian": 0.28849785070057865,
+            "interiorP95": 1.2106318844777868,
+            "interiorMax": 2.681421791964982,
+            "boundaryToNearbyMaxRatio": 0.45717029984138147,
+            "boundaryToInteriorMaxRatio": 0.45717029984138147,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "DEF-Finger_Pinky3.L/translation",
+          "maxAbs": 1.2258592522243241,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0558482829959852,
+                "norm": 1.103337829115634
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.34901276571776485,
+                "norm": 0.41870864401791597
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.41097662592176687,
+                "norm": 0.41484599137358746
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.681448613505182,
+                "norm": 2.71154119237627
+              }
+            ],
+            "nearbyMax": 2.681448613505182,
+            "interiorMedian": 0.2884889101871787,
+            "interiorP95": 1.2106318844777866,
+            "interiorMax": 2.681448613505182,
+            "boundaryToNearbyMaxRatio": 0.45716305956797154,
+            "boundaryToInteriorMaxRatio": 0.45716305956797154,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-pinkie.2/translation",
+          "maxAbs": 1.2005325481611664,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0297759461637803,
+                "norm": 1.074289657516776
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.33963952727908314,
+                "norm": 0.41200081260226185
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.4076963515552916,
+                "norm": 0.4116051794199162
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.621950390879246,
+                "norm": 2.6469979744084147
+              }
+            ],
+            "nearbyMax": 2.621950390879246,
+            "interiorMedian": 0.2857736762675859,
+            "interiorP95": 1.1776842897675333,
+            "interiorMax": 2.621950390879246,
+            "boundaryToNearbyMaxRatio": 0.4578776747025253,
+            "boundaryToInteriorMaxRatio": 0.4578776747025253,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "DEF-Finger_Pinky2.L/translation",
+          "maxAbs": 1.2005110909198142,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0297562770255078,
+                "norm": 1.0742707748108138
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.3396502558999592,
+                "norm": 0.412011200003266
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.4076963515552917,
+                "norm": 0.41160551148620045
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.621944132519866,
+                "norm": 2.646993107720696
+              }
+            ],
+            "nearbyMax": 2.621944132519866,
+            "interiorMedian": 0.28576384170284597,
+            "interiorP95": 1.177684289767533,
+            "interiorMax": 2.621944132519866,
+            "boundaryToNearbyMaxRatio": 0.4578705839037241,
+            "boundaryToInteriorMaxRatio": 0.4578705839037241,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-middle.3/translation",
+          "maxAbs": 1.1748634094960628,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0061649337708825,
+                "norm": 1.0675777517574143
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.3622196980161439,
+                "norm": 0.4226252724522632
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.39284258259246274,
+                "norm": 0.3970788735125381
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.58190314920644,
+                "norm": 2.6323622610996624
+              }
+            ],
+            "nearbyMax": 2.58190314920644,
+            "interiorMedian": 0.2781492064400306,
+            "interiorP95": 1.216672098030985,
+            "interiorMax": 2.58190314920644,
+            "boundaryToNearbyMaxRatio": 0.45503775378141603,
+            "boundaryToInteriorMaxRatio": 0.45503775378141603,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "DEF-Finger_Middle3.L/translation",
+          "maxAbs": 1.1748562570841434,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.006160463512184,
+                "norm": 1.0675683278177306
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.36223757905093723,
+                "norm": 0.42263950386441995
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.39283274802772283,
+                "norm": 0.3970719080482228
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.58191298377118,
+                "norm": 2.63236722920755
+              }
+            ],
+            "nearbyMax": 2.58191298377118,
+            "interiorMedian": 0.2781501004913707,
+            "interiorP95": 1.2166899790657788,
+            "interiorMax": 2.58191298377118,
+            "boundaryToNearbyMaxRatio": 0.4550332503336852,
+            "boundaryToInteriorMaxRatio": 0.4550332503336852,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-pinkie.1/translation",
+          "maxAbs": 1.1532792011088802,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.965334484871974,
+                "norm": 1.0064524256015668
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.32162974903520647,
+                "norm": 0.3934055336280579
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.393328946521425,
+                "norm": 0.398122805411343
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.487525301652922,
+                "norm": 2.506694295030772
+              }
+            ],
+            "nearbyMax": 2.487525301652922,
+            "interiorMedian": 0.2761974923648016,
+            "interiorP95": 1.1063961802533475,
+            "interiorMax": 2.487525301652922,
+            "boundaryToNearbyMaxRatio": 0.4636251138199656,
+            "boundaryToInteriorMaxRatio": 0.4636251138199656,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "DEF-Finger_Pinky1.L/translation",
+          "maxAbs": 1.1532774130054007,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.9653318027167548,
+                "norm": 1.0064474909130916
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.3216547824839171,
+                "norm": 0.3934227451043413
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.393321794110705,
+                "norm": 0.39811374166699875
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.487526195704262,
+                "norm": 2.506695991629234
+              }
+            ],
+            "nearbyMax": 2.487526195704262,
+            "interiorMedian": 0.2761903399540816,
+            "interiorP95": 1.106392604046389,
+            "interiorMax": 2.487526195704262,
+            "boundaryToNearbyMaxRatio": 0.4636242283586838,
+            "boundaryToInteriorMaxRatio": 0.4636242283586838,
+            "unit": "metres/second (node-local)"
+          }
+        }
+      ]
+    },
+    "rotation": {
+      "count": 314,
+      "maxEndpointComponentAbs": 0,
+      "maxBoundaryVelocityMismatch": 4.1848018630903745,
+      "worstVelocityTracks": [
+        {
+          "key": "PortableObject_GEO-zip_tie.001/rotation",
+          "maxAbs": 4.1848018630903745,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 3.4058981719022783,
+                "norm": 3.4875767946782013
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 1.1270987882558914,
+                "norm": 1.3695336638178515
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.5861710124734564,
+                "norm": 0.7905838248999615
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 8.294239582685641,
+                "norm": 8.4507940085555
+              }
+            ],
+            "nearbyMax": 8.294239582685641,
+            "interiorMedian": 0.7282582215875046,
+            "interiorP95": 3.4058981719022783,
+            "interiorMax": 8.294239582685641,
+            "boundaryToNearbyMaxRatio": 0.5045431617174666,
+            "boundaryToInteriorMaxRatio": 0.5045431617174666,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-hyd_hoses_upper_arm.001.mesh/rotation",
+          "maxAbs": 4.0898634383758985,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 3.451198713986611,
+                "norm": 3.489319506454006
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.42081255189759936,
+                "norm": 0.5810694429002322
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.5077693581273488,
+                "norm": 0.7908627286301194
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 8.381223098224554,
+                "norm": 8.496963725351225
+              }
+            ],
+            "nearbyMax": 8.381223098224554,
+            "interiorMedian": 0.5132180696335743,
+            "interiorP95": 3.451198713986611,
+            "interiorMax": 8.381223098224554,
+            "boundaryToNearbyMaxRatio": 0.4879793068916492,
+            "boundaryToInteriorMaxRatio": 0.4879793068916492,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-wires_motor_shoulder.006.mesh/rotation",
+          "maxAbs": 3.0632837201600767,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 2.9721110221803384,
+                "norm": 3.1645658480769314
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.46054717288553637,
+                "norm": 0.5293942748035143
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.7578103527087583,
+                "norm": 0.7711941627912888
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 5.876005711017018,
+                "norm": 7.476564405871372
+              }
+            ],
+            "nearbyMax": 5.876005711017018,
+            "interiorMedian": 0.6852422227661794,
+            "interiorP95": 3.985217793116071,
+            "interiorMax": 5.876005711017018,
+            "boundaryToNearbyMaxRatio": 0.521320752703946,
+            "boundaryToInteriorMaxRatio": 0.521320752703946,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-zip_tie.004/rotation",
+          "maxAbs": 2.793567902379535,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 2.599877378420082,
+                "norm": 2.7624233174611437
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.9336506765664259,
+                "norm": 1.2103804360721728
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.7915517623451067,
+                "norm": 0.8678671151425311
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 5.771697423040495,
+                "norm": 6.1057541276794
+              }
+            ],
+            "nearbyMax": 5.771697423040495,
+            "interiorMedian": 0.5013411146508657,
+            "interiorP95": 2.599877378420082,
+            "interiorMax": 5.771697423040495,
+            "boundaryToNearbyMaxRatio": 0.48401149568715623,
+            "boundaryToInteriorMaxRatio": 0.48401149568715623,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-hyd_rod_shoulder_lift/rotation",
+          "maxAbs": 2.7836576654564316,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 2.0798183447159424,
+                "norm": 2.438630477557611
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.6443219251349567,
+                "norm": 0.6770193066231702
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.4924158631301414,
+                "norm": 0.653259272030573
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 3.9192216559319673,
+                "norm": 6.132924735780377
+              }
+            ],
+            "nearbyMax": 3.9192216559319673,
+            "interiorMedian": 0.41239595143771846,
+            "interiorP95": 2.0798183447159424,
+            "interiorMax": 4.256711658055552,
+            "boundaryToNearbyMaxRatio": 0.710257778159397,
+            "boundaryToInteriorMaxRatio": 0.6539455544724386,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "DEF-Foot.L/rotation",
+          "maxAbs": 2.74672899530659,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.4003633723400315,
+                "norm": 1.4069500081572104
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.410599233869689,
+                "norm": 0.4523406659608812
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 1.7019168720886242,
+                "norm": 1.8005159136379565
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 1.0068927745627292,
+                "norm": 1.280615575238797
+              }
+            ],
+            "nearbyMax": 1.7019168720886242,
+            "interiorMedian": 0.8054381924017746,
+            "interiorP95": 2.0148676556308054,
+            "interiorMax": 3.3708282232667903,
+            "boundaryToNearbyMaxRatio": 1.6139031467123026,
+            "boundaryToInteriorMaxRatio": 0.8148528531793995,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "DEF-Toes.L/rotation",
+          "maxAbs": 2.7467162009195087,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.4311460838750654,
+                "norm": 1.4480482014494471
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.34981163681941585,
+                "norm": 0.3836585839521532
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 1.7018967516160943,
+                "norm": 1.800550555490327
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 1.0068777466744363,
+                "norm": 1.2804283182103096
+              }
+            ],
+            "nearbyMax": 1.7018967516160943,
+            "interiorMedian": 1.5808117672807613,
+            "interiorP95": 5.470558261530265,
+            "interiorMax": 7.028875367073237,
+            "boundaryToNearbyMaxRatio": 1.6139147091686203,
+            "boundaryToInteriorMaxRatio": 0.3907760569758427,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-hyd_hoses_upper_arm.mesh/rotation",
+          "maxAbs": 2.520366574298145,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 2.814292889155469,
+                "norm": 2.84021885563177
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.5620682247696629,
+                "norm": 0.7399690862415389
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.4389767748057656,
+                "norm": 0.6984970355624336
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 5.9366656577285095,
+                "norm": 6.076346312243773
+              }
+            ],
+            "nearbyMax": 5.9366656577285095,
+            "interiorMedian": 0.419209432885028,
+            "interiorP95": 2.814292889155469,
+            "interiorMax": 5.9366656577285095,
+            "boundaryToNearbyMaxRatio": 0.42454244850677497,
+            "boundaryToInteriorMaxRatio": 0.42454244850677497,
+            "unit": "radians/second"
+          }
+        }
+      ]
+    },
+    "scale": {
+      "count": 314,
+      "maxEndpointComponentAbs": 0,
+      "maxBoundaryVelocityMismatch": 0.15854771230041087,
+      "worstVelocityTracks": [
+        {
+          "key": "DEF-Shoulder_Tire/scale",
+          "maxAbs": 0.15854771230041087,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.5436621342713726,
+                "norm": 0.5436621357416396
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.19130561504724852,
+                "norm": 0.1913056167854132
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.0994542710620615,
+                "norm": 0.09945428160678728
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.260126025476887,
+                "norm": 0.26012604025114094
+              }
+            ],
+            "nearbyMax": 0.5436621342713726,
+            "interiorMedian": 0.05129712528936731,
+            "interiorP95": 0.2927769112926334,
+            "interiorMax": 0.5436621342713726,
+            "boundaryToNearbyMaxRatio": 0.2916291246086135,
+            "boundaryToInteriorMaxRatio": 0.2916291246086135,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Thighs_Center/scale",
+          "maxAbs": 0.11475334027872376,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.1881263670609882,
+                "norm": 0.25614273240510377
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.07987815862891803,
+                "norm": 0.11241221584741634
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.03782552409289551,
+                "norm": 0.05482324321570893
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.12985916903292255,
+                "norm": 0.16579638545856099
+              }
+            ],
+            "nearbyMax": 0.1881263670609882,
+            "interiorMedian": 0.091379199359144,
+            "interiorP95": 0.155604271419682,
+            "interiorMax": 0.36620000895144467,
+            "boundaryToNearbyMaxRatio": 0.6099801004583381,
+            "boundaryToInteriorMaxRatio": 0.31336247262063605,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Collar1.R/scale",
+          "maxAbs": 0.04514959665086371,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.031974866417494446,
+                "norm": 0.04334809556447341
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.018378127560620065,
+                "norm": 0.023120858646426348
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.009884631615085866,
+                "norm": 0.013959681778271334
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.010864511883730409,
+                "norm": 0.013579687618344214
+              }
+            ],
+            "nearbyMax": 0.031974866417494446,
+            "interiorMedian": 0.009884631615085866,
+            "interiorP95": 0.03587309784250163,
+            "interiorMax": 0.07788617653580139,
+            "boundaryToNearbyMaxRatio": 1.4120339413258958,
+            "boundaryToInteriorMaxRatio": 0.5796869054178069,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Collar2.R/scale",
+          "maxAbs": 0.03491451338624817,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.029374963958539252,
+                "norm": 0.036641101843560175
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.018024083071711446,
+                "norm": 0.022198270481212066
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.00472416728058192,
+                "norm": 0.006762992014842464
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.006515846165950235,
+                "norm": 0.007962201783912798
+              }
+            ],
+            "nearbyMax": 0.029374963958539252,
+            "interiorMedian": 0.008350439515638746,
+            "interiorP95": 0.0252801956899573,
+            "interiorMax": 0.051855000900757134,
+            "boundaryToNearbyMaxRatio": 1.1885806374274233,
+            "boundaryToInteriorMaxRatio": 0.6733104383330245,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Collar2.L/scale",
+          "maxAbs": 0.03232533664500912,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.004291448350407484,
+                "norm": 0.00546137855416875
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.012942292983437242,
+                "norm": 0.01819150747344643
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.00833613469419868,
+                "norm": 0.010258852320312116
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.04795333767246251,
+                "norm": 0.05999927894299196
+              }
+            ],
+            "nearbyMax": 0.04795333767246251,
+            "interiorMedian": 0.008146569809559922,
+            "interiorP95": 0.016929756174318553,
+            "interiorMax": 0.04795333767246251,
+            "boundaryToNearbyMaxRatio": 0.6740998273321888,
+            "boundaryToInteriorMaxRatio": 0.6740998273321888,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Collar1.L/scale",
+          "maxAbs": 0.028259172115469557,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.01593557820784646,
+                "norm": 0.021113971010551867
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.01443357128520385,
+                "norm": 0.018873465682484762
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.018084870505603912,
+                "norm": 0.021184443852208034
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.04390149699956371,
+                "norm": 0.05328489966913408
+              }
+            ],
+            "nearbyMax": 0.04390149699956371,
+            "interiorMedian": 0.010871669154365632,
+            "interiorP95": 0.026953859798445064,
+            "interiorMax": 0.04390149699956371,
+            "boundaryToNearbyMaxRatio": 0.6436949545422197,
+            "boundaryToInteriorMaxRatio": 0.6436949545422197,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-RibCage/scale",
+          "maxAbs": 0.024432657084287785,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.0033652107481111984,
+                "norm": 0.003365339960334691
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.012495267113603131,
+                "norm": 0.012495337225076916
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.0071238010771530556,
+                "norm": 0.00712380556536118
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.02623861872644175,
+                "norm": 0.026238624819199252
+              }
+            ],
+            "nearbyMax": 0.02623861872644175,
+            "interiorMedian": 0.0050496019683434305,
+            "interiorP95": 0.01586047077167359,
+            "interiorMax": 0.02623861872644175,
+            "boundaryToNearbyMaxRatio": 0.9311716191701044,
+            "boundaryToInteriorMaxRatio": 0.9311716191701044,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Spine/scale",
+          "maxAbs": 0.0011801485249699113,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.00105855725976718,
+                "norm": 0.0010586659902054112
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.001319620367750302,
+                "norm": 0.001319702743930251
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.0007438507148834515,
+                "norm": 0.0007438936968791353
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.0001716578572807965,
+                "norm": 0.00017184401703323676
+              }
+            ],
+            "nearbyMax": 0.001319620367750302,
+            "interiorMedian": 0.0005400072507596086,
+            "interiorP95": 0.001319620367750302,
+            "interiorMax": 0.002174332858890089,
+            "boundaryToNearbyMaxRatio": 0.8943091163270211,
+            "boundaryToInteriorMaxRatio": 0.5427635056632177,
+            "unit": "scale/second"
+          }
+        }
+      ]
+    },
+    "weights": {
+      "count": 11,
+      "maxEndpointComponentAbs": 0,
+      "maxBoundaryVelocityMismatch": 19.574551767987703,
+      "worstVelocityTracks": [
+        {
+          "key": "Mobile_Jacket/weights",
+          "maxAbs": 19.574551767987703,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 37.83701347380674,
+                "norm": 58.53243302341253
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 32.69588695967424,
+                "norm": 34.155845305331525
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 12.301794182229116,
+                "norm": 20.323497302736772
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 59.74809298849177,
+                "norm": 63.59613014646777
+              }
+            ],
+            "nearbyMax": 59.74809298849177,
+            "interiorMedian": 14.218563366782774,
+            "interiorP95": 33.7121604428078,
+            "interiorMax": 65.49854359036713,
+            "boundaryToNearbyMaxRatio": 0.32761801739442975,
+            "boundaryToInteriorMaxRatio": 0.29885476370907477,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_MechanicalSoft/weights",
+          "maxAbs": 14.528256557532256,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 40.17545228959945,
+                "norm": 40.72957368036711
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 8.478757554178419,
+                "norm": 9.5705883577665
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 8.595595545478602,
+                "norm": 10.521884966198142
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 20.46145208242438,
+                "norm": 22.386952876941166
+              }
+            ],
+            "nearbyMax": 40.17545228959945,
+            "interiorMedian": 5.978180428503192,
+            "interiorP95": 40.17545228959945,
+            "interiorMax": 103.43569242295621,
+            "boundaryToNearbyMaxRatio": 0.36162023647692215,
+            "boundaryToInteriorMaxRatio": 0.1404568985541774,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_Footwear/weights",
+          "maxAbs": 8.168461271911598,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 6.967817266553032,
+                "norm": 10.670773359794921
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 3.513988110005914,
+                "norm": 6.1997332705784265
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 7.554705660417843,
+                "norm": 14.085024843294526
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 17.824136525215827,
+                "norm": 21.565236946488444
+              }
+            ],
+            "nearbyMax": 17.824136525215827,
+            "interiorMedian": 10.73689857166358,
+            "interiorP95": 37.70301394402596,
+            "interiorMax": 59.23560756152861,
+            "boundaryToNearbyMaxRatio": 0.45828089682524964,
+            "boundaryToInteriorMaxRatio": 0.13789782207309914,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_Pants/weights",
+          "maxAbs": 6.281848520469454,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 6.143351361886665,
+                "norm": 9.34787630393101
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 12.103615232317111,
+                "norm": 12.779897109016375
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 3.460492765336557,
+                "norm": 5.702711927779027
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 10.383068813343538,
+                "norm": 14.410290223775924
+              }
+            ],
+            "nearbyMax": 12.103615232317111,
+            "interiorMedian": 5.376881978070709,
+            "interiorP95": 11.457482494474762,
+            "interiorMax": 15.77112990705885,
+            "boundaryToNearbyMaxRatio": 0.51900596639066,
+            "boundaryToInteriorMaxRatio": 0.3983131555880357,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_HeadSkin/weights",
+          "maxAbs": 5.010802616112608,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 3.190462971282611,
+                "norm": 3.4250314894943936
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 2.871193518840129,
+                "norm": 2.9613477885225286
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 1.1120353615185987,
+                "norm": 1.1176655001365132
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 6.011601210187893,
+                "norm": 6.111174259625151
+              }
+            ],
+            "nearbyMax": 6.011601210187893,
+            "interiorMedian": 1.966569632294565,
+            "interiorP95": 4.7827322399974594,
+            "interiorMax": 6.011601210187893,
+            "boundaryToNearbyMaxRatio": 0.833522125123798,
+            "boundaryToInteriorMaxRatio": 0.833522125123798,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_EyeMeniscus/weights",
+          "maxAbs": 0,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [],
+            "last": [],
+            "nearbyMax": 0,
+            "interiorMedian": 0,
+            "interiorP95": 0,
+            "interiorMax": 0,
+            "boundaryToNearbyMaxRatio": null,
+            "boundaryToInteriorMaxRatio": null,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_GEO-einar_eyebrows/weights",
+          "maxAbs": 0,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [],
+            "last": [],
+            "nearbyMax": 0,
+            "interiorMedian": 0,
+            "interiorP95": 0,
+            "interiorMax": 0,
+            "boundaryToNearbyMaxRatio": null,
+            "boundaryToInteriorMaxRatio": null,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_GEO-einar_eyelashes/weights",
+          "maxAbs": 0,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [],
+            "last": [],
+            "nearbyMax": 0,
+            "interiorMedian": 0,
+            "interiorP95": 0,
+            "interiorMax": 0,
+            "boundaryToNearbyMaxRatio": null,
+            "boundaryToInteriorMaxRatio": null,
+            "unit": "runtime morph coefficient/second"
+          }
+        }
+      ]
+    }
+  },
+  "tracks": [
+    {
+      "key": "DEF-Collar1.L/scale",
+      "target": "scale",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.05085008674537004,
+          0.005904317688768966,
+          -0.0394777486167902
+        ],
+        "incoming": [
+          -0.05244505160464334,
+          0.03416348980423852,
+          -0.012019626215015771
+        ],
+        "delta": [
+          0.0015949648592733026,
+          -0.028259172115469557,
+          -0.02745812240177443
+        ],
+        "maxAbs": 0.028259172115469557,
+        "norm": 0.0394344165340997,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.01593557820784646,
+            "norm": 0.021113971010551867
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.01443357128520385,
+            "norm": 0.018873465682484762
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.018084870505603912,
+            "norm": 0.021184443852208034
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.04390149699956371,
+            "norm": 0.05328489966913408
+          }
+        ],
+        "nearbyMax": 0.04390149699956371,
+        "interiorMedian": 0.010871669154365632,
+        "interiorP95": 0.026953859798445064,
+        "interiorMax": 0.04390149699956371,
+        "boundaryToNearbyMaxRatio": 0.6436949545422197,
+        "boundaryToInteriorMaxRatio": 0.6436949545422197,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Collar1.R/scale",
+      "target": "scale",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.02173618589481392,
+          -0.008904755327095535,
+          -0.044920735607890366
+        ],
+        "incoming": [
+          -0.031123715248224413,
+          0.03624484132376818,
+          -0.009115747462682297
+        ],
+        "delta": [
+          0.009387529353410494,
+          -0.04514959665086371,
+          -0.03580498814520807
+        ],
+        "maxAbs": 0.04514959665086371,
+        "norm": 0.05838329351086077,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.031974866417494446,
+            "norm": 0.04334809556447341
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.018378127560620065,
+            "norm": 0.023120858646426348
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.009884631615085866,
+            "norm": 0.013959681778271334
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.010864511883730409,
+            "norm": 0.013579687618344214
+          }
+        ],
+        "nearbyMax": 0.031974866417494446,
+        "interiorMedian": 0.009884631615085866,
+        "interiorP95": 0.03587309784250163,
+        "interiorMax": 0.07788617653580139,
+        "boundaryToNearbyMaxRatio": 1.4120339413258958,
+        "boundaryToInteriorMaxRatio": 0.5796869054178069,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Collar2.L/scale",
+      "target": "scale",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.03519702888725874,
+          -0.00992039810335864,
+          -0.036677578568149315
+        ],
+        "incoming": [
+          -0.004463104289300709,
+          -0.009383962864683541,
+          -0.004352241923140194
+        ],
+        "delta": [
+          -0.030733924597958026,
+          -0.0005364352386750988,
+          -0.03232533664500912
+        ],
+        "maxAbs": 0.03232533664500912,
+        "norm": 0.04460705407411961,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.004291448350407484,
+            "norm": 0.00546137855416875
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.012942292983437242,
+            "norm": 0.01819150747344643
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.00833613469419868,
+            "norm": 0.010258852320312116
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.04795333767246251,
+            "norm": 0.05999927894299196
+          }
+        ],
+        "nearbyMax": 0.04795333767246251,
+        "interiorMedian": 0.008146569809559922,
+        "interiorP95": 0.016929756174318553,
+        "interiorMax": 0.04795333767246251,
+        "boundaryToNearbyMaxRatio": 0.6740998273321888,
+        "boundaryToInteriorMaxRatio": 0.6740998273321888,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Collar2.R/scale",
+      "target": "scale",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.036745526500364105,
+          0.0021707576239144537,
+          -0.045761144243178495
+        ],
+        "incoming": [
+          -0.016969094433278736,
+          0.018378119345125274,
+          -0.010846630856930328
+        ],
+        "delta": [
+          -0.01977643206708537,
+          -0.01620736172121082,
+          -0.03491451338624817
+        ],
+        "maxAbs": 0.03491451338624817,
+        "norm": 0.04327596427885477,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.029374963958539252,
+            "norm": 0.036641101843560175
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.018024083071711446,
+            "norm": 0.022198270481212066
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.00472416728058192,
+            "norm": 0.006762992014842464
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.006515846165950235,
+            "norm": 0.007962201783912798
+          }
+        ],
+        "nearbyMax": 0.029374963958539252,
+        "interiorMedian": 0.008350439515638746,
+        "interiorP95": 0.0252801956899573,
+        "interiorMax": 0.051855000900757134,
+        "boundaryToNearbyMaxRatio": 1.1885806374274233,
+        "boundaryToInteriorMaxRatio": 0.6733104383330245,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Finger_Middle3.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.41794862510488345,
+          -0.08476683354142388,
+          2.8459472858153774
+        ],
+        "incoming": [
+          0.37046090134679893,
+          -0.4249104160557316,
+          1.671091028731234
+        ],
+        "delta": [
+          0.04748772375808452,
+          0.3401435825143077,
+          1.1748562570841434
+        ],
+        "maxAbs": 1.1748562570841434,
+        "norm": 1.224026129395592,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.006160463512184,
+            "norm": 1.0675683278177306
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.36223757905093723,
+            "norm": 0.42263950386441995
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.39283274802772283,
+            "norm": 0.3970719080482228
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.58191298377118,
+            "norm": 2.63236722920755
+          }
+        ],
+        "nearbyMax": 2.58191298377118,
+        "interiorMedian": 0.2781501004913707,
+        "interiorP95": 1.2166899790657788,
+        "interiorMax": 2.58191298377118,
+        "boundaryToNearbyMaxRatio": 0.4550332503336852,
+        "boundaryToInteriorMaxRatio": 0.4550332503336852,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Finger_Pinky1.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.4413540055976579,
+          -0.44318859976745717,
+          2.7991123854328572
+        ],
+        "incoming": [
+          0.41026764320914366,
+          -0.6393182322101665,
+          1.6458349724274566
+        ],
+        "delta": [
+          0.031086362388514255,
+          0.1961296324427093,
+          1.1532774130054007
+        ],
+        "maxAbs": 1.1532774130054007,
+        "norm": 1.1702486855352976,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.9653318027167548,
+            "norm": 1.0064474909130916
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.3216547824839171,
+            "norm": 0.3934227451043413
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.393321794110705,
+            "norm": 0.39811374166699875
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.487526195704262,
+            "norm": 2.506695991629234
+          }
+        ],
+        "nearbyMax": 2.487526195704262,
+        "interiorMedian": 0.2761903399540816,
+        "interiorP95": 1.106392604046389,
+        "interiorMax": 2.487526195704262,
+        "boundaryToNearbyMaxRatio": 0.4636242283586838,
+        "boundaryToInteriorMaxRatio": 0.4636242283586838,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Finger_Pinky2.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.44284349579594523,
+          -0.31554304479154516,
+          2.914476351660947
+        ],
+        "incoming": [
+          0.40219257150622617,
+          -0.5671361032235915,
+          1.7139652607411329
+        ],
+        "delta": [
+          0.04065092428971906,
+          0.2515930584320464,
+          1.2005110909198142
+        ],
+        "maxAbs": 1.2005110909198142,
+        "norm": 1.2272646186207283,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.0297562770255078,
+            "norm": 1.0742707748108138
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.3396502558999592,
+            "norm": 0.412011200003266
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.4076963515552917,
+            "norm": 0.41160551148620045
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.621944132519866,
+            "norm": 2.646993107720696
+          }
+        ],
+        "nearbyMax": 2.621944132519866,
+        "interiorMedian": 0.28576384170284597,
+        "interiorP95": 1.177684289767533,
+        "interiorMax": 2.621944132519866,
+        "boundaryToNearbyMaxRatio": 0.4578705839037241,
+        "boundaryToInteriorMaxRatio": 0.4578705839037241,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Finger_Pinky3.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.44132897214894723,
+          -0.24586422840876224,
+          2.954099830711303
+        ],
+        "incoming": [
+          0.3953387739337544,
+          -0.5257307975653194,
+          1.728240578486979
+        ],
+        "delta": [
+          0.045990198215192846,
+          0.27986656915655717,
+          1.2258592522243241
+        ],
+        "maxAbs": 1.2258592522243241,
+        "norm": 1.2582413524945497,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.0558482829959852,
+            "norm": 1.103337829115634
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.34901276571776485,
+            "norm": 0.41870864401791597
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.41097662592176687,
+            "norm": 0.41484599137358746
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.681448613505182,
+            "norm": 2.71154119237627
+          }
+        ],
+        "nearbyMax": 2.681448613505182,
+        "interiorMedian": 0.2884889101871787,
+        "interiorP95": 1.2106318844777866,
+        "interiorMax": 2.681448613505182,
+        "boundaryToNearbyMaxRatio": 0.45716305956797154,
+        "boundaryToInteriorMaxRatio": 0.45716305956797154,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Foot.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.2756260932576429,
+          -0.1314886363788759,
+          -1.6282211007833234
+        ],
+        "incoming": [
+          -0.2823955032793803,
+          -0.3380805969401987,
+          -1.4022998576670267
+        ],
+        "delta": [
+          0.006769410021737365,
+          0.2065919605613228,
+          -0.2259212431162967
+        ],
+        "maxAbs": 0.2259212431162967,
+        "norm": 0.30621311397754736,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.8176925686866423,
+            "norm": 0.9576114195999167
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.33918356089185236,
+            "norm": 0.34707186847737526
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.438607282584595,
+            "norm": 0.44201426073915745
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.2802801778089305,
+            "norm": 0.4091750237932696
+          }
+        ],
+        "nearbyMax": 0.8176925686866423,
+        "interiorMedian": 0.18592295981173243,
+        "interiorP95": 0.559930049423158,
+        "interiorMax": 0.9357561528613221,
+        "boundaryToNearbyMaxRatio": 0.27629117808807513,
+        "boundaryToInteriorMaxRatio": 0.24143174739004675,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Foot.L/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          2.6168241935485668,
+          0.1072760897463556,
+          0.5410661469378465
+        ],
+        "incoming": [
+          5.363553188855157,
+          -0.3288894525209457,
+          0.03655792073723911
+        ],
+        "delta": [
+          -2.74672899530659,
+          0.4361655422673013,
+          0.5045082262006074
+        ],
+        "maxAbs": 2.74672899530659,
+        "norm": 2.826533053799895,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.4003633723400315,
+            "norm": 1.4069500081572104
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.410599233869689,
+            "norm": 0.4523406659608812
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 1.7019168720886242,
+            "norm": 1.8005159136379565
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 1.0068927745627292,
+            "norm": 1.280615575238797
+          }
+        ],
+        "nearbyMax": 1.7019168720886242,
+        "interiorMedian": 0.8054381924017746,
+        "interiorP95": 2.0148676556308054,
+        "interiorMax": 3.3708282232667903,
+        "boundaryToNearbyMaxRatio": 1.6139031467123026,
+        "boundaryToInteriorMaxRatio": 0.8148528531793995,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Foot.L/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Foot.R/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.13973313449622643,
+          0.17080858486361464,
+          0.6618575623589913
+        ],
+        "incoming": [
+          -0.2082339446260362,
+          0.13667005214107414,
+          0.3153283314141031
+        ],
+        "delta": [
+          0.06850081012980977,
+          0.0341385327225405,
+          0.3465292309448882
+        ],
+        "maxAbs": 0.3465292309448882,
+        "norm": 0.35488069587418225,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.21045799141442112,
+            "norm": 0.3253150518204037
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.2036059788816038,
+            "norm": 0.22492427622622438
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.2679239412644032,
+            "norm": 0.31316029027646836
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.9190257701358242,
+            "norm": 0.9765939403347038
+          }
+        ],
+        "nearbyMax": 0.9190257701358242,
+        "interiorMedian": 0.18887826457404921,
+        "interiorP95": 0.5512058964473977,
+        "interiorMax": 0.9190257701358242,
+        "boundaryToNearbyMaxRatio": 0.3770614951239878,
+        "boundaryToInteriorMaxRatio": 0.3770614951239878,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Foot.R/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          1.0618049595906434,
+          0.1031692701124513,
+          -0.32179024599836503
+        ],
+        "incoming": [
+          1.0349913652824192,
+          0.44872534128172775,
+          1.1323806994872865
+        ],
+        "delta": [
+          0.026813594308224165,
+          -0.34555607116927645,
+          -1.4541709454856515
+        ],
+        "maxAbs": 1.4541709454856515,
+        "norm": 1.4949050491105802,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.0351289814652866,
+            "norm": 1.283348374609758
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.9120549337932604,
+            "norm": 1.1073669830453754
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.795319774927018,
+            "norm": 1.0198365140722188
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.479005488589241,
+            "norm": 2.714120237722291
+          }
+        ],
+        "nearbyMax": 2.479005488589241,
+        "interiorMedian": 0.8862728173832526,
+        "interiorP95": 2.479005488589241,
+        "interiorMax": 2.805927496415154,
+        "boundaryToNearbyMaxRatio": 0.58659448402964,
+        "boundaryToInteriorMaxRatio": 0.5182496509063391,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Foot.R/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Forearm.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.4079039538097109,
+          -1.7845844916891185,
+          1.4074926900094635
+        ],
+        "incoming": [
+          0.47660804074013147,
+          -1.382775564504016,
+          0.755601678670796
+        ],
+        "delta": [
+          -0.06870408693042057,
+          -0.4018089271851024,
+          0.6518910113386676
+        ],
+        "maxAbs": 0.6518910113386676,
+        "norm": 0.7688514526166524,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.5894375833423855,
+            "norm": 0.6613703019032176
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.12882212706531537,
+            "norm": 0.1725549075896315
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.244397874303534,
+            "norm": 0.32491886726524305
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 1.2277685193794567,
+            "norm": 1.5663523524177472
+          }
+        ],
+        "nearbyMax": 1.2277685193794567,
+        "interiorMedian": 0.16980505021738607,
+        "interiorP95": 0.6026907369128764,
+        "interiorMax": 1.2277685193794567,
+        "boundaryToNearbyMaxRatio": 0.5309559587569069,
+        "boundaryToInteriorMaxRatio": 0.5309559587569069,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Forearm.L/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 5.16191365590357e-8,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -5.220128578766965,
+          -0.4087299014431966,
+          0.519456457023257
+        ],
+        "incoming": [
+          -3.1264253368108816,
+          -0.613296660417191,
+          0.27918625915690215
+        ],
+        "delta": [
+          -2.0937032419560833,
+          0.2045667589739944,
+          0.2402701978663549
+        ],
+        "maxAbs": 2.0937032419560833,
+        "norm": 2.1173498983959345,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 2.639529195674796,
+            "norm": 2.6635612967451925
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.5721079363076491,
+            "norm": 0.6027594535820399
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.7674977606467639,
+            "norm": 0.7835774130148818
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 5.360335521401231,
+            "norm": 5.407426628109312
+          }
+        ],
+        "nearbyMax": 5.360335521401231,
+        "interiorMedian": 0.4647485078557244,
+        "interiorP95": 2.639529195674796,
+        "interiorMax": 5.360335521401231,
+        "boundaryToNearbyMaxRatio": 0.3905918264998408,
+        "boundaryToInteriorMaxRatio": 0.3905918264998408,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Forearm.L/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Forearm.R/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.11708859203390959,
+          -0.6389966593756747,
+          -0.8124212396295586
+        ],
+        "incoming": [
+          0.19101585689456632,
+          -0.628653987826597,
+          -0.520463941121355
+        ],
+        "delta": [
+          -0.07392726486065673,
+          -0.010342671549077753,
+          -0.2919572985082036
+        ],
+        "maxAbs": 0.2919572985082036,
+        "norm": 0.3013490924107091,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.7180084818688542,
+            "norm": 0.7442865910360695
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.3986326372693514,
+            "norm": 0.4305135556577622
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.14546125896733492,
+            "norm": 0.1906981273922495
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.10622760401393283,
+            "norm": 0.13685212631231405
+          }
+        ],
+        "nearbyMax": 0.7180084818688542,
+        "interiorMedian": 0.17069235813745776,
+        "interiorP95": 0.3386308855399712,
+        "interiorMax": 0.7180084818688542,
+        "boundaryToNearbyMaxRatio": 0.40662096044922524,
+        "boundaryToInteriorMaxRatio": 0.40662096044922524,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Forearm.R/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          4.023055842573885,
+          -0.4037089109367205,
+          -0.3911492422141573
+        ],
+        "incoming": [
+          2.0915646350695365,
+          -0.6161731567370253,
+          -0.19196941315968094
+        ],
+        "delta": [
+          1.9314912075043482,
+          0.21246424580030482,
+          -0.19917982905447637
+        ],
+        "maxAbs": 1.9314912075043482,
+        "norm": 1.9533233077788907,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 3.9482052373786214,
+            "norm": 3.987230183338736
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.15933342511295256,
+            "norm": 0.16336577119543946
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.44612115333380675,
+            "norm": 0.4638208684901111
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.9317957061412137,
+            "norm": 0.9666636092258541
+          }
+        ],
+        "nearbyMax": 3.9482052373786214,
+        "interiorMedian": 0.505375936252328,
+        "interiorP95": 1.0675445776645782,
+        "interiorMax": 3.9482052373786214,
+        "boundaryToNearbyMaxRatio": 0.4892073971278013,
+        "boundaryToInteriorMaxRatio": 0.4892073971278013,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Forearm.R/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Knee.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.06354539793572393,
+          -0.29456859097892857,
+          0.31793910345385595
+        ],
+        "incoming": [
+          -0.14436425797314986,
+          -0.34346591518671366,
+          0.592897298534471
+        ],
+        "delta": [
+          0.08081886003742593,
+          0.04889732420778509,
+          -0.2749581950806151
+        ],
+        "maxAbs": 0.2749581950806151,
+        "norm": 0.2907312255235407,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.2119059082068138,
+            "norm": 1.2603927907589882
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.20198863928454402,
+            "norm": 0.2901562502760491
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.27688412379392474,
+            "norm": 0.27817895584747737
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.2444184374843541,
+            "norm": 0.31133733041344924
+          }
+        ],
+        "nearbyMax": 1.2119059082068138,
+        "interiorMedian": 0.19761395578379692,
+        "interiorP95": 0.45222835690724256,
+        "interiorMax": 1.2119059082068138,
+        "boundaryToNearbyMaxRatio": 0.22688081081100978,
+        "boundaryToInteriorMaxRatio": 0.22688081081100978,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Knee.L/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 4.2146848510894035e-8,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          4.67383236711691,
+          1.1111451923635716,
+          -0.41647944049526747
+        ],
+        "incoming": [
+          4.732054281140895,
+          0.35447618454161,
+          -0.3262640963738712
+        ],
+        "delta": [
+          -0.05822191402398502,
+          0.7566690078219616,
+          -0.09021534412139626
+        ],
+        "maxAbs": 0.7566690078219616,
+        "norm": 0.7642490346646373,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.8736002881207341,
+            "norm": 1.0586617120916548
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.8729404090655044,
+            "norm": 1.0111220905078515
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 1.6921674207516206,
+            "norm": 1.9170193068774268
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 1.3317830950153335,
+            "norm": 1.3385682699746382
+          }
+        ],
+        "nearbyMax": 1.6921674207516206,
+        "interiorMedian": 0.6583057920997684,
+        "interiorP95": 1.6921674207516206,
+        "interiorMax": 2.2781453289788067,
+        "boundaryToNearbyMaxRatio": 0.44715965958372317,
+        "boundaryToInteriorMaxRatio": 0.33214255394371317,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Knee.L/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Knee.R/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.08651112848551659,
+          -0.5015290519877675,
+          1.0753980374223238
+        ],
+        "incoming": [
+          0.04126985688026149,
+          -0.67887463969731,
+          0.8553837592444908
+        ],
+        "delta": [
+          -0.1277809853657781,
+          0.17734558770954245,
+          0.22001427817783292
+        ],
+        "maxAbs": 0.22001427817783292,
+        "norm": 0.31013822773596467,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.26422045170176045,
+            "norm": 0.3880703748105345
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.15340139749227427,
+            "norm": 0.16961092588551244
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.16671040067804854,
+            "norm": 0.2237859581411153
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.7514112321010922,
+            "norm": 0.7536637278896251
+          }
+        ],
+        "nearbyMax": 0.7514112321010922,
+        "interiorMedian": 0.19417399546626557,
+        "interiorP95": 0.5247633601684728,
+        "interiorMax": 0.7514112321010922,
+        "boundaryToNearbyMaxRatio": 0.29280142321353136,
+        "boundaryToInteriorMaxRatio": 0.29280142321353136,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Knee.R/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          1.8560494445270526,
+          -0.07690618042210061,
+          -0.36332438978865267
+        ],
+        "incoming": [
+          2.310514128559766,
+          0.5238766940077592,
+          -0.2762739652684588
+        ],
+        "delta": [
+          -0.45446468403271334,
+          -0.6007828744298598,
+          -0.08705042452019385
+        ],
+        "maxAbs": 0.6007828744298598,
+        "norm": 0.7583244606699064,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.3528935992593999,
+            "norm": 0.4964462398365988
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.6666770010227687,
+            "norm": 0.7036702361988963
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.24551888998532223,
+            "norm": 0.30454931008367897
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.8307478509077996,
+            "norm": 0.9820917002302333
+          }
+        ],
+        "nearbyMax": 0.8307478509077996,
+        "interiorMedian": 0.6809266659761182,
+        "interiorP95": 1.454536418229468,
+        "interiorMax": 2.062463005555807,
+        "boundaryToNearbyMaxRatio": 0.7231831822054723,
+        "boundaryToInteriorMaxRatio": 0.2912938912414366,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Knee.R/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-RibCage/scale",
+      "target": "scale",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          -0.04935880844360344,
+          -0.00000715241391734581
+        ],
+        "incoming": [
+          0,
+          -0.024926151359315658,
+          0.00001072861608004978
+        ],
+        "delta": [
+          0,
+          -0.024432657084287785,
+          -0.00001788102999739559
+        ],
+        "maxAbs": 0.024432657084287785,
+        "norm": 0.02443266362739912,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.0033652107481111984,
+            "norm": 0.003365339960334691
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.012495267113603131,
+            "norm": 0.012495337225076916
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.0071238010771530556,
+            "norm": 0.00712380556536118
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.02623861872644175,
+            "norm": 0.026238624819199252
+          }
+        ],
+        "nearbyMax": 0.02623861872644175,
+        "interiorMedian": 0.0050496019683434305,
+        "interiorP95": 0.01586047077167359,
+        "interiorMax": 0.02623861872644175,
+        "boundaryToNearbyMaxRatio": 0.9311716191701044,
+        "boundaryToInteriorMaxRatio": 0.9311716191701044,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Shoulder_Tire/scale",
+      "target": "scale",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.000003576206958672905,
+          -0.5007977176647189,
+          0.000021457241752037434
+        ],
+        "incoming": [
+          0,
+          -0.34225000536430805,
+          -0.000057219285760265496
+        ],
+        "delta": [
+          -0.000003576206958672905,
+          -0.15854771230041087,
+          0.00007867652751230293
+        ],
+        "maxAbs": 0.15854771230041087,
+        "norm": 0.15854773186166712,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.5436621342713726,
+            "norm": 0.5436621357416396
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.19130561504724852,
+            "norm": 0.1913056167854132
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.0994542710620615,
+            "norm": 0.09945428160678728
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.260126025476887,
+            "norm": 0.26012604025114094
+          }
+        ],
+        "nearbyMax": 0.5436621342713726,
+        "interiorMedian": 0.05129712528936731,
+        "interiorP95": 0.2927769112926334,
+        "interiorMax": 0.5436621342713726,
+        "boundaryToNearbyMaxRatio": 0.2916291246086135,
+        "boundaryToInteriorMaxRatio": 0.2916291246086135,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Spine/scale",
+      "target": "scale",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.00000715241391734581,
+          -0.0016915458914522842,
+          0
+        ],
+        "incoming": [
+          -0.000007152410720033187,
+          -0.0005113973664823729,
+          -0.000007152410720033187
+        ],
+        "delta": [
+          0.000014304824637378997,
+          -0.0011801485249699113,
+          0.000007152410720033187
+        ],
+        "maxAbs": 0.0011801485249699113,
+        "norm": 0.001180256889823428,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.00105855725976718,
+            "norm": 0.0010586659902054112
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.001319620367750302,
+            "norm": 0.001319702743930251
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.0007438507148834515,
+            "norm": 0.0007438936968791353
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.0001716578572807965,
+            "norm": 0.00017184401703323676
+          }
+        ],
+        "nearbyMax": 0.001319620367750302,
+        "interiorMedian": 0.0005400072507596086,
+        "interiorP95": 0.001319620367750302,
+        "interiorMax": 0.002174332858890089,
+        "boundaryToNearbyMaxRatio": 0.8943091163270211,
+        "boundaryToInteriorMaxRatio": 0.5427635056632177,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Thighs_Center/scale",
+      "target": "scale",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.00919442809074804,
+          0.14023022726348197,
+          0.1373513806617503
+        ],
+        "incoming": [
+          -0.021600280374500225,
+          0.025476886984758213,
+          0.04636192628725512
+        ],
+        "delta": [
+          0.012405852283752185,
+          0.11475334027872376,
+          0.09098945437449517
+        ],
+        "maxAbs": 0.11475334027872376,
+        "norm": 0.1469738585034059,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.1881263670609882,
+            "norm": 0.25614273240510377
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.07987815862891803,
+            "norm": 0.11241221584741634
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.03782552409289551,
+            "norm": 0.05482324321570893
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.12985916903292255,
+            "norm": 0.16579638545856099
+          }
+        ],
+        "nearbyMax": 0.1881263670609882,
+        "interiorMedian": 0.091379199359144,
+        "interiorP95": 0.155604271419682,
+        "interiorMax": 0.36620000895144467,
+        "boundaryToNearbyMaxRatio": 0.6099801004583381,
+        "boundaryToInteriorMaxRatio": 0.31336247262063605,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Toes.L/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 4.2146848510894035e-8,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          2.616836909916093,
+          0.10725116850808103,
+          0.5410552601868975
+        ],
+        "incoming": [
+          5.363553110835602,
+          -0.3288855943010975,
+          0.0365406413519752
+        ],
+        "delta": [
+          -2.7467162009195087,
+          0.4361367628091785,
+          0.5045146188349223
+        ],
+        "maxAbs": 2.7467162009195087,
+        "norm": 2.8265173208182386,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.4311460838750654,
+            "norm": 1.4480482014494471
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.34981163681941585,
+            "norm": 0.3836585839521532
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 1.7018967516160943,
+            "norm": 1.800550555490327
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 1.0068777466744363,
+            "norm": 1.2804283182103096
+          }
+        ],
+        "nearbyMax": 1.7018967516160943,
+        "interiorMedian": 1.5808117672807613,
+        "interiorP95": 5.470558261530265,
+        "interiorMax": 7.028875367073237,
+        "boundaryToNearbyMaxRatio": 1.6139147091686203,
+        "boundaryToInteriorMaxRatio": 0.3907760569758427,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-UpperArm.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.21249464127738538,
+          -0.8110551285713455,
+          0.2394516423059919
+        ],
+        "incoming": [
+          0.29129801949747164,
+          -0.7862931200961284,
+          0.12982117185097236
+        ],
+        "delta": [
+          -0.07880337822008626,
+          -0.024762008475217145,
+          0.10963047045501953
+        ],
+        "maxAbs": 0.10963047045501953,
+        "norm": 0.13726605383274337,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.39250927690436366,
+            "norm": 0.4076054889603867
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.1734961043930573,
+            "norm": 0.18461938312035245
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.13553103073390882,
+            "norm": 0.1374499082040621
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.2207023846137341,
+            "norm": 0.2419996845487797
+          }
+        ],
+        "nearbyMax": 0.39250927690436366,
+        "interiorMedian": 0.12985174749764344,
+        "interiorP95": 0.2268526677096095,
+        "interiorMax": 0.39250927690436366,
+        "boundaryToNearbyMaxRatio": 0.2793066989897704,
+        "boundaryToInteriorMaxRatio": 0.2793066989897704,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-UpperArm.L/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -4.97435136950356,
+          -4.14134206956451,
+          -2.6195605582559702
+        ],
+        "incoming": [
+          -2.877723540557793,
+          -1.7941110282886275,
+          -0.8578797804563907
+        ],
+        "delta": [
+          -2.096627828945767,
+          -2.347231041275882,
+          -1.7616807777995795
+        ],
+        "maxAbs": 2.347231041275882,
+        "norm": 3.6067798625792835,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 2.802684183131912,
+            "norm": 2.985838187233242
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.3990289689074573,
+            "norm": 0.49758020169436895
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.7061581707155815,
+            "norm": 0.8090498932664654
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 5.4754394558533726,
+            "norm": 7.055565339118462
+          }
+        ],
+        "nearbyMax": 5.4754394558533726,
+        "interiorMedian": 0.5895629137990515,
+        "interiorP95": 2.802684183131912,
+        "interiorMax": 5.4754394558533726,
+        "boundaryToNearbyMaxRatio": 0.4286835897284258,
+        "boundaryToInteriorMaxRatio": 0.4286835897284258,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-UpperArm.L/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-UpperArm.R/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.2249165961483357,
+          -0.5589611476405751,
+          0.08668099831605355
+        ],
+        "incoming": [
+          0.25897180519694163,
+          -0.5748034875154671,
+          -0.10348197234878016
+        ],
+        "delta": [
+          -0.03405520904860593,
+          0.01584233987489192,
+          0.19016297066483373
+        ],
+        "maxAbs": 0.19016297066483373,
+        "norm": 0.19383676743107914,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.4476829978627693,
+            "norm": 0.4595823816326825
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.10624910874217197,
+            "norm": 0.15861312183065654
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.13117521260540865,
+            "norm": 0.1354522590890436
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.2441403875176128,
+            "norm": 0.2483390352262618
+          }
+        ],
+        "nearbyMax": 0.4476829978627693,
+        "interiorMedian": 0.13033128640187536,
+        "interiorP95": 0.2441403875176128,
+        "interiorMax": 0.5279295058084306,
+        "boundaryToNearbyMaxRatio": 0.4247714824388426,
+        "boundaryToInteriorMaxRatio": 0.36020523303321117,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-UpperArm.R/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          3.2874242277895633,
+          -2.200509938393606,
+          -0.1985674447048959
+        ],
+        "incoming": [
+          1.4492974634971945,
+          -2.00589551759924,
+          0.022842246746362493
+        ],
+        "delta": [
+          1.8381267642923689,
+          -0.19461442079436608,
+          -0.22140969145125838
+        ],
+        "maxAbs": 1.8381267642923689,
+        "norm": 1.8616140915500188,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 4.227738811484821,
+            "norm": 4.910622481132422
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.8765461262184484,
+            "norm": 1.1234338223450027
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.5905274410998178,
+            "norm": 0.6946413900549467
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 1.2338873011134903,
+            "norm": 1.5381687078507456
+          }
+        ],
+        "nearbyMax": 4.227738811484821,
+        "interiorMedian": 0.6181263128025918,
+        "interiorP95": 1.2387004924635416,
+        "interiorMax": 4.227738811484821,
+        "boundaryToNearbyMaxRatio": 0.4347777491123681,
+        "boundaryToInteriorMaxRatio": 0.4347777491123681,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-UpperArm.R/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Wrist.L/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.4142749665065867,
+          -0.7092190592161759,
+          2.317705308923933
+        ],
+        "incoming": [
+          0.4105394348165049,
+          -0.7778818850893694,
+          1.3445289422299787
+        ],
+        "delta": [
+          0.0037355316900817837,
+          0.0686628258731935,
+          0.9731763666939541
+        ],
+        "maxAbs": 0.9731763666939541,
+        "norm": 0.97560277702841,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.7137961570974074,
+            "norm": 0.760531946718129
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.27610463445130035,
+            "norm": 0.33106154963231965
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.3259608369751025,
+            "norm": 0.3373594605739633
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 1.9779102265168476,
+            "norm": 2.0016601577125015
+          }
+        ],
+        "nearbyMax": 1.9779102265168476,
+        "interiorMedian": 0.23388070136539518,
+        "interiorP95": 0.8822431042906884,
+        "interiorMax": 1.9779102265168476,
+        "boundaryToNearbyMaxRatio": 0.4920225163139702,
+        "boundaryToInteriorMaxRatio": 0.4920225163139702,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Wrist.L/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -5.220174684052391,
+          -0.4087047959526087,
+          0.5194658256146022
+        ],
+        "incoming": [
+          -3.126403965582886,
+          -0.6133046890665619,
+          0.279175812143823
+        ],
+        "delta": [
+          -2.093770718469505,
+          0.20459989311395316,
+          0.24029001347077922
+        ],
+        "maxAbs": 2.093770718469505,
+        "norm": 2.117422071377441,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 2.6396098151563194,
+            "norm": 2.663646185335492
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.5721509937601272,
+            "norm": 0.6027811537292781
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.7673959203116882,
+            "norm": 0.78347663330109
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 5.360328423433285,
+            "norm": 5.407416361740701
+          }
+        ],
+        "nearbyMax": 5.360328423433285,
+        "interiorMedian": 0.46473356759136597,
+        "interiorP95": 2.6396098151563194,
+        "interiorMax": 5.360328423433285,
+        "boundaryToNearbyMaxRatio": 0.3906049318389426,
+        "boundaryToInteriorMaxRatio": 0.3906049318389426,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Wrist.L/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Wrist.R/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.01518278664304582,
+          -1.7322288218141473,
+          -0.7322301628917567
+        ],
+        "incoming": [
+          0.031106728272764336,
+          -1.1945098095313025,
+          -0.44642129129623137
+        ],
+        "delta": [
+          -0.015923941629718517,
+          -0.5377190122828448,
+          -0.2858088715955253
+        ],
+        "maxAbs": 0.5377190122828448,
+        "norm": 0.6091650180125023,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.0450535022912308,
+            "norm": 1.35888133723673
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.43787078001991064,
+            "norm": 0.6241604865163036
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.2465364451088239,
+            "norm": 0.298669074412881
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.35465228555284556,
+            "norm": 0.35742234845922904
+          }
+        ],
+        "nearbyMax": 1.0450535022912308,
+        "interiorMedian": 0.23985430539363284,
+        "interiorP95": 0.46261097976000964,
+        "interiorMax": 1.119202577372355,
+        "boundaryToNearbyMaxRatio": 0.5145373046489209,
+        "boundaryToInteriorMaxRatio": 0.48044833272747856,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Wrist.R/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          4.0230247171277,
+          -0.40370999493683046,
+          -0.39116262305200744
+        ],
+        "incoming": [
+          2.0915224311056333,
+          -0.6161395166735965,
+          -0.19195782809735154
+        ],
+        "delta": [
+          1.9315022860220665,
+          0.212429521736766,
+          -0.1992047949546559
+        ],
+        "maxAbs": 1.9315022860220665,
+        "norm": 1.9533330317553907,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 3.9483172055144706,
+            "norm": 3.9873420888062507
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.15933104143970614,
+            "norm": 0.16336446424151985
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.44615201289294504,
+            "norm": 0.46384949065350617
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 0.9318435559741469,
+            "norm": 0.9667081203237116
+          }
+        ],
+        "nearbyMax": 3.9483172055144706,
+        "interiorMedian": 0.5052736364589858,
+        "interiorP95": 1.0675749394604663,
+        "interiorMax": 3.9483172055144706,
+        "boundaryToNearbyMaxRatio": 0.4891963298501974,
+        "boundaryToInteriorMaxRatio": 0.4891963298501974,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "DEF-Wrist.R/scale",
+      "target": "scale",
+      "interpolation": "STEP",
+      "keys": 2,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "scale/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "scale/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-hyd_hoses_upper_arm.001.mesh/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -7.2641549243521455,
+          -2.737370317289052,
+          -1.3738761079550528
+        ],
+        "incoming": [
+          -3.1742914859762474,
+          -2.009017988441953,
+          -1.0728860067445414
+        ],
+        "delta": [
+          -4.0898634383758985,
+          -0.728352328847099,
+          -0.3009901012105114
+        ],
+        "maxAbs": 4.0898634383758985,
+        "norm": 4.165102051634225,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 3.451198713986611,
+            "norm": 3.489319506454006
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.42081255189759936,
+            "norm": 0.5810694429002322
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.5077693581273488,
+            "norm": 0.7908627286301194
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 8.381223098224554,
+            "norm": 8.496963725351225
+          }
+        ],
+        "nearbyMax": 8.381223098224554,
+        "interiorMedian": 0.5132180696335743,
+        "interiorP95": 3.451198713986611,
+        "interiorMax": 8.381223098224554,
+        "boundaryToNearbyMaxRatio": 0.4879793068916492,
+        "boundaryToInteriorMaxRatio": 0.4879793068916492,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-hyd_hoses_upper_arm.mesh/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -4.895964196480536,
+          -2.643432123793166,
+          -1.7182092940684097
+        ],
+        "incoming": [
+          -2.375597622182391,
+          -1.9510194110798924,
+          -1.1956623298874665
+        ],
+        "delta": [
+          -2.520366574298145,
+          -0.6924127127132738,
+          -0.5225469641809433
+        ],
+        "maxAbs": 2.520366574298145,
+        "norm": 2.6654715086342686,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 2.814292889155469,
+            "norm": 2.84021885563177
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.5620682247696629,
+            "norm": 0.7399690862415389
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.4389767748057656,
+            "norm": 0.6984970355624336
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 5.9366656577285095,
+            "norm": 6.076346312243773
+          }
+        ],
+        "nearbyMax": 5.9366656577285095,
+        "interiorMedian": 0.419209432885028,
+        "interiorP95": 2.814292889155469,
+        "interiorMax": 5.9366656577285095,
+        "boundaryToNearbyMaxRatio": 0.42454244850677497,
+        "boundaryToInteriorMaxRatio": 0.42454244850677497,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-hyd_rod_shoulder_lift/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 2.9802322387695312e-8,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -2.7022227090629922,
+          -3.472255171302959,
+          -4.646373547569007
+        ],
+        "incoming": [
+          -1.7074833859537204,
+          -1.612681206845139,
+          -1.862715882112575
+        ],
+        "delta": [
+          -0.9947393231092718,
+          -1.85957396445782,
+          -2.7836576654564316
+        ],
+        "maxAbs": 2.7836576654564316,
+        "norm": 3.492316086594055,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 2.0798183447159424,
+            "norm": 2.438630477557611
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.6443219251349567,
+            "norm": 0.6770193066231702
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.4924158631301414,
+            "norm": 0.653259272030573
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 3.9192216559319673,
+            "norm": 6.132924735780377
+          }
+        ],
+        "nearbyMax": 3.9192216559319673,
+        "interiorMedian": 0.41239595143771846,
+        "interiorP95": 2.0798183447159424,
+        "interiorMax": 4.256711658055552,
+        "boundaryToNearbyMaxRatio": 0.710257778159397,
+        "boundaryToInteriorMaxRatio": 0.6539455544724386,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-middle.3/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.4179450488979248,
+          -0.08474180009271316,
+          2.8459499679705966
+        ],
+        "incoming": [
+          0.370468947808859,
+          -0.4249139922610916,
+          1.6710865584745338
+        ],
+        "delta": [
+          0.0474761010890658,
+          0.34017219216837846,
+          1.1748634094960628
+        ],
+        "maxAbs": 1.1748634094960628,
+        "norm": 1.2240404942124965,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.0061649337708825,
+            "norm": 1.0675777517574143
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.3622196980161439,
+            "norm": 0.4226252724522632
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.39284258259246274,
+            "norm": 0.3970788735125381
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.58190314920644,
+            "norm": 2.6323622610996624
+          }
+        ],
+        "nearbyMax": 2.58190314920644,
+        "interiorMedian": 0.2781492064400306,
+        "interiorP95": 1.216672098030985,
+        "interiorMax": 2.58190314920644,
+        "boundaryToNearbyMaxRatio": 0.45503775378141603,
+        "boundaryToInteriorMaxRatio": 0.45503775378141603,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-pinkie.1/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.4413629461150546,
+          -0.44319932838833315,
+          2.7991141735363367
+        ],
+        "incoming": [
+          0.41026585510646363,
+          -0.6393146560048064,
+          1.6458349724274566
+        ],
+        "delta": [
+          0.031097091008590982,
+          0.19611532761647327,
+          1.1532792011088802
+        ],
+        "maxAbs": 1.1532792011088802,
+        "norm": 1.1702483353996493,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 0.965334484871974,
+            "norm": 1.0064524256015668
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.32162974903520647,
+            "norm": 0.3934055336280579
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.393328946521425,
+            "norm": 0.398122805411343
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.487525301652922,
+            "norm": 2.506694295030772
+          }
+        ],
+        "nearbyMax": 2.487525301652922,
+        "interiorMedian": 0.2761974923648016,
+        "interiorP95": 1.1063961802533475,
+        "interiorMax": 2.487525301652922,
+        "boundaryToNearbyMaxRatio": 0.4636251138199656,
+        "boundaryToInteriorMaxRatio": 0.4636251138199656,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-pinkie.2/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.4428470720029039,
+          -0.31555019720546246,
+          2.914496914850959
+        ],
+        "incoming": [
+          0.4021907834035462,
+          -0.5671432556343116,
+          1.7139643666897928
+        ],
+        "delta": [
+          0.040656288599357715,
+          0.2515930584288491,
+          1.2005325481611664
+        ],
+        "maxAbs": 1.2005325481611664,
+        "norm": 1.2272857858080977,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.0297759461637803,
+            "norm": 1.074289657516776
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.33963952727908314,
+            "norm": 0.41200081260226185
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.4076963515552916,
+            "norm": 0.4116051794199162
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.621950390879246,
+            "norm": 2.6469979744084147
+          }
+        ],
+        "nearbyMax": 2.621950390879246,
+        "interiorMedian": 0.2857736762675859,
+        "interiorP95": 1.1776842897675333,
+        "interiorMax": 2.621950390879246,
+        "boundaryToNearbyMaxRatio": 0.4578776747025253,
+        "boundaryToInteriorMaxRatio": 0.4578776747025253,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-pinkie.3/translation",
+      "target": "translation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 3,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.4413379126663439,
+          -0.24586422840876224,
+          2.9540971485560843
+        ],
+        "incoming": [
+          0.39533430367705436,
+          -0.5257307975653194,
+          1.728230743922239
+        ],
+        "delta": [
+          0.04600360898928957,
+          0.27986656915655717,
+          1.2258664046338452
+        ],
+        "maxAbs": 1.2258664046338452,
+        "norm": 1.2582488110788788,
+        "unit": "metres/second (node-local)"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 1.0558518592029442,
+            "norm": 1.1033437559826282
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.34902707054559956,
+            "norm": 0.4187261418836898
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.41099629505124713,
+            "norm": 0.41486503122152135
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 2.681421791964982,
+            "norm": 2.711512832302887
+          }
+        ],
+        "nearbyMax": 2.681421791964982,
+        "interiorMedian": 0.28849785070057865,
+        "interiorP95": 1.2106318844777868,
+        "interiorMax": 2.681421791964982,
+        "boundaryToNearbyMaxRatio": 0.45717029984138147,
+        "boundaryToInteriorMaxRatio": 0.45717029984138147,
+        "unit": "metres/second (node-local)"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-wires_motor_shoulder.006.mesh/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 4.2146848510894035e-8,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -4.868166655373225,
+          0.48524609213045317,
+          -4.662694136677763
+        ],
+        "incoming": [
+          -2.6044445355440375,
+          -0.03497584566848245,
+          -1.5994104165176861
+        ],
+        "delta": [
+          -2.263722119829187,
+          0.5202219377989357,
+          -3.0632837201600767
+        ],
+        "maxAbs": 3.0632837201600767,
+        "norm": 3.8443173451952415,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 2.9721110221803384,
+            "norm": 3.1645658480769314
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.46054717288553637,
+            "norm": 0.5293942748035143
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.7578103527087583,
+            "norm": 0.7711941627912888
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 5.876005711017018,
+            "norm": 7.476564405871372
+          }
+        ],
+        "nearbyMax": 5.876005711017018,
+        "interiorMedian": 0.6852422227661794,
+        "interiorP95": 3.985217793116071,
+        "interiorMax": 5.876005711017018,
+        "boundaryToNearbyMaxRatio": 0.521320752703946,
+        "boundaryToInteriorMaxRatio": 0.521320752703946,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-zip_tie.001/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -6.3114152441688525,
+          -3.6695744159457733,
+          -1.625978746528315
+        ],
+        "incoming": [
+          -2.126613381078478,
+          -2.814683412877777,
+          -1.5556360887439877
+        ],
+        "delta": [
+          -4.1848018630903745,
+          -0.8548910030679964,
+          -0.07034265778432736
+        ],
+        "maxAbs": 4.1848018630903745,
+        "norm": 4.271809142501036,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 3.4058981719022783,
+            "norm": 3.4875767946782013
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 1.1270987882558914,
+            "norm": 1.3695336638178515
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.5861710124734564,
+            "norm": 0.7905838248999615
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 8.294239582685641,
+            "norm": 8.4507940085555
+          }
+        ],
+        "nearbyMax": 8.294239582685641,
+        "interiorMedian": 0.7282582215875046,
+        "interiorP95": 3.4058981719022783,
+        "interiorMax": 8.294239582685641,
+        "boundaryToNearbyMaxRatio": 0.5045431617174666,
+        "boundaryToInteriorMaxRatio": 0.5045431617174666,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "PortableObject_GEO-zip_tie.004/rotation",
+      "target": "rotation",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 4,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": 0,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -4.300358498484914,
+          -3.694888699418394,
+          -1.5981547532201383
+        ],
+        "incoming": [
+          -1.506790596105379,
+          -2.922550542382465,
+          -1.269963477396673
+        ],
+        "delta": [
+          -2.793567902379535,
+          -0.7723381570359291,
+          -0.3281912758234653
+        ],
+        "maxAbs": 2.793567902379535,
+        "norm": 2.916888302205877,
+        "unit": "radians/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 2.599877378420082,
+            "norm": 2.7624233174611437
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 0.9336506765664259,
+            "norm": 1.2103804360721728
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 0.7915517623451067,
+            "norm": 0.8678671151425311
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 5.771697423040495,
+            "norm": 6.1057541276794
+          }
+        ],
+        "nearbyMax": 5.771697423040495,
+        "interiorMedian": 0.5013411146508657,
+        "interiorP95": 2.599877378420082,
+        "interiorMax": 5.771697423040495,
+        "boundaryToNearbyMaxRatio": 0.48401149568715623,
+        "boundaryToInteriorMaxRatio": 0.48401149568715623,
+        "unit": "radians/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "Mobile_EyeMeniscus/weights",
+      "target": "weights",
+      "interpolation": "LINEAR",
+      "keys": 2,
+      "components": 7,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "runtime morph coefficient/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "runtime morph coefficient/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "Mobile_Footwear/weights",
+      "target": "weights",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 9,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.9673282202514342,
+          -2.298499065939445,
+          2.2324498761067804,
+          0.10707521254962546,
+          1.212956419000924,
+          2.248654563888267,
+          -0.7770132145317382,
+          -3.3839643774024846,
+          -0.27753869344172816
+        ],
+        "incoming": [
+          -0.07064793688712781,
+          -0.6165686488380909,
+          4.501140809509845,
+          1.738579388182787,
+          -6.955504852910673,
+          6.096815031506369,
+          -0.0646756739359001,
+          -4.27161637329862,
+          -1.1206218305879996
+        ],
+        "delta": [
+          1.037976157138562,
+          -1.6819304171013543,
+          -2.268690933403065,
+          -1.6315041756331614,
+          8.168461271911598,
+          -3.8481604676181025,
+          -0.7123375405958381,
+          0.8876519958961357,
+          0.8430831371462715
+        ],
+        "maxAbs": 8.168461271911598,
+        "norm": 9.759779065436467,
+        "unit": "runtime morph coefficient/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 6.967817266553032,
+            "norm": 10.670773359794921
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 3.513988110005914,
+            "norm": 6.1997332705784265
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 7.554705660417843,
+            "norm": 14.085024843294526
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 17.824136525215827,
+            "norm": 21.565236946488444
+          }
+        ],
+        "nearbyMax": 17.824136525215827,
+        "interiorMedian": 10.73689857166358,
+        "interiorP95": 37.70301394402596,
+        "interiorMax": 59.23560756152861,
+        "boundaryToNearbyMaxRatio": 0.45828089682524964,
+        "boundaryToInteriorMaxRatio": 0.13789782207309914,
+        "unit": "runtime morph coefficient/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "Mobile_GEO-einar_eyebrows/weights",
+      "target": "weights",
+      "interpolation": "LINEAR",
+      "keys": 2,
+      "components": 7,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "runtime morph coefficient/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "runtime morph coefficient/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "Mobile_GEO-einar_eyelashes/weights",
+      "target": "weights",
+      "interpolation": "LINEAR",
+      "keys": 2,
+      "components": 7,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 0,
+        "norm": 0,
+        "unit": "runtime morph coefficient/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [],
+        "last": [],
+        "nearbyMax": 0,
+        "interiorMedian": 0,
+        "interiorP95": 0,
+        "interiorMax": 0,
+        "boundaryToNearbyMaxRatio": null,
+        "boundaryToInteriorMaxRatio": null,
+        "unit": "runtime morph coefficient/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "Mobile_HeadSkin/weights",
+      "target": "weights",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 9,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          0.44108936628271617,
+          2.461335167927503,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "incoming": [
+          0.19715620149771482,
+          7.472137784040111,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          0.24393316478500135,
+          -5.010802616112608,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "maxAbs": 5.010802616112608,
+        "norm": 5.016736613230057,
+        "unit": "runtime morph coefficient/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 3.190462971282611,
+            "norm": 3.4250314894943936
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 2.871193518840129,
+            "norm": 2.9613477885225286
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 1.1120353615185987,
+            "norm": 1.1176655001365132
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 6.011601210187893,
+            "norm": 6.111174259625151
+          }
+        ],
+        "nearbyMax": 6.011601210187893,
+        "interiorMedian": 1.966569632294565,
+        "interiorP95": 4.7827322399974594,
+        "interiorMax": 6.011601210187893,
+        "boundaryToNearbyMaxRatio": 0.833522125123798,
+        "boundaryToInteriorMaxRatio": 0.833522125123798,
+        "unit": "runtime morph coefficient/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "Mobile_Jacket/weights",
+      "target": "weights",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 13,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.04948039948019832,
+          -1.988671470406664,
+          -13.147576594530102,
+          14.010677659926857,
+          -22.05750093763676,
+          -32.49078433818043,
+          -32.430818499897406,
+          -44.57032454525176,
+          -3.0985973669282214,
+          -1.2005398284404116,
+          -0.2539393037214457,
+          5.2423760855464465,
+          19.01079790988584
+        ],
+        "incoming": [
+          0.058921559511633394,
+          -0.8139157302968966,
+          -14.102857030462117,
+          5.755051390071023,
+          -14.333574131160908,
+          -16.86012030354831,
+          -29.82581018932431,
+          -32.48202956806592,
+          -22.673149134915924,
+          -0.8087516897570326,
+          -3.373849355925415,
+          4.729495826568344,
+          15.97179089212019
+        ],
+        "delta": [
+          -0.10840195899183172,
+          -1.1747557401097675,
+          0.9552804359320142,
+          8.255626269855835,
+          -7.723926806475852,
+          -15.630664034632122,
+          -2.605008310573094,
+          -12.08829497718584,
+          19.574551767987703,
+          -0.39178813868337903,
+          3.119910052203969,
+          0.5128802589781021,
+          3.039007017765652
+        ],
+        "maxAbs": 19.574551767987703,
+        "norm": 30.494235496115607,
+        "unit": "runtime morph coefficient/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 37.83701347380674,
+            "norm": 58.53243302341253
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 32.69588695967424,
+            "norm": 34.155845305331525
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 12.301794182229116,
+            "norm": 20.323497302736772
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 59.74809298849177,
+            "norm": 63.59613014646777
+          }
+        ],
+        "nearbyMax": 59.74809298849177,
+        "interiorMedian": 14.218563366782774,
+        "interiorP95": 33.7121604428078,
+        "interiorMax": 65.49854359036713,
+        "boundaryToNearbyMaxRatio": 0.32761801739442975,
+        "boundaryToInteriorMaxRatio": 0.29885476370907477,
+        "unit": "runtime morph coefficient/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "Mobile_MechanicalSoft/weights",
+      "target": "weights",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 11,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          -0.6817537897735679,
+          -11.955397546811431,
+          5.941223250530731,
+          -0.11463531406025998,
+          0,
+          34.1452521158852,
+          0,
+          0.11283648196004752,
+          11.409874220331005,
+          -1.8844679520448528,
+          -21.863252104262525
+        ],
+        "incoming": [
+          -0.492014333431083,
+          -6.356907083032336,
+          7.316054301102186,
+          -0.43060909929691804,
+          0,
+          19.616995558352944,
+          0,
+          0.2179518356662113,
+          7.181742085857539,
+          -4.934011858696974,
+          -8.356361711714934
+        ],
+        "delta": [
+          -0.18973945634248496,
+          -5.598490463779095,
+          -1.374831050571455,
+          0.3159737852366581,
+          0,
+          14.528256557532256,
+          0,
+          -0.10511535370616377,
+          4.228132134473467,
+          3.0495439066521213,
+          -13.506890392547591
+        ],
+        "maxAbs": 14.528256557532256,
+        "norm": 21.30876091389209,
+        "unit": "runtime morph coefficient/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 40.17545228959945,
+            "norm": 40.72957368036711
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 8.478757554178419,
+            "norm": 9.5705883577665
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 8.595595545478602,
+            "norm": 10.521884966198142
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 20.46145208242438,
+            "norm": 22.386952876941166
+          }
+        ],
+        "nearbyMax": 40.17545228959945,
+        "interiorMedian": 5.978180428503192,
+        "interiorP95": 40.17545228959945,
+        "interiorMax": 103.43569242295621,
+        "boundaryToNearbyMaxRatio": 0.36162023647692215,
+        "boundaryToInteriorMaxRatio": 0.1404568985541774,
+        "unit": "runtime morph coefficient/second"
+      },
+      "stepInteriorChanges": 0
+    },
+    {
+      "key": "Mobile_Pants/weights",
+      "target": "weights",
+      "interpolation": "LINEAR",
+      "keys": 49,
+      "components": 9,
+      "endpointComponentMaxAbs": 0,
+      "endpointRotationAngleRadians": null,
+      "endpointExactlyEqual": true,
+      "boundaryVelocity": {
+        "outgoing": [
+          5.447800565666536,
+          -1.602934635430287,
+          0.6339032466147848,
+          -1.5463966194562646,
+          5.865920848705436,
+          0.8929502679249551,
+          -2.501514523646998,
+          1.3950783345783004,
+          4.000824315703974
+        ],
+        "incoming": [
+          9.477995608419818,
+          0.17555592112321458,
+          -0.7399079484740332,
+          -3.8697690173660533,
+          1.9331830731047899,
+          -3.2476629497972294,
+          -4.578204458812843,
+          -4.886770185891154,
+          6.393339675137505
+        ],
+        "delta": [
+          -4.030195042753282,
+          -1.7784905565535014,
+          1.3738111950888179,
+          2.3233723979097887,
+          3.932737775600646,
+          4.140613217722184,
+          2.076689935165845,
+          6.281848520469454,
+          -2.3925153594335313
+        ],
+        "maxAbs": 6.281848520469454,
+        "norm": 10.430743652203532,
+        "unit": "runtime morph coefficient/second"
+      },
+      "neighboringVelocityChanges": {
+        "first": [
+          {
+            "keyIndex": 1,
+            "timeSeconds": 0.016667000949382782,
+            "maxAbs": 6.143351361886665,
+            "norm": 9.34787630393101
+          },
+          {
+            "keyIndex": 2,
+            "timeSeconds": 0.033334001898765564,
+            "maxAbs": 12.103615232317111,
+            "norm": 12.779897109016375
+          }
+        ],
+        "last": [
+          {
+            "keyIndex": 46,
+            "timeSeconds": 0.7666820287704468,
+            "maxAbs": 3.460492765336557,
+            "norm": 5.702711927779027
+          },
+          {
+            "keyIndex": 47,
+            "timeSeconds": 0.7833490371704102,
+            "maxAbs": 10.383068813343538,
+            "norm": 14.410290223775924
+          }
+        ],
+        "nearbyMax": 12.103615232317111,
+        "interiorMedian": 5.376881978070709,
+        "interiorP95": 11.457482494474762,
+        "interiorMax": 15.77112990705885,
+        "boundaryToNearbyMaxRatio": 0.51900596639066,
+        "boundaryToInteriorMaxRatio": 0.3983131555880357,
+        "unit": "runtime morph coefficient/second"
+      },
+      "stepInteriorChanges": 0
+    }
+  ],
+  "acceptance": false,
+  "policy": "Measurements from decoded final GLB. LINEAR quaternion velocity uses actual shortest-path SLERP angular velocity; other LINEAR values use exact adjacent segment slopes. No new acceptance thresholds. These are boundary derivatives, not a claim that all interior native keys are C1.",
+  "fullDecodedAuditSha256": "e03b8d9bd9e0981aba2d24ee1333cf7aad8b779e20b0a9777a4cdf5f82aad79b",
+  "fullTrackCount": 953,
+  "trackSubsetPolicy": "Compact generic runtime evidence: all-track aggregate gates plus worst boundary tracks per property and principal limb tracks. Complete decoded audit remains bound by SHA, not embedded in logs."
+}
