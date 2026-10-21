@@ -22,8 +22,8 @@ mkdir -p fixtures
 download "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/$ASSETS_SHA/Models/model-index.json" fixtures/model-index.json 91c2e5fb4e500e45011065bc7ff0b5ee357dbfc2c9a10e9bd85e944fe3c90ff4
 download "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Environments/$ENVIRONMENT_SHA/Cannon_Exterior.hdr" fixtures/Cannon_Exterior.hdr 7d65926ed2fa41c121738af2addf1fd5f1ae42d12ff77255e2679777f06c984b
 download "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Environments/$ENVIRONMENT_SHA/Cannon_Exterior.hdr.license" fixtures/Cannon_Exterior.hdr.license 5387a07d4ff9743ed01148854ed0b4dc0529b33579c979c49002cdde8e031f1e
-# One diagnostic reference binding, without edits to the loader, renderer, shaders,
-# glTF, animation implementation or application UI. Verify it against pinned bytes.
+# Diagnostic references and optional application-level directional-light configuration.
+# No edits to the loader, renderer, shaders, skinning or morph algorithms; verify pinned bytes.
 node patch-diagnostics71.cjs
 npm --prefix official-viewer/glTF-Sample-Renderer ci --ignore-scripts --no-audit --no-fund
 npm --prefix official-viewer/glTF-Sample-Renderer run build

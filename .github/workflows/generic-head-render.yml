@@ -2,7 +2,7 @@ name: Generic representative standard glTF proof71
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/generic-head-render.yml']
+    paths: ['.github/workflows/generic-head-render.yml', 'package71/**']
 permissions:
   contents: read
 jobs:

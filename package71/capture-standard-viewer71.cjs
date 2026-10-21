@@ -28,6 +28,29 @@ const externalFixtures=new Map([
 ]);
 let browser,page,browserDetails,loaded,playback,reset;
 const snapshots=[],errors=[],warnings=[],failedRequests=[],blockedRequests=[],servedFixtures=[],glErrors=[],contextLosses=[];
+const requestState=new Map(),consoleMessages=[],startupDiagnostics=[];
+async function startupState(label){
+  let timer;
+  const state=await Promise.race([
+    page.evaluate(()=>{
+      const q=window.__standardViewer71,canvas=document.querySelector('#canvas'),gl=q?.view.context;
+      return {url:location.href,documentReady:document.readyState,diagnosticBinding:!!q,
+        gltfPresent:!!q?.state.gltf,meshCount:q?.state.gltf?.meshes?.length??null,skinCount:q?.state.gltf?.skins?.length??null,
+        environmentPresent:!!q?.state.environment,isLoading:q?.getViewerState().isLoading??null,
+        selectedModel:q?.getViewerState().selectedModel??null,animationNames:q?.state.gltf?.animations?.map(a=>a.name)??[],
+        validationIssueCounts:q?.getViewerState().validationReport?.issues?{errors:q.getViewerState().validationReport.issues.numErrors,warnings:q.getViewerState().validationReport.issues.numWarnings}:null,
+        lighting:q?{useIBL:q.state.renderingParameters.useIBL,directionalFallback:q.state.renderingParameters.useDirectionalLightsWithDisabledIBL,renderEnvironment:q.state.renderingParameters.renderEnvironmentMap}:null,
+        canvas:canvas?{width:canvas.width,height:canvas.height,clientWidth:canvas.clientWidth,clientHeight:canvas.clientHeight}:null,
+        gl:gl?{version:gl.getParameter(gl.VERSION),contextLost:gl.isContextLost(),error:gl.getError(),drawCalls:window.__drawCalls71||0}:null,
+        bodyText:document.body?.innerText?.slice(0,2400)??''};
+    }).catch(error=>({evaluationError:String(error)})),
+    new Promise(resolve=>{timer=setTimeout(()=>resolve({evaluationTimedOut:true}),5000);})
+  ]);clearTimeout(timer);
+  const record={label,at:new Date().toISOString(),state,requests:[...requestState.values()].map(entry=>({...entry}))};
+  if(state.gl?.error)glErrors.push({label,error:state.gl.error});
+  if(state.gl?.contextLost)contextLosses.push({label,contextLost:true});
+  startupDiagnostics.push(record);console.log('STANDARD71_STARTUP',JSON.stringify(record));return record;
+}
 async function exposeProbe(){
   await page.evaluate(()=>{
     const qa=window.__standardViewer71;
@@ -99,7 +122,8 @@ async function setPose(pose){
     qa.state.animationTimer.fixedTime=null;
     qa.state.animationTimer.pause();qa.state.animationTimer.reset();
     if(pose.seconds>0)qa.state.animationTimer.setFixedTime(pose.seconds);
-    if(pose.cameraName){const index=qa.state.gltf.nodes.findIndex(n=>n.name===pose.cameraName&&n.camera!==undefined);if(index<0)throw Error('Unknown glTF camera '+pose.cameraName);qa.uiEvents.cameraChanged.emit(index);}
+    if(pose.cameraName){const index=qa.state.gltf.nodes.findIndex(n=>n.name===pose.cameraName&&n.camera!==undefined);if(index<0)throw Error('Unknown glTF camera '+pose.cameraName);qa.uiEvents.cameraChanged.emit(index);
+      if(pose.cameraYfov!==undefined){if(!(pose.cameraYfov>0&&pose.cameraYfov<Math.PI))throw Error('Invalid camera field of view');qa.state.gltf.cameras[qa.state.gltf.nodes[index].camera].perspective.yfov=pose.cameraYfov;}}
     else qa.uiEvents.cameraChanged.emit(-1);
     qa.view.renderFrame(qa.state,qa.canvas.width,qa.canvas.height);
   },pose);
@@ -129,20 +153,30 @@ async function setPose(pose){
   });
   page=await context.newPage();page.setDefaultTimeout(60000);
   page.on('pageerror',e=>errors.push({type:'pageerror',message:e.message}));
-  page.on('console',m=>{if(m.type()==='error')errors.push({type:'console',message:m.text()});else if(m.type()==='warning')warnings.push(m.text());});
-  page.on('requestfailed',r=>failedRequests.push({url:r.url(),error:r.failure()?.errorText}));
-  page.on('response',r=>{if(r.status()>=400)errors.push({type:'http',message:r.status()+' '+r.url()});});
-  await page.goto(origin+'/?model='+encodeURIComponent(origin+'/representative71.glb'),{waitUntil:'domcontentloaded'});
-  await page.waitForFunction(()=>{const q=window.__standardViewer71;return q?.state.gltf?.meshes?.length>0&&q.state.environment&&!q.getViewerState().isLoading;},{},{timeout:120000});
+  page.on('console',m=>{if(consoleMessages.length<60)consoleMessages.push({type:m.type(),message:m.text().slice(0,1200)});if(m.type()==='error')errors.push({type:'console',message:m.text()});else if(m.type()==='warning')warnings.push(m.text());});
+  page.on('request',r=>requestState.set(r,{url:r.url(),method:r.method(),startedAt:new Date().toISOString(),finished:false}));
+  page.on('requestfinished',r=>{const entry=requestState.get(r);if(entry)Object.assign(entry,{finished:true,finishedAt:new Date().toISOString()});});
+  page.on('requestfailed',r=>{const failure={url:r.url(),error:r.failure()?.errorText};failedRequests.push(failure);const entry=requestState.get(r);if(entry)Object.assign(entry,{finished:true,failed:true,error:failure.error,finishedAt:new Date().toISOString()});});
+  page.on('response',r=>{const entry=requestState.get(r.request());if(entry)Object.assign(entry,{status:r.status(),contentLength:r.headers()['content-length']??null});if(r.status()>=400)errors.push({type:'http',message:r.status()+' '+r.url()});});
+  await page.goto(origin+'/?standardProof71&model='+encodeURIComponent(origin+'/representative71.glb'),{waitUntil:'domcontentloaded'});
+  await startupState('dom-content-loaded');
+  const readiness=()=>{const q=window.__standardViewer71;return q?.state.gltf?.meshes?.length>0&&!q.getViewerState().isLoading&&q.state.renderingParameters.useIBL===false;};
+  let ready=false;
+  for(const [label,budget] of [['after-10s',10000],['after-30s',20000],['after-60s',30000],['after-120s',60000]]){
+    try{await page.waitForFunction(readiness,null,{timeout:budget});ready=true;await startupState('ready');break;}
+    catch(error){if(error.name!=='TimeoutError')throw error;await startupState(label);}
+  }
+  check(ready,'Official model was not ready within the unchanged 120-second startup budget; see startup predicate/request/GL diagnostics');
+  check(glErrors.length===0&&contextLosses.length===0,'WebGL error or context loss during startup: '+JSON.stringify({glErrors,contextLosses}));
   await exposeProbe();
-  // Keep the official image-based lighting, hide only its background for silhouette checks.
+  // Use the official directional-light mode for diagnostic-material deformation checks.
   await page.evaluate(()=>window.__standardViewer71.uiEvents.renderEnvChanged.emit(false));
   loaded=await page.evaluate(()=>{const q=window.__standardViewer71;return {generator:q.state.gltf.asset.generator,animations:q.state.gltf.animations.map(a=>a.name),statistics:q.view.gatherStatistics(q.state),uiValidation:q.getViewerState().validationReport,webglVersion:q.view.context.getParameter(q.view.context.VERSION)};});
   check(loaded.generator.includes('glTF Blender I/O'),'Not the planned standard Blender exporter asset');
   check(loaded.animations.includes(inputs.playbackAnimation),'Requested exported clip missing');
   await page.locator('[data-testid="tab-animations"]').click();
   await page.getByRole('button',{name:'Pause',exact:true}).click();
-  await setPose({kind:'animation',animationNames:[inputs.playbackAnimation],seconds:0,cameraName:inputs.playbackCamera||null});
+  await setPose({kind:'animation',animationNames:[inputs.playbackAnimation],seconds:0,cameraName:inputs.playbackCamera||null,cameraYfov:inputs.playbackCameraYfov});
   const beginning=await probe();delete beginning.image;
   await page.getByRole('button',{name:'Reset',exact:true}).click();
   await page.getByRole('button',{name:'Play',exact:true}).click();
@@ -173,10 +207,11 @@ async function setPose(pose){
   check(failedRequests.length===0&&blockedRequests.length===0,'Unexpected browser network dependency');
   const report={format:'official-standard-viewer-proof71-v1',pass:true,completedAt:new Date().toISOString(),asset:inputs.asset,
     upstream:JSON.parse(fs.readFileSync(path.join(root,'upstream-build71.json'))),browser:browserDetails,loaded,playback,reset,restReset:true,
-    snapshots,errors,warnings,failedRequests,blockedRequests,servedFixtures,
-    limits:['Small representative export, not whole-character acceptance.','Synthetic sandboxed desktop Chromium/SwiftShader, not an iPhone benchmark.','One diagnostic reference binding only; official loader, shaders, skinning, morphing and renderer unmodified.','Exact pose times use upstream AnimationTimer and GltfView public APIs; real UI Play/Pause/Reset independently checked.','Upstream UI integrated validator suppresses one issue code; separate CLI Khronos validation is authoritative and suppresses none.','Artistic fidelity requires independent screenshot review against the original source.']};
+    lighting:'Official directional-light mode, no optional HDR preprocessing',startupDiagnostics,consoleMessages,snapshots,errors,warnings,glErrors,contextLosses,failedRequests,blockedRequests,servedFixtures,
+    limits:['Small representative export, not whole-character acceptance.','Synthetic sandboxed desktop Chromium/SwiftShader, not an iPhone benchmark.','Diagnostic references and directional-light application configuration only; official loader, shaders, skinning, morphing and renderer algorithms unmodified.','Exact pose times use upstream AnimationTimer and GltfView public APIs; real UI Play/Pause/Reset independently checked.','Camera yfov overrides widen framing without changing exported geometry or camera transforms.','Upstream UI integrated validator suppresses one issue code; separate CLI Khronos validation is authoritative and suppresses none.','Artistic fidelity requires independent screenshot review against the original source.']};
   fs.writeFileSync(path.join(output,'standard-viewer71.json'),JSON.stringify(report,null,2));console.log('STANDARD71_RESULT',JSON.stringify(report));
 })().catch(async error=>{
-  const report={pass:false,error:error.stack,browser:browserDetails,loaded,playback,reset,snapshots,errors,warnings,failedRequests,blockedRequests,servedFixtures};
+  if(page)await startupState('failure');
+  const report={pass:false,error:error.stack,browser:browserDetails,loaded,playback,reset,startupDiagnostics,consoleMessages,snapshots,errors,warnings,glErrors,contextLosses,failedRequests,blockedRequests,servedFixtures};
   fs.writeFileSync(path.join(output,'standard-viewer71-failure.json'),JSON.stringify(report,null,2));console.error('STANDARD71_FAILED',JSON.stringify(report));process.exitCode=1;
 }).finally(async()=>{await browser?.close();server.close();});

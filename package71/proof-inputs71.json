@@ -2,14 +2,14 @@
   "format": "representative-standard-proof-inputs71-v1",
   "asset": {
     "filename": "representative71.glb",
-    "bytes": 22937072,
-    "sha256": "178434ff01531c08c88a378838e6ebbe53fb66cee1a4b990d776f3601d8d3a46"
+    "bytes": 22922280,
+    "sha256": "6763ef3acf1b0d48ac5428190e6e72c0a308c8d0b2526e3e07e1904791c60e06"
   },
   "transport": {
     "filename": "representative71.glb.gz",
     "encoding": "gzip",
-    "bytes": 12169269,
-    "sha256": "6295f8ac3c85983cddb07a21471a81e251e5b448dc869a5559cef0a5ad3a7233"
+    "bytes": 12106872,
+    "sha256": "0e30f3bab8659dc242d634b53cbce3c54bdd23b703a92cc2dd26d661084613e0"
   },
   "playbackAnimation": "Walk539_618",
   "playbackCamera": "Knee_Boot_Closeup",
@@ -109,5 +109,26 @@
     "Representative knee/boot and head proof, not a complete character.",
     "Neutral diagnostic materials, not final PBR or appearance acceptance.",
     "Only standard glTF skinning and animated morph targets; no source control rig or personal reference images."
-  ]
+  ],
+  "cameras": {
+    "Full_Representative_View": {
+      "aspectRatio": 1.7777777777777777,
+      "yfov": 0.5150186614985846,
+      "zfar": 1000,
+      "znear": 0.10000000149011612
+    },
+    "Knee_Boot_Closeup": {
+      "aspectRatio": 1.7777777777777777,
+      "yfov": 0.6420864869573304,
+      "zfar": 1000,
+      "znear": 0.10000000149011612
+    },
+    "Head_Closeup": {
+      "aspectRatio": 1.7777777777777777,
+      "yfov": 0.42809542494151465,
+      "zfar": 1000,
+      "znear": 0.10000000149011612
+    }
+  },
+  "revision": "Topology-correspondent facial deformation and widened embedded cameras; independent standard-viewer review pending."
 }
