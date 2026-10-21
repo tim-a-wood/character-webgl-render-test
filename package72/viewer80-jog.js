@@ -95,7 +95,7 @@ function updateUi() {
   el('play').disabled = !metrics.ready || playing; el('pause').disabled = !playing; el('reset').disabled = !metrics.ready;
 }
 function isLoopingJog80() {
-  return clip?.name === config?.jog?.clip && config.jog.loopMode === 'repeat' && config.jog.loopValidation?.approved === true;
+  return !!clip && !!config?.jog && clip.name === config.jog.clip && config.jog.loopMode === 'repeat' && config.jog.loopValidation?.approved === true;
 }
 function configureAction80() {
   const repeat = isLoopingJog80();

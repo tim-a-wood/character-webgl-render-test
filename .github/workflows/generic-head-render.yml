@@ -24,7 +24,7 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Restore exact standard runtime and lossless hosting parts
         working-directory: package72
-        run: node restore-transport72.cjs && node restore-transport76.cjs && node restore-transport77.cjs && node restore-transport78.cjs && node restore-transport79.cjs && node restore-transport80.cjs && node split80.cjs && node validate80.cjs
+        run: node test-startup80.mjs && node restore-transport72.cjs && node restore-transport76.cjs && node restore-transport77.cjs && node restore-transport78.cjs && node restore-transport79.cjs && node restore-transport80.cjs && node split80.cjs && node validate80.cjs
       - name: Install established Chromium
         working-directory: package72
         run: npx --no-install playwright-core install chromium
