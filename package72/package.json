@@ -1,0 +1,16 @@
+{
+  "name": "standard-character-browser-proof72",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bounded standard Three GLTFLoader character proof; no custom skin shader or publication",
+  "dependencies": {
+    "gltf-validator": "2.0.0-dev.3.10",
+    "playwright-core": "1.57.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node test-metrics72.mjs",
+    "freeze": "node freeze72.cjs",
+    "capture": "node capture72.cjs"
+  }
+}

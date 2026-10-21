@@ -1,0 +1,44 @@
+{
+  "schema": "standard-character-runtime72-v1",
+  "asset": {
+    "filename": "einar-mobile-e8abce9889c5.glb",
+    "bytes": 23660224,
+    "sha256": "e8abce9889c536d8447beb5d70ce2e907fc4b23277eab0aaf74646b76b021bad",
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "814a393a0143dad6f8afe22c455b86678cd8696d29130172d19e6f9f91c550c7",
+      "postprocessor": "@gltf-transform/core 4.5.1"
+    },
+    "transport": {
+      "parts": [
+        {
+          "filename": "einar-mobile-e8abce9889c5.glb.part0",
+          "bytes": 6000000,
+          "sha256": "5877db09c16b5757795d4202e8ff0231f8f940b3b02437dc8aa0aba26590f6f4",
+          "gitBlobSha": "b83f4d175d34bc8727bd28b3624c90916a7875e0"
+        },
+        {
+          "filename": "einar-mobile-e8abce9889c5.glb.part1",
+          "bytes": 6000000,
+          "sha256": "21d504e47a27e1c0995c9c90a80086cc3c7ad776d97b307fa7da77e0484bd76e",
+          "gitBlobSha": "af46d36813e55c584f5a19ea0615122f3b3ac072"
+        },
+        {
+          "filename": "einar-mobile-e8abce9889c5.glb.part2",
+          "bytes": 6000000,
+          "sha256": "f98dc646f5fa925cd3f2c429287a6445e0da34dd0daba5d04663b11181a26539",
+          "gitBlobSha": "9957ac06b1a2142d7ac32f7a6d966b86856206ce"
+        },
+        {
+          "filename": "einar-mobile-e8abce9889c5.glb.part3",
+          "bytes": 5660224,
+          "sha256": "7837c4f2186e33723f0863946e626bbff6b0be3608f8cc52352d7059dcaa8829",
+          "gitBlobSha": "6620c80df2b761ca68cc05affb82d2ae7f564bb6"
+        }
+      ]
+    }
+  },
+  "clip": "Walk539_618",
+  "duration": 1.3166930675506592,
+  "scope": "Whole-character mobile LOD with accepted finite walk and existing generic expressions. Fixed corrective basis is walk-conditioned; arbitrary new animation portability is not claimed."
+}

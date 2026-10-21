@@ -1,13 +1,13 @@
-name: Generic representative standard glTF proof71
+name: Generic whole-character mobile proof72
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/generic-head-render.yml', 'package71/**']
+    paths: ['.github/workflows/generic-head-render.yml', 'package72/**']
 permissions:
   contents: read
 jobs:
   standard-character:
-    if: github.event.repository.private == false && github.event.head_commit.message == 'Check generic representative standard port71'
+    if: github.event.repository.private == false && github.event.head_commit.message == 'Check generic whole-character mobile port72'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -17,26 +17,19 @@ jobs:
           fetch-depth: 1
           lfs: false
           sparse-checkout: |
-            package71
-      - name: Use exact supported Node runtime
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+            package72
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '24.19.0'
-      - name: Install exact validator and established browser harness
-        working-directory: package71
+      - name: Install pinned validator and browser harness
+        working-directory: package72
         run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Restore the exact exporter GLB from lossless transport
-        working-directory: package71
-        run: node restore-transport71.cjs
-      - name: Validate the exact standard Blender glTF export
-        working-directory: package71
-        run: node validate-gltf71.cjs representative71.glb validator71.json
-      - name: Fetch, verify and build official Khronos Sample Viewer
-        working-directory: package71
-        run: bash prepare-official-viewer71.sh
+      - name: Restore and verify exact standard runtime
+        working-directory: package72
+        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs
       - name: Install established Chromium
-        working-directory: package71
+        working-directory: package72
         run: npx --no-install playwright-core install chromium
-      - name: Small independent standard viewer proof
-        working-directory: package71
-        run: timeout 300s node capture-standard-viewer71.cjs
+      - name: Cold-load and thirty-second standard playback proof
+        working-directory: package72
+        run: timeout 300s node capture72.cjs
