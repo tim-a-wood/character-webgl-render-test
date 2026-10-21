@@ -1,4 +1,4 @@
-name: Generic whole-character mobile proof72
+name: Generic character eye-pass diagnostic73
 on:
   push:
     branches: [main]
@@ -26,10 +26,10 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Restore and verify exact standard runtime
         working-directory: package72
-        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs
+        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs && node freeze73-diagnostic.cjs
       - name: Install established Chromium
         working-directory: package72
         run: npx --no-install playwright-core install chromium
-      - name: Cold-load and thirty-second standard playback proof
+      - name: Same-model eye-pass A/B diagnostic
         working-directory: package72
-        run: timeout 300s node capture72.cjs
+        run: timeout 300s node capture73-diagnostic.cjs
