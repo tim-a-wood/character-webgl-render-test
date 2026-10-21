@@ -1,0 +1,241 @@
+{
+  "schema": "finite-jog-demo-inputs76-v1",
+  "entry": "index76-jog.html",
+  "asset": {
+    "filename": "einar-jog-v1-e64040e3aa50.glb",
+    "bytes": 25265084,
+    "sha256": "e64040e3aa5017c64cb9b00907d147ce414c02b9145e1bb16611c88e2b80bc4a",
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "96482c30e3489a27b26e70b4e9311c7026422b9847f74fc454dc1b7eb9ef00ea",
+      "postprocessor": "@gltf-transform/core 4.5.1",
+      "scope": "Animation-only append of Jog v1 WIP to accepted v13; fixed model and all six prior clips unchanged."
+    }
+  },
+  "baselineAsset": {
+    "filename": "einar-knee74-production.glb",
+    "sha256": "2b6b1228fc69de4d7a32c1d08f869da49daa45fa1716b44c162e40ebfff538e6",
+    "bytes": 24509432
+  },
+  "jog": {
+    "clip": "Jog478_525",
+    "samples": 48,
+    "firstSourceFrame": 478,
+    "lastSourceFrame": 525,
+    "sourceDt": 0.016667,
+    "duration": 0.783349,
+    "loopMode": "finite",
+    "contactAnchors": [
+      {
+        "sourceFrame": 478,
+        "label": "right support",
+        "status": "source-worker annotation"
+      },
+      {
+        "sourceFrame": 493,
+        "label": "no-support hypothesis",
+        "status": "hypothesis, not independently proven contact"
+      },
+      {
+        "sourceFrame": 501,
+        "label": "left support",
+        "status": "source-worker annotation"
+      },
+      {
+        "sourceFrame": 513,
+        "label": "worst wire fit",
+        "status": "fit-error review anchor, not contact"
+      },
+      {
+        "sourceFrame": 522,
+        "label": "partial right support",
+        "status": "source-worker annotation"
+      }
+    ],
+    "fitReview": {
+      "status": "WIP",
+      "artisticAccepted": false,
+      "exceededPriorWalkFitGateComponents": 40,
+      "knownErrors": [
+        {
+          "component": "jacket",
+          "maxErrorMillimetres": 64.35,
+          "sourceFrame": 493
+        },
+        {
+          "component": "forearm thick wire",
+          "maxErrorMillimetres": 64.93,
+          "sourceFrame": 513
+        },
+        {
+          "component": "pants",
+          "maxErrorMillimetres": 12.57,
+          "sourceFrame": 496
+        },
+        {
+          "component": "head",
+          "maxErrorMillimetres": 7.84,
+          "sourceFrame": 479
+        }
+      ],
+      "source": "Frozen native Jog v1 fit and export audit; not artistically accepted.",
+      "fitReportSha256": "9b881fd7e20e306f18825d0c212e475f5de7884b3d817782aecff0d5bd5576e9",
+      "exportAuditSha256": "d72b0ed12ac323bdae6625d6d5becbeee77038c9fa38d309d899b1868c7b6d3f"
+    }
+  },
+  "retainedClips": [
+    "Face_Jaw",
+    "Face_Smile",
+    "Face_Brow",
+    "Face_Blink",
+    "Face_JawSmile",
+    "Walk539_618"
+  ],
+  "expectedCaptureCount": 48,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 1,
+  "network": {
+    "offline": false,
+    "latency": 40,
+    "downloadThroughput": 1250000,
+    "uploadThroughput": 625000,
+    "connectionType": "cellular4g"
+  },
+  "cpuThrottlingRate": 2,
+  "conditionsLabel": "Synthetic throttled desktop Chromium/SwiftShader; not a phone or cellular-network measurement.",
+  "localFiles": [
+    {
+      "path": "index76-jog.html",
+      "bytes": 1763,
+      "sha256": "eda2c1e34eb6143d8cf11d376c3950a1cfb2dce3a43e6f00be5dedd5ce6f4d51"
+    },
+    {
+      "path": "viewer76-jog.js",
+      "bytes": 29260,
+      "sha256": "8df3013d98c66431755e8587c04069b794257b53debe09029d57c39835723875"
+    },
+    {
+      "path": "viewer72.css",
+      "bytes": 2050,
+      "sha256": "5621ebe9815e3e2f91ccffc902f02cf10d871cecdd91acce7e32d26f7d63d59f"
+    },
+    {
+      "path": "metrics72.js",
+      "bytes": 1680,
+      "sha256": "74a18a19a576e9d686c37d8de1dca2428e6d06860627b0a85d431d891a7297b8"
+    },
+    {
+      "path": "runtime76-jog.json",
+      "bytes": 3097,
+      "sha256": "684ef447b596eeb3e4e8c4949c63ac10b3251bf0b6502e0ba49ff29ef06b8380"
+    },
+    {
+      "path": "ATTRIBUTION72.md",
+      "bytes": 1737,
+      "sha256": "94920154e671cf1f2748b3530e56fa11f860e6cba49632034f3805ee1fe96c8c"
+    },
+    {
+      "path": "einar-jog-v1-e64040e3aa50.glb",
+      "bytes": 25265084,
+      "sha256": "e64040e3aa5017c64cb9b00907d147ce414c02b9145e1bb16611c88e2b80bc4a"
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "vendor/three/build/three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "path": "vendor/three/examples/jsm/controls/OrbitControls.js",
+      "bytes": 29868,
+      "sha256": "5a44a9e86a2a0fb11933eed69bc2cd33c76a496854c1aed6ed776efa87d7b064"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/MESHOPT_LICENSE.md",
+      "bytes": 1079,
+      "sha256": "063805e3b8e24ceab4c5dea358b03245ee41c31be87cf65c61d836636cb494bb"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/meshopt_decoder.module.js",
+      "bytes": 24850,
+      "sha256": "01f48524f4bac6141eaba07e94cc36e7ee56f311796fa6117c159842941b0468"
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 108522,
+      "sha256": "d073b438e6a07e1359741dd5d6c76c953420cc0d4fd84eb1bdde94315540e6a3"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 31906,
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb"
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/KTX2Loader.js",
+      "bytes": 22589,
+      "sha256": "9cca5aa35fdb04b4818c792c8d08fb6e7607dcafc46e7b06a9485e9f25261be7"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/WorkerPool.js",
+      "bytes": 1712,
+      "sha256": "94ff7b608caf3b827ffa95bd6092b9d174732b856915b38ed006b4f049f95675"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/ktx-parse.module.js",
+      "bytes": 18676,
+      "sha256": "f73948e7bbf8db386076fda0458160bdb50ce2e11e88fa7da0f339e1ec547493"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstddec.module.js",
+      "bytes": 39754,
+      "sha256": "5cbf818e842628a4464e748594a6deae18ceddda3c2f541e7b3a0ff5fc7611e2"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/README.md",
+      "bytes": 1448,
+      "sha256": "930b11bbbb742b2525491b0964f0462d63d8b21383c0623ec4c98c43d53723c6"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/basis_transcoder.js",
+      "bytes": 62337,
+      "sha256": "48a0ef319a28bf0224ee88ded34f74eaf97c175bba9eb18b47fb9720510ad6c4"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/basis_transcoder.wasm",
+      "bytes": 499935,
+      "sha256": "79ae97d781e10a566659c689b7bb1de91726453f55f9f5e3bcc07a4e3904070f"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/BASIS-LICENSE.txt",
+      "bytes": 11347,
+      "sha256": "065fcf48d6af21c0b75e23be5ed5753aee75c892e1c2cf178fa6736305614a5c"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstd-LICENSE.txt",
+      "bytes": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/ktx-parse-LICENSE.txt",
+      "bytes": 1078,
+      "sha256": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstddec-LICENSE.txt",
+      "bytes": 2617,
+      "sha256": "8d078b49fc02bd63c1beaf4ddc629a8b48e4ba6a435415408c8209e2a5c3aacf"
+    }
+  ],
+  "externalAssets": [],
+  "mergeAuditSha256": "280e736abf1347d94ab9512791b8866ecb1241fe1451c89707fad091a04c244f",
+  "acceptedViewerSha256": "6fc46ef9bdb41ff600af1f8ae98f43e77b569afe126d867f9cfb71d9451cbbd1",
+  "sharedAppearance": "Reviewed v13 eye surfaces: opacity0.08, no refraction, FrontSide; no appearance changes in this Jog iteration.",
+  "policy": "One loaded model, one finite real Play,48native-key Jog stills and one retained Walk still. Demo/review/retro before next iteration. No publication or deployment."
+}

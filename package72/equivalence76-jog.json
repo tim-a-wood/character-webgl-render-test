@@ -1,0 +1,117 @@
+{
+  "schema": "append-only-jog-equivalence76-v1",
+  "technicalPreservationPassed": true,
+  "artisticAcceptance": false,
+  "status": "Jog v1 WIP",
+  "baselineAsset": {
+    "filename": "einar-knee74-production.glb",
+    "sha256": "2b6b1228fc69de4d7a32c1d08f869da49daa45fa1716b44c162e40ebfff538e6",
+    "bytes": 24509432
+  },
+  "asset": {
+    "filename": "einar-jog-v1-e64040e3aa50.glb",
+    "bytes": 25265084,
+    "sha256": "e64040e3aa5017c64cb9b00907d147ce414c02b9145e1bb16611c88e2b80bc4a",
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "96482c30e3489a27b26e70b4e9311c7026422b9847f74fc454dc1b7eb9ef00ea",
+      "postprocessor": "@gltf-transform/core 4.5.1",
+      "scope": "Animation-only append of Jog v1 WIP to accepted v13; fixed model and all six prior clips unchanged."
+    }
+  },
+  "fixedGeometryBasisBindingsTexturesRestGraphExact": true,
+  "fixedAppearanceExact": true,
+  "retainedAnimationsExact": true,
+  "retainedAnimationNames": [
+    "Face_Jaw",
+    "Face_Smile",
+    "Face_Brow",
+    "Face_Blink",
+    "Face_JawSmile",
+    "Walk539_618"
+  ],
+  "appendedClip": "Jog478_525",
+  "jog": {
+    "samples": 48,
+    "duration": 0.783349,
+    "sourceDt": 0.016667,
+    "loopMode": "finite"
+  },
+  "oldScalingMaxError": 5.924381696331693e-08,
+  "preservedClips": [
+    {
+      "name": "Face_Jaw",
+      "channels": 6,
+      "samplers": 6,
+      "sha256": "ba9864cb6c295ebe85b7e18f57e9955ba61c670dac650e8c18ee38894323f1af",
+      "channelsAndAccessorBytesExact": true
+    },
+    {
+      "name": "Face_Smile",
+      "channels": 6,
+      "samplers": 6,
+      "sha256": "ab5a8dfe6543bb75824a3495c75b15a988d59f6e419fa7b207342e1a0a5cbefc",
+      "channelsAndAccessorBytesExact": true
+    },
+    {
+      "name": "Face_Brow",
+      "channels": 6,
+      "samplers": 6,
+      "sha256": "d552ac8a74baa1ec70eb723a8f93fcc9cf25c407d6ad470476dd10171f73ea68",
+      "channelsAndAccessorBytesExact": true
+    },
+    {
+      "name": "Face_Blink",
+      "channels": 6,
+      "samplers": 6,
+      "sha256": "82f8dc27c567b5174b906f2da37643bf4300e60bb291123229f553c7759ac1a3",
+      "channelsAndAccessorBytesExact": true
+    },
+    {
+      "name": "Face_JawSmile",
+      "channels": 6,
+      "samplers": 6,
+      "sha256": "500f88064d22e602d21029912952bbe39e511906007d5935e2093440cf0ecd9a",
+      "channelsAndAccessorBytesExact": true
+    },
+    {
+      "name": "Walk539_618",
+      "channels": 953,
+      "samplers": 953,
+      "sha256": "a67bf2a28f99adf9c89755632a60ea6f3cdb11bf4a718748fba02b3c3c528e0a",
+      "channelsAndAccessorBytesExact": true
+    }
+  ],
+  "knownFitLimitations": {
+    "status": "WIP",
+    "artisticAccepted": false,
+    "exceededPriorWalkFitGateComponents": 40,
+    "knownErrors": [
+      {
+        "component": "jacket",
+        "maxErrorMillimetres": 64.35,
+        "sourceFrame": 493
+      },
+      {
+        "component": "forearm thick wire",
+        "maxErrorMillimetres": 64.93,
+        "sourceFrame": 513
+      },
+      {
+        "component": "pants",
+        "maxErrorMillimetres": 12.57,
+        "sourceFrame": 496
+      },
+      {
+        "component": "head",
+        "maxErrorMillimetres": 7.84,
+        "sourceFrame": 479
+      }
+    ],
+    "source": "Frozen native Jog v1 fit and export audit; not artistically accepted.",
+    "fitReportSha256": "9b881fd7e20e306f18825d0c212e475f5de7884b3d817782aecff0d5bd5576e9",
+    "exportAuditSha256": "d72b0ed12ac323bdae6625d6d5becbeee77038c9fa38d309d899b1868c7b6d3f"
+  },
+  "sourceReportSha256": "280e736abf1347d94ab9512791b8866ecb1241fe1451c89707fad091a04c244f",
+  "scope": "Evaluated runtime-only audit. No raw source, control rig, geometry or new basis publication. Demo and review required before the next iteration."
+}

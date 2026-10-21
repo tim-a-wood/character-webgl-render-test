@@ -1,0 +1,94 @@
+{
+  "schema": "standard-character-runtime72-v1",
+  "asset": {
+    "filename": "einar-jog-v1-e64040e3aa50.glb",
+    "bytes": 25265084,
+    "sha256": "e64040e3aa5017c64cb9b00907d147ce414c02b9145e1bb16611c88e2b80bc4a",
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "96482c30e3489a27b26e70b4e9311c7026422b9847f74fc454dc1b7eb9ef00ea",
+      "postprocessor": "@gltf-transform/core 4.5.1",
+      "scope": "Animation-only append of Jog v1 WIP to accepted v13; fixed model and all six prior clips unchanged."
+    }
+  },
+  "clip": "Walk539_618",
+  "duration": 1.316693,
+  "scope": "Accepted v13 model, corrected Walk and existing expressions preserved. Jog v1 is a WIP fixed-basis approximation, not artistic acceptance.",
+  "baselineAsset": {
+    "filename": "einar-knee74-production.glb",
+    "sha256": "2b6b1228fc69de4d7a32c1d08f869da49daa45fa1716b44c162e40ebfff538e6",
+    "bytes": 24509432
+  },
+  "jog": {
+    "clip": "Jog478_525",
+    "samples": 48,
+    "firstSourceFrame": 478,
+    "lastSourceFrame": 525,
+    "sourceDt": 0.016667,
+    "duration": 0.783349,
+    "loopMode": "finite",
+    "contactAnchors": [
+      {
+        "sourceFrame": 478,
+        "label": "right support",
+        "status": "source-worker annotation"
+      },
+      {
+        "sourceFrame": 493,
+        "label": "no-support hypothesis",
+        "status": "hypothesis, not independently proven contact"
+      },
+      {
+        "sourceFrame": 501,
+        "label": "left support",
+        "status": "source-worker annotation"
+      },
+      {
+        "sourceFrame": 513,
+        "label": "worst wire fit",
+        "status": "fit-error review anchor, not contact"
+      },
+      {
+        "sourceFrame": 522,
+        "label": "partial right support",
+        "status": "source-worker annotation"
+      }
+    ],
+    "fitReview": {
+      "status": "WIP",
+      "artisticAccepted": false,
+      "exceededPriorWalkFitGateComponents": 40,
+      "knownErrors": [
+        {
+          "component": "jacket",
+          "maxErrorMillimetres": 64.35,
+          "sourceFrame": 493
+        },
+        {
+          "component": "forearm thick wire",
+          "maxErrorMillimetres": 64.93,
+          "sourceFrame": 513
+        },
+        {
+          "component": "pants",
+          "maxErrorMillimetres": 12.57,
+          "sourceFrame": 496
+        },
+        {
+          "component": "head",
+          "maxErrorMillimetres": 7.84,
+          "sourceFrame": 479
+        }
+      ],
+      "source": "Frozen native Jog v1 fit and export audit; not artistically accepted.",
+      "fitReportSha256": "9b881fd7e20e306f18825d0c212e475f5de7884b3d817782aecff0d5bd5576e9",
+      "exportAuditSha256": "d72b0ed12ac323bdae6625d6d5becbeee77038c9fa38d309d899b1868c7b6d3f"
+    }
+  },
+  "iterationPolicy": "Iteration1 demo, then review and retro before any autonomous next iteration. No loop or performance claim.",
+  "transportBaselineAsset": {
+    "filename": "einar-mobile-e8abce9889c5.glb",
+    "bytes": 23660224,
+    "sha256": "e8abce9889c536d8447beb5d70ce2e907fc4b23277eab0aaf74646b76b021bad"
+  }
+}

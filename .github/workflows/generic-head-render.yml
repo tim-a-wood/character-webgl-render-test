@@ -1,4 +1,4 @@
-name: Generic character localized knee motion proof75
+name: Generic character finite Jog WIP proof76
 on:
   push:
     branches: [main]
@@ -26,10 +26,10 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Restore and verify exact standard runtime
         working-directory: package72
-        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs && node restore-transport75.cjs && node validate75.cjs && node freeze75-motion.mjs
+        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs && node restore-transport76.cjs && node validate76.cjs
       - name: Install established Chromium
         working-directory: package72
         run: npx --no-install playwright-core install chromium
-      - name: Exact-time before and after knee motion proof
+      - name: Finite Jog WIP playback and gait captures
         working-directory: package72
-        run: timeout 420s node capture75-motion.cjs
+        run: timeout 420s node capture76-jog.cjs
