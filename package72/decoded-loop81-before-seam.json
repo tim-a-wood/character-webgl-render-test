@@ -1,0 +1,1310 @@
+{
+  "schema": "decoded-final-loop-seam81-v1",
+  "asset": {
+    "sha256": "9417621f79e8972dede4ad9630d989c246ba5da11bb469c42a612b7b4143dd3f",
+    "bytes": 29588820
+  },
+  "clip": "Diagnostic_BeforeJogV6",
+  "duration": 0.800016,
+  "trackCount": 953,
+  "allTrackEndpointsExactlyEqual": true,
+  "maxEndpointRotationAngleRadians": 5.960464477539063e-8,
+  "groups": {
+    "translation": {
+      "count": 314,
+      "maxEndpointComponentAbs": 0,
+      "maxBoundaryVelocityMismatch": 1.2258664046338452,
+      "worstVelocityTracks": [
+        {
+          "key": "PortableObject_GEO-pinkie.3/translation",
+          "maxAbs": 1.2258664046338452,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0558518592029442,
+                "norm": 1.1033437559826282
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.34902707054559956,
+                "norm": 0.4187261418836898
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.41099629505124713,
+                "norm": 0.41486503122152135
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.681421791964982,
+                "norm": 2.711512832302887
+              }
+            ],
+            "nearbyMax": 2.681421791964982,
+            "interiorMedian": 0.28849785070057865,
+            "interiorP95": 1.2106318844777868,
+            "interiorMax": 2.681421791964982,
+            "boundaryToNearbyMaxRatio": 0.45717029984138147,
+            "boundaryToInteriorMaxRatio": 0.45717029984138147,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "DEF-Finger_Pinky3.L/translation",
+          "maxAbs": 1.2258592522243241,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0558482829959852,
+                "norm": 1.103337829115634
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.34901276571776485,
+                "norm": 0.41870864401791597
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.41097662592176687,
+                "norm": 0.41484599137358746
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.681448613505182,
+                "norm": 2.71154119237627
+              }
+            ],
+            "nearbyMax": 2.681448613505182,
+            "interiorMedian": 0.2884889101871787,
+            "interiorP95": 1.2106318844777866,
+            "interiorMax": 2.681448613505182,
+            "boundaryToNearbyMaxRatio": 0.45716305956797154,
+            "boundaryToInteriorMaxRatio": 0.45716305956797154,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-pinkie.2/translation",
+          "maxAbs": 1.2005325481611664,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0297759461637803,
+                "norm": 1.074289657516776
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.33963952727908314,
+                "norm": 0.41200081260226185
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.4076963515552916,
+                "norm": 0.4116051794199162
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.621950390879246,
+                "norm": 2.6469979744084147
+              }
+            ],
+            "nearbyMax": 2.621950390879246,
+            "interiorMedian": 0.2857736762675859,
+            "interiorP95": 1.1776842897675333,
+            "interiorMax": 2.621950390879246,
+            "boundaryToNearbyMaxRatio": 0.4578776747025253,
+            "boundaryToInteriorMaxRatio": 0.4578776747025253,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "DEF-Finger_Pinky2.L/translation",
+          "maxAbs": 1.2005110909198142,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0297562770255078,
+                "norm": 1.0742707748108138
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.3396502558999592,
+                "norm": 0.412011200003266
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.4076963515552917,
+                "norm": 0.41160551148620045
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.621944132519866,
+                "norm": 2.646993107720696
+              }
+            ],
+            "nearbyMax": 2.621944132519866,
+            "interiorMedian": 0.28576384170284597,
+            "interiorP95": 1.177684289767533,
+            "interiorMax": 2.621944132519866,
+            "boundaryToNearbyMaxRatio": 0.4578705839037241,
+            "boundaryToInteriorMaxRatio": 0.4578705839037241,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-middle.3/translation",
+          "maxAbs": 1.1748634094960628,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.0061649337708825,
+                "norm": 1.0675777517574143
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.3622196980161439,
+                "norm": 0.4226252724522632
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.39284258259246274,
+                "norm": 0.3970788735125381
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.58190314920644,
+                "norm": 2.6323622610996624
+              }
+            ],
+            "nearbyMax": 2.58190314920644,
+            "interiorMedian": 0.2781492064400306,
+            "interiorP95": 1.216672098030985,
+            "interiorMax": 2.58190314920644,
+            "boundaryToNearbyMaxRatio": 0.45503775378141603,
+            "boundaryToInteriorMaxRatio": 0.45503775378141603,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "DEF-Finger_Middle3.L/translation",
+          "maxAbs": 1.1748562570841434,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.006160463512184,
+                "norm": 1.0675683278177306
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.36223757905093723,
+                "norm": 0.42263950386441995
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.39283274802772283,
+                "norm": 0.3970719080482228
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.58191298377118,
+                "norm": 2.63236722920755
+              }
+            ],
+            "nearbyMax": 2.58191298377118,
+            "interiorMedian": 0.2781501004913707,
+            "interiorP95": 1.2166899790657788,
+            "interiorMax": 2.58191298377118,
+            "boundaryToNearbyMaxRatio": 0.4550332503336852,
+            "boundaryToInteriorMaxRatio": 0.4550332503336852,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-pinkie.1/translation",
+          "maxAbs": 1.1532792011088802,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.965334484871974,
+                "norm": 1.0064524256015668
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.32162974903520647,
+                "norm": 0.3934055336280579
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.393328946521425,
+                "norm": 0.398122805411343
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.487525301652922,
+                "norm": 2.506694295030772
+              }
+            ],
+            "nearbyMax": 2.487525301652922,
+            "interiorMedian": 0.2761974923648016,
+            "interiorP95": 1.1063961802533475,
+            "interiorMax": 2.487525301652922,
+            "boundaryToNearbyMaxRatio": 0.4636251138199656,
+            "boundaryToInteriorMaxRatio": 0.4636251138199656,
+            "unit": "metres/second (node-local)"
+          }
+        },
+        {
+          "key": "DEF-Finger_Pinky1.L/translation",
+          "maxAbs": 1.1532774130054007,
+          "unit": "metres/second (node-local)",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.9653318027167548,
+                "norm": 1.0064474909130916
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.3216547824839171,
+                "norm": 0.3934227451043413
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.393321794110705,
+                "norm": 0.39811374166699875
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 2.487526195704262,
+                "norm": 2.506695991629234
+              }
+            ],
+            "nearbyMax": 2.487526195704262,
+            "interiorMedian": 0.2761903399540816,
+            "interiorP95": 1.106392604046389,
+            "interiorMax": 2.487526195704262,
+            "boundaryToNearbyMaxRatio": 0.4636242283586838,
+            "boundaryToInteriorMaxRatio": 0.4636242283586838,
+            "unit": "metres/second (node-local)"
+          }
+        }
+      ]
+    },
+    "rotation": {
+      "count": 314,
+      "maxEndpointComponentAbs": 0,
+      "maxBoundaryVelocityMismatch": 4.1848018630903745,
+      "worstVelocityTracks": [
+        {
+          "key": "PortableObject_GEO-zip_tie.001/rotation",
+          "maxAbs": 4.1848018630903745,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 3.4058981719022783,
+                "norm": 3.4875767946782013
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 1.1270987882558914,
+                "norm": 1.3695336638178515
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.5861710124734564,
+                "norm": 0.7905838248999615
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 8.294239582685641,
+                "norm": 8.4507940085555
+              }
+            ],
+            "nearbyMax": 8.294239582685641,
+            "interiorMedian": 0.7282582215875046,
+            "interiorP95": 3.4058981719022783,
+            "interiorMax": 8.294239582685641,
+            "boundaryToNearbyMaxRatio": 0.5045431617174666,
+            "boundaryToInteriorMaxRatio": 0.5045431617174666,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-hyd_hoses_upper_arm.001.mesh/rotation",
+          "maxAbs": 4.0898634383758985,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 3.451198713986611,
+                "norm": 3.489319506454006
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.42081255189759936,
+                "norm": 0.5810694429002322
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.5077693581273488,
+                "norm": 0.7908627286301194
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 8.381223098224554,
+                "norm": 8.496963725351225
+              }
+            ],
+            "nearbyMax": 8.381223098224554,
+            "interiorMedian": 0.5132180696335743,
+            "interiorP95": 3.451198713986611,
+            "interiorMax": 8.381223098224554,
+            "boundaryToNearbyMaxRatio": 0.4879793068916492,
+            "boundaryToInteriorMaxRatio": 0.4879793068916492,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-wires_motor_shoulder.006.mesh/rotation",
+          "maxAbs": 3.0632837201600767,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 2.9721110221803384,
+                "norm": 3.1645658480769314
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.46054717288553637,
+                "norm": 0.5293942748035143
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.7578103527087583,
+                "norm": 0.7711941627912888
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 5.876005711017018,
+                "norm": 7.476564405871372
+              }
+            ],
+            "nearbyMax": 5.876005711017018,
+            "interiorMedian": 0.6852422227661794,
+            "interiorP95": 3.985217793116071,
+            "interiorMax": 5.876005711017018,
+            "boundaryToNearbyMaxRatio": 0.521320752703946,
+            "boundaryToInteriorMaxRatio": 0.521320752703946,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-zip_tie.004/rotation",
+          "maxAbs": 2.793567902379535,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 2.599877378420082,
+                "norm": 2.7624233174611437
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.9336506765664259,
+                "norm": 1.2103804360721728
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.7915517623451067,
+                "norm": 0.8678671151425311
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 5.771697423040495,
+                "norm": 6.1057541276794
+              }
+            ],
+            "nearbyMax": 5.771697423040495,
+            "interiorMedian": 0.5013411146508657,
+            "interiorP95": 2.599877378420082,
+            "interiorMax": 5.771697423040495,
+            "boundaryToNearbyMaxRatio": 0.48401149568715623,
+            "boundaryToInteriorMaxRatio": 0.48401149568715623,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-hyd_rod_shoulder_lift/rotation",
+          "maxAbs": 2.7836576654564316,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 2.0798183447159424,
+                "norm": 2.438630477557611
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.6443219251349567,
+                "norm": 0.6770193066231702
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.4924158631301414,
+                "norm": 0.653259272030573
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 3.9192216559319673,
+                "norm": 6.132924735780377
+              }
+            ],
+            "nearbyMax": 3.9192216559319673,
+            "interiorMedian": 0.41239595143771846,
+            "interiorP95": 2.0798183447159424,
+            "interiorMax": 4.256711658055552,
+            "boundaryToNearbyMaxRatio": 0.710257778159397,
+            "boundaryToInteriorMaxRatio": 0.6539455544724386,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "DEF-Foot.L/rotation",
+          "maxAbs": 2.74672899530659,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.4003633723400315,
+                "norm": 1.4069500081572104
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.410599233869689,
+                "norm": 0.4523406659608812
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 1.7019168720886242,
+                "norm": 1.8005159136379565
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 1.0068927745627292,
+                "norm": 1.280615575238797
+              }
+            ],
+            "nearbyMax": 1.7019168720886242,
+            "interiorMedian": 0.8054381924017746,
+            "interiorP95": 2.0148676556308054,
+            "interiorMax": 3.3708282232667903,
+            "boundaryToNearbyMaxRatio": 1.6139031467123026,
+            "boundaryToInteriorMaxRatio": 0.8148528531793995,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "DEF-Toes.L/rotation",
+          "maxAbs": 2.7467162009195087,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 1.4311460838750654,
+                "norm": 1.4480482014494471
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.34981163681941585,
+                "norm": 0.3836585839521532
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 1.7018967516160943,
+                "norm": 1.800550555490327
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 1.0068777466744363,
+                "norm": 1.2804283182103096
+              }
+            ],
+            "nearbyMax": 1.7018967516160943,
+            "interiorMedian": 1.5808117672807613,
+            "interiorP95": 5.470558261530265,
+            "interiorMax": 7.028875367073237,
+            "boundaryToNearbyMaxRatio": 1.6139147091686203,
+            "boundaryToInteriorMaxRatio": 0.3907760569758427,
+            "unit": "radians/second"
+          }
+        },
+        {
+          "key": "PortableObject_GEO-hyd_hoses_upper_arm.mesh/rotation",
+          "maxAbs": 2.520366574298145,
+          "unit": "radians/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 2.814292889155469,
+                "norm": 2.84021885563177
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.5620682247696629,
+                "norm": 0.7399690862415389
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.4389767748057656,
+                "norm": 0.6984970355624336
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 5.9366656577285095,
+                "norm": 6.076346312243773
+              }
+            ],
+            "nearbyMax": 5.9366656577285095,
+            "interiorMedian": 0.419209432885028,
+            "interiorP95": 2.814292889155469,
+            "interiorMax": 5.9366656577285095,
+            "boundaryToNearbyMaxRatio": 0.42454244850677497,
+            "boundaryToInteriorMaxRatio": 0.42454244850677497,
+            "unit": "radians/second"
+          }
+        }
+      ]
+    },
+    "scale": {
+      "count": 314,
+      "maxEndpointComponentAbs": 0,
+      "maxBoundaryVelocityMismatch": 0.15854771230041087,
+      "worstVelocityTracks": [
+        {
+          "key": "DEF-Shoulder_Tire/scale",
+          "maxAbs": 0.15854771230041087,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.5436621342713726,
+                "norm": 0.5436621357416396
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.19130561504724852,
+                "norm": 0.1913056167854132
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.0994542710620615,
+                "norm": 0.09945428160678728
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.260126025476887,
+                "norm": 0.26012604025114094
+              }
+            ],
+            "nearbyMax": 0.5436621342713726,
+            "interiorMedian": 0.05129712528936731,
+            "interiorP95": 0.2927769112926334,
+            "interiorMax": 0.5436621342713726,
+            "boundaryToNearbyMaxRatio": 0.2916291246086135,
+            "boundaryToInteriorMaxRatio": 0.2916291246086135,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Thighs_Center/scale",
+          "maxAbs": 0.11475334027872376,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.1881263670609882,
+                "norm": 0.25614273240510377
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.07987815862891803,
+                "norm": 0.11241221584741634
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.03782552409289551,
+                "norm": 0.05482324321570893
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.12985916903292255,
+                "norm": 0.16579638545856099
+              }
+            ],
+            "nearbyMax": 0.1881263670609882,
+            "interiorMedian": 0.091379199359144,
+            "interiorP95": 0.155604271419682,
+            "interiorMax": 0.36620000895144467,
+            "boundaryToNearbyMaxRatio": 0.6099801004583381,
+            "boundaryToInteriorMaxRatio": 0.31336247262063605,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Collar1.R/scale",
+          "maxAbs": 0.04514959665086371,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.031974866417494446,
+                "norm": 0.04334809556447341
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.018378127560620065,
+                "norm": 0.023120858646426348
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.009884631615085866,
+                "norm": 0.013959681778271334
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.010864511883730409,
+                "norm": 0.013579687618344214
+              }
+            ],
+            "nearbyMax": 0.031974866417494446,
+            "interiorMedian": 0.009884631615085866,
+            "interiorP95": 0.03587309784250163,
+            "interiorMax": 0.07788617653580139,
+            "boundaryToNearbyMaxRatio": 1.4120339413258958,
+            "boundaryToInteriorMaxRatio": 0.5796869054178069,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Collar2.R/scale",
+          "maxAbs": 0.03491451338624817,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.029374963958539252,
+                "norm": 0.036641101843560175
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.018024083071711446,
+                "norm": 0.022198270481212066
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.00472416728058192,
+                "norm": 0.006762992014842464
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.006515846165950235,
+                "norm": 0.007962201783912798
+              }
+            ],
+            "nearbyMax": 0.029374963958539252,
+            "interiorMedian": 0.008350439515638746,
+            "interiorP95": 0.0252801956899573,
+            "interiorMax": 0.051855000900757134,
+            "boundaryToNearbyMaxRatio": 1.1885806374274233,
+            "boundaryToInteriorMaxRatio": 0.6733104383330245,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Collar2.L/scale",
+          "maxAbs": 0.03232533664500912,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.004291448350407484,
+                "norm": 0.00546137855416875
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.012942292983437242,
+                "norm": 0.01819150747344643
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.00833613469419868,
+                "norm": 0.010258852320312116
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.04795333767246251,
+                "norm": 0.05999927894299196
+              }
+            ],
+            "nearbyMax": 0.04795333767246251,
+            "interiorMedian": 0.008146569809559922,
+            "interiorP95": 0.016929756174318553,
+            "interiorMax": 0.04795333767246251,
+            "boundaryToNearbyMaxRatio": 0.6740998273321888,
+            "boundaryToInteriorMaxRatio": 0.6740998273321888,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Collar1.L/scale",
+          "maxAbs": 0.028259172115469557,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.01593557820784646,
+                "norm": 0.021113971010551867
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.01443357128520385,
+                "norm": 0.018873465682484762
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.018084870505603912,
+                "norm": 0.021184443852208034
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.04390149699956371,
+                "norm": 0.05328489966913408
+              }
+            ],
+            "nearbyMax": 0.04390149699956371,
+            "interiorMedian": 0.010871669154365632,
+            "interiorP95": 0.026953859798445064,
+            "interiorMax": 0.04390149699956371,
+            "boundaryToNearbyMaxRatio": 0.6436949545422197,
+            "boundaryToInteriorMaxRatio": 0.6436949545422197,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-RibCage/scale",
+          "maxAbs": 0.024432657084287785,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.0033652107481111984,
+                "norm": 0.003365339960334691
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.012495267113603131,
+                "norm": 0.012495337225076916
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.0071238010771530556,
+                "norm": 0.00712380556536118
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.02623861872644175,
+                "norm": 0.026238624819199252
+              }
+            ],
+            "nearbyMax": 0.02623861872644175,
+            "interiorMedian": 0.0050496019683434305,
+            "interiorP95": 0.01586047077167359,
+            "interiorMax": 0.02623861872644175,
+            "boundaryToNearbyMaxRatio": 0.9311716191701044,
+            "boundaryToInteriorMaxRatio": 0.9311716191701044,
+            "unit": "scale/second"
+          }
+        },
+        {
+          "key": "DEF-Spine/scale",
+          "maxAbs": 0.0011801485249699113,
+          "unit": "scale/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 0.00105855725976718,
+                "norm": 0.0010586659902054112
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 0.001319620367750302,
+                "norm": 0.001319702743930251
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 0.0007438507148834515,
+                "norm": 0.0007438936968791353
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 0.0001716578572807965,
+                "norm": 0.00017184401703323676
+              }
+            ],
+            "nearbyMax": 0.001319620367750302,
+            "interiorMedian": 0.0005400072507596086,
+            "interiorP95": 0.001319620367750302,
+            "interiorMax": 0.002174332858890089,
+            "boundaryToNearbyMaxRatio": 0.8943091163270211,
+            "boundaryToInteriorMaxRatio": 0.5427635056632177,
+            "unit": "scale/second"
+          }
+        }
+      ]
+    },
+    "weights": {
+      "count": 11,
+      "maxEndpointComponentAbs": 0,
+      "maxBoundaryVelocityMismatch": 19.574551767987703,
+      "worstVelocityTracks": [
+        {
+          "key": "Mobile_Jacket/weights",
+          "maxAbs": 19.574551767987703,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 37.83701347380674,
+                "norm": 58.53243302341253
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 32.69588695967424,
+                "norm": 34.155845305331525
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 12.301794182229116,
+                "norm": 20.323497302736772
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 59.74809298849177,
+                "norm": 63.59613014646777
+              }
+            ],
+            "nearbyMax": 59.74809298849177,
+            "interiorMedian": 14.218563366782774,
+            "interiorP95": 33.7121604428078,
+            "interiorMax": 65.49854359036713,
+            "boundaryToNearbyMaxRatio": 0.32761801739442975,
+            "boundaryToInteriorMaxRatio": 0.29885476370907477,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_MechanicalSoft/weights",
+          "maxAbs": 14.528256557532256,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 40.17545228959945,
+                "norm": 40.72957368036711
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 8.478757554178419,
+                "norm": 9.5705883577665
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 8.595595545478602,
+                "norm": 10.521884966198142
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 20.46145208242438,
+                "norm": 22.386952876941166
+              }
+            ],
+            "nearbyMax": 40.17545228959945,
+            "interiorMedian": 5.978180428503192,
+            "interiorP95": 40.17545228959945,
+            "interiorMax": 103.43569242295621,
+            "boundaryToNearbyMaxRatio": 0.36162023647692215,
+            "boundaryToInteriorMaxRatio": 0.1404568985541774,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_Footwear/weights",
+          "maxAbs": 8.168461271911598,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 6.967817266553032,
+                "norm": 10.670773359794921
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 3.513988110005914,
+                "norm": 6.1997332705784265
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 7.554705660417843,
+                "norm": 14.085024843294526
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 17.824136525215827,
+                "norm": 21.565236946488444
+              }
+            ],
+            "nearbyMax": 17.824136525215827,
+            "interiorMedian": 10.73689857166358,
+            "interiorP95": 37.70301394402596,
+            "interiorMax": 59.23560756152861,
+            "boundaryToNearbyMaxRatio": 0.45828089682524964,
+            "boundaryToInteriorMaxRatio": 0.13789782207309914,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_Pants/weights",
+          "maxAbs": 6.281848520469454,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 6.143351361886665,
+                "norm": 9.34787630393101
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 12.103615232317111,
+                "norm": 12.779897109016375
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 3.460492765336557,
+                "norm": 5.702711927779027
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 10.383068813343538,
+                "norm": 14.410290223775924
+              }
+            ],
+            "nearbyMax": 12.103615232317111,
+            "interiorMedian": 5.376881978070709,
+            "interiorP95": 11.457482494474762,
+            "interiorMax": 15.77112990705885,
+            "boundaryToNearbyMaxRatio": 0.51900596639066,
+            "boundaryToInteriorMaxRatio": 0.3983131555880357,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_HeadSkin/weights",
+          "maxAbs": 5.010802616112608,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [
+              {
+                "keyIndex": 1,
+                "timeSeconds": 0.016667000949382782,
+                "maxAbs": 3.190462971282611,
+                "norm": 3.4250314894943936
+              },
+              {
+                "keyIndex": 2,
+                "timeSeconds": 0.033334001898765564,
+                "maxAbs": 2.871193518840129,
+                "norm": 2.9613477885225286
+              }
+            ],
+            "last": [
+              {
+                "keyIndex": 46,
+                "timeSeconds": 0.7666820287704468,
+                "maxAbs": 1.1120353615185987,
+                "norm": 1.1176655001365132
+              },
+              {
+                "keyIndex": 47,
+                "timeSeconds": 0.7833490371704102,
+                "maxAbs": 6.011601210187893,
+                "norm": 6.111174259625151
+              }
+            ],
+            "nearbyMax": 6.011601210187893,
+            "interiorMedian": 1.966569632294565,
+            "interiorP95": 4.7827322399974594,
+            "interiorMax": 6.011601210187893,
+            "boundaryToNearbyMaxRatio": 0.833522125123798,
+            "boundaryToInteriorMaxRatio": 0.833522125123798,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_EyeMeniscus/weights",
+          "maxAbs": 0,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [],
+            "last": [],
+            "nearbyMax": 0,
+            "interiorMedian": 0,
+            "interiorP95": 0,
+            "interiorMax": 0,
+            "boundaryToNearbyMaxRatio": null,
+            "boundaryToInteriorMaxRatio": null,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_GEO-einar_eyebrows/weights",
+          "maxAbs": 0,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [],
+            "last": [],
+            "nearbyMax": 0,
+            "interiorMedian": 0,
+            "interiorP95": 0,
+            "interiorMax": 0,
+            "boundaryToNearbyMaxRatio": null,
+            "boundaryToInteriorMaxRatio": null,
+            "unit": "runtime morph coefficient/second"
+          }
+        },
+        {
+          "key": "Mobile_GEO-einar_eyelashes/weights",
+          "maxAbs": 0,
+          "unit": "runtime morph coefficient/second",
+          "neighboringVelocityChanges": {
+            "first": [],
+            "last": [],
+            "nearbyMax": 0,
+            "interiorMedian": 0,
+            "interiorP95": 0,
+            "interiorMax": 0,
+            "boundaryToNearbyMaxRatio": null,
+            "boundaryToInteriorMaxRatio": null,
+            "unit": "runtime morph coefficient/second"
+          }
+        }
+      ]
+    }
+  },
+  "fullDecodedAuditSha256": "60d31d5cd94d1dac2c5edf422bb4a69ba5bb65fec5948ed438ddab684af68568",
+  "policy": "Measurements from decoded final GLB. LINEAR quaternion velocity uses actual shortest-path SLERP angular velocity; other LINEAR values use exact adjacent segment slopes. No new acceptance thresholds. These are boundary derivatives, not a claim that all interior native keys are C1."
+}

@@ -1,0 +1,557 @@
+{
+  "schema": "loop-jog-comparison-inputs81-v1",
+  "entry": "index81-jog.html",
+  "asset": {
+    "filename": "einar-jog-v6-diagnostic-9417621f79e8.glb",
+    "bytes": 29588820,
+    "sha256": "9417621f79e8972dede4ad9630d989c246ba5da11bb469c42a612b7b4143dd3f",
+    "provenance": {
+      "exporter": "Khronos glTF Blender I/O v5.0.21",
+      "exportedAssetSha256": "d470ea855060406367d54b223a075872d71371c072f3ca5f08ea34371a0f01f4",
+      "postprocessor": "@gltf-transform/core 4.5.1",
+      "scope": "Declared contact-only animation edits on exact frozen v5 model; no new geometry or basis."
+    },
+    "parts": [
+      {
+        "filename": "einar-jog-v6-diagnostic-9417621f79e8.glb.part0",
+        "bytes": 16777216,
+        "sha256": "55ae7897411c2b501744b5ad7582e32c60e005163c89d3b7eae14aabe2826f8c"
+      },
+      {
+        "filename": "einar-jog-v6-diagnostic-9417621f79e8.glb.part1",
+        "bytes": 12811604,
+        "sha256": "0f1d53c5fd23afd1ea2ef52860b33870ebdec0298fbe120c991ef5fd23a84622"
+      }
+    ]
+  },
+  "baselineAsset": {
+    "filename": "einar-jog-v5-production-57e6f937fa05.glb",
+    "bytes": 28820000,
+    "sha256": "57e6f937fa050381dcc95a87939e72c56fd342b0f967919132a326567f5ec72b"
+  },
+  "jog": {
+    "clip": "JogLoop498_546",
+    "samples": 49,
+    "firstSourceFrame": 498,
+    "lastSourceFrame": 546,
+    "sourceDt": 0.016667,
+    "duration": 0.800016,
+    "loopMode": "repeat",
+    "rootMode": "in-place-cyclic",
+    "contactAnchors": [
+      {
+        "sourceFrame": 519,
+        "label": "entry begins",
+        "status": "native bounded contact-plan annotation"
+      },
+      {
+        "sourceFrame": 523,
+        "label": "right support begins",
+        "status": "native bounded contact-plan annotation"
+      },
+      {
+        "sourceFrame": 540,
+        "label": "right end-support anchor",
+        "status": "native bounded contact-plan annotation"
+      },
+      {
+        "sourceFrame": 544,
+        "label": "correction fully released",
+        "status": "native bounded contact-plan annotation"
+      }
+    ],
+    "fitReview": {
+      "status": "WIP",
+      "artisticAccepted": false,
+      "nativeContactAuditSha256": "800b489b9efe6a7e986ba6eaf8f073cd059a42a9fc1040753d69e1afcfe3b680",
+      "beforePersistentRightPointSpanMm": 25.264543833097758,
+      "afterPersistentRightPointSpanMm": 6.316148093396756,
+      "nativeRightKneeBefore": {
+        "maxAngleDegrees": 166.25142870753464,
+        "minBendRadiusMm": 52.854492453887566,
+        "maxPlaneStepDegrees": 3.4606977433064885,
+        "trajectory": {
+          "endpointMaxMm": 0,
+          "seamVelocityDeltaMaxMps": 0.3101412764361085,
+          "secondMm": 12.561319849348488,
+          "thirdMm": 13.160348478787672,
+          "maxFrameTravelMm": 30.17888738394429
+        },
+        "anglesDegrees": [
+          122.69650724719268,
+          118.63799141626424,
+          115.1271235472047,
+          112.14207424943379,
+          109.33501205038795,
+          107.15265814531318,
+          106.09876924171196,
+          106.2801578760875,
+          107.5714547164826,
+          109.91496665530445,
+          113.35654873072713,
+          117.87563442443249,
+          123.30844231110544,
+          130.05251944691832,
+          137.69528574051412,
+          144.8787533860577,
+          151.50452597829826,
+          157.63922589392774,
+          162.17752551055366,
+          164.88657052816197,
+          166.2463988994708,
+          166.25142870753464,
+          163.8623671662949,
+          159.21844663454598,
+          154.25495246796112,
+          149.53861597589164,
+          144.9068400435233,
+          141.48069409129565,
+          139.2224394035698,
+          137.7757876029722,
+          137.10240739333386,
+          137.3804276627863,
+          138.53022067805128,
+          140.4345026797818,
+          143.55134629193006,
+          147.50252941425106,
+          150.96427911127586,
+          153.63966388491815,
+          155.77303039811025,
+          156.83496492502226,
+          156.34767276038934,
+          154.49836042953285,
+          150.28990928577213,
+          143.07960195202162,
+          136.6835839330166,
+          132.32072973662295,
+          129.6327829297067,
+          126.69269307897159,
+          122.69650724719268
+        ]
+      },
+      "nativeRightKneeAfter": {
+        "maxAngleDegrees": 166.25142870753464,
+        "minBendRadiusMm": 52.854492453887566,
+        "maxPlaneStepDegrees": 3.4606977433064885,
+        "trajectory": {
+          "endpointMaxMm": 0,
+          "seamVelocityDeltaMaxMps": 0.3101412764361085,
+          "secondMm": 12.561319849348488,
+          "thirdMm": 15.977091117384518,
+          "maxFrameTravelMm": 31.84629514018396
+        },
+        "anglesDegrees": [
+          122.69650724719268,
+          118.63799141626424,
+          115.1271235472047,
+          112.14207424943379,
+          109.33501205038795,
+          107.15265814531318,
+          106.09876924171196,
+          106.2801578760875,
+          107.5714547164826,
+          109.91496665530445,
+          113.35654873072713,
+          117.87563442443249,
+          123.30844231110544,
+          130.05251944691832,
+          137.69528574051412,
+          144.8787533860577,
+          151.50452597829826,
+          157.63922589392774,
+          162.17752551055366,
+          164.88657052816197,
+          166.2463988994708,
+          166.25142870753464,
+          164.1552551502432,
+          160.155611732364,
+          155.35180536916542,
+          150.27387635663763,
+          145.29701510401685,
+          141.6387818260163,
+          139.1896818342219,
+          137.56404884119064,
+          136.71494822137205,
+          136.79730057957963,
+          137.7028081391281,
+          139.40503387165825,
+          142.40194185185695,
+          146.36591015866006,
+          149.95982790142375,
+          152.88256801793975,
+          155.3153520398615,
+          156.660368843026,
+          156.46922868189688,
+          154.76103339910398,
+          150.28990928577213,
+          142.76688595526477,
+          136.431916684514,
+          132.2617916482536,
+          129.6327829297067,
+          126.69269307897159,
+          122.69650724719268
+        ]
+      },
+      "inheritedV5BasisFitLimitations": {
+        "RigidBody": {
+          "component": "GEO-hyd_hose_connector_straight_nut.003",
+          "maxMm": 1.0175362097255203e-12,
+          "sourceFrame": 522
+        },
+        "MechanicalSoft": {
+          "component": "GEO-einar_tire_shoulder_padding",
+          "maxMm": 29.631420131642564,
+          "sourceFrame": 534
+        },
+        "Footwear": {
+          "component": "GEO-einar_boot_main.L",
+          "maxMm": 9.219744422022057,
+          "sourceFrame": 530
+        },
+        "Hand": {
+          "component": "GEO-einar_glove",
+          "maxMm": 5.982334557199048,
+          "sourceFrame": 502
+        },
+        "Jacket": {
+          "component": "GEO-einar_jacket_main",
+          "maxMm": 20.438020541137032,
+          "sourceFrame": 535
+        },
+        "Pants": {
+          "component": "GEO-einar_pants_main",
+          "maxMm": 12.246975237177768,
+          "sourceFrame": 530
+        },
+        "HeadSkin": {
+          "component": "GEO-einar_head",
+          "maxMm": 6.725780711613418,
+          "sourceFrame": 527
+        },
+        "KnitHat": {
+          "component": "GEO-einar_hat",
+          "maxMm": 2.5438405243138007e-13,
+          "sourceFrame": 498
+        },
+        "OralExpression": {
+          "component": "GEO-einar_teeth_lower",
+          "maxMm": 4.585973723508303e-13,
+          "sourceFrame": 505
+        },
+        "EyeOpaque": {
+          "component": "GEO-einar_teeth_upper",
+          "maxMm": 4.982493048981751e-13,
+          "sourceFrame": 529
+        },
+        "EyeCornea": {
+          "component": "GEO-eye.cornea.R",
+          "maxMm": 7.027150473277824e-13,
+          "sourceFrame": 534
+        },
+        "EyeMeniscus": {
+          "component": "GEO-eye.meniscus.L",
+          "maxMm": 2.498001805406602e-13,
+          "sourceFrame": 498
+        }
+      },
+      "limitations": [
+        "Contact correction is bounded to native520–543; exact v5 seam neighborhood and upper-body style are retained.",
+        "Contact improvement is not a smoothness guarantee. Native knee derivatives and actual browser release views remain part of the review.",
+        "Existing fixed-basis deformation limitations remain; no new targets were added. Inherited v5 residuals are historical, not a new v6 fit measurement.",
+        "Endpoint equality does not imply mathematically C1 LINEAR runtime animation. Actual repetition is for WIP review, not finished-motion certification."
+      ]
+    },
+    "loopValidation": {
+      "approved": true,
+      "scope": "WIP-loop-review",
+      "endpointPosePassed": true,
+      "firstDerivativeReviewed": true,
+      "contactSeamPassed": true,
+      "rootConventionPassed": true,
+      "nativeAuditSha256": "800b489b9efe6a7e986ba6eaf8f073cd059a42a9fc1040753d69e1afcfe3b680",
+      "decodedAuditSha256": "ba8d2432110ec2e10dd1c90a872aad10f0459157f1de3b4f5660be35a8312086",
+      "decodedAssetSha256": "9417621f79e8972dede4ad9630d989c246ba5da11bb469c42a612b7b4143dd3f",
+      "interpretation": "Approval to repeat the bounded contact candidate for WIP review. Exact seam preservation; not mathematical C1, no-slide or artistic acceptance."
+    }
+  },
+  "diagnosticBeforeClip": "Diagnostic_BeforeJogV6",
+  "diagnosticBefore": {
+    "clip": "Diagnostic_BeforeJogV6",
+    "samples": 49,
+    "firstSourceFrame": 498,
+    "lastSourceFrame": 546,
+    "sourceDt": 0.016667,
+    "duration": 0.800016,
+    "loopMode": "finite",
+    "sourceCycleLoopMode": "repeat",
+    "policy": "Exact v5 loop data sampled diagnostically at the same native keys. Production v5 behavior remains unchanged on its existing route."
+  },
+  "retainedClips": [
+    "Face_Jaw",
+    "Face_Smile",
+    "Face_Brow",
+    "Face_Blink",
+    "Face_JawSmile",
+    "Walk539_618"
+  ],
+  "capturePlan": {
+    "sideSourceFrames": [
+      519,
+      520,
+      521,
+      522,
+      523,
+      528,
+      534,
+      538,
+      540,
+      541,
+      542,
+      543,
+      544
+    ],
+    "threeQuarterSourceFrames": [
+      523,
+      540
+    ],
+    "seamOffsets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "expectedCaptureCount": 36,
+  "diagnosticContact": {
+    "units": "metres",
+    "groundY": -0.025249142199754715,
+    "groundDefinition": "Native right-sole support floor in Blender Z-up, mapped to runtime Y-up. Not an invented visual floor.",
+    "removedRootTravelRuntime": [
+      -5.2713834112161423e-17,
+      0,
+      1.5236620850281957
+    ],
+    "rootTravelFraction": "native key / 48; source498 is zero. Unwrapped seam keys accumulate the same QA stride continuously.",
+    "rootTravelConvention": "Production Jog stays in-place. Only paused diagnostic contact samples restore the identical removed v5 linear stride through a QA parent group; seam neighbors accumulate this exact stride. No production root changes.",
+    "productionRootChanged": false,
+    "gridSizeMetres": 4,
+    "gridSpacingMetres": 0.1,
+    "rightSoleVertices": [
+      {
+        "label": "rightSole01",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19365
+      },
+      {
+        "label": "rightSole02",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19368
+      },
+      {
+        "label": "rightSole03",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19372
+      },
+      {
+        "label": "rightSole04",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19375
+      },
+      {
+        "label": "rightSole05",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 19379
+      },
+      {
+        "label": "rightSole06",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 20426
+      },
+      {
+        "label": "rightSole07",
+        "mesh": "Mobile_Footwear",
+        "vertexIndex": 20429
+      }
+    ],
+    "soleMappingAuditSha256": "d20a04bebd260e81f353faeb27583c2ba3022b8e3053fbf427b7e58df2296bf6",
+    "acceptanceThreshold": null,
+    "soleMappingMaxBindErrorMetres": 0.000004575529291134583,
+    "soleMappingScope": "Seven verified persistent sole surface vertices; corner duplicates share exact skin and position-morph data. Public labels are generic, not source vertex IDs.",
+    "supportSourceFrames": [
+      523,
+      540
+    ],
+    "persistentRightSoleLabel": "rightSole03"
+  },
+  "decodedBeforeSeamAudit": {
+    "path": "decoded-loop81-before-seam.json",
+    "sha256": "457146dca4e11aac203e932a3e42629be883cf5cfcd47018de733fed37c09d83",
+    "bytes": 45332,
+    "fullDecodedAuditSha256": "60d31d5cd94d1dac2c5edf422bb4a69ba5bb65fec5948ed438ddab684af68568"
+  },
+  "decodedSeamAudit": {
+    "path": "decoded-loop81-seam.json",
+    "sha256": "7833ece6be663d110a4f243551c2fe0bb86573b18c1fb827f2711d09d6e2029e",
+    "bytes": 156303,
+    "fullDecodedAuditSha256": "ba8d2432110ec2e10dd1c90a872aad10f0459157f1de3b4f5660be35a8312086"
+  },
+  "mergeAuditSha256": "4d929470324d1b3d74ddc0a951179e705cbcf17831886cc50ab013f2ec34260e",
+  "nativeAuditSha256": "800b489b9efe6a7e986ba6eaf8f073cd059a42a9fc1040753d69e1afcfe3b680",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 1,
+  "network": {
+    "offline": false,
+    "latency": 40,
+    "downloadThroughput": 1250000,
+    "uploadThroughput": 625000,
+    "connectionType": "cellular4g"
+  },
+  "cpuThrottlingRate": 2,
+  "conditionsLabel": "Synthetic throttled desktop Chromium/SwiftShader; not a phone or cellular-network measurement.",
+  "localFiles": [
+    {
+      "path": "index81-jog.html",
+      "bytes": 1760,
+      "sha256": "c25f59197ea9cf27a2d791eb947742629d6575490ebb3bf3b64eb47300563625"
+    },
+    {
+      "path": "viewer81-jog.js",
+      "bytes": 44447,
+      "sha256": "e189937d7eb280a0cad5df799f90013e977a2a8f123f62d655e4faf5f238acd5"
+    },
+    {
+      "path": "viewer72.css",
+      "bytes": 2050,
+      "sha256": "5621ebe9815e3e2f91ccffc902f02cf10d871cecdd91acce7e32d26f7d63d59f"
+    },
+    {
+      "path": "metrics72.js",
+      "bytes": 1680,
+      "sha256": "74a18a19a576e9d686c37d8de1dca2428e6d06860627b0a85d431d891a7297b8"
+    },
+    {
+      "path": "runtime81-jog.json",
+      "bytes": 120414,
+      "sha256": "73c80ebadafc181bc08d26a327e27ca2a3af9e08a8413441c2f9781fe60e3f3b"
+    },
+    {
+      "path": "ATTRIBUTION72.md",
+      "bytes": 1737,
+      "sha256": "94920154e671cf1f2748b3530e56fa11f860e6cba49632034f3805ee1fe96c8c"
+    },
+    {
+      "path": "decoded-loop81-seam.json",
+      "bytes": 156303,
+      "sha256": "7833ece6be663d110a4f243551c2fe0bb86573b18c1fb827f2711d09d6e2029e"
+    },
+    {
+      "path": "decoded-loop81-before-seam.json",
+      "bytes": 45332,
+      "sha256": "457146dca4e11aac203e932a3e42629be883cf5cfcd47018de733fed37c09d83"
+    },
+    {
+      "path": "einar-jog-v6-diagnostic-9417621f79e8.glb.part0",
+      "bytes": 16777216,
+      "sha256": "55ae7897411c2b501744b5ad7582e32c60e005163c89d3b7eae14aabe2826f8c"
+    },
+    {
+      "path": "einar-jog-v6-diagnostic-9417621f79e8.glb.part1",
+      "bytes": 12811604,
+      "sha256": "0f1d53c5fd23afd1ea2ef52860b33870ebdec0298fbe120c991ef5fd23a84622"
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "vendor/three/build/three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "path": "vendor/three/examples/jsm/controls/OrbitControls.js",
+      "bytes": 29868,
+      "sha256": "5a44a9e86a2a0fb11933eed69bc2cd33c76a496854c1aed6ed776efa87d7b064"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/MESHOPT_LICENSE.md",
+      "bytes": 1079,
+      "sha256": "063805e3b8e24ceab4c5dea358b03245ee41c31be87cf65c61d836636cb494bb"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/meshopt_decoder.module.js",
+      "bytes": 24850,
+      "sha256": "01f48524f4bac6141eaba07e94cc36e7ee56f311796fa6117c159842941b0468"
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 108522,
+      "sha256": "d073b438e6a07e1359741dd5d6c76c953420cc0d4fd84eb1bdde94315540e6a3"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 31906,
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb"
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/KTX2Loader.js",
+      "bytes": 22589,
+      "sha256": "9cca5aa35fdb04b4818c792c8d08fb6e7607dcafc46e7b06a9485e9f25261be7"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/WorkerPool.js",
+      "bytes": 1712,
+      "sha256": "94ff7b608caf3b827ffa95bd6092b9d174732b856915b38ed006b4f049f95675"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/ktx-parse.module.js",
+      "bytes": 18676,
+      "sha256": "f73948e7bbf8db386076fda0458160bdb50ce2e11e88fa7da0f339e1ec547493"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstddec.module.js",
+      "bytes": 39754,
+      "sha256": "5cbf818e842628a4464e748594a6deae18ceddda3c2f541e7b3a0ff5fc7611e2"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/README.md",
+      "bytes": 1448,
+      "sha256": "930b11bbbb742b2525491b0964f0462d63d8b21383c0623ec4c98c43d53723c6"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/basis_transcoder.js",
+      "bytes": 62337,
+      "sha256": "48a0ef319a28bf0224ee88ded34f74eaf97c175bba9eb18b47fb9720510ad6c4"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/basis/basis_transcoder.wasm",
+      "bytes": 499935,
+      "sha256": "79ae97d781e10a566659c689b7bb1de91726453f55f9f5e3bcc07a4e3904070f"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/BASIS-LICENSE.txt",
+      "bytes": 11347,
+      "sha256": "065fcf48d6af21c0b75e23be5ed5753aee75c892e1c2cf178fa6736305614a5c"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstd-LICENSE.txt",
+      "bytes": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/ktx-parse-LICENSE.txt",
+      "bytes": 1078,
+      "sha256": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/zstddec-LICENSE.txt",
+      "bytes": 2617,
+      "sha256": "8d078b49fc02bd63c1beaf4ddc629a8b48e4ba6a435415408c8209e2a5c3aacf"
+    }
+  ],
+  "externalAssets": [],
+  "policy": "Thirty-six paired native-clock contact/release/seam screenshots and all49 lightweight numerical measurements and separately instrumented three real LoopRepeat crossings; one loaded model, no benchmark, no slowdown or crossfade. Review/retro before any next iteration."
+}
