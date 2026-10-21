@@ -188,6 +188,7 @@ function snapshot() {
 function frameView(kind = 'whole') {
   const target = kind === 'head' ? model.getObjectByName('Mobile_HeadSkin') : model;
   if (!target) throw Error('Missing requested visual inspection target');
+  model.updateMatrixWorld(true); // Skin bounds depend on sibling armature world matrices.
   const box = new THREE.Box3().setFromObject(target, true);
   const center = box.getCenter(new THREE.Vector3()), size = box.getSize(new THREE.Vector3());
   const fit = Math.max(size.y / 2, size.x / (2 * camera.aspect));
@@ -204,6 +205,7 @@ window.characterQA72 = {
       requestedDurationMs: 30000, hardResetCount: 0, policy: 'Repeated finite excerpt with hard resets, not a seamless loop.' };
     el('loop-note').textContent = '30-second measurement: repeated finite excerpt with hard resets, not a seamless loop.';
   },
+  cancelBenchmark() { if (metrics.benchmark) metrics.benchmark.active = false; },
   frameSamples: () => metrics.frameSamples,
   async geometryHashes() {
     const output = []; for (const a of attributes) {
@@ -268,6 +270,7 @@ try {
       for (const [name, list] of Object.entries(node.geometry.morphAttributes)) list.forEach((attribute, i) => attributes.push({ name: node.name + '/morph/' + name + '/' + i, attribute, version: attribute.version }));
     }
   });
+  model.updateMatrixWorld(true); // Update the entire hierarchy before evaluating skinned vertices.
   const box = new THREE.Box3().setFromObject(model, true), size = box.getSize(new THREE.Vector3()), center = box.getCenter(new THREE.Vector3());
   const height = Math.max(size.y, .01), fit = Math.max(size.y / 2, size.x / (2 * camera.aspect));
   controls.target.copy(center); camera.position.copy(center).add(new THREE.Vector3(.4, .035, 1).normalize().multiplyScalar(fit / Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * 1.25 + size.z / 2));

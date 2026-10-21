@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
     check(files.has(name), 'Not in frozen allowlist'); const frozen = files.get(name);
     const bytes = fs.readFileSync(path.join(root, name)); check(bytes.length === frozen.bytes && sha(bytes) === frozen.sha256, 'Changed served bytes');
     res.writeHead(200, { 'Content-Type': { '.js': 'application/javascript', '.html': 'text/html', '.json': 'application/json', '.css': 'text/css', '.glb': 'model/gltf-binary', '.wasm': 'application/wasm', '.md': 'text/plain' }[path.extname(name)] || 'application/octet-stream',
-      'Content-Length': bytes.length, 'Cache-Control': 'no-store' }); res.end(bytes);
+      'Content-Length': bytes.length, 'Cache-Control': /^vendor\/three\/examples\/jsm\/libs\/basis\/basis_transcoder\.(js|wasm)$/.test(name) ? 'no-cache' : 'no-store' }); res.end(bytes);
   } catch { res.writeHead(404).end('Not found'); }
 });
 let browser, page, cdp, cold, playback, reset, idle, browserConfig, throttling;
@@ -76,7 +76,7 @@ async function diagnostics() {
   });
   cdp.on('Network.loadingFinished', e => { const item = transfers.get(e.requestId); if (item) Object.assign(item, { completed: true, finishedSeconds: e.timestamp,
     encodedDataLength: e.encodedDataLength, requestDurationMs: 1000 * (e.timestamp - item.startSeconds) }); });
-  cdp.on('Network.loadingFailed', e => { const item = transfers.get(e.requestId); if (item) Object.assign(item, { failed: true, error: e.errorText }); });
+  cdp.on('Network.loadingFailed', e => { const item = transfers.get(e.requestId); if (item) Object.assign(item, { failed: true, error: e.errorText, failedSeconds: e.timestamp, canceled: !!e.canceled, blockedReason: e.blockedReason ?? null }); });
   page.on('pageerror', e => errors.push({ kind: 'pageerror', message: e.message }));
   page.on('console', m => { if (m.type() === 'error') errors.push({ kind: 'console', message: m.text() }); else if (m.type() === 'warning') warnings.push(m.text()); });
   page.on('requestfailed', r => failedRequests.push({ url: r.url(), error: r.failure()?.errorText }));
@@ -97,9 +97,13 @@ async function diagnostics() {
     assetRequest: assetRequests[0], limitation: 'CDP encodedDataLength includes transfer overhead; localhost plus configured throttling, not WAN or phone radio.' };
   const beforeHashes = await page.evaluate(() => window.characterQA72.geometryHashes());
   const neutral = await snapshot('neutral');
+  // A finite 1.3-second clip can finish before a software-rendered click round trip.
+  // Exercise trusted Pause during bounded repetition, then discard this warm-up series.
+  await page.evaluate(() => window.characterQA72.beginBenchmark());
   await page.locator('#play').click();
   await page.waitForFunction(() => window.characterQA72.report().firstAnimation !== null);
-  await page.locator('#pause').click(); await snapshot('animated');
+  await page.locator('#pause').click();
+  await page.evaluate(() => window.characterQA72.cancelBenchmark()); await snapshot('animated');
   // Trusted orbit input, with visible camera movement checked independently of event receipt.
   const cameraBefore = await page.evaluate(() => window.characterQA72.report().camera.position);
   const bounds = await page.locator('#canvas').boundingBox();
