@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><link rel="icon" href="data:,">
+<title>Einar · exact-key before/after motion comparison</title>
+<link rel="stylesheet" href="./viewer72.css">
+<script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+</head>
+<body>
+<main>
+  <header><div><p class="eyebrow">EXACT NATIVE KEYS · MOTION COMPARISON ONLY</p><h1>Einar in motion</h1></div><span id="badge">Loading</span></header>
+  <section id="viewport" aria-label="Interactive full-character 3D view"><canvas id="canvas" aria-label="Einar full-character view. Drag to orbit and scroll to zoom."></canvas><div class="hint">Drag to orbit · Scroll to zoom</div></section>
+  <section class="controls" aria-label="Animation controls"><label for="animation">Animation</label><select id="animation" disabled><option>Loading</option></select><button id="play" disabled>Play walk</button><button id="pause" disabled>Pause</button><button id="reset" disabled>Reset to neutral</button><output id="time">0.000 s</output></section>
+  <p id="status" role="status">Loading the standard character export and animation…</p>
+  <p id="loop-note">Finite 80-frame excerpt, not a seamless loop. Eye-shell approximation: opacity 0.08, glossy alpha, no refraction. Review required before deployment.</p>
+  <details><summary>Runtime measurements</summary><pre id="metrics">Waiting for first character render.</pre></details>
+  <footer>Einar © Blender Foundation / Blender Studio · Motion derived from Ian Mason’s 100STYLE · <a href="./ATTRIBUTION72.md">Attribution and scope</a></footer>
+</main>
+<script type="module" src="./viewer75-motion.js"></script>
+</body></html>

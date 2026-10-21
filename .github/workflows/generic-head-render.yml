@@ -1,4 +1,4 @@
-name: Generic character eye-material and start-pose candidate74
+name: Generic character localized knee motion proof75
 on:
   push:
     branches: [main]
@@ -26,10 +26,10 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Restore and verify exact standard runtime
         working-directory: package72
-        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs && node freeze74-candidate.cjs
+        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs && node restore-transport75.cjs && node validate75.cjs && node freeze75-motion.mjs
       - name: Install established Chromium
         working-directory: package72
         run: npx --no-install playwright-core install chromium
-      - name: Same-model visible eye material and start-pose proof
+      - name: Exact-time before and after knee motion proof
         working-directory: package72
-        run: timeout 420s node capture74-candidate.cjs
+        run: timeout 420s node capture75-motion.cjs

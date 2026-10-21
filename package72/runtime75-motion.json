@@ -1,0 +1,31 @@
+{
+  "schema": "standard-character-runtime72-v1",
+  "asset": {
+    "filename": "einar-knee74-5849f06afdaa.glb",
+    "sha256": "5849f06afdaa04d0f8a362c30d05807fc5f9de5e37d819ca820929a4b43c4d92",
+    "bytes": 24649156,
+    "provenance": "Standard Blender 5.0.1 evaluated animation; standard glTF Transform animation-only merge. Existing mesh, basis, skin bindings, materials and textures unchanged."
+  },
+  "clip": "Walk539_618",
+  "duration": 1.3166930675506592,
+  "scope": "Whole-character mobile LOD with accepted finite walk and existing generic expressions. Fixed corrective basis is walk-conditioned; arbitrary new animation portability is not claimed.",
+  "baselineAsset": {
+    "filename": "einar-mobile-e8abce9889c5.glb",
+    "sha256": "e8abce9889c536d8447beb5d70ce2e907fc4b23277eab0aaf74646b76b021bad",
+    "bytes": 23660224
+  },
+  "beforeClip": "Diagnostic_BeforeWalk",
+  "windows": [
+    {
+      "side": "L",
+      "first": 565,
+      "last": 577
+    },
+    {
+      "side": "R",
+      "first": 604,
+      "last": 616
+    }
+  ],
+  "policy": "Diagnostic before/after clips only; production excludes Diagnostic_BeforeWalk."
+}
