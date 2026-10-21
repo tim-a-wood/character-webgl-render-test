@@ -1,14 +1,11 @@
-name: Generic character bounded Jog correction proof77
+name: Generic compact Jog v3 comparison78
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/generic-head-render.yml', 'package72/**']
 permissions:
   contents: read
 jobs:
   standard-character:
-    if: github.event.repository.private == false && github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || github.event.head_commit.message == 'Check generic whole-character mobile port72')
+    if: github.event.repository.private == false && github.ref == 'refs/heads/main'
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
@@ -25,12 +22,12 @@ jobs:
       - name: Install pinned validator and browser harness
         working-directory: package72
         run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Restore and verify exact standard runtime
+      - name: Restore exact standard runtime and lossless hosting parts
         working-directory: package72
-        run: node restore-transport72.cjs && node validate72.cjs && npm test && node freeze72.cjs && node restore-transport76.cjs && node restore-transport77.cjs && node split77.cjs && node validate77.cjs
+        run: node restore-transport72.cjs && node restore-transport76.cjs && node restore-transport77.cjs && node restore-transport78.cjs && node split78.cjs && node validate78.cjs
       - name: Install established Chromium
         working-directory: package72
         run: npx --no-install playwright-core install chromium
-      - name: Bounded Jog correction comparison
+      - name: Compact Jog v2-v3 poses and finite-play smoke
         working-directory: package72
-        run: timeout 300s node capture77-jog.cjs
+        run: timeout 300s node capture78-jog.cjs

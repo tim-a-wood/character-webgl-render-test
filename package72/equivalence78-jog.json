@@ -1,0 +1,151 @@
+{
+  "schema": "compact-jog-runtime-equivalence78-v1",
+  "baselineSha256": "7b55b401f3e71d679b17e3f162fcc9f026b32a8f02543d48020d3dcd45a153a6",
+  "outputSha256": "cb2533d156131650d1f8574ef37d1dc9327c1e1f9b66c5cbcf61cb6d7d6a37bf",
+  "outputBytes": 29571372,
+  "fixedGeometryTargetsAppearanceBindingsRestGraphExact": true,
+  "retainedWalkFaceExact": true,
+  "beforeJogExact": true,
+  "frozenLowerBodyTracksExact": true,
+  "frozenLowerMorphBlocksExact": true,
+  "frozenLowerMorphBlocks": [
+    {
+      "node": "Mobile_Pants",
+      "trackKey": "Mobile_Pants/weights",
+      "input": {
+        "name": "",
+        "extras": {},
+        "type": "SCALAR",
+        "component": 5126,
+        "normalized": false,
+        "count": 48,
+        "sha256": "b9ed11a759ebf9ea99eeff835bf0ee9507f62ce5c3c690da3111069b1be9cef8"
+      },
+      "output": {
+        "name": "",
+        "extras": {},
+        "type": "SCALAR",
+        "component": 5126,
+        "normalized": false,
+        "count": 432,
+        "sha256": "58744af5523e6b95ccb7f81439e77f0d18b6d299cca58d0a7fef4a9d346f503b"
+      },
+      "targetNames": [
+        "WalkMean",
+        "WalkMode01",
+        "WalkMode02",
+        "WalkMode03",
+        "WalkMode04",
+        "WalkMode05",
+        "WalkMode06",
+        "WalkMode07",
+        "WalkMode08"
+      ],
+      "allCoefficientColumnsExact": true
+    },
+    {
+      "node": "Mobile_Footwear",
+      "trackKey": "Mobile_Footwear/weights",
+      "input": {
+        "name": "",
+        "extras": {},
+        "type": "SCALAR",
+        "component": 5126,
+        "normalized": false,
+        "count": 48,
+        "sha256": "b9ed11a759ebf9ea99eeff835bf0ee9507f62ce5c3c690da3111069b1be9cef8"
+      },
+      "output": {
+        "name": "",
+        "extras": {},
+        "type": "SCALAR",
+        "component": 5126,
+        "normalized": false,
+        "count": 432,
+        "sha256": "36dca6c1696d9f064a0e6cf2d4543b80753a1e7c2cb7432a23b6929f63764ef6"
+      },
+      "targetNames": [
+        "WalkMean",
+        "WalkMode01",
+        "WalkMode02",
+        "WalkMode03",
+        "WalkMode04",
+        "WalkMode05",
+        "WalkMode06",
+        "WalkMode07",
+        "WalkMode08"
+      ],
+      "allCoefficientColumnsExact": true
+    },
+    {
+      "node": "Mobile_MechanicalSoft",
+      "trackKey": "Mobile_MechanicalSoft/weights",
+      "input": {
+        "name": "",
+        "extras": {},
+        "type": "SCALAR",
+        "component": 5126,
+        "normalized": false,
+        "count": 48,
+        "sha256": "b9ed11a759ebf9ea99eeff835bf0ee9507f62ce5c3c690da3111069b1be9cef8"
+      },
+      "output": {
+        "name": "",
+        "extras": {},
+        "type": "SCALAR",
+        "component": 5126,
+        "normalized": false,
+        "count": 528,
+        "sha256": "1595d65825fb328487b28b8b63165f4590cab18cd520ac99cdde694b896d00d1"
+      },
+      "targetNames": [
+        "WalkMean",
+        "WalkMode01",
+        "WalkMode02",
+        "WalkMode03",
+        "WalkMode04",
+        "WalkMode05",
+        "WalkMode06",
+        "JogSupplement01",
+        "JogSupplement02",
+        "JogSupplement03",
+        "JogSupplement04"
+      ],
+      "allCoefficientColumnsExact": true
+    }
+  ],
+  "correctedJogExactAfterRoundtrip": true,
+  "actualChangedMorphTargets": {
+    "Mobile_Hand": [
+      "WalkMean",
+      "WalkMode01"
+    ],
+    "Mobile_HeadSkin": [
+      "WalkMean",
+      "WalkMode01"
+    ],
+    "Mobile_Jacket": [
+      "JogSupplement01",
+      "JogSupplement02",
+      "JogSupplement03",
+      "JogSupplement04",
+      "WalkMean",
+      "WalkMode01",
+      "WalkMode02",
+      "WalkMode03",
+      "WalkMode04",
+      "WalkMode05",
+      "WalkMode06",
+      "WalkMode07",
+      "WalkMode08"
+    ]
+  },
+  "unchangedJogTrackCount": 150,
+  "diagnosticClip": "Diagnostic_BeforeJogV3",
+  "correctedClip": "Jog478_525",
+  "changedTrackCount": 803,
+  "frozenLowerTrackCount": 54,
+  "nativeExportSha256": "bdb918349867122689f5ecc424ec31add14b8e1ea0eaa2c85bd0b3d9ff7192ec",
+  "mergeAuditSha256": "35c635e22746c334d3e44a693ad10140d13de7741311388a6b4b52a73efe5b5f",
+  "scope": "Generic evaluated runtime data only. No geometry, target basis, appearance, bindings or accepted Walk/Face changes. Artistic approval remains pending."
+}
